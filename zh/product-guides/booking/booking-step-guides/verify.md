@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 验证流程，用于运价重新检查、预订要求、附加服务选项和订单创建前的会话处理。
+description: Atlas API 验证流程，用于运价重新检查、预订要求、附加服务选项和订单创建前的会话处理。
 ---
 
 # 验证
@@ -108,18 +107,18 @@ Atlas 在滚动 60 秒窗口中一起计算 `verify.do` 和 `getOffers.do`。
 
 ### 接下来是什么？
 
-使用返回的 `sessionId` 调用[创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)。
+使用返回的 `sessionId` 调用[创建订单](create-order.md)。
 
 如果价格、库存或附加服务发生变化，将验证结果作为当前真实来源。
 
 ### 相关页面
 
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [预订 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [搜索](search.md)
+* [创建订单](create-order.md)
+* [预订 API](../../../api-reference/booking-apis/)
 
 ### 完整 API 参考
 
 在此查看端点级详情：
 
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/COwEy62n0XrLQubATdaA)
+* [验证](../../../api-reference/booking-apis/verify.md)

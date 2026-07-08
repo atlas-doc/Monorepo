@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas 重复预订错误 318 和 608 的区别，以及如何在重试前确认现有预订是否已成功。
+description: Atlas 重复预订错误 318 和 608 的区别，以及如何在重试前确认现有预订是否已成功。
 ---
 
 # 318 vs 608 重复预订
@@ -107,9 +106,9 @@ Atlas 认为相同的乘客和行程可能已存在订单。
 
 ### 相关页面
 
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [轮询和出票时机](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [验证、订单与出票错误](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
+* [查询订单](../../../product-guides/booking/booking-step-guides/query-order/)
+* [轮询和出票时机](../../../product-guides/booking/booking-step-guides/query-order/post-payment-polling.md)
+* [创建订单](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [支付与出票](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [错误代码](./)
+* [验证、订单与出票错误](verify-order-and-ticketing-errors.md)

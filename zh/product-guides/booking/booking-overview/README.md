@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 预订流程概述，涵盖搜索、获取报价、验证、订单创建、支付、出票、标识符和订单跟进。
+description: Atlas API 预订流程概述，涵盖搜索、获取报价、验证、订单创建、支付、出票、标识符和订单跟进。
 ---
 
 # 预订概述
@@ -114,22 +113,22 @@ Atlas 对选定的预订前 API 应用请求限制治理。
 
 避免立即重试循环。
 
-有关完整策略，请使用[API 请求限制](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)。
+有关完整策略，请使用[API 请求限制](api-request-limits.md)。
 
 ### 关键预订页面
 
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [价格比较搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xXO9qKGJUXpfkxLDdpiB)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [确认订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [预订决策](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
+* [标识符](identifiers.md)
+* [搜索](../booking-step-guides/search.md)
+* [价格比较搜索](../../../api-reference/booking-apis/price-compare-search.md)
+* [获取报价](../booking-step-guides/get-offer.md)
+* [获取报价价格](../booking-step-guides/get-offer-price.md)
+* [验证](../booking-step-guides/verify.md)
+* [创建订单](../booking-step-guides/create-order.md)
+* [确认订单](../booking-step-guides/confirm-order.md)
+* [支付与出票](../booking-step-guides/payment-and-ticketing/)
+* [查询订单](../booking-step-guides/query-order/)
+* [可选附加服务](../optional-ancillaries/)
+* [预订决策](booking-decisions/)
 
 ### 预订流程中的关键标识符
 
@@ -195,7 +194,7 @@ Atlas 对选定的预订前 API 应用请求限制治理。
 
 仅在 FR 航司时在支付前插入 `orderCommit.do`。
 
-有关完整的分步顺序，请使用[标准预订流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN)。
+有关完整的分步顺序，请使用[标准预订流程](../booking-flows/standard-booking-flow.md)。
 
 #### 如何包含座位和行李
 
@@ -217,7 +216,7 @@ Atlas 对选定的预订前 API 应用请求限制治理。
 
 仅在 FR 航司时在支付前插入 `orderCommit.do`。
 
-有关完整的分步顺序，请使用[获取报价流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj)。
+有关完整的分步顺序，请使用[获取报价流程](../booking-flows/get-offer-flow.md)。
 
 #### 履约流程
 
@@ -227,7 +226,7 @@ Atlas 对选定的预订前 API 应用请求限制治理。
 
 将 5 分钟支付和出票窗口视为严格的。
 
-有关完整的分步顺序，请使用[履约流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01)。
+有关完整的分步顺序，请使用[履约流程](../booking-flows/fulfillment-flow.md)。
 
 #### `pay.do` 之后会发生什么？
 
@@ -258,36 +257,36 @@ Webhook 可以提供帮助，但不应该是您唯一的确认路径。
 
 使用：
 
-* [预订决策](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
-* [搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [获取报价 vs 获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
+* [预订决策](booking-decisions/)
+* [搜索 vs 报价](booking-decisions/search-vs-offer.md)
+* [获取报价 vs 获取报价价格](booking-decisions/get-offer-vs-get-offer-price.md)
 
 #### 构建标准流程
 
 使用：
 
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [标准预订流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN)
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [标识符](identifiers.md)
+* [标准预订流程](../booking-flows/standard-booking-flow.md)
+* [搜索](../booking-step-guides/search.md)
+* [验证](../booking-step-guides/verify.md)
+* [创建订单](../booking-step-guides/create-order.md)
 
 #### 构建支付和跟进
 
 使用：
 
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [支付后轮询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [支付与出票](../booking-step-guides/payment-and-ticketing/)
+* [支付后轮询](../booking-step-guides/query-order/post-payment-polling.md)
+* [查询订单](../booking-step-guides/query-order/)
 
 #### 添加座位和行李
 
 使用：
 
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [行李](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [行李和座位 productCode 新鲜度](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
+* [可选附加服务](../optional-ancillaries/)
+* [座位](../optional-ancillaries/seats-and-baggage/)
+* [行李](../optional-ancillaries/baggage.md)
+* [行李和座位 productCode 新鲜度](../optional-ancillaries/baggage-and-seat-productcode-freshness.md)
 
 将这里的附加服务视为可选的添加项，而不是强制性的预订步骤。
 
@@ -295,28 +294,28 @@ Webhook 可以提供帮助，但不应该是您唯一的确认路径。
 
 使用：
 
-* [预订决策](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
-* [获取报价流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
+* [预订决策](booking-decisions/)
+* [获取报价流程](../booking-flows/get-offer-flow.md)
+* [获取报价](../booking-step-guides/get-offer.md)
+* [可选附加服务](../optional-ancillaries/)
 
 #### 构建履约路径
 
 使用：
 
-* [履约流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [获取报价 vs 获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [API 请求限制](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
+* [履约流程](../booking-flows/fulfillment-flow.md)
+* [获取报价价格](../booking-step-guides/get-offer-price.md)
+* [获取报价 vs 获取报价价格](booking-decisions/get-offer-vs-get-offer-price.md)
+* [可选附加服务](../optional-ancillaries/)
+* [支付与出票](../booking-step-guides/payment-and-ticketing/)
+* [API 请求限制](api-request-limits.md)
 
 #### 评估售前航线覆盖
 
 使用：
 
-* [价格比较搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xXO9qKGJUXpfkxLDdpiB)
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
+* [价格比较搜索](../../../api-reference/booking-apis/price-compare-search.md)
+* [搜索](../booking-step-guides/search.md)
 
 ### 在以下情况下使用此部分
 
@@ -331,13 +330,13 @@ Webhook 可以提供帮助，但不应该是您唯一的确认路径。
 
 在此查看端点级详情：
 
-[预订 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+[预订 API](../../../api-reference/booking-apis/)
 
 ### 相关页面
 
-* [快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [获取沙箱凭据](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [预订决策](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [快速入门](../../../readme/quick-start.md)
+* [获取沙箱凭据](../../../readme/making-requests.md)
+* [标识符](identifiers.md)
+* [可选附加服务](../optional-ancillaries/)
+* [预订决策](booking-decisions/)
+* [错误代码](../../../support-and-reference/troubleshooting-and-support/errors-handing/)

@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 支付错误，涉及过期订单、不支持的支付方式、重复支付风险、乘客数据和 VCC 失败。
+description: 常见的 Atlas API 支付错误，涉及过期订单、不支持的支付方式、重复支付风险、乘客数据和 VCC 失败。
 ---
 
 # 支付错误
@@ -178,8 +177,8 @@ description: >-
 
 ### 相关页面
 
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [混合支付指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SkmHf0AK1tgebiGujAko)
-* [支付](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [支付与出票](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [获取报价价格](../../../product-guides/booking/booking-step-guides/get-offer-price.md)
+* [混合支付指南](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/hybrid-payment-guide.md)
+* [支付](../faqs/atlas-api-payments.md)
+* [查询订单](../../../product-guides/booking/booking-step-guides/query-order/)

@@ -15,7 +15,7 @@ description: Atlas 扩展与集成，涵盖 webhook、通知和数据源。
 
 ### 主要部分
 
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [航班数据源](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lwbbbCSVAlYcqOhIybiX)
-* [多渠道通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8Zq7m8MZqQ7q8Zq7m8M)
-* [特殊集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Zq8Zq7m8MZqQ7q8Zq)
+* [Webhook 概述](webhook-overview/)
+* [航班数据源](flight-data-feed.md)
+* [多渠道通知](multi-channel-notifications.md)
+* [特殊集成](special-integrations/)

@@ -1,6 +1,5 @@
 ---
-description: >-
-  `getOfferPrice.do` 履约路径的步骤级指南，涵盖 5 分钟出票、超时处理和恢复规则。
+description: '`getOfferPrice.do` 履约路径的步骤级指南，涵盖 5 分钟出票、超时处理和恢复规则。'
 ---
 
 # 获取报价价格
@@ -167,10 +166,10 @@ Webhook 可以提供帮助，但不应该是您唯一的确认路径。
 
 ### 相关页面
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [API 请求限制](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zE0QlLrSj0ynAcagJTD3)
+* [预订概述](../booking-overview/)
+* [获取报价](get-offer.md)
+* [创建订单](create-order.md)
+* [支付与出票](payment-and-ticketing/)
+* [查询订单](query-order/)
+* [API 请求限制](../booking-overview/api-request-limits.md)
+* [获取报价价格](../../../api-reference/booking-apis/get-offer-price.md)

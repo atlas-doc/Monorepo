@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API webhook 注册和事件查询参考，用于端点设置、更新和事件对账。
+description: Atlas API webhook 注册和事件查询参考，用于端点设置、更新和事件对账。
 ---
 
 # Webhook 注册与事件
@@ -46,9 +45,9 @@ description: >-
 
 ### 后续步骤
 
-使用 [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)了解运营模式和事件覆盖范围。
+使用 [Webhook 概述](../../product-guides/extensions-and-integrations/webhook-overview/)了解运营模式和事件覆盖范围。
 
-当需要更深入的事件跟进时，使用[事件查询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/70gk6tmdLYkYGQSscSKw)和[事件通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX)。
+当需要更深入的事件跟进时，使用[事件查询](../../product-guides/extensions-and-integrations/webhook-overview/incident-query.md)和[事件通知](../../product-guides/extensions-and-integrations/webhook-overview/incident-notification.md)。
 
 ### 典型流程
 
@@ -93,15 +92,15 @@ Atlas 将该 URL 用于所有支持的 webhook 事件类型。
 
 ### 相关页面
 
-* [Webhooks](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [履约 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [事件查询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/70gk6tmdLYkYGQSscSKw)
-* [事件通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX)
+* [Webhooks](../../product-guides/extensions-and-integrations/webhook-overview/)
+* [履约 API](../booking-apis/get-offer-price.md)
+* [事件查询](../../product-guides/extensions-and-integrations/webhook-overview/incident-query.md)
+* [事件通知](../../product-guides/extensions-and-integrations/webhook-overview/incident-notification.md)
 
 {% openapi-operation spec="atlas-api" path="/updateWebhookURL.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/6d498c79f43546e63a2289f81c033345c8210830410d2835d33def093c5f3f29.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260708%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260708T131020Z&X-Amz-Expires=172800&X-Amz-Signature=27126ae21ba6c52dbf38f05311990817f1e9c7b7109d7807e10d2e1b9238185d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/6d498c79f43546e63a2289f81c033345c8210830410d2835d33def093c5f3f29.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260708%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260708T160242Z&X-Amz-Expires=172800&X-Amz-Signature=d8e7b67a1a18ec6873272e04188bd55a3a9f436111c9b505348005277cdf09b7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="atlas-api" path="/event/getPageList.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/6d498c79f43546e63a2289f81c033345c8210830410d2835d33def093c5f3f29.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260708%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260708T131020Z&X-Amz-Expires=172800&X-Amz-Signature=27126ae21ba6c52dbf38f05311990817f1e9c7b7109d7807e10d2e1b9238185d&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/6d498c79f43546e63a2289f81c033345c8210830410d2835d33def093c5f3f29.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260708%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260708T160242Z&X-Amz-Expires=172800&X-Amz-Signature=d8e7b67a1a18ec6873272e04188bd55a3a9f436111c9b505348005277cdf09b7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}

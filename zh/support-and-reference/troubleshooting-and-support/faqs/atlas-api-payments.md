@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 支付问题，涉及存款、VCC 直通、卡数据、退款和支付限制。
+description: 常见的 Atlas API 支付问题，涉及存款、VCC 直通、卡数据、退款和支付限制。
 ---
 
 # 支付
@@ -97,51 +96,51 @@ Atlas 不支持在一个 `pay.do` 请求中使用多个 VCC。
 在发送 `pay.do` 之前，检查当前搜索或验证响应中的支付支持和必填字段。
 {% endhint %}
 
-| 航空公司代码 | 航空公司名称                       | cardHolderCountry | cardHoldProvince | cardHolderCity | cardHolderPostCode | cardHolderAddress |
-| ------------ | ---------------------------------- | ----------------- | ---------------- | -------------- | ------------------ | ----------------- |
-| 4N           | Air North                          | 必填              | 必填             | 必填           | 必填               | 必填              |
-| 5J           | Cebu Pacific Air                   | 必填              | 必填             | 必填           | 必填               | 必填              |
-| 8P           | Pacific Coastal                    | 必填              | 必填             | 非必填         | 必填               | 必填              |
-| 9M           | Central Mountain Air               | 必填              | 必填             | 非必填         | 必填               | 必填              |
-| A3           | Aegean Airlines                    | 必填              | 必填             | 必填           | 必填               | 必填              |
-| AN           | Advanced Airlines                  | 必填              | 必填             | 必填           | 必填               | 必填              |
-| AS           | Alaska Airlines                    | 非必填            | 必填             | 必填           | 必填               | 必填              |
-| BT           | Air Baltic                         | 必填              | 非必填           | 必填           | 必填               | 必填              |
-| BV           | TOKI AIR                           | 必填              | 必填             | 必填           | 必填               | 必填              |
-| D8           | Norwegian Air Sweden               | 必填              | 非必填           | 必填           | 必填               | 必填              |
-| DE           | Condor                             | 非必填            | 非必填           | 必填           | 非必填             | 非必填            |
-| DG           | Cebgo                              | 必填              | 必填             | 必填           | 必填               | 必填              |
-| DI           | Cebu Pacific Air                   | 非必填            | 非必填           | 必填           | 非必填             | 非必填            |
-| DM           | Arajet                             | 必填              | 必填             | 必填           | 必填               | 必填              |
-| DY           | Norwegian Air Shuttle ASA          | 非必填            | 必填             | 必填           | 必填               | 必填              |
-| E6           | Eurowings Europe                   | 必填              | 必填             | 必填           | 必填               | 必填              |
-| EI           | Aer Lingus                         | 必填              | 必填             | 必填           | 必填               | 必填              |
-| EW           | Eurowings                          | 必填              | 必填             | 必填           | 必填               | 必填              |
-| F9           | Frontier Airlines (美国地址)       | 必填              | 非必填           | 必填           | 必填               | 必填              |
-| F9           | Frontier Airlines (非美国地址)     | 非必填            | 非必填           | 非必填         | 非必填             | 非必填            |
-| FA           | Fly Safair                         | 必填              | 必填             | 必填           | 必填               | 必填              |
-| G4           | Allegiant Air                      | 必填              | 必填             | 必填           | 必填               | 必填              |
-| GE           | Lift Airline                       | 必填              | 必填             | 必填           | 必填               | 必填              |
-| GQ           | Skyexpress                         | 必填              | 必填             | 必填           | 必填               | 必填              |
-| H4           | HiSky                              | 必填              | 非必填           | 非必填         | 非必填             | 非必填            |
-| H7           | HiSky                              | 必填              | 非必填           | 非必填         | 非必填             | 非必填            |
-| JV           | Perimeter                          | 必填              | 必填             | 必填           | 非必填             | 非必填            |
-| KM           | AirMalta                           | 必填              | 非必填           | 必填           | 非必填             | 必填              |
-| LJ           | Jin Air                            | 必填              | 必填             | 非必填         | 必填               | 必填              |
-| MM           | Peach Aviation                     | 非必填            | 非必填           | 必填           | 必填               | 必填              |
-| MO           | Calm Air                           | 非必填            | 非必填           | 非必填         | 非必填             | 必填              |
-| NK           | Spirit Airlines                    | 必填              | 必填             | 必填           | 必填               | 必填              |
-| OA           | Olympic Air                        | 必填              | 必填             | 必填           | 必填               | 必填              |
-| OG           | PLAY                               | 必填              | 必填             | 必填           | 必填               | 必填              |
-| P6           | Pascan                             | 必填              | 必填             | 必填           | 必填               | 必填              |
-| PB           | PAL Airlines                       | 必填              | 必填             | 必填           | 必填               | 必填              |
-| RW           | Royal Air Philippines              | 非必填            | 非必填           | 非必填         | 非必填             | 必填              |
-| SY           | Sun Country Airlines               | 必填              | 必填             | 必填           | 必填               | 必填              |
-| TR           | Scoot Tiger Air                    | 必填              | 非必填           | 必填           | 必填               | 必填              |
-| VY           | Vueling Airlines                   | 必填              | 非必填           | 必填           | 必填               | 必填              |
+| 航空公司代码 | 航空公司名称                    | cardHolderCountry | cardHoldProvince | cardHolderCity | cardHolderPostCode | cardHolderAddress |
+| ------ | ------------------------- | ----------------- | ---------------- | -------------- | ------------------ | ----------------- |
+| 4N     | Air North                 | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| 5J     | Cebu Pacific Air          | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| 8P     | Pacific Coastal           | 必填                | 必填               | 非必填            | 必填                 | 必填                |
+| 9M     | Central Mountain Air      | 必填                | 必填               | 非必填            | 必填                 | 必填                |
+| A3     | Aegean Airlines           | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| AN     | Advanced Airlines         | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| AS     | Alaska Airlines           | 非必填               | 必填               | 必填             | 必填                 | 必填                |
+| BT     | Air Baltic                | 必填                | 非必填              | 必填             | 必填                 | 必填                |
+| BV     | TOKI AIR                  | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| D8     | Norwegian Air Sweden      | 必填                | 非必填              | 必填             | 必填                 | 必填                |
+| DE     | Condor                    | 非必填               | 非必填              | 必填             | 非必填                | 非必填               |
+| DG     | Cebgo                     | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| DI     | Cebu Pacific Air          | 非必填               | 非必填              | 必填             | 非必填                | 非必填               |
+| DM     | Arajet                    | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| DY     | Norwegian Air Shuttle ASA | 非必填               | 必填               | 必填             | 必填                 | 必填                |
+| E6     | Eurowings Europe          | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| EI     | Aer Lingus                | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| EW     | Eurowings                 | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| F9     | Frontier Airlines (美国地址)  | 必填                | 非必填              | 必填             | 必填                 | 必填                |
+| F9     | Frontier Airlines (非美国地址) | 非必填               | 非必填              | 非必填            | 非必填                | 非必填               |
+| FA     | Fly Safair                | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| G4     | Allegiant Air             | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| GE     | Lift Airline              | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| GQ     | Skyexpress                | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| H4     | HiSky                     | 必填                | 非必填              | 非必填            | 非必填                | 非必填               |
+| H7     | HiSky                     | 必填                | 非必填              | 非必填            | 非必填                | 非必填               |
+| JV     | Perimeter                 | 必填                | 必填               | 必填             | 非必填                | 非必填               |
+| KM     | AirMalta                  | 必填                | 非必填              | 必填             | 非必填                | 必填                |
+| LJ     | Jin Air                   | 必填                | 必填               | 非必填            | 必填                 | 必填                |
+| MM     | Peach Aviation            | 非必填               | 非必填              | 必填             | 必填                 | 必填                |
+| MO     | Calm Air                  | 非必填               | 非必填              | 非必填            | 非必填                | 必填                |
+| NK     | Spirit Airlines           | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| OA     | Olympic Air               | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| OG     | PLAY                      | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| P6     | Pascan                    | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| PB     | PAL Airlines              | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| RW     | Royal Air Philippines     | 非必填               | 非必填              | 非必填            | 非必填                | 必填                |
+| SY     | Sun Country Airlines      | 必填                | 必填               | 必填             | 必填                 | 必填                |
+| TR     | Scoot Tiger Air           | 必填                | 非必填              | 必填             | 必填                 | 必填                |
+| VY     | Vueling Airlines          | 必填                | 非必填              | 必填             | 必填                 | 必填                |
 
 ### 相关页面
 
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [财务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)
+* [支付与出票](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [错误代码](../errors-handing/)
+* [财务](atlas-api-finance.md)

@@ -18,6 +18,6 @@ description: Atlas API 支付与出票流程。
 
 ### 相关页面
 
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付后轮询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [创建订单](../create-order.md)
+* [支付后轮询](../query-order/post-payment-polling.md)
+* [查询订单](../query-order/)

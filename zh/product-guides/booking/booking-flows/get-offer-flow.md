@@ -1,6 +1,5 @@
 ---
-description: >-
-  从获取报价到订单跟进的已知行程和独立报价定价的预订路径。
+description: 从获取报价到订单跟进的已知行程和独立报价定价的预订路径。
 ---
 
 # 获取报价流程
@@ -11,7 +10,7 @@ description: >-
 
 本页面定义了该路径的端到端序列。
 
-当您需要某一端点的步骤级详情时，请使用[预订步骤指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Hivwro5sZdOotzmaEIn)。
+当您需要某一端点的步骤级详情时，请使用[预订步骤指南](../booking-step-guides/)。
 
 ### 何时使用此流程
 
@@ -27,7 +26,7 @@ description: >-
 {% step %}
 ### 获取报价
 
-调用[获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)。
+调用[获取报价](../booking-step-guides/get-offer.md)。
 
 保留 `OfferId`。
 {% endstep %}
@@ -37,13 +36,13 @@ description: >-
 
 此步骤为可选。
 
-当座位或行李追加销售是您产品的一部分时，在订单创建前使用[可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)。
+当座位或行李追加销售是您产品的一部分时，在订单创建前使用[可选附加服务](../optional-ancillaries/)。
 {% endstep %}
 
 {% step %}
 ### 创建订单
 
-使用 `OfferId` 调用[创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)。
+使用 `OfferId` 调用[创建订单](../booking-step-guides/create-order.md)。
 
 保留 `orderNo`。
 {% endstep %}
@@ -53,13 +52,13 @@ description: >-
 
 此步骤特定于航司。
 
-当航司要求时，在支付前使用[确认订单（仅 FR）](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB)。
+当航司要求时，在支付前使用[确认订单（仅 FR）](../booking-step-guides/confirm-order.md)。
 {% endstep %}
 
 {% step %}
 ### 支付与出票
 
-调用[支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)。
+调用[支付与出票](../booking-step-guides/payment-and-ticketing/)。
 
 支付成功并不总是意味着最终出票已完成。
 {% endstep %}
@@ -67,11 +66,11 @@ description: >-
 {% step %}
 ### 查询订单
 
-使用[查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)作为支付后的标准跟进步骤。
+使用[查询订单](../booking-step-guides/query-order/)作为支付后的标准跟进步骤。
 
 持续跟进订单，直到出票或达到其他终态。
 
-使用[支付后轮询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)了解轮询时机和重试指导。
+使用[支付后轮询](../booking-step-guides/query-order/post-payment-polling.md)了解轮询时机和重试指导。
 {% endstep %}
 {% endstepper %}
 
@@ -83,6 +82,6 @@ description: >-
 
 ### 决策支持
 
-当您在标准搜索路径和获取报价之间做选择时，使用[搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)。
+当您在标准搜索路径和获取报价之间做选择时，使用[搜索 vs 报价](../booking-overview/booking-decisions/search-vs-offer.md)。
 
-当您需要精确的请求和响应字段时，使用[API 参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)。
+当您需要精确的请求和响应字段时，使用[API 参考](../../../api-reference/)。

@@ -20,10 +20,10 @@ description: 跨 Atlas API 预订流程使用的步骤级参考页面。
 
 ### 主要步骤指南
 
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [搜索](search.md)
+* [获取报价](get-offer.md)
+* [获取报价价格](get-offer-price.md)
+* [验证](verify.md)
+* [创建订单](create-order.md)
+* [支付与出票](payment-and-ticketing/)
+* [查询订单](query-order/)

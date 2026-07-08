@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 沙箱测试数据，包括已发布的航线、测试卡和共享的验证输入。
+description: Atlas API 沙箱测试数据，包括已发布的航线、测试卡和共享的验证输入。
 ---
 
 # 沙箱测试数据
@@ -27,8 +26,8 @@ description: >-
 
 ### 本部分的页面
 
-* [沙箱测试航线](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tyXBAEpAntbScXsBHd0l)
-* [沙箱测试卡](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/VXnL5n838qAJ6myXvikA)
+* [沙箱测试航线](sandbox-test-routes.md)
+* [沙箱测试卡号](sandbox-test-cards.md)
 
 ### 本部分涵盖的内容
 
@@ -44,9 +43,9 @@ description: >-
 
 ### 后续步骤
 
-选择所需的测试输入后，继续[沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)或[UAT 验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)。
+选择所需的测试输入后，继续[沙箱开发](../../../readme/sandbox-development/)或[UAT 验证](../../../readme/uat-submission-guide.md)。
 
 ### 相关章节
 
-* [集成参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JKGPURw0UiwgbJIUMwZq)
-* [沙箱与 UAT](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
+* [参考数据与沙箱](../)
+* [沙箱开发](../../../readme/sandbox-development/)

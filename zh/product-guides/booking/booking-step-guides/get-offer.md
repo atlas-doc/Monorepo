@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 获取报价流程，用于实时价格检查、OfferId 处理、推荐附加销售和下游订单创建。
+description: Atlas API 获取报价流程，用于实时价格检查、OfferId 处理、推荐附加销售和下游订单创建。
 ---
 
 # 获取报价
@@ -31,7 +30,7 @@ description: >-
 
 不要将此页面作为履约特定 `getOfferPrice.do` 路径的真实来源。
 
-当流程需要更广泛的展示规则和 5 分钟出票窗口时，使用[获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)。
+当流程需要更广泛的展示规则和 5 分钟出票窗口时，使用[获取报价价格](get-offer-price.md)。
 
 #### 应从获取报价响应中保留什么？
 
@@ -94,11 +93,11 @@ Atlas 在滚动 60 秒窗口中一起计算 `getOffers.do` 和 `verify.do`。
 
 #### 最小路径
 
-继续使用[创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)，然后[支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)。
+继续使用[创建订单](create-order.md)，然后[支付与出票](payment-and-ticketing/)。
 
 #### 带座位和行李的路径
 
-在订单创建前使用[座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)和[行李](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)。
+在订单创建前使用[座位](../optional-ancillaries/seats-and-baggage/)和[行李](../optional-ancillaries/baggage.md)。
 
 ### 与标准搜索的区别
 
@@ -395,20 +394,20 @@ Atlas 在滚动 60 秒窗口中一起计算 `getOffers.do` 和 `verify.do`。
 
 ### 相关页面
 
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [获取报价 vs 获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [行李](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
+* [搜索](search.md)
+* [获取报价价格](get-offer-price.md)
+* [获取报价 vs 获取报价价格](../booking-overview/booking-decisions/get-offer-vs-get-offer-price.md)
+* [创建订单](create-order.md)
+* [支付与出票](payment-and-ticketing/)
+* [座位](../optional-ancillaries/seats-and-baggage/)
+* [行李](../optional-ancillaries/baggage.md)
 
 ### 完整 API 参考
 
 在此查看端点级详情：
 
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rzWbUXxEiy9glqM2Zv3J)
-* [座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/33ZWa8YpkzEg8kPsZLCo)
-* [行李](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MuS2S2ZQqIdtJ6efLOuz)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/w82BK9CIz280FMw8vmrv)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/nz90Dw3FsXnJ4d6erPoH)
+* [获取报价](../../../api-reference/booking-apis/get-offer.md)
+* [座位](../../../api-reference/booking-apis/inflow-seat-and-baggage.md)
+* [行李](../../../api-reference/booking-apis/baggage.md)
+* [创建订单](../../../api-reference/booking-apis/create-order.md)
+* [支付与出票](../../../api-reference/booking-apis/payment-and-ticketing.md)

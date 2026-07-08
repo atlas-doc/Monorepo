@@ -1,6 +1,5 @@
 ---
-description: >-
-  运行无代码快乐路径检查，以确认沙箱凭证、网络访问和核心预订流程就绪。
+description: 运行无代码快乐路径检查，以确认沙箱凭证、网络访问和核心预订流程就绪。
 ---
 
 # 沙箱验证测试工具包
@@ -41,12 +40,12 @@ description: >-
 
 测试工具包在沙箱中运行标准的快乐路径。
 
-| 步骤     | 检查内容                                     |
-| -------- | --------------------------------------------------- |
+| 步骤   | 检查内容           |
+| ---- | -------------- |
 | `搜索` | 您的凭证有效，且返回航班结果 |
-| `校验` | 价格确认有效，且创建了会话   |
-| `下单`  | 订单可以成功创建               |
-| `支付`    | 支付被接受                                 |
+| `校验` | 价格确认有效，且创建了会话  |
+| `下单` | 订单可以成功创建       |
+| `支付` | 支付被接受          |
 
 如果所有四个步骤都通过，您的沙箱环境已准备好进行集成工作。
 
@@ -244,11 +243,11 @@ npx newman run Atlas_UAT_HappyPath.postman_collection.json -e Atlas_UAT_Environm
 
 * 开始 API 集成
 * 保留相同的沙箱凭证用于开发
-* 继续 [沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
+* 继续 [沙箱开发](./)
 
 ### 相关页面
 
-* [快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [沙箱访问](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [UAT 验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
+* [快速入门](../quick-start.md)
+* [沙箱访问](../making-requests.md)
+* [沙箱开发](./)
+* [UAT 验证](../uat-submission-guide.md)

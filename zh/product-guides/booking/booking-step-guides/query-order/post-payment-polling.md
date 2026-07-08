@@ -19,5 +19,5 @@ description: Atlas 支付后轮询策略和重试指导。
 
 ### 相关页面
 
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
+* [查询订单](./)
+* [支付与出票](../payment-and-ticketing/)

@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 搜索流程概述，涵盖航班报价、获取报价、智能搜索和下游标识符处理。
+description: Atlas API 搜索流程概述，涵盖航班报价、获取报价、智能搜索和下游标识符处理。
 ---
 
 # 搜索
@@ -111,11 +110,11 @@ Atlas 在滚动 1 秒窗口中计算 `search.do`。
 
 #### 标准流程
 
-使用 `routingIdentifier` 调用[验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)。
+使用 `routingIdentifier` 调用[验证](verify.md)。
 
 #### 获取报价流程
 
-继续使用[获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)，然后使用 `OfferId` 创建订单。
+继续使用[获取报价](get-offer.md)，然后使用 `OfferId` 创建订单。
 
 #### 智能搜索流程
 
@@ -123,15 +122,15 @@ Atlas 在滚动 1 秒窗口中计算 `search.do`。
 
 ### 相关页面
 
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [沙箱访问](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [预订 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [获取报价](get-offer.md)
+* [验证](verify.md)
+* [沙箱访问](../../../readme/making-requests.md)
+* [预订 API](../../../api-reference/booking-apis/)
 
 ### 完整 API 参考
 
 在此查看端点级详情：
 
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lqBleuC7HEsPku6mncSh)
-* [智能搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jU5sjhTD1WPTM2EU260v)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rzWbUXxEiy9glqM2Zv3J)
+* [搜索](../../../api-reference/booking-apis/search.md)
+* [智能搜索](../../../api-reference/booking-apis/smart-search.md)
+* [获取报价](../../../api-reference/booking-apis/get-offer.md)

@@ -8,5 +8,5 @@ description: Atlas 特殊航司集成。
 
 ### 可用集成
 
-* [FR 集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FR)
-* [居民价格集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RP)
+* [FR 集成](fr-integration.md)
+* [常驻价格集成](resident-price-integration.md)

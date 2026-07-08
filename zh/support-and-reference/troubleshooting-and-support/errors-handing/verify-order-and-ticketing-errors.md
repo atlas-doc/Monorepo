@@ -1,6 +1,5 @@
 ---
-description: >-
-  从验证到订单创建和出票完成的常见预订流程错误。
+description: 从验证到订单创建和出票完成的常见预订流程错误。
 ---
 
 # 验证、订单与出票错误
@@ -174,7 +173,7 @@ Atlas 无法在此流程中完成 3DS 卡认证。
 
 ### 相关页面
 
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [验证](../../../product-guides/booking/booking-step-guides/verify.md)
+* [创建订单](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [支付与出票](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [查询订单](../../../product-guides/booking/booking-step-guides/query-order/)

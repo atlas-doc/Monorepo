@@ -1,9 +1,8 @@
 ---
-description: >-
-  仅用于沙箱支付场景的测试卡，包括 VCC 直通和 MoR 覆盖。
+description: 仅用于沙箱支付场景的测试卡，包括 VCC 直通和 MoR 覆盖。
 ---
 
-# 沙箱测试卡
+# 沙箱测试卡号
 
 {% include "../../../.gitbook/includes/eva-help-hint.md" %}
 
@@ -64,6 +63,6 @@ description: >-
 
 ### 相关页面
 
-* [沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [UAT 验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
+* [沙箱开发](../../../readme/sandbox-development/)
+* [支付与出票](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [UAT 验证](../../../readme/uat-submission-guide.md)

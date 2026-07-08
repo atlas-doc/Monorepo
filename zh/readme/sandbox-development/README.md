@@ -11,7 +11,7 @@ description: 在 UAT 之前构建并验证沙箱集成。
 {% include "../../.gitbook/includes/sandbox-search-currency-note.md" %}
 
 {% hint style="info" %}
-在构建集成之前，运行 [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)。
+在构建集成之前，运行 [沙箱验证测试工具包](sandbox-validation-test-kit.md)。
 
 用它来确认凭证、网络访问以及核心快乐路径，无需编写代码。
 {% endhint %}
@@ -44,7 +44,7 @@ description: 在 UAT 之前构建并验证沙箱集成。
 
 ### 快速设置检查
 
-在完整的开发工作之前，使用 [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)。
+在完整的开发工作之前，使用 [沙箱验证测试工具包](sandbox-validation-test-kit.md)。
 
 它验证 `搜索`、`校验`、`下单` 和 `支付`。
 
@@ -82,7 +82,7 @@ description: 在 UAT 之前构建并验证沙箱集成。
 
 ### 在开发过程中使用 MCP
 
-当您需要帮助找到正确的流程、页面或下一个 API 步骤时，使用 [MCP 辅助开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17)。
+当您需要帮助找到正确的流程、页面或下一个 API 步骤时，使用 [MCP 辅助开发](../integration-tools/mcp-assisted-development.md)。
 
 它适用于：
 
@@ -196,11 +196,11 @@ description: 在 UAT 之前构建并验证沙箱集成。
 
 当您需要已发布的沙箱输入时，使用这些共享参考页面：
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [沙箱测试航线](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tyXBAEpAntbScXsBHd0l)
-* [沙箱测试卡](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/VXnL5n838qAJ6myXvikA)
-* [集成参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JKGPURw0UiwgbJIUMwZq)
+* [预订概述](../../product-guides/booking/booking-overview/)
+* [Webhook 概述](../../product-guides/extensions-and-integrations/webhook-overview/)
+* [沙箱测试航线](../../support-and-reference/integration-reference/sandbox-test-data/sandbox-test-routes.md)
+* [沙箱测试卡](../../support-and-reference/integration-reference/sandbox-test-data/sandbox-test-cards.md)
+* [集成参考](../../support-and-reference/integration-reference/)
 
 ### 完成此阶段的标准
 
@@ -220,12 +220,12 @@ description: 在 UAT 之前构建并验证沙箱集成。
 
 ### 下一步
 
-沙箱流程稳定后，进入 [UAT 验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)。
+沙箱流程稳定后，进入 [UAT 验证](../uat-submission-guide.md)。
 
 ### 相关页面
 
-* [快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [沙箱访问](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [UAT 验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [快速入门](../quick-start.md)
+* [沙箱访问](../making-requests.md)
+* [沙箱验证测试工具包](sandbox-validation-test-kit.md)
+* [UAT 验证](../uat-submission-guide.md)
+* [Webhook 概述](../../product-guides/extensions-and-integrations/webhook-overview/)

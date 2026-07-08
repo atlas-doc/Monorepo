@@ -2,7 +2,7 @@
 description: FR 航司订单确认流程（orderCommit.do）。
 ---
 
-# 确认订单
+# 确认订单（仅 FR）
 
 使用此页面确认 FR 航司的订单。
 
@@ -18,6 +18,6 @@ description: FR 航司订单确认流程（orderCommit.do）。
 
 ### 相关页面
 
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [FR 集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FR)
+* [创建订单](create-order.md)
+* [支付与出票](payment-and-ticketing/)
+* [FR 集成](../../extensions-and-integrations/special-integrations/fr-integration.md)

@@ -131,21 +131,21 @@ Atlas 返回已知行程的当前报价上下文。
 
 #### 需要标准搜索和预订
 
-使用[搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)。
+使用[搜索](../../booking-step-guides/search.md)。
 
 #### 需要独立价格检索
 
-使用[获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)。
+使用[获取报价](../../booking-step-guides/get-offer.md)。
 
 #### 需要完整的预订序列
 
-使用[预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)。
+使用[预订概述](../)。
 
 ### 相关页面
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [预订概述](../)
+* [标识符](../identifiers.md)
+* [搜索](../../booking-step-guides/search.md)
+* [获取报价](../../booking-step-guides/get-offer.md)
+* [验证](../../booking-step-guides/verify.md)
+* [创建订单](../../booking-step-guides/create-order.md)

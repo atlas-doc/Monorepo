@@ -18,5 +18,5 @@ description: Atlas API 订单查询流程。
 
 ### 相关页面
 
-* [支付后轮询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
+* [支付后轮询](post-payment-polling.md)
+* [支付与出票](../payment-and-ticketing/)

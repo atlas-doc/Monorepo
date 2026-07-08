@@ -1,9 +1,8 @@
 ---
-description: >-
-  常见的 Atlas API 集成问题，涵盖设置、预订、支付、出票、预订后和财务主题。
+description: 常见的 Atlas API 集成问题，涵盖设置、预订、支付、出票、预订后和财务主题。
 ---
 
-# Atlas API 常见问题解答
+# Atlas API 常见问题
 
 {% include "../../../.gitbook/includes/eva-help-hint.md" %}
 
@@ -21,64 +20,64 @@ description: >-
 
 首先使用这些页面：
 
-* [集成前](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
-* [启动检查清单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
-* [合作伙伴常见问题](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rj5WM4KAQ5YcHyUoIR75)
+* [集成前](before-integration.md)
+* [启动检查清单](kickoff-checklist.md)
+* [合作伙伴常见问题](top-questions-for-partners.md)
 
 #### 沙箱、设置和首次实施
 
 使用：
 
-* [入门指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
+* [入门指南](atlas-api-general-information.md)
 
 #### 搜索、预订和出票
 
 使用：
 
-* [搜索与预订](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
-* [订单与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lbLT2qkyVzsb5Mak1Kpg)
+* [搜索与预订](atlas-api-search-and-book.md)
+* [订单与出票](atlas-api-order.md)
 
 #### 支付、退款和财务
 
 使用：
 
-* [支付](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
-* [财务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)
+* [支付](atlas-api-payments.md)
+* [财务](atlas-api-finance.md)
 
 #### 预订后操作
 
 使用：
 
-* [预订后](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0)
+* [预订后服务](atlas-api-post-ticketing.md)
 
 ### 常见问题解答分类
 
-* [集成前](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
-* [启动检查清单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
-* [合作伙伴常见问题](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rj5WM4KAQ5YcHyUoIR75)
-* [入门指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
-* [搜索与预订](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
-* [订单与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lbLT2qkyVzsb5Mak1Kpg)
-* [预订后](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0)
-* [支付](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
-* [财务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)
+* [集成前](before-integration.md)
+* [启动检查清单](kickoff-checklist.md)
+* [合作伙伴常见问题](top-questions-for-partners.md)
+* [入门指南](atlas-api-general-information.md)
+* [搜索与预订](atlas-api-search-and-book.md)
+* [订单与出票](atlas-api-order.md)
+* [预订后服务](atlas-api-post-ticketing.md)
+* [支付](atlas-api-payments.md)
+* [财务](atlas-api-finance.md)
 
 ### 常见问题
 
 #### 新的 Atlas API 合作伙伴应从何处开始？
 
-从[集成前](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)开始，了解高优先级的规划问题。
+从[集成前](before-integration.md)开始，了解高优先级的规划问题。
 
-然后使用[启动检查清单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)对齐流程选择、支付设计、出票处理和发布范围。
+然后使用[启动检查清单](kickoff-checklist.md)对齐流程选择、支付设计、出票处理和发布范围。
 
 #### 在哪里可以找到预订和出票问题？
 
-使用[搜索与预订](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)了解搜索、验证、定价和预订流程问题。
+使用[搜索与预订](atlas-api-search-and-book.md)了解搜索、验证、定价和预订流程问题。
 
-使用[订单与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lbLT2qkyVzsb5Mak1Kpg)了解订单状态、出票、PNR 和跟进问题。
+使用[订单与出票](atlas-api-order.md)了解订单状态、出票、PNR 和跟进问题。
 
 #### 在哪里可以找到支付或退款问题？
 
-使用[支付](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)了解存款、VCC、卡处理和支付限制。
+使用[支付](atlas-api-payments.md)了解存款、VCC、卡处理和支付限制。
 
-使用[预订后](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0)和[财务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)了解退款、跟进、充值和对账问题。
+使用[预订后服务](atlas-api-post-ticketing.md)和[财务](atlas-api-finance.md)了解退款、跟进、充值和对账问题。

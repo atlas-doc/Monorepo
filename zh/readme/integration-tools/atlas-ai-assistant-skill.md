@@ -4,7 +4,7 @@ description: >-
   lookup, and troubleshooting during integration.
 ---
 
-# Atlas AI Assistant Skill
+# Atlas AI 助手技能
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
 
@@ -56,6 +56,6 @@ After import, use the skill to:
 
 ### Related pages
 
-* [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17)
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
+* [MCP 辅助开发](mcp-assisted-development.md)
+* [快速入门](../quick-start.md)
+* [API 参考](../../api-reference/)

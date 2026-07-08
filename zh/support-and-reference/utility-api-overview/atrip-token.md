@@ -2,7 +2,7 @@
 description: Generate ATRIP access tokens for downstream workflows.
 ---
 
-# ATRIP Token
+# ATRIP 令牌
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
 
@@ -26,4 +26,4 @@ You may also see this API called `getAtripToken`.
 
 See the complete endpoint schemas and samples here:
 
-[ATRIP Token](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NC8YKQmRw2vNp8A5Lumc)
+[ATRIP Token](../../api-reference/utility-apis/atrip-token.md)

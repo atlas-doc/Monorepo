@@ -112,8 +112,8 @@ description: 在标准获取报价路径和获取报价价格路径之间做选�
 
 ### 相关页面
 
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [API 请求限制](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
+* [获取报价](../../booking-step-guides/get-offer.md)
+* [获取报价价格](../../booking-step-guides/get-offer-price.md)
+* [可选附加服务](../../optional-ancillaries/)
+* [预订概述](../)
+* [API 请求限制](../api-request-limits.md)

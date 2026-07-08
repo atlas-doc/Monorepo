@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 订单创建流程，涵盖旅客、联系信息、附加服务和预订要求处理。
+description: Atlas API 订单创建流程，涵盖旅客、联系信息、附加服务和预订要求处理。
 ---
 
 # 创建订单
@@ -92,22 +91,22 @@ description: >-
 
 #### 标准支付路径
 
-使用 `orderNo` 继续到[支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)。
+使用 `orderNo` 继续到[支付与出票](payment-and-ticketing/)。
 
 #### FR 流程
 
-如果航司是 FR，在支付前完成[确认订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB)。
+如果航司是 FR，在支付前完成[确认订单](confirm-order.md)。
 
 ### 相关页面
 
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [预订 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [验证](verify.md)
+* [获取报价](get-offer.md)
+* [获取报价价格](get-offer-price.md)
+* [支付与出票](payment-and-ticketing/)
+* [预订 API](../../../api-reference/booking-apis/)
 
 ### 完整 API 参考
 
 在此查看端点级详情：
 
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/w82BK9CIz280FMw8vmrv)
+* [创建订单](../../../api-reference/booking-apis/create-order.md)
