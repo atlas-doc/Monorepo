@@ -334,8 +334,8 @@ Webhook 可以提供帮助，但不应该是您唯一的确认路径。
 
 ### 相关页面
 
-* [快速入门](../../../readme/quick-start.md)
-* [获取沙箱凭据](../../../readme/making-requests.md)
+* [快速入门](../../../readme-1/quick-start.md)
+* [获取沙箱凭据](../../../readme-1/making-requests.md)
 * [标识符](identifiers.md)
 * [可选附加服务](../optional-ancillaries/)
 * [预订决策](booking-decisions/)

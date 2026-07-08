@@ -43,9 +43,9 @@ description: Atlas API 沙箱测试数据，包括已发布的航线、测试卡
 
 ### 后续步骤
 
-选择所需的测试输入后，继续[沙箱开发](../../../readme/sandbox-development/)或[UAT 验证](../../../readme/uat-submission-guide.md)。
+选择所需的测试输入后，继续[沙箱开发](../../../readme-1/sandbox-development/)或[UAT 验证](../../../readme-1/uat-submission-guide.md)。
 
 ### 相关章节
 
 * [参考数据与沙箱](../)
-* [沙箱开发](../../../readme/sandbox-development/)
+* [沙箱开发](../../../readme-1/sandbox-development/)

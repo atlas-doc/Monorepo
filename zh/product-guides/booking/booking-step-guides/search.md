@@ -124,7 +124,7 @@ Atlas 在滚动 1 秒窗口中计算 `search.do`。
 
 * [获取报价](get-offer.md)
 * [验证](verify.md)
-* [沙箱访问](../../../readme/making-requests.md)
+* [沙箱访问](../../../readme-1/making-requests.md)
 * [预订 API](../../../api-reference/booking-apis/)
 
 ### 完整 API 参考

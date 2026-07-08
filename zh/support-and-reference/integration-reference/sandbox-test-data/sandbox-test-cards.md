@@ -63,6 +63,6 @@ description: 仅用于沙箱支付场景的测试卡，包括 VCC 直通和 MoR 
 
 ### 相关页面
 
-* [沙箱开发](../../../readme/sandbox-development/)
+* [沙箱开发](../../../readme-1/sandbox-development/)
 * [支付与出票](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
-* [UAT 验证](../../../readme/uat-submission-guide.md)
+* [UAT 验证](../../../readme-1/uat-submission-guide.md)

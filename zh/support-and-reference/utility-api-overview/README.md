@@ -69,6 +69,6 @@ Use endpoint-level details here:
 
 ### Related pages
 
-* [Integration Guides](../../readme/)
+* [Integration Guides](../../readme-1/)
 * [Post-booking](../../product-guides/post-booking/)
 * [Webhook Overview](../../product-guides/extensions-and-integrations/webhook-overview/)

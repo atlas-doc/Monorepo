@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 端点参考文档，包含按工作流和能力组织的请求模式、响应字段和示例。
+description: Atlas API 端点参考文档，包含按工作流和能力组织的请求模式、响应字段和示例。
 ---
 
 # API 参考
@@ -25,7 +24,7 @@ description: >-
 
 当需要流程选择、顺序指导或业务决策时，请首先使用[产品指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSrm5O)。
 
-当需要入门、沙箱、UAT 或上线步骤时，请使用[集成指南](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/)。
+当需要入门、沙箱、UAT 或上线步骤时，请使用[集成指南](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)。
 
 #### 在 API 参考中应首先打开哪个页面？
 
@@ -54,7 +53,7 @@ description: >-
 ### 推荐用法
 
 1. 从[产品指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSrm5O)开始选择工作流。
-2. 使用[集成指南](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/)进行沙箱、UAT 和生产部署。
+2. 使用[集成指南](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)进行沙箱、UAT 和生产部署。
 3. 使用本部分获取请求和响应详细信息。
 4. 使用[支持与参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Li1ioGB8DIQIbQ2KPfxM)进行故障排除、共享参考数据和更新。
 

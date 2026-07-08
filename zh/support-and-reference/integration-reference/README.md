@@ -1,6 +1,5 @@
 ---
-description: >-
-  跨工作流使用的共享 Atlas API 参考值、枚举值和沙箱测试输入。
+description: 跨工作流使用的共享 Atlas API 参考值、枚举值和沙箱测试输入。
 ---
 
 # 参考数据与沙箱
@@ -52,6 +51,6 @@ description: >-
 
 ### 相关章节
 
-* [集成指南](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/)
+* [集成指南](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)
 * [API 参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
 * [故障排除与支持](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tPfxQTN6n9wpKCsa6jJW)

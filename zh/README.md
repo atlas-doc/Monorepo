@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 文档最新更新、新指南、故障排除变更及推荐后续阅读。
+description: Atlas API 文档最新更新、新指南、故障排除变更及推荐后续阅读。
 ---
 
 # 📣 Atlas API 文档更新
@@ -33,9 +32,9 @@ description: >-
 
 #### 新集成团队应该从哪里开始？
 
-从[快速入门](readme/quick-start.md)开始。
+从[快速入门](readme-1/quick-start.md)开始。
 
-然后使用[集成指南](readme/)、[预订概述](product-guides/booking/booking-overview/)和[错误码](support-and-reference/troubleshooting-and-support/errors-handing/)。
+然后使用[集成指南](readme-1/)、[预订概述](product-guides/booking/booking-overview/)和[错误码](support-and-reference/troubleshooting-and-support/errors-handing/)。
 
 #### 我应该查看哪些页面了解请求限制指南？
 
@@ -45,7 +44,7 @@ description: >-
 
 #### 新集成
 
-从[快速入门](readme/quick-start.md)和[集成指南](readme/)开始。
+从[快速入门](readme-1/quick-start.md)和[集成指南](readme-1/)开始。
 
 #### 预订流程
 
@@ -231,8 +230,8 @@ description: >-
 
 后续阅读：
 
-* [沙箱访问](readme/making-requests.md)
-* [快速入门](readme/quick-start.md)
+* [沙箱访问](readme-1/making-requests.md)
+* [快速入门](readme-1/quick-start.md)
 
 #### UAT 测试流程更新
 
@@ -247,8 +246,8 @@ description: >-
 
 后续阅读：
 
-* [UAT 验证](readme/uat-submission-guide.md)
-* [快速入门](readme/quick-start.md)
+* [UAT 验证](readme-1/uat-submission-guide.md)
+* [快速入门](readme-1/quick-start.md)
 * [入门指南](support-and-reference/troubleshooting-and-support/faqs/atlas-api-general-information.md)
 
 #### 作废工作流和通知更新
@@ -285,7 +284,7 @@ description: >-
 
 #### MCP 辅助开发
 
-当您希望在 Atlas API 集成过程中使用 GitBook MCP 时，请阅读 [MCP 辅助开发](readme/integration-tools/mcp-assisted-development.md)。
+当您希望在 Atlas API 集成过程中使用 GitBook MCP 时，请阅读 [MCP 辅助开发](readme-1/integration-tools/mcp-assisted-development.md)。
 
 适用于：
 
@@ -295,12 +294,12 @@ description: >-
 
 后续阅读：
 
-* [快速入门](readme/quick-start.md)
+* [快速入门](readme-1/quick-start.md)
 * [API 参考](api-reference/)
 
 #### 沙箱验证测试工具包
 
-当您在开发前或环境变更后需要进行无代码沙箱验证运行时，请阅读[沙箱验证测试工具包](readme/sandbox-development/sandbox-validation-test-kit.md)。
+当您在开发前或环境变更后需要进行无代码沙箱验证运行时，请阅读[沙箱验证测试工具包](readme-1/sandbox-development/sandbox-validation-test-kit.md)。
 
 适用于：
 
@@ -310,8 +309,8 @@ description: >-
 
 后续阅读：
 
-* [沙箱开发](readme/sandbox-development/)
-* [UAT 验证](readme/uat-submission-guide.md)
+* [沙箱开发](readme-1/sandbox-development/)
+* [UAT 验证](readme-1/uat-submission-guide.md)
 
 #### 错误码改进
 
@@ -334,17 +333,17 @@ description: >-
 
 从以下内容开始：
 
-* [快速入门](readme/quick-start.md)
-* [MCP 辅助开发](readme/integration-tools/mcp-assisted-development.md)
+* [快速入门](readme-1/quick-start.md)
+* [MCP 辅助开发](readme-1/integration-tools/mcp-assisted-development.md)
 * [预订概述](product-guides/booking/booking-overview/)
 
 #### 沙箱验证
 
 从以下内容开始：
 
-* [沙箱访问](readme/making-requests.md)
-* [沙箱验证测试工具包](readme/sandbox-development/sandbox-validation-test-kit.md)
-* [沙箱开发](readme/sandbox-development/)
+* [沙箱访问](readme-1/making-requests.md)
+* [沙箱验证测试工具包](readme-1/sandbox-development/sandbox-validation-test-kit.md)
+* [沙箱开发](readme-1/sandbox-development/)
 
 #### 预订和支付流程
 
@@ -366,11 +365,11 @@ description: >-
 
 #### Atlas API 文档最近有什么变化？
 
-最近的更新新增了[标识符](product-guides/booking/booking-overview/identifiers.md)、[搜索 vs 获取报价](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md)、[429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md)、[202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md)、[验证 vs 创建订单](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md)、[轮询与出票时机](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md)、[402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md)、[行李与座位产品代码时效性](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md)、[从搜索 vs 验证 vs 获取报价重启](product-guides/booking/booking-overview/booking-decisions/restart-point.md)、[307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md)、[309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md)、[座位回退模式](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md)、[401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md)、[205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md)和[318 vs 608 重复预订](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md)，为选定的预订前 API 增加了 QPS 和 QPM 请求限制指南，新增了[多渠道通知](product-guides/extensions-and-integrations/multi-channel-notifications.md)用于 ATRIP 通知设置，将新的 ATRIP **UAT 测试**流程添加到[UAT 验证](readme/uat-submission-guide.md)，明确了**航班预订**是必需的，增加了自动验证指南，扩展了[作废工作流](product-guides/post-booking/void.md)，更改了 `seatAvailability.do` 的调用规则，新增了[MCP 辅助开发](readme/integration-tools/mcp-assisted-development.md)，发布了[沙箱验证测试工具包](readme/sandbox-development/sandbox-validation-test-kit.md)，并改进了[错误码](support-and-reference/troubleshooting-and-support/errors-handing/)作为故障排除入口点。
+最近的更新新增了[标识符](product-guides/booking/booking-overview/identifiers.md)、[搜索 vs 获取报价](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md)、[429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md)、[202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md)、[验证 vs 创建订单](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md)、[轮询与出票时机](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md)、[402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md)、[行李与座位产品代码时效性](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md)、[从搜索 vs 验证 vs 获取报价重启](product-guides/booking/booking-overview/booking-decisions/restart-point.md)、[307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md)、[309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md)、[座位回退模式](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md)、[401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md)、[205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md)和[318 vs 608 重复预订](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md)，为选定的预订前 API 增加了 QPS 和 QPM 请求限制指南，新增了[多渠道通知](product-guides/extensions-and-integrations/multi-channel-notifications.md)用于 ATRIP 通知设置，将新的 ATRIP **UAT 测试**流程添加到[UAT 验证](readme-1/uat-submission-guide.md)，明确了**航班预订**是必需的，增加了自动验证指南，扩展了[作废工作流](product-guides/post-booking/void.md)，更改了 `seatAvailability.do` 的调用规则，新增了[MCP 辅助开发](readme-1/integration-tools/mcp-assisted-development.md)，发布了[沙箱验证测试工具包](readme-1/sandbox-development/sandbox-validation-test-kit.md)，并改进了[错误码](support-and-reference/troubleshooting-and-support/errors-handing/)作为故障排除入口点。
 
 #### 沙箱集成应该先阅读哪个指南？
 
-从[快速入门](readme/quick-start.md)开始。然后使用[沙箱验证测试工具包](readme/sandbox-development/sandbox-validation-test-kit.md)在编码前确认就绪状态。
+从[快速入门](readme-1/quick-start.md)开始。然后使用[沙箱验证测试工具包](readme-1/sandbox-development/sandbox-validation-test-kit.md)在编码前确认就绪状态。
 
 #### 预订、支付或故障排除应该从哪里开始？
 
@@ -502,7 +501,7 @@ description: >-
 
 更新的页面：
 
-* [沙箱访问](readme/making-requests.md)
+* [沙箱访问](readme-1/making-requests.md)
 {% endupdate %}
 
 {% update date="2026-06-29" %}
@@ -520,8 +519,8 @@ description: >-
 
 更新的页面：
 
-* [UAT 验证](readme/uat-submission-guide.md)
-* [快速入门](readme/quick-start.md)
+* [UAT 验证](readme-1/uat-submission-guide.md)
+* [快速入门](readme-1/quick-start.md)
 * [入门指南](support-and-reference/troubleshooting-and-support/faqs/atlas-api-general-information.md)
 {% endupdate %}
 
@@ -567,7 +566,7 @@ description: >-
 {% update date="2026-04-15" %}
 ## 新增 MCP 辅助开发
 
-发布了[MCP 辅助开发](readme/integration-tools/mcp-assisted-development.md)，面向在 Atlas API 集成过程中使用 GitBook MCP 的团队。
+发布了[MCP 辅助开发](readme-1/integration-tools/mcp-assisted-development.md)，面向在 Atlas API 集成过程中使用 GitBook MCP 的团队。
 
 当您需要以下内容时使用它：
 
@@ -581,7 +580,7 @@ description: >-
 {% update date="2026-04-09" %}
 ## 新增沙箱验证测试工具包
 
-发布了[沙箱验证测试工具包](readme/sandbox-development/sandbox-validation-test-kit.md)，用于无代码沙箱验证运行。
+发布了[沙箱验证测试工具包](readme-1/sandbox-development/sandbox-validation-test-kit.md)，用于无代码沙箱验证运行。
 
 当您需要以下内容时使用它：
 

@@ -1,6 +1,5 @@
 ---
-description: >-
-  查找共享的参考数据、沙箱测试输入、故障排除指南、运营工具和文档更新。
+description: 查找共享的参考数据、沙箱测试输入、故障排除指南、运营工具和文档更新。
 ---
 
 # 支持与参考
@@ -37,4 +36,4 @@ description: >-
 
 ### 需要接入指南？
 
-使用[集成指南](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/)进行沙箱设置、UAT 和生产上线。
+使用[集成指南](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)进行沙箱设置、UAT 和生产上线。
