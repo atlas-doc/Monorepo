@@ -34,45 +34,45 @@ Use the change log below when you need page-level detail.
 
 #### Where should a new integration team start?
 
-Start with [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2).
+Start with [Quick Start](readme/quick-start.md).
 
-Then use [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/), [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3), and [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1).
+Then use [Integration Guides](readme/), [Booking Overview](product-guides/booking/booking-overview/), and [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/).
 
 #### Which pages should I check for request-limit guidance?
 
-Start with [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3), [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD), [Search & Booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj), and [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1).
+Start with [Booking Overview](product-guides/booking/booking-overview/), [Search](product-guides/booking/booking-step-guides/search.md), [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md), and [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/).
 
 ### Popular starting points
 
 #### New integration
 
-Start with [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2) and [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/).
+Start with [Quick Start](readme/quick-start.md) and [Integration Guides](readme/).
 
 #### Booking flow
 
-Start with [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3) and [Search & Booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj).
+Start with [Booking Overview](product-guides/booking/booking-overview/) and [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md).
 
-Use [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC) when you need the right token for the next step.
+Use [Identifiers](product-guides/booking/booking-overview/identifiers.md) when you need the right token for the next step.
 
-Use [Verify vs Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL) when the booking boundary is the main question.
+Use [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) when the booking boundary is the main question.
 
-Use [Restart from Search vs Verify vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw) when the main question is where to restart.
+Use [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md) when the main question is where to restart.
 
-Use [Seat fallback modes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gwnqga4Hd9HkYrjG8NVb) when paid seat failure behavior must be defined before booking.
+Use [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md) when paid seat failure behavior must be defined before booking.
 
 #### Troubleshooting
 
-Start with [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1) and [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD).
+Start with [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) and [FAQs](support-and-reference/troubleshooting-and-support/faqs/).
 
-Use [429 vs 110](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hqJgEqYKMP5CMQ8mArxT) when request frequency or search concurrency is the main issue.
+Use [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md) when request frequency or search concurrency is the main issue.
 
-Use [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy) when you need to know which earlier step must be refreshed.
+Use [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md) when you need to know which earlier step must be refreshed.
 
-Use [402 vs 404 vs 406 vs 615](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LSNWTatN3FFeRiN3ukJk) when the main risk is duplicate or unnecessary payment retry.
+Use [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md) when the main risk is duplicate or unnecessary payment retry.
 
-Use [307 vs 327 vs 410](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cuGr1qmrKMXj5NCIRO1C) and [309 vs 409](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FQIV30qEvPMqZLZ6jwbF) when order input or ancillary mapping is the main failure area.
+Use [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md) and [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md) when order input or ancillary mapping is the main failure area.
 
-Use [401 vs 402 vs 404](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/259Et84h3iNJClFr0uOL) when the main question is whether the order expired or was already paid.
+Use [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md) when the main question is whether the order expired or was already paid.
 
 ### Latest Atlas API documentation updates
 
@@ -88,9 +88,9 @@ What changed:
 
 Read next:
 
-* [Void workflow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/H8SaqS9SfWWq494hZlz5)
-* [Refund, Query & Post-booking Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XUINxYxfOsv9CDtmb1pl)
+* [Void workflow](product-guides/post-booking/void.md)
+* [Void](api-reference/post-booking-apis/void.md)
+* [Refund, Query & Post-booking Errors](support-and-reference/troubleshooting-and-support/errors-handing/refund-query-and-post-booking-errors.md)
 
 #### Fulfillment API and `getOfferPrice.do` launch
 
@@ -98,16 +98,16 @@ Published new fulfillment guidance for the `getOfferPrice.do` flow and updated k
 
 What changed:
 
-* added [Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ) for the new fulfillment-oriented booking path
-* added [Get Offer vs Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp) to clarify when to use `getOffers.do` versus `getOfferPrice.do`
-* added [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zE0QlLrSj0ynAcagJTD3) under API Reference
-* updated [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3), [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB), [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n), [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE), [Orders & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lbLT2qkyVzsb5Mak1Kpg), and [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
+* added [Fulfillment API](product-guides/booking/booking-step-guides/get-offer-price.md) for the new fulfillment-oriented booking path
+* added [Get Offer vs Fulfillment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) to clarify when to use `getOffers.do` versus `getOfferPrice.do`
+* added [Get Offer Price](api-reference/booking-apis/get-offer-price.md) under API Reference
+* updated [Booking Overview](product-guides/booking/booking-overview/), [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/), [Query Order](product-guides/booking/booking-step-guides/query-order/), [Create Order](product-guides/booking/booking-step-guides/create-order.md), [Orders & Ticketing](support-and-reference/troubleshooting-and-support/faqs/atlas-api-order.md), and [API Request Limits](product-guides/booking/booking-overview/api-request-limits.md)
 
 Read next:
 
-* [Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
+* [Fulfillment API](product-guides/booking/booking-step-guides/get-offer-price.md)
+* [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [API Request Limits](product-guides/booking/booking-overview/api-request-limits.md)
 
 #### Payment timeout, transient failure, and duplicate-booking clarification pack
 
@@ -115,15 +115,15 @@ Published three new pages for payment deadline recovery, transient booking-stage
 
 What changed:
 
-* added [401 vs 402 vs 404](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/259Et84h3iNJClFr0uOL) to distinguish expired payment windows from non-payable or already-paid order states
-* added [205 vs 299 vs 304](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/CAbp9hZapWv0wuj4S8io) to clarify when to retry once, restart from search, or escalate transient verify and order failures
-* added [318 vs 608 duplicate booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SzdaH3BBGeQYPWIXQ7S1) to clarify how to confirm existing booking state before retrying
+* added [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md) to distinguish expired payment windows from non-payable or already-paid order states
+* added [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md) to clarify when to retry once, restart from search, or escalate transient verify and order failures
+* added [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md) to clarify how to confirm existing booking state before retrying
 
 Read next:
 
-* [Payment Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/v1plEh7MJqP2ZqtiNvxk)
-* [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Payment Errors](support-and-reference/troubleshooting-and-support/errors-handing/payment-errors.md)
+* [Verify, Order & Ticketing Errors](support-and-reference/troubleshooting-and-support/errors-handing/verify-order-and-ticketing-errors.md)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### Input validation and seat fallback clarification pack
 
@@ -131,15 +131,15 @@ Published three new pages for order input troubleshooting, ancillary mapping, an
 
 What changed:
 
-* added [307 vs 327 vs 410](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cuGr1qmrKMXj5NCIRO1C) to distinguish generic order-field issues, booking-requirement mismatches, and contact phone formatting errors
-* added [309 vs 409](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FQIV30qEvPMqZLZ6jwbF) to distinguish stale ancillary codes from baggage segment-mapping errors
-* added [Seat fallback modes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gwnqga4Hd9HkYrjG8NVb) to explain `STOP_TICKET`, `STOP_SEAT`, and `SIMILAR_SEAT`
+* added [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md) to distinguish generic order-field issues, booking-requirement mismatches, and contact phone formatting errors
+* added [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md) to distinguish stale ancillary codes from baggage segment-mapping errors
+* added [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md) to explain `STOP_TICKET`, `STOP_SEAT`, and `SIMILAR_SEAT`
 
 Read next:
 
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Create Order](product-guides/booking/booking-step-guides/create-order.md)
+* [Seats](product-guides/booking/optional-ancillaries/seats-and-baggage/)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### Payment-state and ancillary freshness clarification pack
 
@@ -147,15 +147,15 @@ Published three new pages for payment recovery, ancillary reuse safety, and flow
 
 What changed:
 
-* added [402 vs 404 vs 406 vs 615](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LSNWTatN3FFeRiN3ukJk) to clarify when to query order, wait, or avoid another `pay.do`
-* added [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg) to explain when ancillary selections are stale
-* added [Restart from Search vs Verify vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw) to explain the earliest booking step that must be rerun
+* added [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md) to clarify when to query order, wait, or avoid another `pay.do`
+* added [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md) to explain when ancillary selections are stale
+* added [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md) to explain the earliest booking step that must be rerun
 
 Read next:
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### Booking recovery and timing clarification pack
 
@@ -163,15 +163,15 @@ Published three new pages for booking-stage recovery decisions and post-payment 
 
 What changed:
 
-* added [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy) to explain when to refresh search, refresh verify, or rebuild the booking context
-* added [Verify vs Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL) to clarify the validation boundary before booking creation
-* added [Polling and Ticketing Timing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP) to explain why payment success does not always mean final ticketing
+* added [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md) to explain when to refresh search, refresh verify, or rebuild the booking context
+* added [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) to clarify the validation boundary before booking creation
+* added [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md) to explain why payment success does not always mean final ticketing
 
 Read next:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### Booking flow clarification pack
 
@@ -179,15 +179,15 @@ Published three new pages for common integration questions around flow choice, i
 
 What changed:
 
-* added [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC) for `routingIdentifier`, `sessionId`, `OfferId`, `orderNo`, and fresh-identifier rules
-* added [Search vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx) to clarify when to use `search.do` versus `getOffers.do`
-* added [429 vs 110](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hqJgEqYKMP5CMQ8mArxT) to distinguish request-limit governance from search concurrency pressure
+* added [Identifiers](product-guides/booking/booking-overview/identifiers.md) for `routingIdentifier`, `sessionId`, `OfferId`, `orderNo`, and fresh-identifier rules
+* added [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md) to clarify when to use `search.do` versus `getOffers.do`
+* added [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md) to distinguish request-limit governance from search concurrency pressure
 
 Read next:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Search & Booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### QPS and QPM request limit governance
 
@@ -201,9 +201,9 @@ What changed:
 
 Read next:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Search & Booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md)
 
 #### Multi-channel notifications launch
 
@@ -217,9 +217,9 @@ What changed:
 
 Read next:
 
-* [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW)
+* [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md)
+* [Webhook Overview](product-guides/extensions-and-integrations/webhook-overview/)
+* [Airline Status Update Notification](product-guides/extensions-and-integrations/webhook-overview/airline-status-update-notification.md)
 
 #### Standard headers cleanup
 
@@ -232,8 +232,8 @@ What changed:
 
 Read next:
 
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
+* [Sandbox Access](readme/making-requests.md)
+* [Quick Start](readme/quick-start.md)
 
 #### UAT Testing flow update
 
@@ -248,9 +248,9 @@ What changed:
 
 Read next:
 
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Getting Started](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
+* [UAT Validation](readme/uat-submission-guide.md)
+* [Quick Start](readme/quick-start.md)
+* [Getting Started](support-and-reference/troubleshooting-and-support/faqs/atlas-api-general-information.md)
 
 #### Void workflow and notification updates
 
@@ -264,9 +264,9 @@ What changed:
 
 Read next:
 
-* [Void workflow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/H8SaqS9SfWWq494hZlz5)
-* [Void Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/4aywYMVHUfvNZttgiHPn)
+* [Void workflow](product-guides/post-booking/void.md)
+* [Void](api-reference/post-booking-apis/void.md)
+* [Void Notification](product-guides/extensions-and-integrations/webhook-overview/void-notification.md)
 
 #### SeatAvailability call rules update
 
@@ -280,13 +280,13 @@ What changed:
 
 Read next:
 
-* [Inflow Seat & Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/33ZWa8YpkzEg8kPsZLCo)
-* [Seats & Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
+* [Inflow Seat & Baggage](api-reference/booking-apis/inflow-seat-and-baggage.md)
+* [Seats & Baggage](product-guides/booking/optional-ancillaries/seats-and-baggage/)
+* [Verify](product-guides/booking/booking-step-guides/verify.md)
 
 #### MCP-Assisted Development
 
-Read [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17) when you want to use GitBook MCP during Atlas API integration.
+Read [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md) when you want to use GitBook MCP during Atlas API integration.
 
 Best for:
 
@@ -296,12 +296,12 @@ Best for:
 
 Read next:
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
+* [Quick Start](readme/quick-start.md)
+* [API Reference](api-reference/)
 
 #### Sandbox Validation Test Kit
 
-Read [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf) when you need a no-code sandbox validation run before development or after environment changes.
+Read [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md) when you need a no-code sandbox validation run before development or after environment changes.
 
 Best for:
 
@@ -311,12 +311,12 @@ Best for:
 
 Read next:
 
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
+* [Sandbox Development](readme/sandbox-development/)
+* [UAT Validation](readme/uat-submission-guide.md)
 
 #### Error Codes improvements
 
-[Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1) now works better as the main troubleshooting entry point.
+[Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) now works better as the main troubleshooting entry point.
 
 Best for:
 
@@ -326,8 +326,8 @@ Best for:
 
 Read next:
 
-* [Common & Access Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Rm0Gc9akel1xG9nGdiHw)
-* [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
+* [Common & Access Errors](support-and-reference/troubleshooting-and-support/errors-handing/common-and-access-errors.md)
+* [Verify, Order & Ticketing Errors](support-and-reference/troubleshooting-and-support/errors-handing/verify-order-and-ticketing-errors.md)
 
 ### Start here by use case
 
@@ -335,47 +335,47 @@ Read next:
 
 Start with:
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
+* [Quick Start](readme/quick-start.md)
+* [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md)
+* [Booking Overview](product-guides/booking/booking-overview/)
 
 #### Sandbox validation
 
 Start with:
 
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
+* [Sandbox Access](readme/making-requests.md)
+* [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md)
+* [Sandbox Development](readme/sandbox-development/)
 
 #### Booking and payment flow
 
 Start with:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Hybrid Payment Guide](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SkmHf0AK1tgebiGujAko)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Hybrid Payment Guide](product-guides/booking/booking-step-guides/payment-and-ticketing/hybrid-payment-guide.md)
 
 #### Troubleshooting and support
 
 Start with:
 
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
+* [FAQs](support-and-reference/troubleshooting-and-support/faqs/)
+* [Webhook Overview](product-guides/extensions-and-integrations/webhook-overview/)
 
 ### FAQ
 
 #### What changed in the Atlas API docs recently?
 
-Recent updates added [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC), [Search vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx), [429 vs 110](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hqJgEqYKMP5CMQ8mArxT), [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy), [Verify vs Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL), [Polling and Ticketing Timing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP), [402 vs 404 vs 406 vs 615](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LSNWTatN3FFeRiN3ukJk), [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg), [Restart from Search vs Verify vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw), [307 vs 327 vs 410](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cuGr1qmrKMXj5NCIRO1C), [309 vs 409](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FQIV30qEvPMqZLZ6jwbF), [Seat fallback modes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gwnqga4Hd9HkYrjG8NVb), [401 vs 402 vs 404](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/259Et84h3iNJClFr0uOL), [205 vs 299 vs 304](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/CAbp9hZapWv0wuj4S8io), and [318 vs 608 duplicate booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SzdaH3BBGeQYPWIXQ7S1), added QPS and QPM request-limit guidance for selected pre-booking APIs, added [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7) for ATRIP notification setup, added the new ATRIP **UAT Testing** flow to [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT), clarified that **flight booking** is required, added automatic verification guidance, expanded the [Void workflow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx), changed `seatAvailability.do` call rules, added [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17), published [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf), and improved [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1) as a troubleshooting entry point.
+Recent updates added [Identifiers](product-guides/booking/booking-overview/identifiers.md), [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md), [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md), [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md), [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md), [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md), [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md), [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md), [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md), [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md), [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md), [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md), [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md), [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md), and [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md), added QPS and QPM request-limit guidance for selected pre-booking APIs, added [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md) for ATRIP notification setup, added the new ATRIP **UAT Testing** flow to [UAT Validation](readme/uat-submission-guide.md), clarified that **flight booking** is required, added automatic verification guidance, expanded the [Void workflow](product-guides/post-booking/void.md), changed `seatAvailability.do` call rules, added [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md), published [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md), and improved [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) as a troubleshooting entry point.
 
 #### Which guide should I read first for sandbox integration?
 
-Start with [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2). Then use [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf) to confirm readiness before coding.
+Start with [Quick Start](readme/quick-start.md). Then use [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md) to confirm readiness before coding.
 
 #### Where should I start for booking, payment, or troubleshooting?
 
-Use [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3) for the main flow, [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB) for payment and polling, and [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1) for failure handling.
+Use [Booking Overview](product-guides/booking/booking-overview/) for the main flow, [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/) for payment and polling, and [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) for failure handling.
 
 ### Full change log
 
@@ -393,9 +393,9 @@ What changed:
 
 Updated pages:
 
-* [Void workflow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/H8SaqS9SfWWq494hZlz5)
-* [Atlas API Documentation Updates](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/6ojNmuqNsaDSENrllwAh)
+* [Void workflow](product-guides/post-booking/void.md)
+* [Void](api-reference/post-booking-apis/void.md)
+* [Atlas API Documentation Updates](./)
 {% endupdate %}
 
 {% update date="2026-07-06" %}
@@ -405,14 +405,14 @@ Published the new fulfillment booking path for `getOfferPrice.do` and updated ke
 
 What changed:
 
-* added [Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ) for fulfillment positioning, 5-minute timing, retry rules, and recovery guidance
-* added [Get Offer vs Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp) to distinguish standard Get Offer from the fulfillment path
-* added [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zE0QlLrSj0ynAcagJTD3) under API Reference
-* updated [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3) to add the new fulfillment branch
-* updated [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu) to distinguish `getOffers.do` from `getOfferPrice.do`
-* updated [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE), [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB), and [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n) for 5-minute fulfillment handling
-* updated [Orders & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lbLT2qkyVzsb5Mak1Kpg) to separate standard 30-minute hold from the fulfillment flow
-* updated [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV) to document the separate `getOfferPrice.do` QPM policy
+* added [Fulfillment API](product-guides/booking/booking-step-guides/get-offer-price.md) for fulfillment positioning, 5-minute timing, retry rules, and recovery guidance
+* added [Get Offer vs Fulfillment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) to distinguish standard Get Offer from the fulfillment path
+* added [Get Offer Price](api-reference/booking-apis/get-offer-price.md) under API Reference
+* updated [Booking Overview](product-guides/booking/booking-overview/) to add the new fulfillment branch
+* updated [Get Offer](product-guides/booking/booking-step-guides/get-offer.md) to distinguish `getOffers.do` from `getOfferPrice.do`
+* updated [Create Order](product-guides/booking/booking-step-guides/create-order.md), [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/), and [Query Order](product-guides/booking/booking-step-guides/query-order/) for 5-minute fulfillment handling
+* updated [Orders & Ticketing](support-and-reference/troubleshooting-and-support/faqs/atlas-api-order.md) to separate standard 30-minute hold from the fulfillment flow
+* updated [API Request Limits](product-guides/booking/booking-overview/api-request-limits.md) to document the separate `getOfferPrice.do` QPM policy
 {% endupdate %}
 
 {% update date="2026-07-05" %}
@@ -422,28 +422,28 @@ Published fifteen new support pages for common booking-flow integration question
 
 What changed:
 
-* added [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC) for `routingIdentifier`, `sessionId`, `OfferId`, `orderNo`, and refresh rules
-* added [Search vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx) to clarify when to use `search.do` and when to use `getOffers.do`
-* added [429 vs 110](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hqJgEqYKMP5CMQ8mArxT) to explain request-limit governance versus search concurrency pressure
-* added [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy) to explain which earlier step must be refreshed
-* added [Verify vs Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL) to clarify the validation boundary before order creation
-* added [Polling and Ticketing Timing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP) to explain post-payment follow-up and safe polling behavior
-* added [402 vs 404 vs 406 vs 615](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LSNWTatN3FFeRiN3ukJk) to clarify payment-state recovery and duplicate-payment risk
-* added [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg) to explain when ancillary selections are stale
-* added [Restart from Search vs Verify vs Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw) to explain which booking step must be rerun after stale context or price drift
-* added [307 vs 327 vs 410](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cuGr1qmrKMXj5NCIRO1C) to clarify passenger, document, and contact input errors at order creation
-* added [309 vs 409](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FQIV30qEvPMqZLZ6jwbF) to clarify stale ancillary codes versus baggage segment-mapping errors
-* added [Seat fallback modes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gwnqga4Hd9HkYrjG8NVb) to explain `STOP_TICKET`, `STOP_SEAT`, and `SIMILAR_SEAT`
-* added [401 vs 402 vs 404](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/259Et84h3iNJClFr0uOL) to clarify payment deadline expiration versus non-payable or already-paid orders
-* added [205 vs 299 vs 304](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/CAbp9hZapWv0wuj4S8io) to clarify transient verify and order failures
-* added [318 vs 608 duplicate booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SzdaH3BBGeQYPWIXQ7S1) to clarify duplicate-booking handling before another retry
+* added [Identifiers](product-guides/booking/booking-overview/identifiers.md) for `routingIdentifier`, `sessionId`, `OfferId`, `orderNo`, and refresh rules
+* added [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md) to clarify when to use `search.do` and when to use `getOffers.do`
+* added [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md) to explain request-limit governance versus search concurrency pressure
+* added [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md) to explain which earlier step must be refreshed
+* added [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) to clarify the validation boundary before order creation
+* added [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md) to explain post-payment follow-up and safe polling behavior
+* added [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md) to clarify payment-state recovery and duplicate-payment risk
+* added [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md) to explain when ancillary selections are stale
+* added [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md) to explain which booking step must be rerun after stale context or price drift
+* added [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md) to clarify passenger, document, and contact input errors at order creation
+* added [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md) to clarify stale ancillary codes versus baggage segment-mapping errors
+* added [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md) to explain `STOP_TICKET`, `STOP_SEAT`, and `SIMILAR_SEAT`
+* added [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md) to clarify payment deadline expiration versus non-payable or already-paid orders
+* added [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md) to clarify transient verify and order failures
+* added [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md) to clarify duplicate-booking handling before another retry
 
 Updated pages:
 
-* [Atlas API Documentation Updates](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/6ojNmuqNsaDSENrllwAh)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
+* [Atlas API Documentation Updates](./)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/)
 {% endupdate %}
 
 {% update date="2026-07-03" %}
@@ -461,34 +461,34 @@ What changed:
 
 Updated pages:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Search Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZZXG9HGTENPgRVyaaoYs)
-* [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
-* [Search & Booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Search](product-guides/booking/booking-step-guides/search.md)
+* [Get Offer](product-guides/booking/booking-step-guides/get-offer.md)
+* [Verify](product-guides/booking/booking-step-guides/verify.md)
+* [Seats](product-guides/booking/optional-ancillaries/seats-and-baggage/)
+* [Baggage](product-guides/booking/optional-ancillaries/baggage.md)
+* [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Search Errors](support-and-reference/troubleshooting-and-support/errors-handing/search-errors.md)
+* [Verify, Order & Ticketing Errors](support-and-reference/troubleshooting-and-support/errors-handing/verify-order-and-ticketing-errors.md)
+* [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md)
 {% endupdate %}
 
 {% update date="2026-06-30" %}
 ## Added multi-channel notification setup guidance
 
-Published [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7) for ATRIP delivery across webhook, email, DingTalk, WeCom, Slack, and Teams.
+Published [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md) for ATRIP delivery across webhook, email, DingTalk, WeCom, Slack, and Teams.
 
 What changed:
 
 * added a new guide for channel selection, ATRIP setup, and test notifications
-* clarified in [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6) that webhook is one delivery option in the broader notification model
-* updated [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW) to position airline status as the first live multi-channel scenario
+* clarified in [Webhook Overview](product-guides/extensions-and-integrations/webhook-overview/) that webhook is one delivery option in the broader notification model
+* updated [Airline Status Update Notification](product-guides/extensions-and-integrations/webhook-overview/airline-status-update-notification.md) to position airline status as the first live multi-channel scenario
 
 Updated pages:
 
-* [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW)
+* [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md)
+* [Webhook Overview](product-guides/extensions-and-integrations/webhook-overview/)
+* [Airline Status Update Notification](product-guides/extensions-and-integrations/webhook-overview/airline-status-update-notification.md)
 {% endupdate %}
 
 {% update date="2026-06-29" %}
@@ -503,7 +503,7 @@ What changed:
 
 Updated pages:
 
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
+* [Sandbox Access](readme/making-requests.md)
 {% endupdate %}
 
 {% update date="2026-06-29" %}
@@ -521,9 +521,9 @@ What changed:
 
 Updated pages:
 
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Getting Started](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
+* [UAT Validation](readme/uat-submission-guide.md)
+* [Quick Start](readme/quick-start.md)
+* [Getting Started](support-and-reference/troubleshooting-and-support/faqs/atlas-api-general-information.md)
 {% endupdate %}
 
 {% update date="2026-06-10" %}
@@ -539,9 +539,9 @@ What changed:
 
 Updated pages:
 
-* [Void workflow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/H8SaqS9SfWWq494hZlz5)
-* [Void Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/4aywYMVHUfvNZttgiHPn)
+* [Void workflow](product-guides/post-booking/void.md)
+* [Void](api-reference/post-booking-apis/void.md)
+* [Void Notification](product-guides/extensions-and-integrations/webhook-overview/void-notification.md)
 {% endupdate %}
 
 {% update date="2026-06-09" %}
@@ -557,18 +557,18 @@ What changed:
 
 Updated pages:
 
-* [Inflow Seat & Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/33ZWa8YpkzEg8kPsZLCo)
-* [Seats & Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Search & Booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
+* [Inflow Seat & Baggage](api-reference/booking-apis/inflow-seat-and-baggage.md)
+* [Seats & Baggage](product-guides/booking/optional-ancillaries/seats-and-baggage/)
+* [Verify](product-guides/booking/booking-step-guides/verify.md)
+* [Get Offer](product-guides/booking/booking-step-guides/get-offer.md)
+* [Booking Overview](product-guides/booking/booking-overview/)
+* [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md)
 {% endupdate %}
 
 {% update date="2026-04-15" %}
 ## Added MCP-Assisted Development
 
-Published [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17) for teams using GitBook MCP during Atlas API integration.
+Published [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md) for teams using GitBook MCP during Atlas API integration.
 
 Use it when you need to:
 
@@ -582,7 +582,7 @@ The guide also includes prompt patterns and usage boundaries for production-safe
 {% update date="2026-04-09" %}
 ## Added Sandbox Validation Test Kit
 
-Published [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf) for a no-code sandbox validation run.
+Published [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md) for a no-code sandbox validation run.
 
 Use it when you need to:
 
@@ -597,7 +597,7 @@ The page also explains the expected final retrieve timeout during ticketing poll
 {% update date="2026-04-08" %}
 ## Improved Error Codes landing page
 
-Updated [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1) with:
+Updated [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) with:
 
 * retry policy guidance
 * a quick decision table for high-frequency codes
@@ -610,7 +610,7 @@ This makes the page more useful as the main troubleshooting entry point.
 {% update date="2026-04-03" %}
 ## Added Hybrid Payment Guide
 
-Published [Hybrid Payment Guide](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SkmHf0AK1tgebiGujAko) under **Payment & Ticketing**.
+Published [Hybrid Payment Guide](product-guides/booking/booking-step-guides/payment-and-ticketing/hybrid-payment-guide.md) under **Payment & Ticketing**.
 
 Use it when you need to:
 
