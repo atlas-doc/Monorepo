@@ -1,6 +1,5 @@
 ---
-description: >-
-  标准搜索、已知行程报价查询和快速履约的端到端预订路径。
+description: 标准搜索、已知行程报价查询和快速履约的端到端预订路径。
 ---
 
 # 预订流程
@@ -15,19 +14,19 @@ description: >-
 
 ### 选择正确的流程
 
-当 Atlas 是您主要的搜索层时，使用[标准预订流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN)。
+当 Atlas 是您主要的搜索层时，使用[标准预订流程](standard-booking-flow.md)。
 
 从 `search.do` 开始。
 
 然后在 `order.do` 之前继续调用 `verify.do`。
 
-当行程已知或需要独立价格检查时，使用[获取报价流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj)。
+当行程已知或需要独立价格检查时，使用[获取报价流程](get-offer-flow.md)。
 
 从 `getOffers.do` 开始。
 
 然后使用 `OfferId` 继续调用 `order.do`。
 
-当您需要更广泛的报价可见性且可以在创建订单后立即开始支付时，使用[履约流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01)。
+当您需要更广泛的报价可见性且可以在创建订单后立即开始支付时，使用[履约流程](fulfillment-flow.md)。
 
 从 `getOfferPrice.do` 开始。
 
@@ -35,28 +34,28 @@ description: >-
 
 需要帮助选择入口路径？
 
-请使用[搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)和[报价 vs 履约](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)。
+请使用[搜索 vs 报价](../booking-overview/booking-decisions/search-vs-offer.md)和[获取报价 vs 获取报价价格](../booking-overview/booking-decisions/get-offer-vs-get-offer-price.md)。
 
 ### 可用流程
 
-* [标准预订流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN)
-* [获取报价流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj)
-* [履约流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01)
+* [标准预订流程](standard-booking-flow.md)
+* [获取报价流程](get-offer-flow.md)
+* [履约流程](fulfillment-flow.md)
 
 每个流程页面包含该路径的完整端到端步骤序列。
 
 ### 需要更深入的决定指南？
 
-使用[预订决策](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)了解重新开始选择、API 边界和边缘情况。
+使用[预订决策](../booking-overview/booking-decisions/)了解重新开始选择、API 边界和边缘情况。
 
 ### 需要跨流程的共享规则？
 
-使用[预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)。
+使用[预订概述](../booking-overview/)。
 
 ### 需要详细了解某个预订步骤？
 
-使用[预订步骤指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Hivwro5sZdOotzmaEIn)。
+使用[预订步骤指南](../booking-step-guides/)。
 
 ### 需要可选座位或行李处理？
 
-使用[可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)。
+使用[可选附加服务](../optional-ancillaries/)。

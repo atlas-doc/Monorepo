@@ -34,34 +34,34 @@ description: 选择正确的预订流程、重启点或 API 步骤。
 
 #### 选择预订入口路径
 
-从[搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)开始。
+从[搜索 vs 报价](search-vs-offer.md)开始。
 
 当您需要决定 Atlas 是您的搜索层还是您的定价和预订层时使用。
 
 #### 选择报价路径
 
-然后使用[获取报价 vs 获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)。
+然后使用[获取报价 vs 获取报价价格](get-offer-vs-get-offer-price.md)。
 
 当您已经需要基于报价的路径并且必须在标准报价检索和快速履约之间做选择时使用。
 
 #### 决定从哪里重启
 
-使用[重启点](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw)。
+使用[重启点](restart-point.md)。
 
 当标识符过期、定价漂移或预订延迟时使用。
 
 #### 决定哪个 API 拥有问题
 
-使用[验证 vs 订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL)。
+使用[验证 vs 下单](verify-vs-order.md)。
 
 当您需要区分验证和预订创建时使用。
 
 ### 此部分的页面
 
-* [搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [重启点](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw)
-* [获取报价 vs 获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [验证 vs 订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL)
+* [搜索 vs 报价](search-vs-offer.md)
+* [重启点](restart-point.md)
+* [获取报价 vs 获取报价价格](get-offer-vs-get-offer-price.md)
+* [验证 vs 下单](verify-vs-order.md)
 
 ### 快速决策规则
 
@@ -121,29 +121,29 @@ description: 选择正确的预订流程、重启点或 API 步骤。
 
 使用：
 
-* [搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [获取报价 vs 获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
+* [搜索 vs 报价](search-vs-offer.md)
+* [获取报价 vs 获取报价价格](get-offer-vs-get-offer-price.md)
+* [预订概述](../)
 
 #### 决定重试什么
 
 使用：
 
-* [重启点](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw)
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [重启点](restart-point.md)
+* [标识符](../identifiers.md)
+* [错误代码](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### 决定问题属于验证还是订单
 
 使用：
 
-* [验证 vs 订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [验证 vs 下单](verify-vs-order.md)
+* [验证](../../booking-step-guides/verify.md)
+* [创建订单](../../booking-step-guides/create-order.md)
 
 ### 相关页面
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [API 请求限制](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [预订概述](../)
+* [标识符](../identifiers.md)
+* [API 请求限制](../api-request-limits.md)
+* [错误代码](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)

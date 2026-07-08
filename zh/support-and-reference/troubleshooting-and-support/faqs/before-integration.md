@@ -1,6 +1,5 @@
 ---
-description: >-
-  集成 Atlas API 前应了解的商业、技术和规划前提条件。
+description: 集成 Atlas API 前应了解的商业、技术和规划前提条件。
 ---
 
 # 集成前
@@ -15,11 +14,11 @@ description: >-
 
 在开始实施前，您应该：
 
-1.  确认商业协议已签署
-2.  确认已获取沙箱凭证
-3.  确定首选支付模式（存款、VCC 直通或两者）
-4.  确定目标航空公司
-5.  确认流程选择（标准搜索、Get Offer 或两者）
+1. 确认商业协议已签署
+2. 确认已获取沙箱凭证
+3. 确定首选支付模式（存款、VCC 直通或两者）
+4. 确定目标航空公司
+5. 确认流程选择（标准搜索、Get Offer 或两者）
 
 #### Atlas 适合所有类型的旅行社吗？
 
@@ -68,6 +67,6 @@ Atlas 是一个聚合平台，通过 API 直连 150 多家航空公司。\
 
 ### 相关页面
 
-* [启动检查清单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
-* [合作伙伴常见问题](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rj5WM4KAQ5YcHyUoIR75)
-* [入门指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
+* [启动检查清单](kickoff-checklist.md)
+* [合作伙伴常见问题](top-questions-for-partners.md)
+* [入门指南](atlas-api-general-information.md)

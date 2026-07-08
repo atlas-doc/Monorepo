@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 预订领域，涵盖共享规则、端到端流程、步骤指南和可选附加服务。
+description: Atlas API 预订领域，涵盖共享规则、端到端流程、步骤指南和可选附加服务。
 ---
 
 # 预订
@@ -16,7 +15,7 @@ description: >-
 
 ### 主要预订部分
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [预订流程](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wkGCRQidKhCerhUNdoz7)
-* [预订步骤指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Hivwro5sZdOotzmaEIn)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
+* [预订概述](booking-overview/)
+* [预订流程](booking-flows/)
+* [预订步骤指南](booking-step-guides/)
+* [可选附加服务](optional-ancillaries/)

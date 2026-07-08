@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 财务问题，涉及余额、充值、结算、对账和退款资金。
+description: 常见的 Atlas API 财务问题，涉及余额、充值、结算、对账和退款资金。
 ---
 
 # 财务
@@ -79,5 +78,5 @@ ATRIP 中的 `Finance` -> `Top Up`。
 
 ### 相关页面
 
-* [支付](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
-* [预订后](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0)
+* [支付](atlas-api-payments.md)
+* [预订后服务](atlas-api-post-ticketing.md)

@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 访问错误，涉及认证、请求格式、缺少字段和账户范围失败。
+description: 常见的 Atlas API 访问错误，涉及认证、请求格式、缺少字段和账户范围失败。
 ---
 
 # 通用与访问错误
@@ -127,5 +126,5 @@ description: >-
 
 ### 相关页面
 
-* [认证与请求基础](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/readme/quick-start/making-requests)
-* [帮助与支持](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/troubleshooting-and-support)
+* [认证与请求基础](../../../readme-1/making-requests.md)
+* [帮助与支持](../)

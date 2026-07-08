@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 预订后错误，涉及退款、作废、订单查询和出票后的附加服务工作流。
+description: 常见的 Atlas API 预订后错误，涉及退款、作废、订单查询和出票后的附加服务工作流。
 ---
 
 # 退款、查询与预订后错误
@@ -31,7 +30,7 @@ description: >-
 
 诸如 `822` 和 `823` 等代码指向仅作废的提交问题。
 
-当订单仍在航空公司作废窗口内时，使用专用的[作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)流程。
+当订单仍在航空公司作废窗口内时，使用专用的[作废](../../../product-guides/post-booking/void.md)流程。
 
 ### 退款报价和提交
 
@@ -88,7 +87,7 @@ description: >-
 
 作废使用专用端点，应遵循作废报价 -> 作废提交 -> 作废查询的顺序。
 
-如果订单仍在航空公司作废窗口内，使用[作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)而不是退款流程。
+如果订单仍在航空公司作废窗口内，使用[作废](../../../product-guides/post-booking/void.md)而不是退款流程。
 
 #### `822` 超过机票作废截止时间
 
@@ -202,18 +201,18 @@ Atlas 无法为此航空公司支持此附加服务流程。
 
 ### 后续步骤
 
-使用[退款](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)获取退款流程指导。
+使用[退款](../../../product-guides/post-booking/refunds.md)获取退款流程指导。
 
-使用[作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)获取专用作废流程。
+使用[作废](../../../product-guides/post-booking/void.md)获取专用作废流程。
 
-使用[查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)当当前订单状态仍不明确时。
+使用[查询订单](../../../product-guides/booking/booking-step-guides/query-order/)当当前订单状态仍不明确时。
 
-使用[预订后](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)将案例路由到正确的预订后工作流。
+使用[预订后服务](../../../product-guides/post-booking/)将案例路由到正确的预订后工作流。
 
 ### 相关页面
 
-* [退款](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [预订后](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [出票后附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
-* [订单维护](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AQEBHaWYnuNx4vUIfO7g)
+* [退款](../../../product-guides/post-booking/refunds.md)
+* [作废](../../../product-guides/post-booking/void.md)
+* [预订后服务](../../../product-guides/post-booking/)
+* [出票后附加服务](../../../product-guides/post-booking/post-ticketing-ancillaries.md)
+* [订单维护](../../../product-guides/post-booking/order-maintenance.md)

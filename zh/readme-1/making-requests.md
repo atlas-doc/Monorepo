@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 沙箱访问指南：凭证、请求头、gzip 处理以及在开发前的首次认证请求。
+description: Atlas API 沙箱访问指南：凭证、请求头、gzip 处理以及在开发前的首次认证请求。
 ---
 
 # 沙箱访问
@@ -10,7 +9,7 @@ description: >-
 使用此页面获取沙箱访问权限并准备您的首次 API 调用。
 
 {% hint style="info" %}
-获取沙箱凭证后，运行 [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)。
+获取沙箱凭证后，运行 [沙箱验证测试工具包](sandbox-development/sandbox-validation-test-kit.md)。
 
 用它来在开发开始前确认凭证、网络访问以及无代码预订的快乐路径。
 {% endhint %}
@@ -150,11 +149,11 @@ Atlas 响应可能很大。
 
 ### 下一步
 
-继续 [沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)。
+继续 [沙箱开发](sandbox-development/)。
 
 ### 相关页面
 
-* [快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
+* [快速入门](quick-start.md)
+* [沙箱验证测试工具包](sandbox-development/sandbox-validation-test-kit.md)
+* [沙箱开发](sandbox-development/)
+* [预订概述](../product-guides/booking/booking-overview/)

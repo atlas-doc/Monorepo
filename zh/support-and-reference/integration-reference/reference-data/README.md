@@ -1,6 +1,5 @@
 ---
-description: >-
-  跨 Atlas API 流程使用的共享值、枚举值和辅助参考数据。
+description: 跨 Atlas API 流程使用的共享值、枚举值和辅助参考数据。
 ---
 
 # 参考数据
@@ -27,7 +26,7 @@ description: >-
 
 ### 本部分的页面
 
-* [区域设置参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Iqbnh1NWCgycDIzPka7l)
+* [区域设置参考](locale.md)
 
 ### 本部分涵盖的内容
 

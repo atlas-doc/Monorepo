@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 搜索错误，涉及请求验证、余额、航线限制、超时和智能搜索跟进。
+description: 常见的 Atlas API 搜索错误，涉及请求验证、余额、航线限制、超时和智能搜索跟进。
 ---
 
 # 搜索错误
@@ -172,10 +171,10 @@ Atlas 拒绝了请求，因为活跃的请求限制已超出。
 
 ### 后续步骤
 
-修复搜索问题后，返回[搜索](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/readme/booking-overview/search)并使用正确的标识符继续预订流程。
+修复搜索问题后，返回[搜索](../../../product-guides/booking/booking-step-guides/search.md)并使用正确的标识符继续预订流程。
 
 ### 相关页面
 
-* [搜索](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/readme/booking-overview/search)
-* [预订 API](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/api-reference/booking-apis)
-* [财务](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/troubleshooting-and-support/faqs/atlas-api-finance)
+* [搜索](../../../product-guides/booking/booking-step-guides/search.md)
+* [预订 API](../../../api-reference/booking-apis/)
+* [财务](../faqs/atlas-api-finance.md)

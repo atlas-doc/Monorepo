@@ -1,6 +1,5 @@
 ---
-description: >-
-  确保 Atlas API 集成设计为生产的启动检查清单。涵盖流程选择、支付设计、出票处理和发布范围。
+description: 确保 Atlas API 集成设计为生产的启动检查清单。涵盖流程选择、支付设计、出票处理和发布范围。
 ---
 
 # 启动检查清单
@@ -50,6 +49,6 @@ description: >-
 
 ### 相关页面
 
-* [集成前](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
-* [入门指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
-* [搜索与预订](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XrP8GBROs9JgYdkjYKPj)
+* [集成前](before-integration.md)
+* [入门指南](atlas-api-general-information.md)
+* [搜索与预订](atlas-api-search-and-book.md)

@@ -1,6 +1,5 @@
 ---
-description: >-
-  常见的 Atlas API 接入问题，涉及访问权限、沙箱测试、定价、性能、航空公司覆盖范围和升级。
+description: 常见的 Atlas API 接入问题，涉及访问权限、沙箱测试、定价、性能、航空公司覆盖范围和升级。
 ---
 
 # 入门指南
@@ -56,14 +55,14 @@ Atlas 将审核您的公司，完成 NDA 步骤，然后发放测试凭证。
 
 是的。
 
-使用[快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)中的 Postman 集合。
+使用[快速入门](../../../readme-1/quick-start.md)中的 Postman 集合。
 
 当您准备进行正式验证时，稍后使用 UAT 指南。
 
 ### 是否有用于首次测试的 Postman 集合？
 
 是的。\
-使用[快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)中的 Postman 集合。
+使用[快速入门](../../../readme-1/quick-start.md)中的 Postman 集合。
 
 当您准备进行正式验证时，使用 UAT 指南。
 

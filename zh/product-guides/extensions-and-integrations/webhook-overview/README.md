@@ -8,10 +8,10 @@ description: Atlas Webhook 通知概述。
 
 ### 可用通知
 
-* [航司状态更新通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AS)
-* [电子邮件通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EN)
-* [事件通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IN)
-* [事件查询](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IQ)
-* [日程变更通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SC)
-* [出票完成通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/TC)
-* [作废通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/VN)
+* [航司状态更新通知](airline-status-update-notification.md)
+* [电子邮件通知](email-notification.md)
+* [事件通知](incident-notification.md)
+* [事件查询](incident-query.md)
+* [日程变更通知](schedule-change-notification.md)
+* [出票完成通知](ticketing-complete-notification.md)
+* [作废通知](void-notification.md)

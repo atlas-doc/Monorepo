@@ -1,9 +1,8 @@
 ---
-description: >-
-  常见的 Atlas API 预订后问题，涉及退款、作废、出票后附加服务、订单对账和退款报价。
+description: 常见的 Atlas API 预订后问题，涉及退款、作废、出票后附加服务、订单对账和退款报价。
 ---
 
-# 预订后
+# 预订后服务
 
 {% include "../../../.gitbook/includes/eva-help-hint.md" %}
 
@@ -123,7 +122,7 @@ description: >-
 
 ### 相关页面
 
-* [退款](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [出票后附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
-* [财务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)
+* [退款](../../../product-guides/post-booking/refunds.md)
+* [作废](../../../product-guides/post-booking/void.md)
+* [出票后附加服务](../../../product-guides/post-booking/post-ticketing-ancillaries.md)
+* [财务](atlas-api-finance.md)

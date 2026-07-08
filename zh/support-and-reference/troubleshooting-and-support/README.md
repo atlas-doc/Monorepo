@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 故障排除与支持入口点，包含错误代码、常见问题解答和升级资源。
+description: Atlas API 故障排除与支持入口点，包含错误代码、常见问题解答和升级资源。
 ---
 
 # 故障排除与支持
@@ -19,9 +18,9 @@ description: >-
 
 #### 当出现故障时，我应该从哪里开始？
 
-当你有返回的状态码时，从[错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)开始。
+当你有返回的状态码时，从[错误代码](errors-handing/)开始。
 
-当问题涉及预期行为、设计决策或常见边缘情况时，使用[常见问题解答](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)。
+当问题涉及预期行为、设计决策或常见边缘情况时，使用[常见问题解答](faqs/)。
 
 #### 何时应使用支持资源？
 
@@ -29,9 +28,9 @@ description: >-
 
 ### 本部分的页面
 
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [常见问题解答](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [帮助中心](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Uz15LoKbrvyjsHXVzMDH)
+* [错误代码](errors-handing/)
+* [常见问题解答](faqs/)
+* [帮助中心](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6gAksXDk6z99aVnKRffY/)
 
 ### 本部分涵盖的内容
 
@@ -73,6 +72,6 @@ description: >-
 
 ### 相关页面
 
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [常见问题解答](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [帮助中心](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Uz15LoKbrvyjsHXVzMDH)
+* [错误代码](errors-handing/)
+* [常见问题解答](faqs/)
+* [帮助中心](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6gAksXDk6z99aVnKRffY/)

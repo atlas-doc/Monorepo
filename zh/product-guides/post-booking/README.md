@@ -1,9 +1,8 @@
 ---
-description: >-
-  Atlas API 预订后流程，涵盖退款、作废、订单维护和 PNR 跟进。
+description: Atlas API 预订后流程，涵盖退款、作废、订单维护和 PNR 跟进。
 ---
 
-# 预订后
+# 预订后服务
 
 使用此部分获取 Atlas API 预订后指导。
 
@@ -16,8 +15,8 @@ description: >-
 
 ### 主要预订后部分
 
-* [退款](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rr5MhxJjJ2eS0rOqk7X4)
-* [作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gbZcGq0q7m8MZqQ7q8Zq)
-* [订单维护](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/q7Zq8Zq7m8MZqQ7q8Zq)
-* [PNR 认领与提取](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/m8MZqQ7q8Zq7m8MZqQ7)
-* [出票后附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8Zq7m8MZqQ7q8Zq7m8M)
+* [退款](refunds.md)
+* [作废](void.md)
+* [订单维护](order-maintenance.md)
+* [PNR 认领与提取](pnr-claim-and-extraction.md)
+* [出票后附加服务](post-ticketing-ancillaries.md)

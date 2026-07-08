@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API UAT 验证指南：执行范围、证据、验证和上线前的审批。
+description: Atlas API UAT 验证指南：执行范围、证据、验证和上线前的审批。
 ---
 
 # UAT 验证
@@ -72,7 +71,7 @@ description: >-
 如果某个用例失败，ATRIP 会直接显示失败原因。
 
 {% hint style="info" %}
-在 UAT 之前，运行 [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)。
+在 UAT 之前，运行 [沙箱验证测试工具包](sandbox-development/sandbox-validation-test-kit.md)。
 
 在正式验证开始前，用它来确认凭证、网络访问和基本的预订路径。
 {% endhint %}
@@ -222,7 +221,7 @@ description: >-
 
 ### 下一步是什么？
 
-获得批准后，继续 [生产上线](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy)。
+获得批准后，继续 [生产上线](production-go-live.md)。
 
 届时，申请 `LIVE` 状态、生成生产凭证、切换端点并运行受控的冒烟测试。
 
@@ -254,8 +253,8 @@ UAT 通过后：
 
 ### 相关页面
 
-* [沙箱开发](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [沙箱验证测试工具包](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [生产上线](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy)
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [沙箱开发](sandbox-development/)
+* [沙箱验证测试工具包](sandbox-development/sandbox-validation-test-kit.md)
+* [快速入门](quick-start.md)
+* [生产上线](production-go-live.md)
+* [Webhook 概述](../product-guides/extensions-and-integrations/webhook-overview/)

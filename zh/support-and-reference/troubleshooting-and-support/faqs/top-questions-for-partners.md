@@ -1,6 +1,5 @@
 ---
-description: >-
-  现有和潜在 Atlas 合作伙伴常见的商业和技术问题汇总。
+description: 现有和潜在 Atlas 合作伙伴常见的商业和技术问题汇总。
 ---
 
 # 合作伙伴常见问题
@@ -66,7 +65,7 @@ ATRIP 是 Atlas 的运营门户。\
 #### 文档中有 Postman 集合吗？
 
 是的。\
-[快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)中包含 Postman 集合。
+[快速入门](../../../readme-1/quick-start.md)中包含 Postman 集合。
 
 #### 如何联系销售或支持？
 
@@ -88,6 +87,6 @@ ATRIP 是 Atlas 的运营门户。\
 
 ### 相关页面
 
-* [集成前](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
-* [启动检查清单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
-* [入门指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)
+* [集成前](before-integration.md)
+* [启动检查清单](kickoff-checklist.md)
+* [入门指南](atlas-api-general-information.md)

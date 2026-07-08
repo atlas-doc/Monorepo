@@ -1,9 +1,8 @@
 ---
-description: >-
-  Atlas API 生产上线指南：LIVE 状态、生产凭证、端点切换、冒烟测试和首批生产监控。
+description: Atlas API 生产上线指南：LIVE 状态、生产凭证、端点切换、冒烟测试和首批生产监控。
 ---
 
-# 生产上线
+# 生产环境上线
 
 {% include "../.gitbook/includes/eva-help-hint.md" %}
 
@@ -193,6 +192,6 @@ UAT 通过后，您的客户经理将您的账户状态更改为 `LIVE`。
 
 ### 相关页面
 
-* [快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [UAT 验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [快速入门](quick-start.md)
+* [UAT 验证](uat-submission-guide.md)
+* [Webhook 概述](../product-guides/extensions-and-integrations/webhook-overview/)
