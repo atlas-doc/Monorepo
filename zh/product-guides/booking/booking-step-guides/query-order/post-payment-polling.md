@@ -1,0 +1,23 @@
+---
+description: Atlas 支付后轮询策略和重试指导。
+---
+
+# 支付后轮询
+
+使用此页面了解支付后的轮询策略。
+
+### 概述
+
+支付后轮询解释了如何持续使用 `queryOrderDetails.do` 直到出票达到终态。
+
+### 关键规则
+
+* 不要在支付后立即轮询
+* 使用递增的间隔进行轮询
+* 在达到最大重试次数或超时后停止
+* Webhook 可以补充轮询，但不应该取代它
+
+### 相关页面
+
+* [查询订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)

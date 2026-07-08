@@ -1,0 +1,93 @@
+---
+description: >-
+  现有和潜在 Atlas 合作伙伴常见的商业和技术问题汇总。
+---
+
+# 合作伙伴常见问题
+
+{% include "../../../.gitbook/includes/eva-help-hint.md" %}
+
+使用本页面查找现有和潜在合作伙伴常见的商业和技术问题的快速答案。
+
+### 常见问题
+
+#### Atlas 是什么？
+
+Atlas 是航班 API 平台。
+
+Atlas 通过 API 直连 150 多家航空公司，使 OTA、TMC 和旅行社能够搜索、预订和出票。
+
+#### 如何开始？
+
+提交[入门表单](https://atlaslovestravel.com/get-started/)。
+
+Atlas 将审核您的公司，完成 NDA 步骤，然后发放测试凭证。
+
+### 如何开始？
+
+提交[入门表单](https://atlaslovestravel.com/get-started/)。\
+Atlas 将审核您的公司，完成 NDA 步骤，然后发放测试凭证。
+
+#### Atlas 是 GDS 还是聚合器？
+
+Atlas 是一个聚合平台，通过 API 直连 150 多家航空公司。\
+它不是 GDS。
+
+#### Atlas 支持哪些支付方式？
+
+存款和 VCC 直通。\
+受支持的方式取决于航空公司和出票渠道。
+
+### Atlas 支持哪些支付方式？
+
+存款和 VCC 直通。\
+受支持的方式取决于航空公司和出票渠道。
+
+#### 在开始之前我们需要签合同吗？
+
+是的。\
+在提供沙箱凭证之前，Atlas 要求签署商业协议和 NDA。
+
+#### Atlas 提供支持吗？
+
+是的。\
+Atlas 在 ATRIP 中提供支持渠道、文档和回退操作工具。
+
+#### 什么是 ATRIP？
+
+ATRIP 是 Atlas 的运营门户。\
+它用于配置、UAT、订单管理、退款、结算和支持。
+
+### 什么是 ATRIP？
+
+ATRIP 是 Atlas 的运营门户。\
+它用于配置、UAT、订单管理、退款、结算和支持。
+
+#### 文档中有 Postman 集合吗？
+
+是的。\
+[快速入门](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)中包含 Postman 集合。
+
+#### 如何联系销售或支持？
+
+销售可以通过[联系表单](https://atlaslovestravel.com/contact/)联系。\
+支持通过 ATRIP 和升级邮箱 **customerfeedback@atlaslovestravel.com** 提供。
+
+### 如何联系销售或支持？
+
+销售：通过[联系表单](https://atlaslovestravel.com/contact/)。\
+支持：通过 ATRIP 和升级邮箱 **customerfeedback@atlaslovestravel.com**。
+
+#### Atlas 是否提供票价保证？
+
+是的，在**存款**模式下完成支付后。\
+出票通常在 10 分钟内完成。\
+极少数情况下可能需要长达 1 小时。
+
+票价保证**不**适用于 VCC 直通支付。
+
+### 相关页面
+
+* [集成前](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
+* [启动检查清单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
+* [入门指南](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rHs9a1GaRY814fF0fIkT)

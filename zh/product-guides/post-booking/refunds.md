@@ -1,0 +1,23 @@
+---
+description: Atlas API 退款流程和规则。
+---
+
+# 退款
+
+使用此页面处理 Atlas 退款。
+
+### 概述
+
+退款流程允许您取消已出票的预订并为符合条件的旅客获得退款。
+
+### 关键规则
+
+* 退款适用于已出票的订单
+* 退款金额取决于航司的退款规则
+* 部分退款（按旅客）可用
+* 退款处理时间因航司而异
+
+### 相关页面
+
+* [作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gbZcGq0q7m8MZqQ7q8Zq)
+* [预订后概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
