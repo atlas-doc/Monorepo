@@ -53,6 +53,6 @@ After you find the required value or test input, return to the workflow or endpo
 
 ### Related sections
 
-* [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/)
+* [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)
 * [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
 * [Troubleshooting & Support](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tPfxQTN6n9wpKCsa6jJW)

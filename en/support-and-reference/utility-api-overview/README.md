@@ -69,6 +69,6 @@ Use endpoint-level details here:
 
 ### Related pages
 
-* [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/)
+* [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)
 * [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
 * [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)

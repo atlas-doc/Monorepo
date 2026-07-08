@@ -41,4 +41,4 @@ Use [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZ
 
 ### Use Integration Guides when you need onboarding steps
 
-Use [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/) for sandbox setup, development, UAT, and production go-live.
+Use [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/) for sandbox setup, development, UAT, and production go-live.

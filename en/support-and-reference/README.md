@@ -38,4 +38,4 @@ Use [Product Guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSr
 
 ### Need onboarding guidance?
 
-Use [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/) for sandbox setup, UAT, and production go-live.
+Use [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/) for sandbox setup, UAT, and production go-live.

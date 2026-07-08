@@ -34,9 +34,9 @@ Use the change log below when you need page-level detail.
 
 #### Where should a new integration team start?
 
-Start with [Quick Start](readme/quick-start.md).
+Start with [Quick Start](readme-1/quick-start.md).
 
-Then use [Integration Guides](readme/), [Booking Overview](product-guides/booking/booking-overview/), and [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/).
+Then use [Integration Guides](readme-1/), [Booking Overview](product-guides/booking/booking-overview/), and [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/).
 
 #### Which pages should I check for request-limit guidance?
 
@@ -46,7 +46,7 @@ Start with [Booking Overview](product-guides/booking/booking-overview/), [Search
 
 #### New integration
 
-Start with [Quick Start](readme/quick-start.md) and [Integration Guides](readme/).
+Start with [Quick Start](readme-1/quick-start.md) and [Integration Guides](readme-1/).
 
 #### Booking flow
 
@@ -232,8 +232,8 @@ What changed:
 
 Read next:
 
-* [Sandbox Access](readme/making-requests.md)
-* [Quick Start](readme/quick-start.md)
+* [Sandbox Access](readme-1/making-requests.md)
+* [Quick Start](readme-1/quick-start.md)
 
 #### UAT Testing flow update
 
@@ -248,8 +248,8 @@ What changed:
 
 Read next:
 
-* [UAT Validation](readme/uat-submission-guide.md)
-* [Quick Start](readme/quick-start.md)
+* [UAT Validation](readme-1/uat-submission-guide.md)
+* [Quick Start](readme-1/quick-start.md)
 * [Getting Started](support-and-reference/troubleshooting-and-support/faqs/atlas-api-general-information.md)
 
 #### Void workflow and notification updates
@@ -286,7 +286,7 @@ Read next:
 
 #### MCP-Assisted Development
 
-Read [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md) when you want to use GitBook MCP during Atlas API integration.
+Read [MCP-Assisted Development](readme-1/integration-tools/mcp-assisted-development.md) when you want to use GitBook MCP during Atlas API integration.
 
 Best for:
 
@@ -296,12 +296,12 @@ Best for:
 
 Read next:
 
-* [Quick Start](readme/quick-start.md)
+* [Quick Start](readme-1/quick-start.md)
 * [API Reference](api-reference/)
 
 #### Sandbox Validation Test Kit
 
-Read [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md) when you need a no-code sandbox validation run before development or after environment changes.
+Read [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md) when you need a no-code sandbox validation run before development or after environment changes.
 
 Best for:
 
@@ -311,8 +311,8 @@ Best for:
 
 Read next:
 
-* [Sandbox Development](readme/sandbox-development/)
-* [UAT Validation](readme/uat-submission-guide.md)
+* [Sandbox Development](readme-1/sandbox-development/)
+* [UAT Validation](readme-1/uat-submission-guide.md)
 
 #### Error Codes improvements
 
@@ -335,17 +335,17 @@ Read next:
 
 Start with:
 
-* [Quick Start](readme/quick-start.md)
-* [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md)
+* [Quick Start](readme-1/quick-start.md)
+* [MCP-Assisted Development](readme-1/integration-tools/mcp-assisted-development.md)
 * [Booking Overview](product-guides/booking/booking-overview/)
 
 #### Sandbox validation
 
 Start with:
 
-* [Sandbox Access](readme/making-requests.md)
-* [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md)
-* [Sandbox Development](readme/sandbox-development/)
+* [Sandbox Access](readme-1/making-requests.md)
+* [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md)
+* [Sandbox Development](readme-1/sandbox-development/)
 
 #### Booking and payment flow
 
@@ -367,11 +367,11 @@ Start with:
 
 #### What changed in the Atlas API docs recently?
 
-Recent updates added [Identifiers](product-guides/booking/booking-overview/identifiers.md), [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md), [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md), [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md), [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md), [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md), [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md), [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md), [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md), [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md), [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md), [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md), [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md), [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md), and [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md), added QPS and QPM request-limit guidance for selected pre-booking APIs, added [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md) for ATRIP notification setup, added the new ATRIP **UAT Testing** flow to [UAT Validation](readme/uat-submission-guide.md), clarified that **flight booking** is required, added automatic verification guidance, expanded the [Void workflow](product-guides/post-booking/void.md), changed `seatAvailability.do` call rules, added [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md), published [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md), and improved [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) as a troubleshooting entry point.
+Recent updates added [Identifiers](product-guides/booking/booking-overview/identifiers.md), [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md), [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md), [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md), [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md), [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md), [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md), [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md), [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md), [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md), [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md), [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md), [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md), [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md), and [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md), added QPS and QPM request-limit guidance for selected pre-booking APIs, added [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md) for ATRIP notification setup, added the new ATRIP **UAT Testing** flow to [UAT Validation](readme-1/uat-submission-guide.md), clarified that **flight booking** is required, added automatic verification guidance, expanded the [Void workflow](product-guides/post-booking/void.md), changed `seatAvailability.do` call rules, added [MCP-Assisted Development](readme-1/integration-tools/mcp-assisted-development.md), published [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md), and improved [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) as a troubleshooting entry point.
 
 #### Which guide should I read first for sandbox integration?
 
-Start with [Quick Start](readme/quick-start.md). Then use [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md) to confirm readiness before coding.
+Start with [Quick Start](readme-1/quick-start.md). Then use [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md) to confirm readiness before coding.
 
 #### Where should I start for booking, payment, or troubleshooting?
 
@@ -503,7 +503,7 @@ What changed:
 
 Updated pages:
 
-* [Sandbox Access](readme/making-requests.md)
+* [Sandbox Access](readme-1/making-requests.md)
 {% endupdate %}
 
 {% update date="2026-06-29" %}
@@ -521,8 +521,8 @@ What changed:
 
 Updated pages:
 
-* [UAT Validation](readme/uat-submission-guide.md)
-* [Quick Start](readme/quick-start.md)
+* [UAT Validation](readme-1/uat-submission-guide.md)
+* [Quick Start](readme-1/quick-start.md)
 * [Getting Started](support-and-reference/troubleshooting-and-support/faqs/atlas-api-general-information.md)
 {% endupdate %}
 
@@ -568,7 +568,7 @@ Updated pages:
 {% update date="2026-04-15" %}
 ## Added MCP-Assisted Development
 
-Published [MCP-Assisted Development](readme/integration-tools/mcp-assisted-development.md) for teams using GitBook MCP during Atlas API integration.
+Published [MCP-Assisted Development](readme-1/integration-tools/mcp-assisted-development.md) for teams using GitBook MCP during Atlas API integration.
 
 Use it when you need to:
 
@@ -582,7 +582,7 @@ The guide also includes prompt patterns and usage boundaries for production-safe
 {% update date="2026-04-09" %}
 ## Added Sandbox Validation Test Kit
 
-Published [Sandbox Validation Test Kit](readme/sandbox-development/sandbox-validation-test-kit.md) for a no-code sandbox validation run.
+Published [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md) for a no-code sandbox validation run.
 
 Use it when you need to:
 

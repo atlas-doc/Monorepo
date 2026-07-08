@@ -26,7 +26,7 @@ Use API Reference when you need exact endpoint-level details such as request fie
 
 Use [Product Guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSrm5O) first when you need flow choice, sequence guidance, or business decisions.
 
-Use [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/) when you need onboarding, sandbox, UAT, or go-live steps.
+Use [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/) when you need onboarding, sandbox, UAT, or go-live steps.
 
 #### Which page should I open first in API Reference?
 
@@ -55,7 +55,7 @@ Then open the exact endpoint page for the API you are implementing.
 ### Recommended usage
 
 1. Start with [Product Guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSrm5O) for workflow choice.
-2. Use [Integration Guides](https://app.gitbook.com/s/6LsKtmbJhZxgxraY5mHB/) for sandbox, UAT, and production rollout.
+2. Use [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/) for sandbox, UAT, and production rollout.
 3. Use this section for request and response details.
 4. Use [Support & Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Li1ioGB8DIQIbQ2KPfxM) for troubleshooting, shared reference data, and updates.
 
