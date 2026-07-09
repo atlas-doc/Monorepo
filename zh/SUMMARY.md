@@ -3,6 +3,7 @@
 * [💬需要帮助？咨询 Eva →](https://www.atriptech.com/)
 * [📣 Atlas API 文档更新](README.md)
 * [集成指南](readme-1/README.md)
+  * [产品功能树演示](readme-1/product-feature-tree-demo.md)
   * [快速入门](readme-1/quick-start.md)
   * [沙箱访问](readme-1/making-requests.md)
   * [沙箱开发](readme-1/sandbox-development/README.md)

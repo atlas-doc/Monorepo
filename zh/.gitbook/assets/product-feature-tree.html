@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlas API 产品功能树</title>
+<style>
+  :root {
+    --primary: #1E3A8A;
+    --secondary: #3B82F6;
+    --accent: #F97316;
+    --bg: #EFF6FF;
+    --text: #1E40AF;
+    --dark: #0F172A;
+    --gray: #64748B;
+    --light: #F8FAFC;
+    --border: #CBD5E1;
+    --success: #10B981;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--dark);
+    line-height: 1.6;
+  }
+
+  /* ===== COVER ===== */
+  .cover {
+    background: linear-gradient(135deg, var(--primary) 0%, #2D5BD6 50%, #1E40AF 100%);
+    color: var(--white);
+    padding: 80px 40px 60px;
+    text-align: center;
+    position: relative; overflow: hidden;
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+  }
+  .cover::before {
+    content: ''; position: absolute;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: rgba(59, 130, 246, 0.15);
+    top: -100px; right: -100px;
+  }
+  .cover::after {
+    content: ''; position: absolute;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: rgba(249, 115, 22, 0.12);
+    bottom: 50px; left: -50px;
+  }
+  .cover h1 { font-size: 56px; font-weight: 800; letter-spacing: -1px; position: relative; }
+  .cover .subtitle { font-size: 36px; font-weight: 700; color: var(--accent); margin-top: 8px; position: relative; }
+  .cover .accent-line {
+    width: 60px; height: 4px; background: var(--accent);
+    margin: 24px auto; border-radius: 2px; position: relative;
+  }
+  .cover .meta { font-size: 14px; opacity: 0.75; margin-top: 8px; position: relative; }
+  .cover .tagline {
+    font-size: 16px; color: #93C5FD; margin-top: 40px;
+    padding: 10px 24px; border: 1px solid rgba(147, 197, 253, 0.3);
+    border-radius: 24px; display: inline-block; position: relative;
+  }
+
+  /* ===== NAV ===== */
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(255,255,255,0.95); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    display: flex; align-items: center; gap: 4px;
+    overflow-x: auto; white-space: nowrap;
+    scrollbar-width: none;
+  }
+  .nav-bar::-webkit-scrollbar { display: none; }
+  .nav-item {
+    display: inline-block; padding: 12px 14px;
+    font-size: 13px; font-weight: 500; color: var(--gray);
+    text-decoration: none; border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+  }
+  .nav-item:hover { color: var(--primary); }
+  .nav-item.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+  /* ===== SECTION ===== */
+  .section {
+    max-width: 1100px; margin: 0 auto;
+    padding: 48px 24px;
+  }
+  .section-title {
+    font-size: 26px; font-weight: 700; color: var(--primary);
+    margin-bottom: 6px;
+  }
+  .section-line {
+    width: 50px; height: 3px; background: var(--accent);
+    border-radius: 2px; margin-bottom: 20px;
+  }
+  .section-desc {
+    font-size: 14px; color: var(--gray); margin-bottom: 24px;
+  }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart-container {
+    background: var(--white);
+    border-radius: 12px; border: 1px solid var(--border);
+    padding: 32px 24px; margin-bottom: 24px;
+    overflow-x: auto;
+  }
+  .flowchart {
+    display: flex; flex-direction: column; align-items: center;
+    min-width: 600px;
+  }
+  .flow-node {
+    background: var(--primary); color: var(--white);
+    padding: 12px 28px; border-radius: 8px;
+    font-size: 14px; font-weight: 600; text-align: center;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.2);
+  }
+  .flow-node.secondary { background: var(--secondary); }
+  .flow-node.accent { background: var(--accent); }
+  .flow-node.success { background: var(--success); }
+  .flow-node.ghost {
+    background: var(--light); color: var(--gray);
+    border: 1px dashed var(--border); box-shadow: none;
+  }
+  .flow-arrow {
+    width: 2px; height: 28px;
+    background: linear-gradient(to bottom, var(--secondary), var(--primary));
+  }
+  .flow-parallel {
+    display: flex; gap: 16px; align-items: center;
+  }
+  .flow-parallel .flow-node { min-width: 120px; font-size: 12px; padding: 10px 16px; }
+  .flow-parallel-bracket {
+    display: flex; flex-direction: column; align-items: center;
+  }
+  .flow-label {
+    font-size: 11px; color: var(--gray);
+    margin: 4px 0; font-weight: 500;
+  }
+
+  /* ===== CARDS ===== */
+  .card-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px; margin-bottom: 24px;
+  }
+  .card {
+    background: var(--white); border-radius: 10px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+  .card:hover { box-shadow: 0 4px 16px rgba(30, 58, 138, 0.08); }
+  .card-top { height: 4px; }
+  .card-body { padding: 16px; }
+  .card-title { font-size: 15px; font-weight: 700; color: var(--primary); margin-bottom: 4px; }
+  .card-api {
+    font-family: 'SF Mono', 'Consolas', monospace;
+    font-size: 11px; color: var(--secondary); margin-bottom: 8px;
+  }
+  .card-desc { font-size: 13px; color: var(--dark); line-height: 1.5; }
+  .card-dep {
+    font-size: 11px; color: var(--accent); font-style: italic;
+    margin-bottom: 6px;
+  }
+  .card ul { padding-left: 16px; margin-top: 6px; }
+  .card li { font-size: 12px; color: var(--dark); line-height: 1.6; }
+
+  /* ===== CHAIN ===== */
+  .chain {
+    background: var(--white); border-radius: 8px;
+    border: 1px solid var(--border);
+    padding: 12px 16px; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 8px;
+    flex-wrap: wrap;
+  }
+  .chain-label {
+    font-size: 12px; font-weight: 600; color: var(--primary);
+    min-width: 130px;
+  }
+  .chain-steps {
+    font-size: 12px; color: var(--gray);
+    font-family: 'SF Mono', 'Consolas', monospace;
+  }
+  .chain-steps span {
+    display: inline-block; margin: 0 2px;
+  }
+  .chain-arrow { color: var(--secondary); font-weight: 700; margin: 0 2px; }
+
+  /* ===== TABLE ===== */
+  .table-wrap {
+    overflow-x: auto; margin-bottom: 24px;
+  }
+  table {
+    width: 100%; border-collapse: collapse;
+    font-size: 13px;
+  }
+  th {
+    background: var(--primary); color: var(--white);
+    padding: 10px 12px; text-align: left; font-weight: 600;
+  }
+  td {
+    padding: 8px 12px; border-bottom: 1px solid var(--border);
+  }
+  tr:nth-child(even) td { background: var(--light); }
+  .tag {
+    display: inline-block; padding: 2px 10px;
+    border-radius: 10px; font-size: 11px; font-weight: 500;
+  }
+  .tag-required { background: #FEF2F2; color: #EF4444; }
+  .tag-optional { background: #F0FDF4; color: #16A34A; }
+  .tag-entry { background: #EFF6FF; color: var(--primary); }
+  .tag-tmc { background: #FFF7ED; color: var(--accent); }
+  .tag-fr { background: #FEF2F2; color: #EF4444; }
+  .tag-query { background: var(--light); color: var(--gray); }
+  .tag-post { background: #F0FDF4; color: #059669; }
+  .tag-config { background: #F5F3FF; color: #7C3AED; }
+  .tag-tool { background: #F0F9FF; color: #0891B2; }
+
+  /* ===== EVENT TYPES ===== */
+  .event-list {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px; margin-bottom: 20px;
+  }
+  .event-item {
+    background: var(--white); border-radius: 8px;
+    border: 1px solid var(--border); padding: 14px;
+    border-left: 3px solid var(--secondary);
+  }
+  .event-item .code {
+    font-family: 'SF Mono', 'Consolas', monospace;
+    font-size: 12px; font-weight: 600; color: var(--secondary);
+  }
+  .event-item .desc {
+    font-size: 12px; color: var(--gray); margin-top: 4px;
+  }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .cover h1 { font-size: 32px; }
+    .cover .subtitle { font-size: 24px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .section { padding: 32px 16px; }
+  }
+
+  /* ===== FOOTER ===== */
+  .page-footer {
+    text-align: center; padding: 32px;
+    color: var(--gray); font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+
+  /* ===== OVERVIEW METRICS ===== */
+  .metrics {
+    display: flex; gap: 16px; margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .metric {
+    flex: 1; min-width: 140px;
+    background: var(--white); border-radius: 10px;
+    border: 1px solid var(--border);
+    padding: 20px; text-align: center;
+  }
+  .metric-num {
+    font-size: 32px; font-weight: 800; color: var(--primary);
+    line-height: 1.1;
+  }
+  .metric-label {
+    font-size: 12px; color: var(--gray); margin-top: 4px;
+  }
+
+  /* ===== SUB-SECTION ===== */
+  .sub-section-title {
+    font-size: 18px; font-weight: 700; color: var(--secondary);
+    margin: 24px 0 12px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .sub-section-title .badge {
+    font-size: 12px; padding: 2px 10px;
+    border-radius: 10px; font-weight: 500;
+  }
+  .badge-blue { background: #DBEAFE; color: var(--primary); }
+  .badge-orange { background: #FFF7ED; color: var(--accent); }
+  .badge-green { background: #D1FAE5; color: #059669; }
+
+  /* ===== FLOW DIAGRAM HORIZONTAL ===== */
+  .flow-h {
+    display: flex; align-items: center; justify-content: center;
+    flex-wrap: wrap; gap: 0; margin: 20px 0;
+  }
+  .flow-h-node {
+    padding: 8px 16px; border-radius: 6px;
+    font-size: 12px; font-weight: 600; text-align: center;
+    white-space: nowrap;
+  }
+  .flow-h-arrow {
+    color: var(--border); font-size: 18px; margin: 0 4px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== COVER ===== -->
+<div class="cover" id="top">
+  <h1>Atlas API</h1>
+  <div class="subtitle">产品功能树</div>
+  <div class="accent-line"></div>
+  <div class="meta">基于 aTripTech Atlas API 文档整理 &nbsp;|&nbsp; 2026-05-29</div>
+  <div class="tagline">✦ &nbsp; 两大预订入口 · 五个核心阶段 · 二十五个 API 接口 &nbsp; ✦</div>
+</div>
+
+<!-- ===== NAV ===== -->
+<nav class="nav-bar">
+  <a href="#overview" class="nav-item active">场景总览</a>
+  <a href="#flowchart" class="nav-item">流程图</a>
+  <a href="#standard" class="nav-item">A. 标准预订</a>
+  <a href="#getoffer" class="nav-item">B. 出票履约</a>
+  <a href="#postticket" class="nav-item">C. 出票后附加</a>
+  <a href="#ancillary" class="nav-item">D. 附加服务</a>
+  <a href="#webhook" class="nav-item">E. 通知管理</a>
+  <a href="#postticketop" class="nav-item">F. 出票后操作</a>
+  <a href="#tools" class="nav-item">G. 工具类</a>
+  <a href="#chains" class="nav-item">调用链路</a>
+  <a href="#deps" class="nav-item">依赖关系</a>
+</nav>
+
+<!-- ===== OVERVIEW ===== -->
+<div class="section" id="overview">
+  <div class="section-title">产品场景总览</div>
+  <div class="section-line"></div>
+  <div class="section-desc">Atlas API 以两大预订入口为起点，串联五个核心业务阶段，共提供 25 个 API 接口</div>
+
+  <div class="metrics">
+    <div class="metric"><div class="metric-num">2</div><div class="metric-label">预订入口</div></div>
+    <div class="metric"><div class="metric-num">5</div><div class="metric-label">核心阶段</div></div>
+    <div class="metric"><div class="metric-num">25</div><div class="metric-label">API 接口</div></div>
+    <div class="metric"><div class="metric-num">7</div><div class="metric-label">调用链路</div></div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">Search · 标准搜索</div>
+        <div class="card-api">POST /search.do</div>
+        <div class="card-desc">通用场景，支持单程/往返、多航司过滤、航班号精确搜索、多运价舱位</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">出票履约接口 · 直接报价</div>
+        <div class="card-api">POST /getOffers.do</div>
+        <div class="card-desc">指定航班直接获取报价，跳过 Search，提高 L2B 转化率，适用于出票履约场景</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== FLOWCHART ===== -->
+<div class="section" id="flowchart">
+  <div class="section-title">API 调用流程图</div>
+  <div class="section-line"></div>
+  <div class="section-desc">完整的 API 调用链路，从预订入口到最终出票查询</div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+
+    <!-- 标准预订流程 -->
+    <div class="flowchart-container">
+      <div style="font-size:14px;font-weight:700;color:var(--primary);margin-bottom:16px;text-align:center;">A. 标准预订流程</div>
+      <div class="flowchart">
+        <div class="flow-node" style="font-size:12px;padding:10px 18px;">票价查询（Search）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/search.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node secondary" style="font-size:12px;padding:10px 18px;">验价（Verify）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/verify.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" style="font-size:12px;padding:10px 18px;">预定（Order）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/order.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-label">↙ 可选附加服务（位置灵活） ↘</div>
+        <div class="flow-parallel">
+          <div class="flow-node success" style="font-size:12px;padding:10px 14px;">行李接口<br><span style="font-weight:400;font-size:10px;opacity:0.7">/getLuggage.do</span></div>
+          <div class="flow-node" style="font-size:12px;padding:10px 14px;">选座接口<br><span style="font-weight:400;font-size:10px;opacity:0.7">/seatAvailability.do</span></div>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" style="font-size:12px;padding:10px 18px;">创建订单（Order）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/order.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node ghost" style="font-size:12px;padding:8px 20px;">订单确认（仅 FR）<br><span style="font-weight:400;font-size:10px">/orderCommit.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">支付<br><span style="font-weight:400;font-size:11px;opacity:0.7">POST /pay.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-parallel">
+          <div class="flow-node success" style="font-size:12px;padding:10px 14px;">订单查询<br><span style="font-weight:400;font-size:10px;opacity:0.7">/queryOrderDetails.do</span></div>
+          <div class="flow-node secondary" style="font-size:12px;padding:10px 14px;">出票后加购<br><span style="font-weight:400;font-size:10px;opacity:0.7">Ancillary 服务</span></div>
+          <div class="flow-node ghost" style="font-size:12px;padding:10px 14px;">Webhook 通知<br><span style="font-weight:400;font-size:10px">航变事件</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 出票履约接口流程 -->
+    <div class="flowchart-container">
+      <div style="font-size:14px;font-weight:700;color:var(--secondary);margin-bottom:16px;text-align:center;">B. 出票履约接口流程</div>
+      <div class="flowchart">
+        <div class="flow-node secondary" style="font-size:12px;padding:10px 18px;">出票履约接口（GetOffer）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/getOffers.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node secondary" style="font-size:12px;padding:10px 18px;">验价（Verify）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/verify.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-label">↙ 可选附加服务 ↘</div>
+        <div class="flow-parallel">
+          <div class="flow-node success" style="font-size:12px;padding:10px 14px;">行李接口<br><span style="font-weight:400;font-size:10px;opacity:0.7">/getLuggage.do</span></div>
+          <div class="flow-node" style="font-size:12px;padding:10px 14px;">选座接口<br><span style="font-weight:400;font-size:10px;opacity:0.7">/seatAvailability.do</span></div>
+        </div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node" style="font-size:12px;padding:10px 18px;">创建订单（Order）<br><span style="font-weight:400;font-size:10px;opacity:0.7">/order.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node ghost" style="font-size:12px;padding:8px 20px;">订单确认（仅 FR）<br><span style="font-weight:400;font-size:10px">/orderCommit.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-node accent">支付<br><span style="font-weight:400;font-size:11px;opacity:0.7">POST /pay.do</span></div>
+        <div class="flow-arrow"></div>
+        <div class="flow-parallel">
+          <div class="flow-node success" style="font-size:12px;padding:10px 14px;">订单查询<br><span style="font-weight:400;font-size:10px;opacity:0.7">/queryOrderDetails.do</span></div>
+          <div class="flow-node secondary" style="font-size:12px;padding:10px 14px;">出票后加购<br><span style="font-weight:400;font-size:10px;opacity:0.7">Ancillary 服务</span></div>
+          <div class="flow-node ghost" style="font-size:12px;padding:10px 14px;">Webhook 通知<br><span style="font-weight:400;font-size:10px">航变事件</span></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ===== A. STANDARD BOOKING ===== -->
+<div class="section" id="standard">
+  <div class="section-title">A. 标准机票预订流程</div>
+  <div class="section-line"></div>
+  <div class="section-desc">通用机票预订场景，从票价查询开始，经过验价、预定、可选附加服务（行李/选座），到创建订单并支付。行李接口与选座接口位置灵活，可在预定前后调用。</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">A1. 票价查询</div>
+        <div class="card-api">POST /search.do</div>
+        <div class="card-dep">依赖：无（入口接口）</div>
+        <ul>
+          <li>行程类型（单程 / 往返）</li>
+          <li>乘客数（成人 / 儿童 / 婴儿）</li>
+          <li>出发 / 到达城市或机场 IATA 码</li>
+          <li>出发 / 返回日期 (yyyyMMdd)</li>
+          <li>指定航司 / 航班号（可选过滤）</li>
+          <li>多运价舱位、结算币种</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">A2. 验价</div>
+        <div class="card-api">POST /verify.do</div>
+        <div class="card-dep">依赖：需先调用票价查询</div>
+        <ul>
+          <li>传入 Search 的 routingIdentifier</li>
+          <li>实时价格（原始价 vs 新价）</li>
+          <li>返回 sessionId（用于后续下单）</li>
+          <li>返回 bookingRequirement</li>
+          <li>退改签规则 / 行李额度</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">A3. 预定</div>
+        <div class="card-api">POST /order.do</div>
+        <div class="card-dep">依赖：需先调用验价</div>
+        <ul>
+          <li>传入 sessionId + offerId（可选）</li>
+          <li>乘客信息（姓名/生日/证件/国籍/性别）</li>
+          <li>支付方式选择</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">A4. 行李接口（位置灵活）</div>
+        <div class="card-api">POST /getLuggage.do</div>
+        <div class="card-dep">前置：验价 或 出票履约接口；可在预定前后调用</div>
+        <ul>
+          <li>参数：offerId（sessionId / offerId）</li>
+          <li>返回各航段行李产品列表</li>
+          <li>含重量/件数/价格/航司原始价</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">A5. 创建订单</div>
+        <div class="card-api">POST /order.do</div>
+        <div class="card-dep">依赖：需先调用验价；可携带行李/选座 productCode</div>
+        <ul>
+          <li>传入 sessionId + offerId（可选）</li>
+          <li>乘客信息（姓名/生日/证件/国籍/性别）</li>
+          <li>附加行李 / 选座 (productCode)</li>
+          <li>支付方式选择</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">A5-1. 选座接口</div>
+        <div class="card-api">POST /seatAvailability.do</div>
+        <div class="card-dep">前置：验价 或 出票履约接口</div>
+        <ul>
+          <li>模式：独立模式 / 非独立模式</li>
+          <li>参数：offerId + carrier + 航段信息</li>
+          <li>返回座位图及可用座位</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">A5-2. 行李接口</div>
+        <div class="card-api">POST /getLuggage.do</div>
+        <div class="card-dep">可在创建订单阶段再次调用以确认行李产品</div>
+        <ul>
+          <li>参数：offerId（sessionId / offerId）</li>
+          <li>返回各航段行李产品列表</li>
+          <li>含重量/件数/价格/航司原始价</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">A6. 订单确认（仅 FR）</div>
+        <div class="card-api">POST /orderCommit.do</div>
+        <div class="card-dep">仅 FR 集成流程，需先 Order</div>
+        <ul>
+          <li>获取 FR 确认页链接</li>
+          <li>用户确认后进入支付</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">A7. 支付</div>
+        <div class="card-api">POST /pay.do</div>
+        <div class="card-dep">依赖：需先调用创建订单</div>
+        <ul>
+          <li>Deposit（预存款）支付</li>
+          <li>VCC（虚拟信用卡）支付</li>
+          <li>MoR（商户代收）模式</li>
+          <li>信用卡：Visa / MC / AE / Discover</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">A8. 订单查询</div>
+        <div class="card-api">POST /queryOrderDetails.do</div>
+        <div class="card-dep">依赖：需先调用创建订单</div>
+        <ul>
+          <li>按订单号查询</li>
+          <li>按 PNR + 航司查询</li>
+          <li>组合查询（订单号 + PNR + 航司 + 参数）</li>
+          <li>返回完整订单详情</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== B. 出票履约接口 ===== -->
+<div class="section" id="getoffer">
+  <div class="section-title">B. 出票履约接口流程</div>
+  <div class="section-line"></div>
+  <div class="section-desc">通过出票履约接口直接获取报价，经验价后，依次调用行李接口、选座接口，再创建订单并支付。</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">B1. 出票履约接口（获取报价）</div>
+        <div class="card-api">POST /getOffers.do</div>
+        <div class="card-dep">前置依赖：无</div>
+        <ul>
+          <li><b>与 Verify 的区别：</b>不依赖 Search</li>
+          <li>提高价格验证成功率，增加 L2B</li>
+          <li>需联系客户经理开通</li>
+        </ul>
+        <div style="margin-top:8px;font-size:12px;color:var(--gray);">
+          <b>参数：</b>乘客数 + 去程航段(航司/机场/航班号/日期) + 返程航段(可选)
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">B2. 验价</div>
+        <div class="card-api">POST /verify.do</div>
+        <div class="card-dep">前置：出票履约接口</div>
+        <ul>
+          <li>实时价格确认</li>
+          <li>返回 sessionId（用于后续下单）</li>
+          <li>退改签规则 / 行李额度</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">B3. 行李接口</div>
+        <div class="card-api">POST /getLuggage.do</div>
+        <div class="card-dep">前置：验价 或 出票履约接口</div>
+        <ul>
+          <li>参数：offerId（sessionId / offerId）</li>
+          <li>返回各航段行李产品列表</li>
+          <li>含重量/件数/价格/航司原始价</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">B4. 选座接口</div>
+        <div class="card-api">POST /seatAvailability.do</div>
+        <div class="card-dep">前置：验价 或 出票履约接口</div>
+        <ul>
+          <li>模式：独立模式 / 非独立模式</li>
+          <li>参数：offerId + carrier + 航段信息</li>
+          <li>返回座位图及可用座位</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">B5. 创建订单</div>
+        <div class="card-api">POST /order.do</div>
+        <div class="card-dep">前置：验价；可携带行李/选座 productCode</div>
+        <ul>
+          <li>使用 offerId 代替 verify 的 sessionId</li>
+          <li>乘客信息（姓名/生日/证件/国籍/性别）</li>
+          <li>附加行李 / 选座 (productCode)</li>
+          <li>支付方式选择</li>
+        </ul>
+        <div style="margin-top:8px;padding:8px 10px;background:#FFFBEB;border-radius:6px;font-size:12px;color:var(--accent);">
+          ⚠️ 注意：使用 offerId 代替 verify 的 sessionId
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">B6. 支付</div>
+        <div class="card-api">POST /pay.do</div>
+        <div class="card-dep">依赖：需先调用创建订单</div>
+        <ul>
+          <li>Deposit（预存款）支付</li>
+          <li>VCC（虚拟信用卡）支付</li>
+          <li>MoR（商户代收）模式</li>
+          <li>信用卡：Visa / MC / AE / Discover</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">B7. 订单查询</div>
+        <div class="card-api">POST /queryOrderDetails.do</div>
+        <div class="card-dep">依赖：需先调用创建订单</div>
+        <ul>
+          <li>按订单号查询</li>
+          <li>按 PNR + 航司查询</li>
+          <li>组合查询（订单号 + PNR + 航司 + 参数）</li>
+          <li>返回完整订单详情</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== C. POST-TICKETING ===== -->
+<div class="section" id="postticket">
+  <div class="section-title">C. 出票后附加服务流程</div>
+  <div class="section-line"></div>
+  <div class="section-desc">适用前提：订单已出票，出发日期在未来。目前仅支持 BAGGAGE（行李）类别。</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">C1. 附加服务搜索</div>
+        <div class="card-api">POST /postBookingAncillarySearch.do</div>
+        <div class="card-dep">前置：订单已出票</div>
+        <ul>
+          <li>参数：原始订单号 + 类别(BAGGAGE)</li>
+          <li>返回：sessionId + 可用行李产品列表</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">C2. 附加服务下单</div>
+        <div class="card-api">POST /postBookingAncillaryOrder.do</div>
+        <div class="card-dep">前置：需先调用附加服务搜索</div>
+        <ul>
+          <li>参数：sessionId + 类别 + 订单号 + 乘客选择</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="background:var(--white);border-radius:10px;border:1px solid var(--border);padding:16px;margin-bottom:16px;">
+    <div style="font-size:14px;font-weight:600;color:var(--primary);margin-bottom:8px;">业务约束</div>
+    <ul style="columns:2;column-gap:24px;">
+      <li style="font-size:12px;line-height:1.8;">同一类型行李每个航段只能加购一次</li>
+      <li style="font-size:12px;line-height:1.8;">婴儿不可购买行李</li>
+      <li style="font-size:12px;line-height:1.8;">联程航段必须使用相同产品码</li>
+      <li style="font-size:12px;line-height:1.8;">已出票/出票中不可重复购买</li>
+      <li style="font-size:12px;line-height:1.8;">往返可不同产品码</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== D. ANCILLARY SERVICES ===== -->
+<div class="section" id="ancillary">
+  <div class="section-title">D. 可选的横向附加服务</div>
+  <div class="section-line"></div>
+  <div class="section-desc">可在多个流程（标准预订 / 出票履约）中调用的可选服务，可并行执行。行李接口与选座接口位置灵活，可根据业务需要在验价后或创建订单前后调用。</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">D1. 行李接口</div>
+        <div class="card-api">POST /getLuggage.do</div>
+        <div class="card-dep">前置：验价 或 出票履约接口；位置灵活</div>
+        <ul>
+          <li>参数：offerId（sessionId / offerId）</li>
+          <li>返回各航段行李产品列表</li>
+          <li>含重量/件数/价格/航司原始价</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">D2. 选座接口</div>
+        <div class="card-api">POST /seatAvailability.do</div>
+        <div class="card-dep">前置：验价 或 出票履约接口</div>
+        <ul>
+          <li>模式：独立模式 / 非独立模式</li>
+          <li>参数：offerId + carrier + 航段信息</li>
+          <li>返回座位图及可用座位</li>
+          <li>在 Order 中使用 productCode 添加</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== E. WEBHOOK ===== -->
+<div class="section" id="webhook">
+  <div class="section-title">E. 通知与事件管理</div>
+  <div class="section-line"></div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">E1. 注册 Webhook</div>
+        <div class="card-api">POST /updateWebhookURL.do</div>
+        <ul>
+          <li>参数：cid + url（回调地址）</li>
+          <li>注册后接收航变等异步通知</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">E2. 事件列表查询</div>
+        <div class="card-api">POST /event/getPageList.do</div>
+        <ul>
+          <li>筛选：事件ID / 订单号 / PNR / 时间范围</li>
+          <li>分页查询</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="event-list">
+    <div class="event-item" style="border-left-color:var(--secondary);">
+      <div class="code">email.schedulechange</div>
+      <div class="desc">航变邮件通知 — 通过邮件发送的航班变更通知</div>
+    </div>
+    <div class="event-item" style="border-left-color:var(--accent);">
+      <div class="code">abnormal.cancelled</div>
+      <div class="desc">异常取消 — 非正常流程的订单取消事件</div>
+    </div>
+    <div class="event-item" style="border-left-color:var(--primary);">
+      <div class="code">order.schedulechange</div>
+      <div class="desc">航变 API 通知 — 通过 API 发送的航班变更通知</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== F. POST-TICKET OPERATIONS ===== -->
+<div class="section" id="postticketop">
+  <div class="section-title">F. 出票后操作流程</div>
+  <div class="section-line"></div>
+  <div class="section-desc">出票后的退票处理、订单维护及 PNR 认领与提取操作。</div>
+
+  <div class="sub-section-title">
+    <span>F1. 退票处理</span>
+    <span class="badge badge-orange">3 API</span>
+  </div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">退票询价</div>
+        <div class="card-api">POST /refundQuotation.do</div>
+        <div class="card-desc">查询退票费用及可退金额，获取退票报价</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">退票提交</div>
+        <div class="card-api">POST /refund.do</div>
+        <div class="card-desc">提交退票申请，处理订单退票</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--accent)"></div>
+      <div class="card-body">
+        <div class="card-title">退票订单查询</div>
+        <div class="card-api">POST /queryRefundOrders.do</div>
+        <div class="card-desc">查询退票处理进度及退票订单详情</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-section-title">
+    <span>F2. 订单维护</span>
+    <span class="badge badge-blue">3 API</span>
+  </div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">订单重新生成</div>
+        <div class="card-api">POST /regenerateOrder.do</div>
+        <div class="card-desc">重新生成订单，用于异常订单恢复</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">停止出票</div>
+        <div class="card-api">POST /stopTicket.do</div>
+        <div class="card-desc">停止正在进行的出票流程</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--primary)"></div>
+      <div class="card-body">
+        <div class="card-title">订单列表查询</div>
+        <div class="card-api">POST /orderList.do</div>
+        <div class="card-desc">按条件查询订单列表，支持分页与筛选</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sub-section-title">
+    <span>F3. PNR 认领与提取</span>
+    <span class="badge badge-green">2 API</span>
+  </div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">PNR 认领</div>
+        <div class="card-api">POST /pnr/claim.do</div>
+        <div class="card-desc">认领已存在的 PNR 到 Atlas 系统中</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--success)"></div>
+      <div class="card-body">
+        <div class="card-title">PNR 提取</div>
+        <div class="card-api">POST /extractPnr.do</div>
+        <div class="card-desc">从 GDS 提取 PNR 详情信息</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== G. TOOLS ===== -->
+<div class="section" id="tools">
+  <div class="section-title">G. 工具类 API</div>
+  <div class="section-line"></div>
+  <div class="section-desc">辅助运营与系统集成的工具类接口，涵盖余额查询、邮件查询、航线数据导出及令牌生成。</div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">G1. 余额查询</div>
+        <div class="card-api">POST /balance.do</div>
+        <div class="card-desc">查询账户当前余额</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">G2. 邮件查询</div>
+        <div class="card-api">POST /queryMail.do</div>
+        <div class="card-desc">查询与订单关联的邮件记录</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">G3. 航线导出</div>
+        <div class="card-api">POST /route/export.do</div>
+        <div class="card-desc">导出航线数据用于分析或运营</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-top" style="background:var(--secondary)"></div>
+      <div class="card-body">
+        <div class="card-title">G4. ATRIP 令牌</div>
+        <div class="card-api">POST /getAtripToken.do</div>
+        <div class="card-desc">生成 ATRIP 访问令牌</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CHAINS ===== -->
+<div class="section" id="chains">
+  <div class="section-title">完整 API 调用链路</div>
+  <div class="section-line"></div>
+  <div class="section-desc">Atlas API 提供的 7 条完整调用链路</div>
+
+  <div class="chain">
+    <span class="chain-label">链路 1：标准预订</span>
+    <span class="chain-steps">
+      <span style="color:var(--primary);font-weight:600;">票价查询</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--secondary);">验价</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--primary);font-weight:600;">预定</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--gray);">[行李接口（位置灵活）]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--primary);font-weight:600;">创建订单</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--accent);">[选座接口]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--success);">[行李接口]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--accent);font-weight:600;">[订单确认]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--success);">支付</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--gray);">订单查询</span>
+    </span>
+  </div>
+  <div class="chain">
+    <span class="chain-label">链路 2：出票履约</span>
+    <span class="chain-steps">
+      <span style="color:var(--secondary);font-weight:600;">出票履约接口</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--secondary);">验价</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--success);">[行李接口]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--accent);">[选座接口]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--primary);font-weight:600;">创建订单</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--accent);font-weight:600;">[订单确认]</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--success);">支付</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--gray);">订单查询</span>
+    </span>
+  </div>
+  <div class="chain">
+    <span class="chain-label">链路 3：出票后加购</span>
+    <span class="chain-steps">
+      <span style="color:var(--gray);">(已出票订单)</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--primary);font-weight:600;">附加服务搜索</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--secondary);font-weight:600;">附加服务下单</span>
+    </span>
+  </div>
+  <div class="chain">
+    <span class="chain-label">链路 4：异步事件</span>
+    <span class="chain-steps">
+      <span style="color:var(--gray);">(已出票订单)</span>
+      <span class="chain-arrow">←</span>
+      <span style="color:var(--success);">Webhook</span>
+      <span class="chain-arrow">←</span>
+      <span style="color:var(--accent);">(航变/取消事件)</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--secondary);">事件列表查询</span>
+    </span>
+  </div>
+  <div class="chain">
+    <span class="chain-label">链路 5：退票处理</span>
+    <span class="chain-steps">
+      <span style="color:var(--gray);">(已出票订单)</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--accent);font-weight:600;">退票询价</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--accent);font-weight:600;">退票提交</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--gray);">退票订单查询</span>
+    </span>
+  </div>
+  <div class="chain">
+    <span class="chain-label">链路 6：订单维护与 PNR</span>
+    <span class="chain-steps">
+      <span style="color:var(--gray);">(已出票订单)</span>
+      <span class="chain-arrow">→</span>
+      <span style="color:var(--primary);font-weight:600;">订单重新生成</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--primary);font-weight:600;">停止出票</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--gray);">订单列表查询</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--success);">PNR 认领</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--success);">PNR 提取</span>
+    </span>
+  </div>
+  <div class="chain">
+    <span class="chain-label">链路 7：运营工具</span>
+    <span class="chain-steps">
+      <span style="color:var(--secondary);font-weight:600;">余额查询</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--secondary);">邮件查询</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--secondary);">航线导出</span>
+      <span class="chain-arrow">/</span>
+      <span style="color:var(--secondary);">ATRIP 令牌</span>
+    </span>
+  </div>
+</div>
+
+<!-- ===== DEPENDENCY TABLE ===== -->
+<div class="section" id="deps">
+  <div class="section-title">API 前置依赖关系总表</div>
+  <div class="section-line"></div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>API</th><th>接口</th><th>前置依赖</th><th>角色</th></tr></thead>
+      <tbody>
+        <tr><td><b>票价查询（Search）</b></td><td style="font-family:monospace;color:var(--secondary)">/search.do</td><td>无</td><td><span class="tag tag-entry">入口</span></td></tr>
+        <tr><td><b>出票履约接口（GetOffer）</b></td><td style="font-family:monospace;color:var(--secondary)">/getOffers.do</td><td>无</td><td><span class="tag tag-entry">入口</span></td></tr>
+        <tr><td><b>验价（Verify）</b></td><td style="font-family:monospace;color:var(--secondary)">/verify.do</td><td>票价查询 / 出票履约接口</td><td><span class="tag tag-required">必选</span></td></tr>
+        <tr><td><b>预定（Order）</b></td><td style="font-family:monospace;color:var(--secondary)">/order.do</td><td>验价</td><td><span class="tag tag-required">必选</span></td></tr>
+        <tr><td><b>行李接口（GetLuggage）</b></td><td style="font-family:monospace;color:var(--secondary)">/getLuggage.do</td><td>验价 / 出票履约接口；位置灵活</td><td><span class="tag tag-optional">可选</span></td></tr>
+        <tr><td><b>创建订单（Order）</b></td><td style="font-family:monospace;color:var(--secondary)">/order.do</td><td>验价 / 出票履约接口</td><td><span class="tag tag-required">必选</span></td></tr>
+        <tr><td><b>选座接口（SeatAvail.）</b></td><td style="font-family:monospace;color:var(--secondary)">/seatAvailability.do</td><td>验价 / 出票履约接口</td><td><span class="tag tag-optional">可选</span></td></tr>
+        <tr><td><b>订单确认（OrderCommit）</b></td><td style="font-family:monospace;color:var(--secondary)">/orderCommit.do</td><td>创建订单</td><td><span class="tag tag-fr">FR必选</span></td></tr>
+        <tr><td><b>支付（Pay）</b></td><td style="font-family:monospace;color:var(--secondary)">/pay.do</td><td>创建订单</td><td><span class="tag tag-required">必选</span></td></tr>
+        <tr><td><b>订单查询（QueryDetails）</b></td><td style="font-family:monospace;color:var(--secondary)">/queryOrderDetails.do</td><td>创建订单</td><td><span class="tag tag-query">查询</span></td></tr>
+        <tr><td><b>附加服务搜索（SearchAncillary）</b></td><td style="font-family:monospace;color:var(--secondary)">/postBookingAncillarySearch.do</td><td>已出票</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>附加服务下单（OrderAncillary）</b></td><td style="font-family:monospace;color:var(--secondary)">/postBookingAncillaryOrder.do</td><td>附加服务搜索</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>注册 Webhook</b></td><td style="font-family:monospace;color:var(--secondary)">/updateWebhookURL.do</td><td>无</td><td><span class="tag tag-config">配置</span></td></tr>
+        <tr><td><b>事件列表查询（IncidentList）</b></td><td style="font-family:monospace;color:var(--secondary)">/event/getPageList.do</td><td>无</td><td><span class="tag tag-query">查询</span></td></tr>
+        <tr><td><b>退票询价（RefundQuotation）</b></td><td style="font-family:monospace;color:var(--secondary)">/refundQuotation.do</td><td>已出票</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>退票提交（Refund）</b></td><td style="font-family:monospace;color:var(--secondary)">/refund.do</td><td>退票询价</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>退票订单查询（QueryRefundOrders）</b></td><td style="font-family:monospace;color:var(--secondary)">/queryRefundOrders.do</td><td>已出票</td><td><span class="tag tag-query">查询</span></td></tr>
+        <tr><td><b>订单重新生成（RegenerateOrder）</b></td><td style="font-family:monospace;color:var(--secondary)">/regenerateOrder.do</td><td>已出票</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>停止出票（StopTicket）</b></td><td style="font-family:monospace;color:var(--secondary)">/stopTicket.do</td><td>创建订单</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>订单列表查询（OrderList）</b></td><td style="font-family:monospace;color:var(--secondary)">/orderList.do</td><td>无</td><td><span class="tag tag-query">查询</span></td></tr>
+        <tr><td><b>PNR 认领（PnrClaim）</b></td><td style="font-family:monospace;color:var(--secondary)">/pnr/claim.do</td><td>无</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>PNR 提取（ExtractPnr）</b></td><td style="font-family:monospace;color:var(--secondary)">/extractPnr.do</td><td>PNR 认领</td><td><span class="tag tag-post">出票后</span></td></tr>
+        <tr><td><b>余额查询（Balance）</b></td><td style="font-family:monospace;color:var(--secondary)">/balance.do</td><td>无</td><td><span class="tag tag-tool">工具</span></td></tr>
+        <tr><td><b>邮件查询（QueryMail）</b></td><td style="font-family:monospace;color:var(--secondary)">/queryMail.do</td><td>无</td><td><span class="tag tag-tool">工具</span></td></tr>
+        <tr><td><b>航线导出（RouteExport）</b></td><td style="font-family:monospace;color:var(--secondary)">/route/export.do</td><td>无</td><td><span class="tag tag-tool">工具</span></td></tr>
+        <tr><td><b>ATRIP 令牌（GetAtripToken）</b></td><td style="font-family:monospace;color:var(--secondary)">/getAtripToken.do</td><td>无</td><td><span class="tag tag-tool">工具</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="page-footer">
+  Atlas API 产品功能树 · 基于 aTripTech Atlas API 文档整理 · 2026-05-29
+</div>
+
+<script>
+  // Nav highlight on scroll
+  document.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.section[id]');
+    const navItems = document.querySelectorAll('.nav-item');
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 100) current = s.id;
+    });
+    navItems.forEach(n => {
+      n.classList.toggle('active', n.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+</body>
+</html>
