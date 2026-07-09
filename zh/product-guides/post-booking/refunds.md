@@ -19,5 +19,5 @@ description: Atlas API 退款流程和规则。
 
 ### 相关页面
 
-* [作废](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gbZcGq0q7m8MZqQ7q8Zq)
-* [预订后概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
+* [作废](void.md)
+* [预订后概述](./)

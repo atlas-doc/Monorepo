@@ -18,6 +18,6 @@ description: Atlas 行李附加服务查询和管理。
 
 ### 相关页面
 
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [行李和座位 productCode 新鲜度](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
+* [可选附加服务](./)
+* [座位](seats-and-baggage/)
+* [行李和座位 productCode 新鲜度](baggage-and-seat-productcode-freshness.md)

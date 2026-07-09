@@ -19,5 +19,5 @@ description: Atlas API 订单维护操作。
 
 ### 相关页面
 
-* [PNR 认领与提取](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/m8MZqQ7q8Zq7m8MZqQ7)
-* [预订后概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
+* [PNR 认领与提取](pnr-claim-and-extraction.md)
+* [预订后概述](./)

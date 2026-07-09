@@ -18,5 +18,5 @@ PNR 认领允许您将现有的航司 PNR 关联到 Atlas 系统。PNR 提取允
 
 ### 相关页面
 
-* [订单维护](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/q7Zq8Zq7m8MZqQ7q8Zq)
-* [预订后概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
+* [订单维护](order-maintenance.md)
+* [预订后概述](./)

@@ -2,7 +2,7 @@
 description: 居民价格特殊集成指南。
 ---
 
-# 居民价格集成
+# 常驻价格集成
 
 使用此页面集成居民价格功能。
 
@@ -18,5 +18,5 @@ description: 居民价格特殊集成指南。
 
 ### 相关页面
 
-* [FR 集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FR)
-* [特殊集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Zq8Zq7m8MZqQ7q8Zq)
+* [FR 集成](fr-integration.md)
+* [特殊集成](./)

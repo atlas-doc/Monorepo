@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 预订流程标识符，包括 routingIdentifier、sessionId、OfferId、orderNo 和 retryAfter。
+description: Atlas API 预订流程标识符，包括 routingIdentifier、sessionId、OfferId、orderNo 和 retryAfter。
 ---
 
 # 标识符
@@ -244,12 +243,12 @@ description: >-
 
 ### 相关页面
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [履约 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [获取报价 vs 履约 API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [获取报价价格](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zE0QlLrSj0ynAcagJTD3)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [预订概述](./)
+* [搜索](../booking-step-guides/search.md)
+* [获取报价](../booking-step-guides/get-offer.md)
+* [履约 API](../booking-step-guides/get-offer-price.md)
+* [获取报价 vs 履约 API](booking-decisions/get-offer-vs-get-offer-price.md)
+* [验证](../booking-step-guides/verify.md)
+* [创建订单](../booking-step-guides/create-order.md)
+* [获取报价价格](../../../api-reference/booking-apis/get-offer-price.md)
+* [错误代码](../../../support-and-reference/troubleshooting-and-support/errors-handing/)

@@ -19,5 +19,5 @@ description: Atlas 航班数据源集成。
 
 ### 相关页面
 
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [多渠道通知](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8Zq7m8MZqQ7q8Zq7m8M)
+* [Webhook 概述](webhook-overview/)
+* [多渠道通知](multi-channel-notifications.md)

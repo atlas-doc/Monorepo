@@ -2,7 +2,7 @@
 description: 行李和座位 productCode 新鲜度规则。
 ---
 
-# 行李和座位 productCode 新鲜度
+# 行李与座位产品代码时效性
 
 使用此页面了解附加服务 productCode 的新鲜度规则。
 
@@ -18,6 +18,6 @@ description: 行李和座位 productCode 新鲜度规则。
 
 ### 相关页面
 
-* [行李](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
+* [行李](baggage.md)
+* [座位](seats-and-baggage/)
+* [可选附加服务](./)

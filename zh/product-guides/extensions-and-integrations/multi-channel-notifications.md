@@ -19,5 +19,5 @@ description: Atlas 多渠道通知配置。
 
 ### 相关页面
 
-* [Webhook 概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [航班数据源](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lwbbbCSVAlYcqOhIybiX)
+* [Webhook 概述](webhook-overview/)
+* [航班数据源](flight-data-feed.md)

@@ -134,9 +134,9 @@ description: 选择在流程中何处重新开始。
 
 ### 相关页面
 
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [搜索 vs 报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [行李和座位 productCode 新鲜度](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
+* [标识符](../identifiers.md)
+* [搜索 vs 报价](search-vs-offer.md)
+* [202 vs 301 vs 308](../../../../support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md)
+* [验证](../../booking-step-guides/verify.md)
+* [获取报价](../../booking-step-guides/get-offer.md)
+* [行李和座位 productCode 新鲜度](../../optional-ancillaries/baggage-and-seat-productcode-freshness.md)

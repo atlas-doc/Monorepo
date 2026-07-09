@@ -2,13 +2,13 @@
 description: 座位和行李附加服务指南。
 ---
 
-# 座位和行李
+# 座位
 
 使用此部分了解座位和行李附加服务。
 
 ### 可用指南
 
-* [座位回退模式](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/seat-fallback-modes)
+* [座位回退模式](seat-fallback-modes.md)
 
 ### 关键规则
 

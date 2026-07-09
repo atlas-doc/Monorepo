@@ -24,5 +24,5 @@ description: 座位履约回退模式。
 
 ### 相关页面
 
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [可选附加服务](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
+* [创建订单](../../booking-step-guides/create-order.md)
+* [可选附加服务](../)

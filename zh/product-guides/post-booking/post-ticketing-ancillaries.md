@@ -18,5 +18,5 @@ description: Atlas API 出票后附加服务管理。
 
 ### 相关页面
 
-* [退款](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rr5MhxJjJ2eS0rOqk7X4)
-* [预订后概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
+* [退款](refunds.md)
+* [预订后概述](./)

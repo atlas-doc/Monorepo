@@ -26,41 +26,41 @@ description: 按航空公司划分的请求字段（如 FR 订单区域设置）
 
 区域设置用于：
 
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [FR 集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/HyzW7wts21GuPr6cO9gM)
+* [创建订单](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [FR 集成](../../../product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
 
 ### FR 支持的区域设置值
 
 **FR：**
 
-| 值      | 语言         | 国家/地区         | 区域       |
-| ------- | ------------ | ---------------- | --------- |
-| ie/en   | 英语         | 爱尔兰           | en-IE     |
-| gb/en   | 英语         | 英国             | en-GB     |
-| at/de   | 德语         | 奥地利           | de-AT     |
-| be/nl   | 荷兰语       | 比利时           | nl-BE     |
-| be/fr   | 法语         | 比利时           | fr-BE     |
-| bg/bg   | 保加利亚语   | 保加利亚         | bg-BG     |
-| cn/zh   | 中文         | 中国             | zh-CN     |
-| cz/cs   | 捷克语       | 捷克共和国       | cs-CZ     |
-| dk/da   | 丹麦语       | 丹麦             | da-DK     |
-| fr/fr   | 法语         | 法国             | fr-FR     |
-| de/de   | 德语         | 德国             | de-DE     |
-| gr/el   | 希腊语       | 希腊             | el-GR     |
-| hu/hu   | 匈牙利语     | 匈牙利           | hu-HU     |
-| it/it   | 意大利语     | 意大利           | it-IT     |
-| lv/lv   | 拉脱维亚语   | 拉脱维亚         | lv-LV     |
-| lt/lt   | 立陶宛语     | 立陶宛           | lt-LT     |
-| lu/fr   | 法语         | 卢森堡           | fr-LU     |
-| nl/nl   | 荷兰语       | 荷兰             | nl-NL     |
-| no/no   | 挪威语       | 挪威             | nb-NO     |
-| pl/pl   | 波兰语       | 波兰             | pl-PL     |
-| pt/pt   | 葡萄牙语     | 葡萄牙           | pt-PT     |
-| ro/ro   | 罗马尼亚语   | 罗马尼亚         | ro-RO     |
-| es/ca   | 加泰罗尼亚语 | 西班牙           | ca-ES     |
-| es/es   | 西班牙语     | 西班牙           | es-ES     |
-| se/sv   | 瑞典语       | 瑞典             | sv-SE     |
-| us/en   | 英语         | 美国             | en-US     |
+| 值     | 语言     | 国家/地区 | 区域    |
+| ----- | ------ | ----- | ----- |
+| ie/en | 英语     | 爱尔兰   | en-IE |
+| gb/en | 英语     | 英国    | en-GB |
+| at/de | 德语     | 奥地利   | de-AT |
+| be/nl | 荷兰语    | 比利时   | nl-BE |
+| be/fr | 法语     | 比利时   | fr-BE |
+| bg/bg | 保加利亚语  | 保加利亚  | bg-BG |
+| cn/zh | 中文     | 中国    | zh-CN |
+| cz/cs | 捷克语    | 捷克共和国 | cs-CZ |
+| dk/da | 丹麦语    | 丹麦    | da-DK |
+| fr/fr | 法语     | 法国    | fr-FR |
+| de/de | 德语     | 德国    | de-DE |
+| gr/el | 希腊语    | 希腊    | el-GR |
+| hu/hu | 匈牙利语   | 匈牙利   | hu-HU |
+| it/it | 意大利语   | 意大利   | it-IT |
+| lv/lv | 拉脱维亚语  | 拉脱维亚  | lv-LV |
+| lt/lt | 立陶宛语   | 立陶宛   | lt-LT |
+| lu/fr | 法语     | 卢森堡   | fr-LU |
+| nl/nl | 荷兰语    | 荷兰    | nl-NL |
+| no/no | 挪威语    | 挪威    | nb-NO |
+| pl/pl | 波兰语    | 波兰    | pl-PL |
+| pt/pt | 葡萄牙语   | 葡萄牙   | pt-PT |
+| ro/ro | 罗马尼亚语  | 罗马尼亚  | ro-RO |
+| es/ca | 加泰罗尼亚语 | 西班牙   | ca-ES |
+| es/es | 西班牙语   | 西班牙   | es-ES |
+| se/sv | 瑞典语    | 瑞典    | sv-SE |
+| us/en | 英语     | 美国    | en-US |
 
 ### 提示
 
@@ -70,8 +70,8 @@ description: 按航空公司划分的请求字段（如 FR 订单区域设置）
 
 ### 相关页面
 
-* [参考数据](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/txmj4lKYJtvehocjKHS3)
-* [集成参考](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JKGPURw0UiwgbJIUMwZq)
-* [FR 集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/HyzW7wts21GuPr6cO9gM)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [特殊集成](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rJmf4QqhDHnkZLTdu1Io)
+* [参考数据](./)
+* [集成参考](../)
+* [FR 集成](../../../product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
+* [创建订单](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [特殊集成](../../../product-guides/extensions-and-integrations/special-integrations/)

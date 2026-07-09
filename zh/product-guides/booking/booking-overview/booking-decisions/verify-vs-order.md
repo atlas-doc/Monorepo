@@ -2,7 +2,7 @@
 description: 选择正确的预订步骤。
 ---
 
-# 验证 vs 订单
+# 验证 vs 下单
 
 {% include "../../../../.gitbook/includes/eva-help-hint.md" %}
 
@@ -158,9 +158,9 @@ description: 选择正确的预订步骤。
 
 ### 相关页面
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [标识符](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy)
-* [验证、订单和出票错误](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
+* [预订概述](../)
+* [标识符](../identifiers.md)
+* [验证](../../booking-step-guides/verify.md)
+* [创建订单](../../booking-step-guides/create-order.md)
+* [202 vs 301 vs 308](../../../../support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md)
+* [验证、订单和出票错误](../../../../support-and-reference/troubleshooting-and-support/errors-handing/verify-order-and-ticketing-errors.md)
