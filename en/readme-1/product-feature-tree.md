@@ -14,12 +14,24 @@ Use this page to understand the full Atlas API landscape: three search entry poi
 
 Atlas API is organized around three search entry points that feed into a common booking pipeline with five core stages.
 
-| Metric | Count | Description |
-|--------|-------|-------------|
-| Search entry points | 3 | Search, GetOffer, SmartSearch |
-| Core stages | 5 | Search → Verify → Book → Pay → Post-ticketing |
-| API endpoints | 26 | Full capability coverage |
-| Integration paths | 8 | Different flow combinations |
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; padding: 20px; text-align: center;">
+    <div style="font-size: 28px; font-weight: 800; color: #1E40AF; line-height: 1.1;">3</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Search entry points</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; padding: 20px; text-align: center;">
+    <div style="font-size: 28px; font-weight: 800; color: #1E40AF; line-height: 1.1;">5</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Core stages</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; padding: 20px; text-align: center;">
+    <div style="font-size: 28px; font-weight: 800; color: #1E40AF; line-height: 1.1;">26</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">API endpoints</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; padding: 20px; text-align: center;">
+    <div style="font-size: 28px; font-weight: 800; color: #1E40AF; line-height: 1.1;">8</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Integration paths</div>
+  </div>
+</div>
 
 ---
 
@@ -27,11 +39,32 @@ Atlas API is organized around three search entry points that feed into a common 
 
 Choose the right search endpoint for your use case:
 
-| Entry point | Endpoint | Best for |
-|------------|----------|----------|
-| **Standard Search** | `POST /search.do` | Most common use case: one-way/return journeys, airline filtering, flight number targeting, multiple fare classes |
-| **Direct Offer** | `POST /getOffers.do` | Skip search when you already know the exact flight and class you want to book; improves L2B conversion |
-| **Smart Search** | `POST /smartSearch.do` | TMC-only; covers routes and time slots not available via standard Search |
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #1E40AF;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Standard Search</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /search.do</div>
+      <div style="font-size: 13px; color: #0F172A; line-height: 1.5;">Most common use case: one-way/return journeys, airline filtering, flight number targeting, multiple fare classes</div>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #3B82F6;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Direct Offer</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /getOffers.do</div>
+      <div style="font-size: 13px; color: #0F172A; line-height: 1.5;">Skip search when you already know the exact flight and class you want to book; improves L2B conversion</div>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #F97316;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Smart Search</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /smartSearch.do</div>
+      <div style="font-size: 13px; color: #0F172A; line-height: 1.5;">TMC-only; covers routes and time slots not available via standard Search</div>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -148,15 +181,119 @@ After successful payment, retrieve order details:
 
 ---
 
+## Booking Flow API Cards
+
+<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #1E40AF;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Search</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /search.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Entry point (no dependency)</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">One-way / return trips</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Passenger counts (ADT/CHD/INF)</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Origin/destination IATA codes</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Departure/return dates</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Airline/flight number filters</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Multiple fare classes, currencies</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #3B82F6;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Verify</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /verify.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: search.do routingIdentifier</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Real-time price validation</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Returns sessionId for booking</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Returns bookingRequirement</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Fare rules/cancellation policy</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Baggage allowance details</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #059669;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Create Order</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /createOrder.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: verify.do sessionId</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Passenger info (names, DOB, docs)</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Contact info (email, phone)</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Internal order reference</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Insurance + ancillary selection</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Returns orderNumber</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #059669;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Pay</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /pay.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: createOrder.do orderNumber</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Deposit (prepaid balance)</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">VCC (virtual credit card)</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">MoR (Merchant of Record)</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Credit cards: Visa/MC/AE/Discover</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #059669;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Retrieve Order</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /retrieveOrder.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: pay.do success</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Booking & ticketing status</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Ticket numbers</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">PNR information</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Passenger details</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Ancillary service status</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+---
+
 ## Direct Offer Flow (GetOffer)
 
 Use the GetOffer flow when you already know the exact flight and fare class. This skips the search step and improves conversion.
 
-| Step | Endpoint | Input | Output |
-|------|----------|-------|--------|
-| 1. Get Offer | `POST /getOffers.do` | Airline, flight number, class, date, route | `offerId` + `sessionId` |
-| 2. Get Offer Price | `POST /getOfferPrice.do` | `offerId` | Real-time exact pricing |
-| 3. Create Order | `POST /createOrder.do` | `sessionId` + passenger info | `orderNumber` |
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #3B82F6;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Get Offer</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /getOffers.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">No dependency (2nd entry point)</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Airline, flight number, class</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Date, origin/destination</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Returns offerId + sessionId</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #3B82F6;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Get Offer Price</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /getOfferPrice.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: getOffers.do offerId</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Real-time exact pricing</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">For display and comparison</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 {% hint style="success" %}
 **Pro tip:** Use GetOffer when rebooking or when users select from cached search results. This reduces API calls and speeds up the booking process.
@@ -168,10 +305,34 @@ Use the GetOffer flow when you already know the exact flight and fare class. Thi
 
 Smart Search is for TMC partners needing extended coverage.
 
-| Step | Endpoint | Requirements |
-|------|----------|-------------|
-| 1. Smart Search | `POST /smartSearch.do` | TMC account permissions |
-| 2. Price Compare Search | `POST /priceCompareSearch.do` | Optional — for multi-flight comparison |
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #F97316;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Smart Search</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /smartSearch.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: TMC account permissions</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Extended route coverage</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Extended time slot coverage</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Returns routingIdentifier</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #F97316;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Price Compare Search</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /priceCompareSearch.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Optional - comparison only</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Multi-flight comparison</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Flexible date comparison</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Price calendar view</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 {% hint style="info" %}
 SmartSearch covers routes and time slots not available via the standard Search endpoint. Contact your account manager to enable TMC-specific features.
@@ -183,11 +344,47 @@ SmartSearch covers routes and time slots not available via the standard Search e
 
 After ticketing, these operations are available:
 
-| Operation | Endpoint | Prerequisite | Use case |
-|-----------|----------|-------------|----------|
-| **Refund** | `POST /refund.do` | Ticketed order | Partial or full refunds; voluntary or involuntary |
-| **Regenerate Order** | `POST /regenerateOrder.do` | Ticketed order | Rebooking scenarios; preserves original order information |
-| **Stop Ticketing** | `POST /stopTicketIssuance.do` | Paid, not yet ticketed | Emergency stop before ticketing completes |
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #DC2626;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Refund</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /refund.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: ticketed order</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Partial or full refunds</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Voluntary or involuntary</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Refund amount calculation</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Status tracking</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #DC2626;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Regenerate Order</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /regenerateOrder.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: ticketed order</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Order regeneration</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Rebook scenario support</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Preserves original order info</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #DC2626;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Stop Ticketing</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /stopTicketIssuance.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Requires: paid, not ticketed</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Emergency stop before ticketing</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Post-payment rapid response</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -195,11 +392,45 @@ After ticketing, these operations are available:
 
 Additional services that can be added pre or post booking:
 
-| Service | Endpoint | Timing |
-|---------|----------|--------|
-| Luggage | `POST /getLuggage.do` | After verify, before createOrder |
-| Seat selection | `POST /seatAvailability.do` | After verify, before createOrder |
-| Post-ticketing ancillaries | `POST /bookAncillary.do` | After ticketing |
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #059669;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Luggage</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /getLuggage.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Timing: After verify, before createOrder</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Baggage tier options</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Per-category pricing</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #059669;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Seat Selection</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /seatAvailability.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Timing: After verify, before createOrder</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Interactive seat maps</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Category-based pricing</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #059669;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Post-ticketing Ancillaries</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /bookAncillary.do</div>
+      <div style="font-size: 11px; color: #F97316; font-style: italic; margin-bottom: 6px;">Timing: After ticketing</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Add luggage post-ticketing</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Select seats post-ticketing</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Separate ancillary payment</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
@@ -209,21 +440,34 @@ Atlas can push event notifications to your system via webhooks.
 
 ### Event Types
 
-| Event Code | Description |
-|------------|-------------|
-| `TICKETING_COMPLETE` | Ticketing completed successfully |
-| `VOID_NOTIFICATION` | Order voided |
-| `SCHEDULE_CHANGE` | Flight schedule changed |
-| `AIRLINE_STATUS_UPDATE` | Airline status update |
-| `EMAIL_NOTIFICATION` | Email notification sent |
-| `INCIDENT_NOTIFICATION` | Incident event |
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin: 20px 0;">
+  <div style="background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; padding: 14px; border-left: 3px solid #3B82F6;">
+    <div style="font-family: monospace; font-size: 12px; font-weight: 600; color: #3B82F6;">TICKETING_COMPLETE</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Ticketing completed successfully</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; padding: 14px; border-left: 3px solid #DC2626;">
+    <div style="font-family: monospace; font-size: 12px; font-weight: 600; color: #DC2626;">VOID_NOTIFICATION</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Order voided</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; padding: 14px; border-left: 3px solid #F97316;">
+    <div style="font-family: monospace; font-size: 12px; font-weight: 600; color: #F97316;">SCHEDULE_CHANGE</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Flight schedule changed</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; padding: 14px; border-left: 3px solid #059669;">
+    <div style="font-family: monospace; font-size: 12px; font-weight: 600; color: #059669;">AIRLINE_STATUS_UPDATE</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Airline status update</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; padding: 14px; border-left: 3px solid #8B5CF6;">
+    <div style="font-family: monospace; font-size: 12px; font-weight: 600; color: #8B5CF6;">EMAIL_NOTIFICATION</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Email notification sent</div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 8px; border: 1px solid #CBD5E1; padding: 14px; border-left: 3px solid #0891B2;">
+    <div style="font-family: monospace; font-size: 12px; font-weight: 600; color: #0891B2;">INCIDENT_NOTIFICATION</div>
+    <div style="font-size: 12px; color: #64748B; margin-top: 4px;">Incident event</div>
+  </div>
+</div>
 
 ### Registration & Query
-
-| Operation | Endpoint | Purpose |
-|-----------|----------|---------|
-| Register webhook | `POST /webhook/register.do` | Register callback URL and select event types; returns signing key for validation |
-| Query incidents | `POST /incident/query.do` | Look up historical events by time range |
 
 ```mermaid
 sequenceDiagram
@@ -247,22 +491,93 @@ sequenceDiagram
 
 ## Order Management & PNR
 
-| Operation | Endpoint | Capabilities |
-|-----------|----------|-------------|
-| **Order List** | `POST /orderList.do` | Filter by creation date range or status; pagination support |
-| **Extract PNR** | `POST /extractPnr.do` | Retrieve raw PNR and e-ticket information |
-| **PNR Claim** | `POST /pnrClaim.do` | Claim PNR ownership and bind to order |
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #0891B2;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Order List</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /orderList.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Filter by date range</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Filter by status</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Pagination support</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #0891B2;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Extract PNR</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /extractPnr.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Raw PNR content</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">E-ticket information</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #0891B2;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">PNR Claim</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /pnrClaim.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Claim PNR ownership</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Bind to order reference</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
 ## Utility Endpoints
 
-| Tool | Endpoint | Capabilities |
-|------|----------|-------------|
-| **Balance** | `POST /balance.do` | Check account balance with multi-currency support |
-| **Flight Data Feed** | `POST /flightDataFeed.do` | Full route data exports and incremental sync |
-| **Email Query** | `POST /emailQuery.do` | Email content lookup and attachment downloads |
-| **aTrip Token** | `POST /atripToken.do` | Obtain and refresh access tokens |
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin: 24px 0;">
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #6366F1;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Balance</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /balance.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Account balance check</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Multi-currency support</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #6366F1;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Flight Data Feed</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /flightDataFeed.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Full route data export</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Incremental sync</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #6366F1;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">Email Query</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /emailQuery.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Email content lookup</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Attachment downloads</li>
+      </ul>
+    </div>
+  </div>
+  <div style="background: #FFFFFF; border-radius: 10px; border: 1px solid #CBD5E1; overflow: hidden;">
+    <div style="height: 4px; background: #6366F1;"></div>
+    <div style="padding: 16px;">
+      <div style="font-size: 15px; font-weight: 700; color: #1E40AF; margin-bottom: 4px;">aTrip Token</div>
+      <div style="font-family: monospace; font-size: 11px; color: #3B82F6; margin-bottom: 8px;">POST /atripToken.do</div>
+      <ul style="padding-left: 16px; margin-top: 6px;">
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Obtain access tokens</li>
+        <li style="font-size: 12px; color: #0F172A; line-height: 1.6;">Token refresh mechanism</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ---
 
