@@ -24,9 +24,9 @@ Start here when you need to:
 
 Use API Reference when you need exact endpoint-level details such as request fields, response fields, schemas, and samples.
 
-Use [Product Guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSrm5O) first when you need flow choice, sequence guidance, or business decisions.
+Use [Product Guides](../product-guides/) first when you need flow choice, sequence guidance, or business decisions.
 
-Use [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/) when you need onboarding, sandbox, UAT, or go-live steps.
+Use [Integration Guides](../readme-1/) when you need onboarding, sandbox, UAT, or go-live steps.
 
 #### Which page should I open first in API Reference?
 
@@ -36,32 +36,32 @@ Then open the exact endpoint page for the API you are implementing.
 
 ### Browse by workflow
 
-* [Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
-* [Post-booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8P9YQq692vHSOmVjquJF)
-* [Webhook & Incident APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/mm7vMP5W4mhhvhD5mVPq)
-* [Utility APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/X2FRiVZEpfn1IE5NdgLT)
+* [Booking APIs](booking-apis/)
+* [Post-booking APIs](post-booking-apis/)
+* [Webhook & Incident APIs](webhook-and-incident-apis/)
+* [Utility APIs](utility-apis/)
 
 ### Common starting points
 
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lqBleuC7HEsPku6mncSh)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/COwEy62n0XrLQubATdaA)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/w82BK9CIz280FMw8vmrv)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/nz90Dw3FsXnJ4d6erPoH)
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/4SLUBW4WrcN15Hl7KYDP)
-* [Webhook Registration & Incidents](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tHs475MBpb4mdFaxH0qc)
-* [Balance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/bjsf9kigpaBzQxaH9xHM)
-* [ATRIP Token](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NC8YKQmRw2vNp8A5Lumc)
+* [Search](booking-apis/search.md)
+* [Verify](booking-apis/verify.md)
+* [Create Order](booking-apis/create-order.md)
+* [Payment & Ticketing](booking-apis/payment-and-ticketing.md)
+* [Refunds](post-booking-apis/refunds.md)
+* [Webhook Registration & Incidents](webhook-and-incident-apis/webhook-registration-and-incidents.md)
+* [Balance](utility-apis/balance.md)
+* [ATRIP Token](utility-apis/atrip-token.md)
 
 ### Recommended usage
 
-1. Start with [Product Guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/da7xGp63DpysnixSrm5O) for workflow choice.
-2. Use [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/) for sandbox, UAT, and production rollout.
+1. Start with [Product Guides](../product-guides/) for workflow choice.
+2. Use [Integration Guides](../readme-1/) for sandbox, UAT, and production rollout.
 3. Use this section for request and response details.
-4. Use [Support & Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Li1ioGB8DIQIbQ2KPfxM) for troubleshooting, shared reference data, and updates.
+4. Use [Support & Reference](../support-and-reference/) for troubleshooting, shared reference data, and updates.
 
 ### Faster implementation with MCP
 
-Use [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17) when you need help finding the right workflow, comparing related APIs, or narrowing down the next integration step.
+Use [MCP-Assisted Development](../readme-1/integration-tools/mcp-assisted-development.md) when you need help finding the right workflow, comparing related APIs, or narrowing down the next integration step.
 
 Use this section as the field-level source of truth after the workflow is clear.
 

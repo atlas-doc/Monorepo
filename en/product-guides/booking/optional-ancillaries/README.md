@@ -54,25 +54,25 @@ Skip this section when the booking does not include seat or baggage upsell.
 
 #### Add seats
 
-Start with [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3).
+Start with [Seats](seats-and-baggage/).
 
-Then use [Seat fallback modes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gwnqga4Hd9HkYrjG8NVb) when order-time seat handling needs a business rule.
+Then use [Seat fallback modes](seats-and-baggage/seat-fallback-modes.md) when order-time seat handling needs a business rule.
 
 #### Add baggage
 
-Start with [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67).
+Start with [Baggage](baggage.md).
 
 Use it when baggage quote and segment mapping are part of the booking flow.
 
 #### Validate freshness before booking
 
-Use [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg) before `order.do` when the session, offer, itinerary, or passenger mix changed.
+Use [Baggage and seat productCode freshness](baggage-and-seat-productcode-freshness.md) before `order.do` when the session, offer, itinerary, or passenger mix changed.
 
 ### Pages in this section
 
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
+* [Seats](seats-and-baggage/)
+* [Baggage](baggage.md)
+* [Baggage and seat productCode freshness](baggage-and-seat-productcode-freshness.md)
 
 ### Quick decision rules
 
@@ -124,27 +124,27 @@ Make that behavior explicit.
 
 Use:
 
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Seat fallback modes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/gwnqga4Hd9HkYrjG8NVb)
+* [Seats](seats-and-baggage/)
+* [Seat fallback modes](seats-and-baggage/seat-fallback-modes.md)
 
 #### Add baggage before booking
 
 Use:
 
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [Baggage](baggage.md)
+* [Create Order](../booking-step-guides/create-order.md)
 
 #### Fix stale ancillary failures
 
 Use:
 
-* [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Baggage and seat productCode freshness](baggage-and-seat-productcode-freshness.md)
+* [Error Codes](../../../support-and-reference/troubleshooting-and-support/errors-handing/)
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [Booking Overview](../booking-overview/)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Get Offer Price](../booking-step-guides/get-offer-price.md)
+* [Verify](../booking-step-guides/verify.md)
+* [Create Order](../booking-step-guides/create-order.md)

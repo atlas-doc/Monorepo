@@ -115,22 +115,22 @@ Wait for the returned `retryAfter` value before retrying.
 
 Avoid immediate retry loops.
 
-Use [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV) for the full policy.
+Use [API Request Limits](api-request-limits.md) for the full policy.
 
 ### Key booking pages
 
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Price Compare Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xXO9qKGJUXpfkxLDdpiB)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Confirm Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [Booking decisions](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
+* [Identifiers](identifiers.md)
+* [Search](../booking-step-guides/search.md)
+* [Price Compare Search](../../../api-reference/booking-apis/price-compare-search.md)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Get Offer Price](../booking-step-guides/get-offer-price.md)
+* [Verify](../booking-step-guides/verify.md)
+* [Create Order](../booking-step-guides/create-order.md)
+* [Confirm Order](../booking-step-guides/confirm-order.md)
+* [Payment & Ticketing](../booking-step-guides/payment-and-ticketing/)
+* [Query Order](../booking-step-guides/query-order/)
+* [Optional ancillaries](../optional-ancillaries/)
+* [Booking decisions](booking-decisions/)
 
 ### Key identifiers in the booking flow
 
@@ -196,7 +196,7 @@ Insert ancillaries before order only when needed.
 
 Insert `orderCommit.do` before payment for FR only.
 
-Use [Standard booking flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN) for the full step-by-step sequence.
+Use [Standard booking flow](../booking-flows/standard-booking-flow.md) for the full step-by-step sequence.
 
 #### How to include seats and baggage
 
@@ -218,7 +218,7 @@ Insert ancillaries before order only when needed.
 
 Insert `orderCommit.do` before payment for FR only.
 
-Use [Get Offer flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj) for the full step-by-step sequence.
+Use [Get Offer flow](../booking-flows/get-offer-flow.md) for the full step-by-step sequence.
 
 #### Fulfillment flow
 
@@ -228,7 +228,7 @@ Insert ancillaries before order only when needed.
 
 Treat the 5-minute payment and ticketing window as strict.
 
-Use [Fulfillment flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01) for the full step-by-step sequence.
+Use [Fulfillment flow](../booking-flows/fulfillment-flow.md) for the full step-by-step sequence.
 
 #### What happens after `pay.do`?
 
@@ -259,36 +259,36 @@ Webhook can help, but it should not be your only confirmation path.
 
 Use:
 
-* [Booking decisions](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
-* [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [Get Offer vs Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
+* [Booking decisions](booking-decisions/)
+* [Search vs Offer](booking-decisions/search-vs-offer.md)
+* [Get Offer vs Get Offer Price](booking-decisions/get-offer-vs-get-offer-price.md)
 
 #### Build the standard flow
 
 Use:
 
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Standard booking flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [Identifiers](identifiers.md)
+* [Standard booking flow](../booking-flows/standard-booking-flow.md)
+* [Search](../booking-step-guides/search.md)
+* [Verify](../booking-step-guides/verify.md)
+* [Create Order](../booking-step-guides/create-order.md)
 
 #### Build payment and follow-up
 
 Use:
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Post-payment polling](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [Payment & Ticketing](../booking-step-guides/payment-and-ticketing/)
+* [Post-payment polling](../booking-step-guides/query-order/post-payment-polling.md)
+* [Query Order](../booking-step-guides/query-order/)
 
 #### Add seats and baggage
 
 Use:
 
-* [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
+* [Optional ancillaries](../optional-ancillaries/)
+* [Seats](../optional-ancillaries/seats-and-baggage/)
+* [Baggage](../optional-ancillaries/baggage.md)
+* [Baggage and seat productCode freshness](../optional-ancillaries/baggage-and-seat-productcode-freshness.md)
 
 Treat ancillaries here as optional add-ons, not as mandatory booking steps.
 
@@ -296,28 +296,28 @@ Treat ancillaries here as optional add-ons, not as mandatory booking steps.
 
 Use:
 
-* [Booking decisions](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
-* [Get Offer flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
+* [Booking decisions](booking-decisions/)
+* [Get Offer flow](../booking-flows/get-offer-flow.md)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Optional ancillaries](../optional-ancillaries/)
 
 #### Build the fulfillment path
 
 Use:
 
-* [Fulfillment flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Get Offer vs Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
+* [Fulfillment flow](../booking-flows/fulfillment-flow.md)
+* [Get Offer Price](../booking-step-guides/get-offer-price.md)
+* [Get Offer vs Get Offer Price](booking-decisions/get-offer-vs-get-offer-price.md)
+* [Optional ancillaries](../optional-ancillaries/)
+* [Payment & Ticketing](../booking-step-guides/payment-and-ticketing/)
+* [API Request Limits](api-request-limits.md)
 
 #### Evaluate pre-sale route coverage
 
 Use:
 
-* [Price Compare Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xXO9qKGJUXpfkxLDdpiB)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
+* [Price Compare Search](../../../api-reference/booking-apis/price-compare-search.md)
+* [Search](../booking-step-guides/search.md)
 
 ### Use this when you need
 
@@ -332,13 +332,13 @@ Use:
 
 Use endpoint-level details here:
 
-[Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+[Booking APIs](../../../api-reference/booking-apis/)
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Get Sandbox Credentials](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
-* [Booking decisions](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Quick Start](../../../readme-1/quick-start.md)
+* [Get Sandbox Credentials](../../../readme-1/making-requests.md)
+* [Identifiers](identifiers.md)
+* [Optional ancillaries](../optional-ancillaries/)
+* [Booking decisions](booking-decisions/)
+* [Error Codes](../../../support-and-reference/troubleshooting-and-support/errors-handing/)

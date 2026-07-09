@@ -12,7 +12,7 @@ Use this guide to move from Atlas sandbox access to live launch.
 
 {% include "../.gitbook/includes/sandbox-search-currency-note.md" %}
 
-If you want an importable assistant for workflow guidance and troubleshooting, use [Atlas AI Assistant Skill](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JeSfAw1uWsyn9tGwrTFH).
+If you want an importable assistant for workflow guidance and troubleshooting, use [Atlas AI Assistant Skill](integration-tools/atlas-ai-assistant-skill.md).
 
 {% hint style="warning" %}
 All API Reference endpoint examples use sandbox base URLs.
@@ -113,7 +113,7 @@ Before moving forward, confirm:
 
 You are ready for the next phase when sandbox requests can be sent successfully.
 
-Use [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f) for this setup.
+Use [Sandbox Access](making-requests.md) for this setup.
 
 #### 2. Sandbox Development
 
@@ -133,10 +133,10 @@ The goal is to complete the end-to-end business flow in sandbox.
 
 Use these pages during development:
 
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Sandbox Development](sandbox-development/)
+* [MCP-Assisted Development](integration-tools/mcp-assisted-development.md)
+* [Booking Overview](../product-guides/booking/booking-overview/)
+* [Webhook Overview](../product-guides/extensions-and-integrations/webhook-overview/)
 
 During this phase, keep these identifiers for later steps:
 
@@ -160,7 +160,7 @@ Then click **Confirm and Continue**, fill the case order details, and use **Subm
 
 The main output of this phase is UAT approval.
 
-Use [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT) for the verification steps.
+Use [UAT Validation](uat-submission-guide.md) for the verification steps.
 
 #### 4. Production Go-Live
 
@@ -178,7 +178,7 @@ Then:
 
 This completes the move from test integration to live operation.
 
-Use [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy) for the go-live checklist.
+Use [Production Go-Live](production-go-live.md) for the go-live checklist.
 
 ### What should you keep across the booking flow?
 
@@ -208,17 +208,17 @@ Use these exit checks:
 
 ### Recommended first path
 
-1. Use [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f) to get credentials and confirm request basics.
-2. Run [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf) for a fast no-code health check.
-3. Use [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv) to implement the full flow.
-4. Move to [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT) after the sandbox flow is stable.
-5. Finish with [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy).
+1. Use [Sandbox Access](making-requests.md) to get credentials and confirm request basics.
+2. Run [Sandbox Validation Test Kit](sandbox-development/sandbox-validation-test-kit.md) for a fast no-code health check.
+3. Use [Sandbox Development](sandbox-development/) to implement the full flow.
+4. Move to [UAT Validation](uat-submission-guide.md) after the sandbox flow is stable.
+5. Finish with [Production Go-Live](production-go-live.md).
 
-Use [Integration Tools](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tTSY4Bl5Zzeu2b1D4ADe) if you want optional help with workflow lookup, endpoint discovery, or troubleshooting during implementation.
+Use [Integration Tools](integration-tools/) if you want optional help with workflow lookup, endpoint discovery, or troubleshooting during implementation.
 
 ### First end-to-end test resource
 
-If you want a no-code environment check first, use [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf).
+If you want a no-code environment check first, use [Sandbox Validation Test Kit](sandbox-development/sandbox-validation-test-kit.md).
 
 Then use this Postman collection during sandbox development:
 
@@ -226,13 +226,13 @@ Then use this Postman collection during sandbox development:
 
 ### Next step
 
-If you are starting fresh, continue with [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f).
+If you are starting fresh, continue with [Sandbox Access](making-requests.md).
 
-If sandbox access is already done, continue with [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv).
+If sandbox access is already done, continue with [Sandbox Development](sandbox-development/).
 
 ### Related pages
 
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy)
+* [Sandbox Access](making-requests.md)
+* [Sandbox Development](sandbox-development/)
+* [UAT Validation](uat-submission-guide.md)
+* [Production Go-Live](production-go-live.md)

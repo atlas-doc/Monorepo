@@ -17,7 +17,7 @@ Start here when you need to:
 
 ### Main booking sections
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Booking flows](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wkGCRQidKhCerhUNdoz7)
-* [Booking step guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Hivwro5sZdOotzmaEIn)
-* [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl)
+* [Booking Overview](booking-overview/)
+* [Booking flows](booking-flows/)
+* [Booking step guides](booking-step-guides/)
+* [Optional ancillaries](optional-ancillaries/)

@@ -16,19 +16,19 @@ Start here when you need to:
 
 ### Choose the right flow
 
-Use [Standard booking flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN) when Atlas is your main shopping layer.
+Use [Standard booking flow](standard-booking-flow.md) when Atlas is your main shopping layer.
 
 Start with `search.do`.
 
 Then continue with `verify.do` before `order.do`.
 
-Use [Get Offer flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj) when the itinerary is already known or when you need an independent price check.
+Use [Get Offer flow](get-offer-flow.md) when the itinerary is already known or when you need an independent price check.
 
 Start with `getOffers.do`.
 
 Then continue with `order.do` using `OfferId`.
 
-Use [Fulfillment flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01) when you need broader offer visibility and can start payment immediately after order creation.
+Use [Fulfillment flow](fulfillment-flow.md) when you need broader offer visibility and can start payment immediately after order creation.
 
 Start with `getOfferPrice.do`.
 
@@ -36,28 +36,28 @@ Follow the stricter fulfillment timing rules.
 
 Need help choosing between entry paths?
 
-Use [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx) and [Offer vs Fulfillment](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp).
+Use [Search vs Offer](../booking-overview/booking-decisions/search-vs-offer.md) and [Offer vs Fulfillment](../booking-overview/booking-decisions/get-offer-vs-get-offer-price.md).
 
 ### Available flows
 
-* [Standard booking flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/o5Zn1hYIBI5mVZ83ihHN)
-* [Get Offer flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/NS7gkZIr0mFD8f0vV1sj)
-* [Fulfillment flow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0JojHpwRpiZgp5WlLy01)
+* [Standard booking flow](standard-booking-flow.md)
+* [Get Offer flow](get-offer-flow.md)
+* [Fulfillment flow](fulfillment-flow.md)
 
 Each flow page contains the full end-to-end step sequence for that path.
 
 ### Need a deeper decision guide?
 
-Use [Booking decisions](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ygfSw8OHHyKfi9HuC7VS) for restart choices, API boundaries, and edge cases.
+Use [Booking decisions](../booking-overview/booking-decisions/) for restart choices, API boundaries, and edge cases.
 
 ### Need shared rules across flows?
 
-Use [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3).
+Use [Booking Overview](../booking-overview/).
 
 ### Need one booking step in detail?
 
-Use [Booking step guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Hivwro5sZdOotzmaEIn).
+Use [Booking step guides](../booking-step-guides/).
 
 ### Need optional seat or baggage handling?
 
-Use [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl).
+Use [Optional ancillaries](../optional-ancillaries/).
