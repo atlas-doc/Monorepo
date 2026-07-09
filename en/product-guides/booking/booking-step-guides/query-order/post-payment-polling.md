@@ -151,8 +151,8 @@ Log these values through the full follow-up chain:
 
 ### Related pages
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Payment Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/v1plEh7MJqP2ZqtiNvxk)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Payment & Ticketing](../payment-and-ticketing/)
+* [Query Order](./)
+* [Error Codes](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Payment Errors](../../../../support-and-reference/troubleshooting-and-support/errors-handing/payment-errors.md)
+* [Webhook Overview](../../../extensions-and-integrations/webhook-overview/)

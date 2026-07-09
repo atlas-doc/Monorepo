@@ -32,7 +32,7 @@ Query the current status instead of submitting again.
 
 Codes such as `822` and `823` point to void-only submission problems.
 
-Use the dedicated [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx) flow when the order is still inside the airline void window.
+Use the dedicated [Void](../../../product-guides/post-booking/void.md) flow when the order is still inside the airline void window.
 
 ### Refund quotation and submission
 
@@ -89,7 +89,7 @@ A matching refund or claim already exists.
 
 Void uses dedicated endpoints and should follow the void quotation → void submission → void query sequence.
 
-If the order is still inside the airline void window, use [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx) instead of the refund flow.
+If the order is still inside the airline void window, use [Void](../../../product-guides/post-booking/void.md) instead of the refund flow.
 
 #### `822` Exceed the ticket void deadline
 
@@ -203,18 +203,18 @@ Examples:
 
 ### What comes next?
 
-Use [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t) for refund flow guidance.
+Use [Refunds](../../../product-guides/post-booking/refunds.md) for refund flow guidance.
 
-Use [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx) for the dedicated void flow.
+Use [Void](../../../product-guides/post-booking/void.md) for the dedicated void flow.
 
-Use [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n) when the current order state is still unclear.
+Use [Query Order](../../../product-guides/booking/booking-step-guides/query-order/) when the current order state is still unclear.
 
-Use [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB) to route the case to the right post-booking workflow.
+Use [Post-booking](../../../product-guides/post-booking/) to route the case to the right post-booking workflow.
 
 ### Related pages
 
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
-* [Order Maintenance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AQEBHaWYnuNx4vUIfO7g)
+* [Refunds](../../../product-guides/post-booking/refunds.md)
+* [Void](../../../product-guides/post-booking/void.md)
+* [Post-booking](../../../product-guides/post-booking/)
+* [Post-ticketing Ancillaries](../../../product-guides/post-booking/post-ticketing-ancillaries.md)
+* [Order Maintenance](../../../product-guides/post-booking/order-maintenance.md)

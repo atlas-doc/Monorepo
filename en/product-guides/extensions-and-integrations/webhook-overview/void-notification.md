@@ -227,7 +227,7 @@ Use `data.message` to route manual follow-up.
 
 ### Related pages
 
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Webhook Registration & Incidents](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tHs475MBpb4mdFaxH0qc)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Void workflow](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
+* [Webhook Overview](./)
+* [Webhook Registration & Incidents](../../../api-reference/webhook-and-incident-apis/webhook-registration-and-incidents.md)
+* [Void](../../../api-reference/post-booking-apis/void.md)
+* [Void workflow](../../post-booking/void.md)

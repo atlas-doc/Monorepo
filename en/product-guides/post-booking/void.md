@@ -26,7 +26,9 @@ Request quotation first.
 
 Then submit the void with the latest `voidOfferId`.
 
-After submission, query status with `voidCode` until the case is closed.
+After submission, query status with `orderNo`.
+
+Add `voidCode` when you want a specific void case.
 
 #### When can a void request fail before submission?
 
@@ -124,7 +126,9 @@ Keep the returned `voidCode`.
 {% step %}
 ### Query final status
 
-Use `queryVoidOrders.do` until the case is completed, rejected, or otherwise closed.
+Use `queryVoidOrders.do` with `orderNo` until the case is completed, rejected, or otherwise closed.
+
+Add `voidCode` when you want to narrow the result to one void case.
 {% endstep %}
 {% endstepper %}
 
@@ -143,9 +147,9 @@ Confirm:
 
 Keep these values through the flow:
 
-* `orderNo` for quotation
+* `orderNo` for quotation and query
 * `voidOfferId` for submission
-* `voidCode` for status follow-up
+* `voidCode` for optional status filtering
 
 Use the latest quotation result before submission.
 
