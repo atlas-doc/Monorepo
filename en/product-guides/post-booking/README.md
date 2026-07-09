@@ -28,7 +28,7 @@ Start by checking the current order state before taking post-booking action.
 
 Use **Refunds** for refund quotation, submission, and status tracking.
 
-Use [**Void**](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx) when the order is still inside the airline void window and should follow the dedicated void flow.
+Use [**Void**](void.md) when the order is still inside the airline void window and should follow the dedicated void flow.
 
 Use **Post-ticketing Ancillaries** for baggage actions after ticketing.
 
@@ -36,11 +36,11 @@ Use **Order Maintenance** and **PNR Claim & Extraction** when the booking needs 
 
 ### Pages in this section
 
-* [Order Maintenance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AQEBHaWYnuNx4vUIfO7g)
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
-* [PNR Claim & Extraction](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rq3uvafDu2fT1CTSax6A)
+* [Order Maintenance](order-maintenance.md)
+* [Refunds](refunds.md)
+* [Void](void.md)
+* [Post-ticketing Ancillaries](post-ticketing-ancillaries.md)
+* [PNR Claim & Extraction](pnr-claim-and-extraction.md)
 
 ### Recommended order of checks
 
@@ -83,35 +83,35 @@ Use order maintenance and PNR tools when bookings need intervention.
 
 #### Refund handling
 
-Use [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t).
+Use [Refunds](refunds.md).
 
 #### Void handling
 
-Use [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx).
+Use [Void](void.md).
 
 #### Post-ticketing baggage
 
-Use [Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm).
+Use [Post-ticketing Ancillaries](post-ticketing-ancillaries.md).
 
 #### Operational intervention
 
-Use [Order Maintenance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AQEBHaWYnuNx4vUIfO7g).
+Use [Order Maintenance](order-maintenance.md).
 
 #### PNR claim or extraction
 
-Use [PNR Claim & Extraction](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rq3uvafDu2fT1CTSax6A).
+Use [PNR Claim & Extraction](pnr-claim-and-extraction.md).
 
 ### Related pages
 
-* [Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Order Maintenance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AQEBHaWYnuNx4vUIfO7g)
-* [PNR Claim & Extraction](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rq3uvafDu2fT1CTSax6A)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Post-ticketing Ancillaries](post-ticketing-ancillaries.md)
+* [Refunds](refunds.md)
+* [Void](void.md)
+* [Order Maintenance](order-maintenance.md)
+* [PNR Claim & Extraction](pnr-claim-and-extraction.md)
+* [Webhook Overview](../extensions-and-integrations/webhook-overview/)
 
 ### Full API reference
 
 Use endpoint-level details here:
 
-[Post-booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8P9YQq692vHSOmVjquJF)
+[Post-booking APIs](../../api-reference/post-booking-apis/)

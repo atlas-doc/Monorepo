@@ -18,10 +18,10 @@ Start here when you need to:
 * configure webhook as one delivery option in Atlas notifications
 
 {% hint style="info" %}
-Need ATRIP notification setup across webhook, email, and team chat? Start with [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7).
+Need ATRIP notification setup across webhook, email, and team chat? Start with [Multi-channel Notifications](../multi-channel-notifications.md).
 {% endhint %}
 
-If you need channel setup first, open [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7) before reading webhook event details.
+If you need channel setup first, open [Multi-channel Notifications](../multi-channel-notifications.md) before reading webhook event details.
 
 ### FAQ
 
@@ -39,7 +39,7 @@ Use webhook as the server-to-server delivery option in Atlas notifications.
 
 Use webhook to speed up event handling for ticketing completion, void updates, schedule changes, airline status updates, email capture, and incident follow-up.
 
-Use [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7) when you also need ATRIP delivery in email, DingTalk, WeCom, Slack, or Teams.
+Use [Multi-channel Notifications](../multi-channel-notifications.md) when you also need ATRIP delivery in email, DingTalk, WeCom, Slack, or Teams.
 
 Do not treat webhook as the only source of truth for booking state.
 
@@ -83,9 +83,9 @@ Keep active order polling during the ticketing window.
 {% step %}
 ### Register your endpoint
 
-Use [Webhook Registration & Incidents](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tHs475MBpb4mdFaxH0qc) to save the webhook URL before go-live.
+Use [Webhook Registration & Incidents](../../../api-reference/webhook-and-incident-apis/webhook-registration-and-incidents.md) to save the webhook URL before go-live.
 
-If you also use mailbox or chat delivery, configure those channels in [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7).
+If you also use mailbox or chat delivery, configure those channels in [Multi-channel Notifications](../multi-channel-notifications.md).
 {% endstep %}
 
 {% step %}
@@ -95,11 +95,11 @@ Handle ticketing, void, schedule, airline, email, and incident notifications.
 
 Atlas sends webhook notifications for these common scenarios:
 
-1. Ticket booked: [Ticketing Complete Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zNIgwHcnNogdlVW0KpPO)
-2. Void submitted or updated: [Void Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/4aywYMVHUfvNZttgiHPn)
-3. Change in flight schedule: [Schedule Change Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8TuCRQT1tW58vMulbndJ)
-4. Airline status update: [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW)
-5. Email received: [Email Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/5JKeyb6NAdTPL7cjz8W2)
+1. Ticket booked: [Ticketing Complete Notification](ticketing-complete-notification.md)
+2. Void submitted or updated: [Void Notification](void-notification.md)
+3. Change in flight schedule: [Schedule Change Notification](schedule-change-notification.md)
+4. Airline status update: [Airline Status Update Notification](airline-status-update-notification.md)
+5. Email received: [Email Notification](email-notification.md)
 {% endstep %}
 
 {% step %}
@@ -107,8 +107,8 @@ Atlas sends webhook notifications for these common scenarios:
 
 Use incident queries and order APIs to confirm final state.
 
-1. Incident notification: [Incident Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX)
-2. Incident query: [Incident Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/70gk6tmdLYkYGQSscSKw)
+1. Incident notification: [Incident Notification](incident-notification.md)
+2. Incident query: [Incident Query](incident-query.md)
 {% endstep %}
 {% endstepper %}
 

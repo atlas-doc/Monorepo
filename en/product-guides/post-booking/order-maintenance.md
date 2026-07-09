@@ -63,13 +63,13 @@ Open the exact endpoint page below for request and response details, then reconc
 
 See endpoint-level details here:
 
-* [Regenerate Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uFfyVhZ3JYFYmFotYD22)
-* [Stop Ticket Issuance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/nl7xxI2vok0bnPcXxH5l)
-* [Order List](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pyXLXgniV4JBArAoDcGC)
+* [Regenerate Order](../../api-reference/post-booking-apis/regenerate-order.md)
+* [Stop Ticket Issuance](../../api-reference/post-booking-apis/stop-ticket-issuance.md)
+* [Order List](../../api-reference/post-booking-apis/order-list.md)
 
 ### Related pages
 
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [Post-booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8P9YQq692vHSOmVjquJF)
-* [Hybrid Payment Guide](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SkmHf0AK1tgebiGujAko)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Post-booking](./)
+* [Post-booking APIs](../../api-reference/post-booking-apis/)
+* [Hybrid Payment Guide](../booking/booking-step-guides/payment-and-ticketing/hybrid-payment-guide.md)
+* [Error Codes](../../support-and-reference/troubleshooting-and-support/errors-handing/)

@@ -138,6 +138,6 @@ Email and chat deliveries may render this event with business fields such as air
 
 ### Related pages
 
-* [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Search Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZZXG9HGTENPgRVyaaoYs)
+* [Multi-channel Notifications](../multi-channel-notifications.md)
+* [Webhook Overview](./)
+* [Search Errors](../../../support-and-reference/troubleshooting-and-support/errors-handing/search-errors.md)

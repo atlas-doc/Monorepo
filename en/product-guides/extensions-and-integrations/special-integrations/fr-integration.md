@@ -101,19 +101,19 @@ This flow adds an FR confirmation page between `order.do` and `pay.do`.
 {% step %}
 ### Search
 
-Call [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD) and keep the selected `routingIdentifier`.
+Call [Search](../../booking/booking-step-guides/search.md) and keep the selected `routingIdentifier`.
 {% endstep %}
 
 {% step %}
 ### Verify
 
-Call [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm) and keep the returned `sessionId`.
+Call [Verify](../../booking/booking-step-guides/verify.md) and keep the returned `sessionId`.
 {% endstep %}
 
 {% step %}
 ### Optional seat selection
 
-If you support FR seat selection, call [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3) before booking.
+If you support FR seat selection, call [Seats](../../booking/optional-ancillaries/seats-and-baggage/) before booking.
 
 Skip this step if you use the FR child-seat simplification.
 {% endstep %}
@@ -121,7 +121,7 @@ Skip this step if you use the FR child-seat simplification.
 {% step %}
 ### Create the order
 
-Call [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE) with passenger, contact, and required FR fields.
+Call [Create Order](../../booking/booking-step-guides/create-order.md) with passenger, contact, and required FR fields.
 
 Make sure the order request includes:
 
@@ -137,7 +137,7 @@ Make sure the order request includes:
 At this stage, the OTA collects payment from the user.\
 Do **not** call `pay.do` yet.
 
-Then call [Confirm Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB).
+Then call [Confirm Order](../../booking/booking-step-guides/confirm-order.md).
 
 Atlas returns `confirmationUrl` for popup mode or iframe mode.
 {% endstep %}
@@ -153,7 +153,7 @@ The FR confirmation page contains the required T\&Cs and consent checkbox. The u
 {% step %}
 ### Pay and issue
 
-Only after the user completes confirmation, call [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB).
+Only after the user completes confirmation, call [Payment & Ticketing](../../booking/booking-step-guides/payment-and-ticketing/).
 
 Payment can use `VCC` or `Deposit`.
 {% endstep %}
@@ -161,7 +161,7 @@ Payment can use `VCC` or `Deposit`.
 {% step %}
 ### Poll final status
 
-Use [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n) until `orderStatus=2` and `ticketStatus=0`.
+Use [Query Order](../../booking/booking-step-guides/query-order/) until `orderStatus=2` and `ticketStatus=0`.
 {% endstep %}
 {% endstepper %}
 
@@ -232,7 +232,7 @@ Pass both:
 
 This helps ensure both sides receive airline communication.
 
-For supported locale values, see [Locale Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Iqbnh1NWCgycDIzPka7l).
+For supported locale values, see [Locale Reference](../../../support-and-reference/integration-reference/reference-data/locale.md).
 
 ### Child seating rule
 
@@ -310,7 +310,7 @@ Use the FR-specific UAT file below.
 
 ### Related pages
 
-* [Confirm Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [UAT Submission Guide](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Special Integrations](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rJmf4QqhDHnkZLTdu1Io)
+* [Confirm Order](../../booking/booking-step-guides/confirm-order.md)
+* [Payment & Ticketing](../../booking/booking-step-guides/payment-and-ticketing/)
+* [UAT Submission Guide](../../../readme-1/uat-submission-guide.md)
+* [Special Integrations](./)

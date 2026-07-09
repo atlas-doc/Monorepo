@@ -30,8 +30,8 @@ Use **Resident Price Integration** for Spain resident fare eligibility and disco
 
 ### Pages in this section
 
-* [FR Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/HyzW7wts21GuPr6cO9gM)
-* [Resident Price Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/0HaXf1Zvm17mQTivKK5b)
+* [FR Integration](fr-integration.md)
+* [Resident Price Integration](resident-price-integration.md)
 
 ### Use this when you need
 

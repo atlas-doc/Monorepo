@@ -23,5 +23,5 @@ Use this page when you need to work with PNR-level utilities.
 
 See the complete endpoint schemas and samples here:
 
-* [PNR Claim](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uFI3mFLBZRGVyZGcwxor)
-* [Extract PNR](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ehFvd1EMI0uIYNbHmunz)
+* [PNR Claim](../../api-reference/post-booking-apis/pnr-claim.md)
+* [Extract PNR](../../api-reference/post-booking-apis/extract-pnr.md)

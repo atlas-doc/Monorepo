@@ -34,7 +34,7 @@ Check current order state and refund conditions first.
 
 Use Refund when the case is outside the void window or needs the refund flow.
 
-Use [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx) when the order is still eligible for the dedicated void flow.
+Use [Void](void.md) when the order is still eligible for the dedicated void flow.
 
 ### Typical flow
 
@@ -89,12 +89,12 @@ Use the API reference for request and response details.
 
 Use endpoint-level details here:
 
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/4SLUBW4WrcN15Hl7KYDP)
+* [Refunds](../../api-reference/post-booking-apis/refunds.md)
 
 ### Related pages
 
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx)
-* [Finance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Post-booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8P9YQq692vHSOmVjquJF)
+* [Void](void.md)
+* [Finance](../../support-and-reference/troubleshooting-and-support/faqs/atlas-api-finance.md)
+* [Post-booking](../../support-and-reference/troubleshooting-and-support/faqs/atlas-api-post-ticketing.md)
+* [Error Codes](../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Post-booking APIs](../../api-reference/post-booking-apis/)

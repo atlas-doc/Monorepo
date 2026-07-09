@@ -177,11 +177,11 @@ Then reconcile the outcome with the current order state.
 
 Use endpoint-level details here:
 
-* [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/H8SaqS9SfWWq494hZlz5)
+* [Void](../../api-reference/post-booking-apis/void.md)
 
 ### Related pages
 
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [Post-booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8P9YQq692vHSOmVjquJF)
-* [Refund, Query & Post-booking Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XUINxYxfOsv9CDtmb1pl)
+* [Refunds](refunds.md)
+* [Post-booking](./)
+* [Post-booking APIs](../../api-reference/post-booking-apis/)
+* [Refund, Query & Post-booking Errors](../../support-and-reference/troubleshooting-and-support/errors-handing/refund-query-and-post-booking-errors.md)

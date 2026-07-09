@@ -179,8 +179,8 @@ Examples:
 
 ### Related pages
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Hybrid Payment Guide](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SkmHf0AK1tgebiGujAko)
-* [Payments](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Get Offer Price](../../../product-guides/booking/booking-step-guides/get-offer-price.md)
+* [Hybrid Payment Guide](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/hybrid-payment-guide.md)
+* [Payments](../faqs/atlas-api-payments.md)
+* [Query Order](../../../product-guides/booking/booking-step-guides/query-order/)

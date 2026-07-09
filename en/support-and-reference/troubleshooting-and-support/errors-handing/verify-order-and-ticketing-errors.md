@@ -175,7 +175,7 @@ Atlas deposit balance is too low at ticketing time.
 
 ### Related pages
 
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [Verify](../../../product-guides/booking/booking-step-guides/verify.md)
+* [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Query Order](../../../product-guides/booking/booking-step-guides/query-order/)

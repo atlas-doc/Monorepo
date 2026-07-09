@@ -177,6 +177,6 @@ After you fix the search issue, return to [Search](https://app.gitbook.com/s/cAl
 
 ### Related pages
 
-* [Search](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/readme/booking-overview/search)
-* [Booking APIs](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/api-reference/booking-apis)
-* [Finance](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/troubleshooting-and-support/faqs/atlas-api-finance)
+* [Search](../../../product-guides/booking/booking-step-guides/search.md)
+* [Booking APIs](../../../api-reference/booking-apis/)
+* [Finance](../faqs/atlas-api-finance.md)

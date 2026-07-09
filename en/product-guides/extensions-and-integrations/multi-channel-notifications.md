@@ -50,7 +50,7 @@ Airline status notifications can include these business fields:
 * a link to the airline details page
 
 {% hint style="info" %}
-Webhook payload fields are documented separately on [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW). Chat and email deliveries may render the same event in a channel-specific format.
+Webhook payload fields are documented separately on [Airline Status Update Notification](webhook-overview/airline-status-update-notification.md). Chat and email deliveries may render the same event in a channel-specific format.
 {% endhint %}
 
 ### Configure notifications in ATRIP
@@ -118,10 +118,10 @@ Then confirm the message reaches the destination channel.
 
 #### Which page documents the webhook schema?
 
-Use [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW) for the current `airline.status` webhook payload.
+Use [Airline Status Update Notification](webhook-overview/airline-status-update-notification.md) for the current `airline.status` webhook payload.
 
 ### Related pages
 
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Webhook Registration & Incidents](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tHs475MBpb4mdFaxH0qc)
-* [Airline Status Update Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/pMAI2bv1LdjljhHdIseW)
+* [Webhook Overview](webhook-overview/)
+* [Webhook Registration & Incidents](../../api-reference/webhook-and-incident-apis/webhook-registration-and-incidents.md)
+* [Airline Status Update Notification](webhook-overview/airline-status-update-notification.md)
