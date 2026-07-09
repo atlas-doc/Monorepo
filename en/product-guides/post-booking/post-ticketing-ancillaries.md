@@ -51,10 +51,10 @@ Create the ancillary order with the selected product codes.
 
 Use the complete endpoint schemas and samples here:
 
-[Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ocqRBHqayQAHicZQzWGA)
+[Post-ticketing Ancillaries](../../api-reference/post-booking-apis/post-ticketing-ancillaries.md)
 
 ### Related pages
 
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
+* [Webhook Overview](../extensions-and-integrations/webhook-overview/)
+* [Post-booking](./)
+* [Refunds](refunds.md)

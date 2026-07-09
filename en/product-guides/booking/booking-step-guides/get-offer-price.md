@@ -168,10 +168,10 @@ Webhook can help, but it should not be your only confirmation path.
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zE0QlLrSj0ynAcagJTD3)
+* [Booking Overview](../booking-overview/)
+* [Get Offer](get-offer.md)
+* [Create Order](create-order.md)
+* [Payment & Ticketing](payment-and-ticketing/)
+* [Query Order](query-order/)
+* [API Request Limits](../booking-overview/api-request-limits.md)
+* [Get Offer Price](../../../api-reference/booking-apis/get-offer-price.md)

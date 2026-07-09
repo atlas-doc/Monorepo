@@ -126,8 +126,8 @@ Decide it before `order.do` and keep it consistent with your traveler promise.
 
 ### Related pages
 
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Seats](./)
+* [Create Order](../../booking-step-guides/create-order.md)
+* [Payment & Ticketing](../../booking-step-guides/payment-and-ticketing/)
+* [Baggage and seat productCode freshness](../baggage-and-seat-productcode-freshness.md)
+* [Error Codes](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)

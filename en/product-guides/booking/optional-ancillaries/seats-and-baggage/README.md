@@ -151,21 +151,21 @@ If no match exists, do not send a flight-only `seatAvailability.do` request.
 
 ### What comes next?
 
-Use [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE) to send the selected ancillary data with the booking when required.
+Use [Create Order](../../booking-step-guides/create-order.md) to send the selected ancillary data with the booking when required.
 
-If you also need baggage options, use [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67).
+If you also need baggage options, use [Baggage](../baggage.md).
 
 ### Related pages
 
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
+* [Verify](../../booking-step-guides/verify.md)
+* [Get Offer](../../booking-step-guides/get-offer.md)
+* [Get Offer Price](../../booking-step-guides/get-offer-price.md)
+* [Create Order](../../booking-step-guides/create-order.md)
+* [Baggage](../baggage.md)
+* [Post-ticketing Ancillaries](../../../post-booking/post-ticketing-ancillaries.md)
 
 ### Full API reference
 
 See the complete endpoint schemas and samples here:
 
-[Seat](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/33ZWa8YpkzEg8kPsZLCo)
+[Seat](../../../../api-reference/booking-apis/inflow-seat-and-baggage.md)

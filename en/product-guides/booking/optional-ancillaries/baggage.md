@@ -104,20 +104,20 @@ For connecting flights, keep the baggage selection consistent across connected s
 
 ### What comes next?
 
-Use [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE) to send the selected baggage `productCode` when required.
+Use [Create Order](../booking-step-guides/create-order.md) to send the selected baggage `productCode` when required.
 
-If seat selection is also needed, use [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3).
+If seat selection is also needed, use [Seats](seats-and-baggage/).
 
 ### Related pages
 
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Post-ticketing Ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ltyid7j3wXhOy02L4UBm)
+* [Verify](../booking-step-guides/verify.md)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Get Offer Price](../booking-step-guides/get-offer-price.md)
+* [Create Order](../booking-step-guides/create-order.md)
+* [Post-ticketing Ancillaries](../../post-booking/post-ticketing-ancillaries.md)
 
 ### Full API reference
 
 See the complete endpoint schemas and samples here:
 
-[Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MuS2S2ZQqIdtJ6efLOuz)
+[Baggage](../../../api-reference/booking-apis/baggage.md)

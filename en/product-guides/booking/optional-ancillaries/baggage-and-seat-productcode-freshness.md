@@ -133,9 +133,9 @@ If booking is delayed, rerun ancillary lookup before `order.do`.
 
 ### Related pages
 
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Seats](seats-and-baggage/)
+* [Baggage](baggage.md)
+* [Verify](../booking-step-guides/verify.md)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Create Order](../booking-step-guides/create-order.md)
+* [Error Codes](../../../support-and-reference/troubleshooting-and-support/errors-handing/)
