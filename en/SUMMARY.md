@@ -3,7 +3,7 @@
 * [💬Need Help? Ask Eva →](https://www.atriptech.com/)
 * [📣 Atlas API Documentation Updates](README.md)
 * [Integration Guides](readme-1/README.md)
-  * [Atlas API 产品功能树](readme-1/product-feature-tree.md)
+  * [API Capability Map](readme-1/product-feature-tree.md)
   * [Quick Start](readme-1/quick-start.md)
   * [Sandbox Access](readme-1/making-requests.md)
   * [Sandbox Development](readme-1/sandbox-development/README.md)

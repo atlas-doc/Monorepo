@@ -1,295 +1,279 @@
 ---
-description: Atlas API 产品功能全景图，展示所有核心接口能力与依赖关系
+description: Complete Atlas API capability map showing all 26 endpoints and their dependencies
 ---
 
-# Atlas API 产品功能树
+# Atlas API Capability Map
 
-Atlas API 全能力全景图，涵盖搜索、预订、支付、退票、改签等核心业务流程。
+{% include "../.gitbook/includes/eva-help-hint.md" %}
 
----
-
-## 📊 产品场景总览
-
-> Atlas API 以三大搜索入口为起点，串联五个核心业务阶段，共提供 **26 个 API 接口**
-
-| 指标 | 数量 | 说明 |
-|------|------|------|
-| 🔍 搜索入口 | 3 | Search, GetOffer, SmartSearch |
-| 🚀 核心阶段 | 5 | 搜索 → 验价 → 预订 → 支付 → 出票后 |
-| 📡 API 接口 | 26 | 全量功能覆盖 |
-| 🔗 调用链路 | 8 | 不同场景组合 |
+Use this page to understand the full Atlas API landscape: three search entry points, five core business stages, and 26 API endpoints covering search, booking, payment, refunds, rebooking, and ancillary services.
 
 ---
 
-## 🔄 API 调用流程图
+## Overview
+
+Atlas API is organized around three search entry points that feed into a common booking pipeline with five core stages.
+
+| Metric | Count | Description |
+|--------|-------|-------------|
+| Search entry points | 3 | Search, GetOffer, SmartSearch |
+| Core stages | 5 | Search → Verify → Book → Pay → Post-ticketing |
+| API endpoints | 26 | Full capability coverage |
+| Integration paths | 8 | Different flow combinations |
+
+---
+
+## Search Entry Points
+
+Choose the right search endpoint for your use case:
+
+| Entry point | Endpoint | Best for |
+|------------|----------|----------|
+| **Standard Search** | `POST /search.do` | Most common use case: one-way/return journeys, airline filtering, flight number targeting, multiple fare classes |
+| **Direct Offer** | `POST /getOffers.do` | Skip search when you already know the exact flight and class you want to book; improves L2B conversion |
+| **Smart Search** | `POST /smartSearch.do` | TMC-only; covers routes and time slots not available via standard Search |
+
+---
+
+## Standard Booking Flow
+
+This is the complete standard booking journey.
+
+{% tabs %}
+{% tab title="Flow Diagram" %}
 
 ```mermaid
-flowchart TD
-    %% 搜索入口
-    SEARCH[🔍 Search\n/search.do]
-    GETOFFER[🔷 GetOffer\n/getOffers.do]
-    SMART[🟠 SmartSearch\n/smartSearch.do]
-
-    %% 验证层
-    VERIFY[✅ Verify\n/verify.do]
+flowchart LR
+    A[1. Search\n/search.do] --> B[2. Verify\n/verify.do]
+    B --> C{Optional\nAncillaries}
+    C --> D[3. Create Order\n/createOrder.do]
+    D --> E[4. Pay\n/pay.do]
+    E --> F[5. Retrieve Order\n/retrieveOrder.do]
     
-    %% 可选附加服务
-    LUGGAGE[🧳 Luggage\n/getLuggage.do]
-    SEAT[💺 Seat\n/seatAvailability.do]
-    
-    %% 预订支付层
-    ORDER[📝 CreateOrder\n/createOrder.do]
-    PAY[💰 Pay\n/pay.do]
-    
-    %% 出票后操作
-    RETRIEVE[🔎 RetrieveOrder\n/retrieveOrder.do]
-    REFUND[↩️ Refund\n/refund.do]
-    ANC[📦 BookAncillary\n/bookAncillary.do]
-    REGEN[🔄 RegenerateOrder\n/regenerateOrder.do]
-    STOP[⛔ StopTicket\n/stopTicketIssuance.do]
-    
-    %% 其他功能
-    LIST[📋 OrderList\n/orderList.do]
-    PNR[📄 ExtractPNR\n/extractPnr.do]
-    CLAIM[🔗 PnrClaim\n/pnrClaim.do]
-
-    %% 连接关系
-    SEARCH --> VERIFY
-    GETOFFER --> VERIFY
-    SMART --> VERIFY
-    
-    VERIFY --> LUGGAGE
-    VERIFY --> SEAT
-    
-    LUGGAGE --> ORDER
-    SEAT --> ORDER
-    VERIFY --> ORDER
-    
-    ORDER --> PAY
-    PAY -->|成功| RETRIEVE
-    PAY -->|紧急| STOP
-    
-    RETRIEVE --> REFUND
-    RETRIEVE --> ANC
-    RETRIEVE --> REGEN
-    RETRIEVE --> LIST
-    RETRIEVE --> PNR
-    RETRIEVE --> CLAIM
-
-    %% 样式
-    classDef search fill:#E0F2FE,stroke:#0284C7,color:#0C4A6E
-    classDef verify fill:#DBEAFE,stroke:#2563EB,color:#1E40AF
-    classDef optional fill:#FEF3C7,stroke:#D97706,color:#92400E
-    classDef order fill:#D1FAE5,stroke:#059669,color:#065F46
-    classDef post fill:#F3E8FF,stroke:#9333EA,color:#581C87
-
-    class SEARCH,GETOFFER,SMART search
-    class VERIFY verify
-    class LUGGAGE,SEAT optional
-    class ORDER,PAY,RETRIEVE order
-    class REFUND,ANC,REGEN,STOP,LIST,PNR,CLAIM post
+    C -.-> L[Luggage\n/getLuggage.do]
+    C -.-> S[Seat Selection\n/seatAvailability.do]
 ```
 
+{% endtab %}
+{% tab title="Step by Step" %}
+
+### Step 1: Search flights
+
+**Endpoint:** `POST /search.do`
+
+Returns available flight options with a `routingIdentifier` used in subsequent calls.
+
+Capabilities:
+* Trip type (one-way / return)
+* Passenger counts (adult / child / infant)
+* Origin / destination city or airport IATA codes
+* Departure / return dates (yyyyMMdd format)
+* Airline / flight number filtering (optional)
+* Multiple fare classes and currency options
+
 ---
 
-### 三大搜索入口
+### Step 2: Verify price
 
-| 编号 | API 名称 | 接口 | 核心能力 |
-|------|---------|------|---------|
-| 🔵 | **Search · 标准搜索** | `POST /search.do` | 通用场景，支持单程/往返、多航司过滤、航班号精确搜索、多运价舱位 |
-| 🔷 | **GetOffer · 直接报价** | `POST /getOffers.do` | 指定航班直接获取报价，跳过 Search，提高 L2B 转化率 |
-| 🟠 | **SmartSearch · 智能搜索** | `POST /smartSearch.do` | 仅限 TMC，覆盖 Search API 未覆盖的航线与时段 |
+**Endpoint:** `POST /verify.do`
+
+**Requires:** `routingIdentifier` from search
+
+Validates the current price and returns:
+* `sessionId` for booking
+* `bookingRequirement` details
+* Fare rules and cancellation policies
+* Baggage allowance information
 
 ---
 
-## 🅰️ 标准预订流程
+### Step 3 (Optional): Ancillary selection
 
-> 完整 8 步标准预订流程
+Before creating the order, you can retrieve available ancillary options:
 
-### 标准预订时序图
+| Service | Endpoint | Returns |
+|---------|----------|---------|
+| Luggage options | `POST /getLuggage.do` | Available baggage tiers and prices |
+| Seat selection | `POST /seatAvailability.do` | Seat maps with pricing per category |
+
+Both endpoints require the `sessionId` from verify.
+
+---
+
+### Step 4: Create order
+
+**Endpoint:** `POST /createOrder.do`
+
+**Requires:** `sessionId` from verify
+
+Creates the booking record and accepts:
+* Passenger information (names, DOB, documents)
+* Contact information (email, phone)
+* Internal order reference (for reconciliation)
+* Insurance and ancillary selections
+
+Returns an `orderNumber` for payment and subsequent operations.
+
+---
+
+### Step 5: Payment
+
+**Endpoint:** `POST /pay.do`
+
+**Requires:** `orderNumber` from createOrder
+
+Supported payment methods:
+* Deposit (prepaid balance)
+* VCC (virtual credit card)
+* MoR (Merchant of Record) billing
+* Credit cards: Visa / MC / AE / Discover
+
+---
+
+### Step 6: Retrieve order
+
+**Endpoint:** `POST /retrieveOrder.do`
+
+**Requires:** `orderNumber`
+
+After successful payment, retrieve order details:
+* Booking status and ticketing status
+* Ticket numbers
+* PNR information
+* Passenger details
+* Ancillary service status
+
+{% endtab %}
+{% endtabs %}
+
+---
+
+## Direct Offer Flow (GetOffer)
+
+Use the GetOffer flow when you already know the exact flight and fare class. This skips the search step and improves conversion.
+
+| Step | Endpoint | Input | Output |
+|------|----------|-------|--------|
+| 1. Get Offer | `POST /getOffers.do` | Airline, flight number, class, date, route | `offerId` + `sessionId` |
+| 2. Get Offer Price | `POST /getOfferPrice.do` | `offerId` | Real-time exact pricing |
+| 3. Create Order | `POST /createOrder.do` | `sessionId` + passenger info | `orderNumber` |
+
+{% hint style="success" %}
+**Pro tip:** Use GetOffer when rebooking or when users select from cached search results. This reduces API calls and speeds up the booking process.
+{% endhint %}
+
+---
+
+## Smart Search Flow (TMC only)
+
+Smart Search is for TMC partners needing extended coverage.
+
+| Step | Endpoint | Requirements |
+|------|----------|-------------|
+| 1. Smart Search | `POST /smartSearch.do` | TMC account permissions |
+| 2. Price Compare Search | `POST /priceCompareSearch.do` | Optional — for multi-flight comparison |
+
+{% hint style="info" %}
+SmartSearch covers routes and time slots not available via the standard Search endpoint. Contact your account manager to enable TMC-specific features.
+{% endhint %}
+
+---
+
+## Post-ticketing Operations
+
+After ticketing, these operations are available:
+
+| Operation | Endpoint | Prerequisite | Use case |
+|-----------|----------|-------------|----------|
+| **Refund** | `POST /refund.do` | Ticketed order | Partial or full refunds; voluntary or involuntary |
+| **Regenerate Order** | `POST /regenerateOrder.do` | Ticketed order | Rebooking scenarios; preserves original order information |
+| **Stop Ticketing** | `POST /stopTicketIssuance.do` | Paid, not yet ticketed | Emergency stop before ticketing completes |
+
+---
+
+## Ancillary Services
+
+Additional services that can be added pre or post booking:
+
+| Service | Endpoint | Timing |
+|---------|----------|--------|
+| Luggage | `POST /getLuggage.do` | After verify, before createOrder |
+| Seat selection | `POST /seatAvailability.do` | After verify, before createOrder |
+| Post-ticketing ancillaries | `POST /bookAncillary.do` | After ticketing |
+
+---
+
+## Webhook Notifications
+
+Atlas can push event notifications to your system via webhooks.
+
+### Event Types
+
+| Event Code | Description |
+|------------|-------------|
+| `TICKETING_COMPLETE` | Ticketing completed successfully |
+| `VOID_NOTIFICATION` | Order voided |
+| `SCHEDULE_CHANGE` | Flight schedule changed |
+| `AIRLINE_STATUS_UPDATE` | Airline status update |
+| `EMAIL_NOTIFICATION` | Email notification sent |
+| `INCIDENT_NOTIFICATION` | Incident event |
+
+### Registration & Query
+
+| Operation | Endpoint | Purpose |
+|-----------|----------|---------|
+| Register webhook | `POST /webhook/register.do` | Register callback URL and select event types; returns signing key for validation |
+| Query incidents | `POST /incident/query.do` | Look up historical events by time range |
 
 ```mermaid
 sequenceDiagram
-    participant User as 客户端
-    participant Atlas as Atlas API
+    participant Client
+    participant Atlas
+    participant Webhook
 
-    Note over User,Atlas: 🔵 第1步：搜索航班
-    User->>Atlas: POST /search.do
-    Atlas->>User: 返回 routingIdentifier + 航班选项
-
-    Note over User,Atlas: ✅ 第2步：验价
-    User->>Atlas: POST /verify.do (routingIdentifier)
-    Atlas->>User: 返回 sessionId + 价格+规则+行李
-
-    Note over User,Atlas: 🧳 可选：查询行李
-    User->>Atlas: POST /getLuggage.do (sessionId)
-    Atlas->>User: 行李选项+价格
-
-    Note over User,Atlas: 💺 可选：查询座位
-    User->>Atlas: POST /seatAvailability.do (sessionId)
-    Atlas->>User: 座位图+价格
-
-    Note over User,Atlas: 📝 第3步：创建订单
-    User->>Atlas: POST /createOrder.do (sessionId + 乘客信息)
-    Atlas->>User: 返回 orderNumber
-
-    Note over User,Atlas: 💰 第4步：支付
-    User->>Atlas: POST /pay.do (orderNumber)
-    Atlas->>User: 支付确认
-
-    Note over User,Atlas: 🔎 第5步：查询订单
-    User->>Atlas: POST /retrieveOrder.do (orderNumber)
-    Atlas->>User: 订单详情 + 票号 + PNR
+    Client->>Atlas: Register webhook
+    Atlas->>Client: signingKey
+    Note over Client,Atlas: Book normally
+    Client->>Atlas: search → verify → order → pay
+    
+    Note over Atlas,Webhook: Events trigger push
+    Atlas->>Webhook: Ticketing complete
+    Webhook->>Client: TICKETING_COMPLETE event
+    Note right of Client: Validate signature with signingKey
+    Client->>Webhook: 200 OK
 ```
 
 ---
 
-### 流程：搜索 → 验价 → 选座/行李 → 预订 → 支付 → 出票 → 订单查询
+## Order Management & PNR
 
-| 步骤 | API | 依赖 | 核心功能 |
-|------|-----|------|---------|
-| **A1** | **票价查询**<br>`POST /search.do` | 无（入口接口） | ✅ 行程类型（单程 / 往返）<br>✅ 乘客数（成人 / 儿童 / 婴儿）<br>✅ 出发 / 到达城市或机场 IATA 码<br>✅ 出发 / 返回日期 (yyyyMMdd)<br>✅ 指定航司 / 航班号（可选过滤）<br>✅ 多运价舱位、结算币种 |
-| **A2** | **验价**<br>`POST /verify.do` | 需先调用票价查询 | ✅ 传入 Search 的 routingIdentifier<br>✅ 实时价格（原始价 vs 新价）<br>✅ 返回 sessionId（用于后续下单）<br>✅ 返回 bookingRequirement<br>✅ 退改签规则 / 行李额度 |
-| **A3** | **预订**<br>`POST /createOrder.do` | 需先调用验价 | ✅ 传入 Verify 返回的 sessionId<br>✅ 乘客信息（姓名、生日证件）<br>✅ 联系人信息（邮箱、电话）<br>✅ 内部订单号（便于对账）<br>✅ 保险、附加服务预订 |
-| **A4** | **支付**<br>`POST /pay.do` | 需先调用创建订单 | ✅ Deposit（预存款）支付<br>✅ VCC（虚拟信用卡）支付<br>✅ MoR（商户代收）模式<br>✅ 信用卡：Visa / MC / AE / Discover |
-| **A5** | **订单查询**<br>`POST /retrieveOrder.do` | 支付成功后 | ✅ 查询订单状态、票号<br>✅ 支付状态、出票状态<br>✅ PNR 信息、乘客信息<br>✅ 附加服务信息 |
+| Operation | Endpoint | Capabilities |
+|-----------|----------|-------------|
+| **Order List** | `POST /orderList.do` | Filter by creation date range or status; pagination support |
+| **Extract PNR** | `POST /extractPnr.do` | Retrieve raw PNR and e-ticket information |
+| **PNR Claim** | `POST /pnrClaim.do` | Claim PNR ownership and bind to order |
 
 ---
 
-## 🅱️ GetOffer 直接报价
+## Utility Endpoints
 
-> 跳过搜索，直接报价 · 提高转化率
-
-| 步骤 | API | 依赖 | 核心功能 |
-|------|-----|------|---------|
-| **B1** | **直接获取报价**<br>`POST /getOffers.do` | 无（第二入口） | ✅ 指定航司、航班号、舱位<br>✅ 出发日期、出发/到达机场<br>✅ 返回包含 sessionId<br>✅ 可直接用于后续 CreateOrder |
-| **B2** | **GetOffer 价格查询**<br>`POST /getOfferPrice.do` | GetOffer | ✅ 传入 GetOffer 的 offerId<br>✅ 获取实时精确报价<br>✅ 用于价格展示与比价 |
-
----
-
-## 🅲 SmartSearch 智能搜索
-
-> TMC 增强版搜索能力
-
-| 步骤 | API | 依赖 | 核心功能 |
-|------|-----|------|---------|
-| **C1** | **智能搜索**<br>`POST /smartSearch.do` | 需 TMC 权限 | ✅ 覆盖 Search API 未覆盖的航线与时段<br>✅ TMC 场景增强版搜索<br>✅ 返回 routingIdentifier |
-| **C2** | **价格对比搜索**<br>`POST /priceCompareSearch.do` | 无（比价入口） | ✅ 多航班比价搜索<br>✅ 灵活日期比价<br>✅ 价格日历视图 |
+| Tool | Endpoint | Capabilities |
+|------|----------|-------------|
+| **Balance** | `POST /balance.do` | Check account balance with multi-currency support |
+| **Flight Data Feed** | `POST /flightDataFeed.do` | Full route data exports and incremental sync |
+| **Email Query** | `POST /emailQuery.do` | Email content lookup and attachment downloads |
+| **aTrip Token** | `POST /atripToken.do` | Obtain and refresh access tokens |
 
 ---
 
-## 🅳 退票 & 改签
+## API Dependency Reference
 
-> 出票后订单维护
+This table shows the key parameter flows between endpoints:
 
-| 步骤 | API | 依赖 | 核心功能 |
-|------|-----|------|---------|
-| **D1** | **退票**<br>`POST /refund.do` | 已出票订单 | ✅ 支持部分退票<br>✅ 支持自愿 / 非自愿退票<br>✅ 退票金额计算<br>✅ 退票状态查询 |
-| **D2** | **RegenerateOrder**<br>`POST /regenerateOrder.do` | 已出票订单 | ✅ 订单重新生成<br>✅ 改签场景使用<br>✅ 保留原订单信息 |
-| **D3** | **停止出票**<br>`POST /stopTicketIssuance.do` | 支付成功未出票 | ✅ 紧急停止出票流程<br>✅ 支付后快速响应前 |
-
----
-
-## 🅴 附加服务
-
-> 行李、选座等增值服务
-
-| 步骤 | API | 依赖 | 核心功能 |
-|------|-----|------|---------|
-| **E1** | **行李服务**<br>`POST /getLuggage.do` | Verify 后 | ✅ 行李产品查询<br>✅ 多等级可选<br>✅ CreateOrder 时预订 |
-| **E2** | **选座服务**<br>`POST /seatAvailability.do` | Verify 后 | ✅ 座位图展示<br>✅ 座位价格查询<br>✅ CreateOrder 时预订 |
-| **E3** | **预订后附加服务**<br>`POST /bookAncillary.do` | 已出票 | ✅ 出票后追加行李<br>✅ 出票后选座<br>✅ 支付附加费单独支付 |
-
----
-
-## 🅵 Webhook 通知管理
-
-> 事件推送与回调
-
-| 步骤 | API | 核心功能 |
-|------|-----|---------|
-| **F1** | **通知注册**<br>`POST /webhook/register.do` | ✅ 注册回调 URL<br>✅ 选择通知类型<br>✅ 验签密钥配置 |
-| **F2** | **事件查询**<br>`POST /incident/query.do` | ✅ 航变事件查询<br>✅ 按时间范围<br>✅ 航班状态更新 |
-
-### Webhook 事件类型
-
-| 事件代码 | 说明 |
-|---------|------|
-| `TICKETING_COMPLETE` | ✅ 出票完成通知 |
-| `VOID_NOTIFICATION` | ❌ 订单作废通知 |
-| `SCHEDULE_CHANGE` | ⚠️ 航班时刻变更通知 |
-| `AIRLINE_STATUS_UPDATE` | 📢 航司状态更新通知 |
-| `EMAIL_NOTIFICATION` | 📧 邮件通知 |
-| `INCIDENT_NOTIFICATION` | 🔔 事件通知 |
-
----
-
-### Webhook 推送流程
-
-```mermaid
-sequenceDiagram
-    participant C as 客户系统
-    participant A as Atlas API
-    participant W as Webhook 服务
-
-    Note over C,A: 1. 注册 Webhook
-    C->>A: POST /webhook/register.do
-    A->>C: 返回 signingKey
-    
-    Note over C,A: 2. 正常预订流程
-    C->>A: search.do
-    C->>A: verify.do
-    C->>A: createOrder.do
-    C->>A: pay.do
-    
-    Note over A,W: 3. 事件触发推送
-    A->>W: 出票完成事件
-    W->>C: POST {eventType: TICKETING_COMPLETE}
-    Note right of C: 用 signingKey 验签
-    C->>W: 返回 200 OK
-    
-    Note over A,W: 4. 其他事件
-    A->>W: 航班变更事件
-    W->>C: SCHEDULE_CHANGE
-    
-    Note over C,A: 5. 查询历史事件
-    C->>A: POST /incident/query.do
-    A->>C: 返回事件列表
-```
-
----
-
-## 🅶 订单列表 & PNR 管理
-
-> 订单查询与 PNR 操作
-
-| 步骤 | API | 核心功能 |
-|------|-----|---------|
-| **G1** | **订单列表**<br>`POST /orderList.do` | ✅ 按创建时间范围<br>✅ 按订单状态过滤<br>✅ 分页查询支持 |
-| **G2** | **PNR 提取**<br>`POST /extractPnr.do` | ✅ 提取 PNR 原文<br>✅ E-ticket 电子客票 |
-| **G3** | **PNR Claim**<br>`POST /pnrClaim.do` | ✅ 认领 PNR 归属<br>✅ 订单绑定 |
-
----
-
-## 🅷 工具类接口
-
-> 辅助功能接口
-
-| 步骤 | API | 核心功能 |
-|------|-----|---------|
-| **H1** | **账户余额**<br>`POST /balance.do` | ✅ 查询账户余额<br>✅ 多币种支持 |
-| **H2** | **航班数据导出**<br>`POST /flightDataFeed.do` | ✅ 全量航线数据<br>✅ 增量数据同步 |
-| **H3** | **邮件查询**<br>`POST /emailQuery.do` | ✅ 邮件内容查询<br>✅ 邮件附件下载 |
-| **H4** | **aTrip Token**<br>`POST /atripToken.do` | ✅ 获取访问令牌<br>✅ Token 刷新机制 |
-
----
-
-## 🔗 API 依赖关系总表
-
-| API 接口 | 依赖接口 | 关键传递参数 |
-|---------|---------|-------------|
+| API | Depends on | Key parameters passed |
+|-----|-----------|----------------------|
 | `search.do` | - | `routingIdentifier` → Verify |
-| `verify.do` | `search.do` | `sessionId` → CreateOrder / 退改签规则 / 行李额度 |
+| `verify.do` | `search.do` | `sessionId` → CreateOrder / rules / baggage |
 | `createOrder.do` | `verify.do` / `getOffers.do` | `sessionId`, `bookingRequirement` |
 | `getOffers.do` | - | `offerId`, `sessionId` |
 | `pay.do` | `createOrder.do` | `orderNumber` |
@@ -301,10 +285,16 @@ sequenceDiagram
 
 ---
 
-### 📝 说明
+### Key Takeaways
 
-- **入口接口**：`search.do`, `getOffers.do`, `smartSearch.do`
-- **必走流程**：Search/GetOffer → Verify → CreateOrder → Pay → RetrieveOrder
-- **可选附加**：Luggage / Seat / Ancillary
-- **出票后操作**：Refund / Regenerate / BookAncillary / OrderList
-- **回调通知**：Webhook 注册 + 事件接收
+* **Entry points:** `search.do`, `getOffers.do`, `smartSearch.do`
+* **Mandatory flow:** Search/GetOffer → Verify → CreateOrder → Pay → RetrieveOrder
+* **Optional steps:** Luggage / Seat / Ancillary
+* **Post-ticketing:** Refund / Regenerate / BookAncillary / OrderList
+* **Notifications:** Webhook registration + event consumption
+
+### Related Sections
+
+* [Booking Overview](../product-guides/booking/booking-overview/) - Choose the right booking flow
+* [API Reference](../api-reference/) - Complete endpoint specifications
+* [Webhook Overview](../product-guides/extensions-and-integrations/webhook-overview/) - Notification setup and handling
