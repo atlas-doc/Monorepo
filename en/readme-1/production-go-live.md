@@ -194,6 +194,6 @@ After launch, keep monitoring early live traffic and route any booking or paymen
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Quick Start](quick-start.md)
+* [UAT Validation](uat-submission-guide.md)
+* [Webhook Overview](../product-guides/extensions-and-integrations/webhook-overview/)

@@ -56,6 +56,6 @@ After import, use the skill to:
 
 ### Related pages
 
-* [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17)
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
+* [MCP-Assisted Development](mcp-assisted-development.md)
+* [Quick Start](../quick-start.md)
+* [API Reference](../../api-reference/)

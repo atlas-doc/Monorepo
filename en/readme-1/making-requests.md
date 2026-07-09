@@ -11,7 +11,7 @@ description: >-
 Use this page to get sandbox access and prepare your first API calls.
 
 {% hint style="info" %}
-After you get sandbox credentials, run the [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf).
+After you get sandbox credentials, run the [Sandbox Validation Test Kit](sandbox-development/sandbox-validation-test-kit.md).
 
 Use it to confirm credentials, network access, and the no-code booking happy path before development starts.
 {% endhint %}
@@ -151,11 +151,11 @@ You can do all of these in sandbox:
 
 ### Next step
 
-Continue with [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv).
+Continue with [Sandbox Development](sandbox-development/).
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
+* [Quick Start](quick-start.md)
+* [Sandbox Validation Test Kit](sandbox-development/sandbox-validation-test-kit.md)
+* [Sandbox Development](sandbox-development/)
+* [Booking Overview](../product-guides/booking/booking-overview/)

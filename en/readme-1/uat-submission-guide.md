@@ -73,7 +73,7 @@ Use this path:
 If a case fails, ATRIP shows the failure reason directly.
 
 {% hint style="info" %}
-Before UAT, run the [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf).
+Before UAT, run the [Sandbox Validation Test Kit](sandbox-development/sandbox-validation-test-kit.md).
 
 Use it to confirm credentials, network access, and the basic booking path before formal validation starts.
 {% endhint %}
@@ -223,7 +223,7 @@ Use this recovery order:
 
 ### What comes next?
 
-After approval, continue with [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy).
+After approval, continue with [Production Go-Live](production-go-live.md).
 
 At that point, ask for `LIVE` status, generate production credentials, switch endpoints, and run a controlled smoke test.
 
@@ -255,8 +255,8 @@ After UAT passes:
 
 ### Related pages
 
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Sandbox Development](sandbox-development/)
+* [Sandbox Validation Test Kit](sandbox-development/sandbox-validation-test-kit.md)
+* [Quick Start](quick-start.md)
+* [Production Go-Live](production-go-live.md)
+* [Webhook Overview](../product-guides/extensions-and-integrations/webhook-overview/)

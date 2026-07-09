@@ -173,7 +173,7 @@ For `429`, always honor `retryAfter` before retrying.
 
 ### What comes next?
 
-After you fix the search issue, return to [Search](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/readme/booking-overview/search) and continue the booking flow with the correct identifier.
+After you fix the search issue, return to [Search](../../../product-guides/booking/booking-step-guides/search.md) and continue the booking flow with the correct identifier.
 
 ### Related pages
 

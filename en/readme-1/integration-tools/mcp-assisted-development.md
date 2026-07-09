@@ -12,7 +12,7 @@ Use GitBook MCP to speed up Atlas API development.
 
 It helps you find the right pages, understand the flow, and narrow down the next step faster.
 
-If you want a packaged assistant setup, use [Atlas AI Assistant Skill](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JeSfAw1uWsyn9tGwrTFH).
+If you want a packaged assistant setup, use [Atlas AI Assistant Skill](atlas-ai-assistant-skill.md).
 
 ### When to use MCP
 
@@ -43,9 +43,9 @@ Ask MCP to outline the minimum sandbox flow.
 
 Then validate against these pages:
 
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
+* [Sandbox Development](../sandbox-development/)
+* [Booking Overview](../../product-guides/booking/booking-overview/)
+* [API Reference](../../api-reference/)
 
 #### Move through the booking flow
 
@@ -64,9 +64,9 @@ Use MCP to route errors to the right troubleshooting section.
 
 Good starting points:
 
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Error Codes](../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [FAQs](../../support-and-reference/troubleshooting-and-support/faqs/)
+* [Webhook Overview](../../product-guides/extensions-and-integrations/webhook-overview/)
 
 ### Prompt patterns that work well
 
@@ -87,10 +87,10 @@ Use MCP as a navigation and implementation aid.
 
 Keep these rules:
 
-* treat [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV) as the source of truth for fields and schemas
+* treat [API Reference](../../api-reference/) as the source of truth for fields and schemas
 * keep production secrets out of prompts
 * validate request details against your actual environment
-* complete [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT) before go-live
+* complete [UAT Validation](../uat-submission-guide.md) before go-live
 
 {% hint style="info" %}
 GitBook MCP is available at [the MCP endpoint](https://resources.atriptech.com/~gitbook/mcp).
@@ -100,14 +100,14 @@ GitBook MCP is available at [the MCP endpoint](https://resources.atriptech.com/~
 
 1. Use MCP to find the right flow.
 2. Open the matching overview or guide page.
-3. Confirm fields and schemas in [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV).
-4. Build and validate in [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv).
+3. Confirm fields and schemas in [API Reference](../../api-reference/).
+4. Build and validate in [Sandbox Development](../sandbox-development/).
 5. Use troubleshooting pages when a call or state transition fails.
-6. Move to [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT) when the flow is stable.
+6. Move to [UAT Validation](../uat-submission-guide.md) when the flow is stable.
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Troubleshooting & Support](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tPfxQTN6n9wpKCsa6jJW)
+* [Quick Start](../quick-start.md)
+* [Sandbox Validation Test Kit](../sandbox-development/sandbox-validation-test-kit.md)
+* [Booking Overview](../../product-guides/booking/booking-overview/)
+* [Troubleshooting & Support](../../support-and-reference/troubleshooting-and-support/)

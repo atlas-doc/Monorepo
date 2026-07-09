@@ -11,7 +11,7 @@ Use this page to build and validate the full Atlas integration in sandbox.
 {% include "../../.gitbook/includes/sandbox-search-currency-note.md" %}
 
 {% hint style="info" %}
-Before you build the integration, run the [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf).
+Before you build the integration, run the [Sandbox Validation Test Kit](sandbox-validation-test-kit.md).
 
 Use it to confirm credentials, network access, and the core happy path without writing code.
 {% endhint %}
@@ -44,7 +44,7 @@ This phase should cover both API execution and webhook follow-up.
 
 ### Fast setup check
 
-Use the [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf) before full development work.
+Use the [Sandbox Validation Test Kit](sandbox-validation-test-kit.md) before full development work.
 
 It validates `Search`, `Verify`, `Order`, and `Pay`.
 
@@ -82,7 +82,7 @@ Make sure you already have:
 
 ### Use MCP during development
 
-Use [MCP-Assisted Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uEdQG85jAqXi5Zbbzq17) when you need help finding the right flow, page, or next API step.
+Use [MCP-Assisted Development](../integration-tools/mcp-assisted-development.md) when you need help finding the right flow, page, or next API step.
 
 It works well for:
 
@@ -196,11 +196,11 @@ Any card number and last name can be used for this specific failure simulation.
 
 Use these shared reference pages when you need published sandbox inputs:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Sandbox Test Routes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tyXBAEpAntbScXsBHd0l)
-* [Sandbox Test Cards](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/VXnL5n838qAJ6myXvikA)
-* [Integration Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JKGPURw0UiwgbJIUMwZq)
+* [Booking Overview](../../product-guides/booking/booking-overview/)
+* [Webhook Overview](../../product-guides/extensions-and-integrations/webhook-overview/)
+* [Sandbox Test Routes](../../support-and-reference/integration-reference/sandbox-test-data/sandbox-test-routes.md)
+* [Sandbox Test Cards](../../support-and-reference/integration-reference/sandbox-test-data/sandbox-test-cards.md)
+* [Integration Reference](../../support-and-reference/integration-reference/)
 
 ### Complete this phase when
 
@@ -220,12 +220,12 @@ You can do all of these reliably in sandbox:
 
 ### Next step
 
-Move to [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT) after the sandbox flow is stable.
+Move to [UAT Validation](../uat-submission-guide.md) after the sandbox flow is stable.
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Quick Start](../quick-start.md)
+* [Sandbox Access](../making-requests.md)
+* [Sandbox Validation Test Kit](sandbox-validation-test-kit.md)
+* [UAT Validation](../uat-submission-guide.md)
+* [Webhook Overview](../../product-guides/extensions-and-integrations/webhook-overview/)

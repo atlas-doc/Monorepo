@@ -154,10 +154,10 @@ If your business needs higher throughput, contact your Atlas account manager or 
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
+* [Booking Overview](./)
+* [Error Codes](../../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Search](../booking-step-guides/search.md)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Verify](../booking-step-guides/verify.md)
+* [Seats](../optional-ancillaries/seats-and-baggage/)
+* [Baggage](../optional-ancillaries/baggage.md)

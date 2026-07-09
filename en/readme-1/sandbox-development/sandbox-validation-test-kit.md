@@ -245,11 +245,11 @@ After the test kit passes:
 
 * start the API integration
 * keep the same sandbox credentials for development
-* continue with [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
+* continue with [Sandbox Development](./)
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
+* [Quick Start](../quick-start.md)
+* [Sandbox Access](../making-requests.md)
+* [Sandbox Development](./)
+* [UAT Validation](../uat-submission-guide.md)
