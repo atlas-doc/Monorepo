@@ -65,6 +65,6 @@ Use these cards only in sandbox.
 
 ### Related pages
 
-* [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
+* [Sandbox Development](../../../readme-1/sandbox-development/)
+* [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [UAT Validation](../../../readme-1/uat-submission-guide.md)

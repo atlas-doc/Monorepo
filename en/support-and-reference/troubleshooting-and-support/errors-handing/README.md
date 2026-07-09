@@ -57,42 +57,42 @@ Use the page that matches the failed stage.
 
 #### Request failed before business processing
 
-Start with [Common & Access Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Rm0Gc9akel1xG9nGdiHw).
+Start with [Common & Access Errors](common-and-access-errors.md).
 
 Use it for invalid JSON, missing fields, credential failures, or access issues.
 
 #### Search failed
 
-Start with [Search Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZZXG9HGTENPgRVyaaoYs).
+Start with [Search Errors](search-errors.md).
 
 Use it for timeout, QPS limits, route restrictions, or empty results.
 
 #### Verify, order, or ticketing failed
 
-Start with [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O).
+Start with [Verify, Order & Ticketing Errors](verify-order-and-ticketing-errors.md).
 
 Use it for expired identifiers, stale pricing, invalid booking input, or ticketing-stage failures.
 
 #### Payment failed
 
-Start with [Payment Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/v1plEh7MJqP2ZqtiNvxk).
+Start with [Payment Errors](payment-errors.md).
 
 Use it for duplicate payment risk, unsupported payment methods, VCC failures, or FR confirmation gaps.
 
 #### Refund, query, or post-booking failed
 
-Start with [Refund, Query & Post-booking Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XUINxYxfOsv9CDtmb1pl).
+Start with [Refund, Query & Post-booking Errors](refund-query-and-post-booking-errors.md).
 
 Use it for order lookup issues, refund timing, expired refund offers, or ancillary limitations.
 
 ### All error guides
 
-* [Common & Access Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Rm0Gc9akel1xG9nGdiHw)
-* [429 vs 110](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hqJgEqYKMP5CMQ8mArxT)
-* [Search Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZZXG9HGTENPgRVyaaoYs)
-* [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
-* [Payment Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/v1plEh7MJqP2ZqtiNvxk)
-* [Refund, Query & Post-booking Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/XUINxYxfOsv9CDtmb1pl)
+* [Common & Access Errors](common-and-access-errors.md)
+* [429 vs 110](429-vs-110.md)
+* [Search Errors](search-errors.md)
+* [Verify, Order & Ticketing Errors](verify-order-and-ticketing-errors.md)
+* [Payment Errors](payment-errors.md)
+* [Refund, Query & Post-booking Errors](refund-query-and-post-booking-errors.md)
 
 ### 429 request-limit handling
 
@@ -128,7 +128,7 @@ Use these fields when `429` is returned:
 }
 ```
 
-Use [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV) for the full policy, counting rules, and pool mapping.
+Use [API Request Limits](../../../product-guides/booking/booking-overview/api-request-limits.md) for the full policy, counting rules, and pool mapping.
 
 #### What counts toward the limit
 
@@ -393,7 +393,7 @@ Always apply back-off where needed and avoid blind retry loops.
 
 `429` is retryable only after the returned `retryAfter` delay and only with lower request frequency.
 
-Use [429 vs 110](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hqJgEqYKMP5CMQ8mArxT) when you need the distinction between request-limit governance and search concurrency pressure.
+Use [429 vs 110](429-vs-110.md) when you need the distinction between request-limit governance and search concurrency pressure.
 
 #### Which error codes mean I need a new identifier or a new flow?
 

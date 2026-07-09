@@ -78,4 +78,4 @@ Common values include:
 
 See the complete endpoint schemas and samples here:
 
-[Email Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KEC5wQ7dkP9bkNcF3gM3)
+[Email Query](../../api-reference/utility-apis/email-query.md)

@@ -83,5 +83,5 @@ Use **borne by sender** so Atlas receives the full intended top-up amount.
 
 ### Related pages
 
-* [Balance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FUCdplDts3cEfJk3ZZ7A)
-* [Payments](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
+* [Balance](../../utility-api-overview/balance.md)
+* [Payments](atlas-api-payments.md)

@@ -15,7 +15,7 @@ It covers the questions teams usually need answered before development starts.
 {% hint style="info" %}
 Need a meeting-ready version of this page?
 
-Use [Kickoff Checklist](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx).
+Use [Kickoff Checklist](kickoff-checklist.md).
 {% endhint %}
 
 Start here when you need to:
@@ -83,13 +83,13 @@ Use:
 
 Use them on every sandbox request.
 
-See [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f).
+See [Sandbox Access](../../../readme-1/making-requests.md).
 
 ### Is there a Postman collection for first tests?
 
 Yes.
 
-Use the collection in [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2) for first end-to-end tests.
+Use the collection in [Quick Start](../../../readme-1/quick-start.md) for first end-to-end tests.
 
 Use the UAT guidance later when you are ready for formal verification.
 
@@ -103,9 +103,9 @@ Use `verify.do` before `order.do` in the standard search flow.
 
 See:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
+* [Booking Overview](../../../product-guides/booking/booking-overview/)
+* [Get Offer](../../../product-guides/booking/booking-step-guides/get-offer.md)
+* [Verify](../../../product-guides/booking/booking-step-guides/verify.md)
 
 #### How should we protect pricing integrity before booking?
 
@@ -170,7 +170,7 @@ Choose the itinerary first.
 
 Then query baggage and seat options before booking to strengthen conversion and traveler clarity.
 
-See [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67).
+See [Baggage](../../../product-guides/booking/optional-ancillaries/baggage.md).
 
 ### Ancillaries and fare content
 
@@ -192,7 +192,7 @@ The main options are:
 
 Support still depends on airline and ticketing channel.
 
-See [Payments](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3).
+See [Payments](atlas-api-payments.md).
 
 ### How should we choose between deposit and VCC?
 
@@ -226,7 +226,7 @@ Use `queryOrderDetails.do` until ticketing reaches the final state.
 
 Webhook helps, but it should not be your only confirmation path.
 
-See [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n).
+See [Query Order](../../../product-guides/booking/booking-step-guides/query-order/).
 
 ### What should our system store for later follow-up?
 
@@ -264,7 +264,7 @@ For **VCC**, refunded funds usually return to the original card.
 
 For **deposit**, Atlas credits your balance after airline funds are received.
 
-See [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0).
+See [Post-booking](atlas-api-post-ticketing.md).
 
 ### Are booking changes handled by API?
 
@@ -292,7 +292,7 @@ Webhook delivery is best effort.
 
 Use airline email, incident flows, and order query for final reconciliation.
 
-See [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6).
+See [Webhook Overview](../../../product-guides/extensions-and-integrations/webhook-overview/).
 
 #### When should we start UAT and prepare for go-live?
 
@@ -311,7 +311,7 @@ Prepare:
 * webhook evidence when required
 * relevant order numbers or request IDs
 
-See [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT).
+See [UAT Validation](../../../readme-1/uat-submission-guide.md).
 
 ### What should be confirmed before go-live?
 
@@ -324,13 +324,13 @@ Confirm all of these:
 * endpoints are switched correctly
 * first live orders can be monitored
 
-See [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy).
+See [Production Go-Live](../../../readme-1/production-go-live.md).
 
 ### Related pages
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [Kickoff Checklist](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Post-booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/dYHx2vNQK9JRsoUPWN7X)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Quick Start](../../../readme-1/quick-start.md)
+* [Kickoff Checklist](kickoff-checklist.md)
+* [FAQs](./)
+* [Booking Overview](../../../product-guides/booking/booking-overview/)
+* [Post-booking Overview](../../../product-guides/post-booking/)
+* [Webhook Overview](../../../product-guides/extensions-and-integrations/webhook-overview/)

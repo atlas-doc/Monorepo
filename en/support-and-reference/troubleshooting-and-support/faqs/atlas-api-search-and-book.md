@@ -125,7 +125,7 @@ Choose the itinerary first.
 
 Then query baggage options with `getLuggage.do` when baggage matters before booking.
 
-See [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67).
+See [Baggage](../../../product-guides/booking/optional-ancillaries/baggage.md).
 
 ### What seat selection scenarios are supported?
 
@@ -135,7 +135,7 @@ Atlas supports Atlas-issued orders and seat selection purchased with the ticket 
 
 Atlas does not support non-Atlas-issued orders or post-ticketing seat selection.
 
-See [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3) for the current support scope.
+See [Seats](../../../product-guides/booking/optional-ancillaries/seats-and-baggage/) for the current support scope.
 
 ### Can we call `seatAvailability.do` with flight information only?
 
@@ -224,13 +224,13 @@ Yes.
 
 If the request enters Atlas business processing and returns a result, it counts toward the pool.
 
-Use [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV) for the full limit model.
+Use [API Request Limits](../../../product-guides/booking/booking-overview/api-request-limits.md) for the full limit model.
 
 ### Related pages
 
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [Identifiers](../../../product-guides/booking/booking-overview/identifiers.md)
+* [Search vs Offer](../../../product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md)
+* [Search](../../../product-guides/booking/booking-step-guides/search.md)
+* [Get Offer](../../../product-guides/booking/booking-step-guides/get-offer.md)
+* [Verify](../../../product-guides/booking/booking-step-guides/verify.md)
+* [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)

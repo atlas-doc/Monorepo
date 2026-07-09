@@ -99,6 +99,6 @@ Use these routes when you need stable sandbox search and booking scenarios.
 
 ### Related pages
 
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Sandbox Validation Test Kit](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/QGSV22o2k6o3CpQ1SZLf)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
+* [Sandbox Access](../../../readme-1/making-requests.md)
+* [Sandbox Validation Test Kit](../../../readme-1/sandbox-development/sandbox-validation-test-kit.md)
+* [Search](../../../product-guides/booking/booking-step-guides/search.md)

@@ -17,7 +17,7 @@ Leave the meeting with the main flow, ownership, and launch path agreed.
 {% hint style="info" %}
 Need a shorter customer pre-read first?
 
-Use [Top Questions for Partners](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rj5WM4KAQ5YcHyUoIR75).
+Use [Top Questions for Partners](top-questions-for-partners.md).
 {% endhint %}
 
 ### What this meeting should achieve
@@ -119,9 +119,9 @@ Main chain:
 
 See:
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
+* [Booking Overview](../../../product-guides/booking/booking-overview/)
+* [Get Offer](../../../product-guides/booking/booking-step-guides/get-offer.md)
+* [Verify](../../../product-guides/booking/booking-step-guides/verify.md)
 
 ### Section 3: Pricing integrity
 
@@ -157,7 +157,7 @@ Set expectations early.
 
 Do not force ancillary queries into the base flow unless they are required.
 
-See [Seats & Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3).
+See [Seats & Baggage](../../../product-guides/booking/optional-ancillaries/seats-and-baggage/).
 
 ### Section 5: Payment model
 
@@ -180,7 +180,7 @@ Confirm the primary payment path before build starts.
 
 Atlas does not issue VCC cards.
 
-See [Payments](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3).
+See [Payments](atlas-api-payments.md).
 
 ### Section 6: Ticketing and booking status
 
@@ -202,7 +202,7 @@ Treat ticketing as asynchronous.
 * `pnrCode`
 * airline PNR when available
 
-See [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n).
+See [Query Order](../../../product-guides/booking/booking-step-guides/query-order/).
 
 ### Section 7: Post-booking operations
 
@@ -224,8 +224,8 @@ This part is often under-scoped.
 
 See:
 
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Post-booking](atlas-api-post-ticketing.md)
+* [Webhook Overview](../../../product-guides/extensions-and-integrations/webhook-overview/)
 
 ### Section 8: Delivery plan
 
@@ -241,9 +241,9 @@ End the kickoff with delivery expectations.
 
 See:
 
-* [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2)
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy)
+* [Quick Start](../../../readme-1/quick-start.md)
+* [UAT Validation](../../../readme-1/uat-submission-guide.md)
+* [Production Go-Live](../../../readme-1/production-go-live.md)
 
 ### Final output of the kickoff
 
@@ -262,8 +262,8 @@ Leave with a written decision log for:
 
 ### Related pages
 
-* [Before Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
-* [Top Questions for Partners](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rj5WM4KAQ5YcHyUoIR75)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Post-booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/dYHx2vNQK9JRsoUPWN7X)
+* [Before Integration](before-integration.md)
+* [Top Questions for Partners](top-questions-for-partners.md)
+* [FAQs](./)
+* [Booking Overview](../../../product-guides/booking/booking-overview/)
+* [Post-booking Overview](../../../product-guides/post-booking/)

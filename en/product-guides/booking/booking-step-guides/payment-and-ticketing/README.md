@@ -94,7 +94,7 @@ Send `creditCard` when using:
 
 ### What comes next?
 
-After `pay.do`, use [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n) until the final ticketed state is confirmed.
+After `pay.do`, use [Query Order](../query-order/) until the final ticketed state is confirmed.
 
 Use webhook as a supplement, not as the only confirmation path.
 
@@ -153,15 +153,15 @@ Use the API response `status` as the source of truth.
 
 ### Related pages
 
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Confirm Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [Hybrid Payment Guide](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/SkmHf0AK1tgebiGujAko)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [Create Order](../create-order.md)
+* [Confirm Order](../confirm-order.md)
+* [Query Order](../query-order/)
+* [Hybrid Payment Guide](hybrid-payment-guide.md)
+* [Error Codes](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Booking APIs](../../../../api-reference/booking-apis/)
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/nz90Dw3FsXnJ4d6erPoH)
+* [Payment & Ticketing](../../../../api-reference/booking-apis/payment-and-ticketing.md)

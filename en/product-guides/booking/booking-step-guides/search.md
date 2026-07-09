@@ -112,11 +112,11 @@ Do not mix identifiers across flows.
 
 #### Standard flow
 
-Call [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm) with `routingIdentifier`.
+Call [Verify](verify.md) with `routingIdentifier`.
 
 #### Get Offer flow
 
-Continue with [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu) and then create the order with `OfferId`.
+Continue with [Get Offer](get-offer.md) and then create the order with `OfferId`.
 
 #### Smart search flow
 
@@ -124,15 +124,15 @@ Use the smart search follow-up only for existing implementations.
 
 ### Related pages
 
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Sandbox Access](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/O9n7Z0tHowy0I3hOF44f)
-* [Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [Get Offer](get-offer.md)
+* [Verify](verify.md)
+* [Sandbox Access](../../../readme-1/making-requests.md)
+* [Booking APIs](../../../api-reference/booking-apis/)
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/lqBleuC7HEsPku6mncSh)
-* [Smart Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jU5sjhTD1WPTM2EU260v)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rzWbUXxEiy9glqM2Zv3J)
+* [Search](../../../api-reference/booking-apis/search.md)
+* [Smart Search](../../../api-reference/booking-apis/smart-search.md)
+* [Get Offer](../../../api-reference/booking-apis/get-offer.md)

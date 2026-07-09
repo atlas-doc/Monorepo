@@ -75,4 +75,4 @@ Returned route records can include:
 
 See the complete endpoint schemas and samples here:
 
-[Route Export](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/api-reference/utility-apis/route-export)
+[Route Export](../../api-reference/utility-apis/route-export.md)

@@ -32,7 +32,7 @@ This flow is a good fit when shopping happens outside Atlas and Atlas is used as
 
 Do not use this page as the source of truth for the fulfillment-specific `getOfferPrice.do` path.
 
-Use [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ) when the flow needs broader display rules and a 5-minute ticketing window.
+Use [Get Offer Price](get-offer-price.md) when the flow needs broader display rules and a 5-minute ticketing window.
 
 #### What should I keep from the Get Offer response?
 
@@ -95,11 +95,11 @@ Honor `retryAfter` when `429` is returned.
 
 #### Minimal path
 
-Continue with [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE), then [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB).
+Continue with [Create Order](create-order.md), then [Payment & Ticketing](payment-and-ticketing/).
 
 #### Path with seats and baggage
 
-Use [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3) and [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67) before order creation.
+Use [Seats](../optional-ancillaries/seats-and-baggage/) and [Baggage](../optional-ancillaries/baggage.md) before order creation.
 
 ### How this differs from standard search
 
@@ -396,20 +396,20 @@ This speeds up support review.
 
 ### Related pages
 
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Get Offer vs Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
+* [Search](search.md)
+* [Get Offer Price](get-offer-price.md)
+* [Get Offer vs Get Offer Price](../booking-overview/booking-decisions/get-offer-vs-get-offer-price.md)
+* [Create Order](create-order.md)
+* [Payment & Ticketing](payment-and-ticketing/)
+* [Seats](../optional-ancillaries/seats-and-baggage/)
+* [Baggage](../optional-ancillaries/baggage.md)
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rzWbUXxEiy9glqM2Zv3J)
-* [Seat](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/33ZWa8YpkzEg8kPsZLCo)
-* [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MuS2S2ZQqIdtJ6efLOuz)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/w82BK9CIz280FMw8vmrv)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/nz90Dw3FsXnJ4d6erPoH)
+* [Get Offer](../../../api-reference/booking-apis/get-offer.md)
+* [Seat](../../../api-reference/booking-apis/inflow-seat-and-baggage.md)
+* [Baggage](../../../api-reference/booking-apis/baggage.md)
+* [Create Order](../../../api-reference/booking-apis/create-order.md)
+* [Payment & Ticketing](../../../api-reference/booking-apis/payment-and-ticketing.md)

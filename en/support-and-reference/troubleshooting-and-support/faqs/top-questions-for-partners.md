@@ -26,7 +26,7 @@ The standard flow is:
 4. `pay.do`
 5. `queryOrderDetails.do`
 
-See [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3).
+See [Booking Overview](../../../product-guides/booking/booking-overview/).
 
 ### 2. Why can search price and booking price differ?
 
@@ -52,7 +52,7 @@ Fare families can be returned in search.
 
 Baggage and seat queries should stay optional unless they are required for conversion.
 
-See [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3) and [Baggage](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67).
+See [Seats](../../../product-guides/booking/optional-ancillaries/seats-and-baggage/) and [Baggage](../../../product-guides/booking/optional-ancillaries/baggage.md).
 
 ### 5. Which payment modes are available?
 
@@ -65,7 +65,7 @@ Atlas does not issue VCC cards.
 
 You provide the card details when VCC pass-through is used.
 
-See [Payments](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3).
+See [Payments](atlas-api-payments.md).
 
 ### 6. Is ticketing synchronous?
 
@@ -103,7 +103,7 @@ Deposit refunds are credited back after Atlas receives airline funds.
 
 Booking changes are generally handled through ATRIP service requests, not a generic self-service API flow.
 
-See [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uvnvVffeDxSurkQpIoj0).
+See [Post-booking](atlas-api-post-ticketing.md).
 
 ### 10. What should be ready before UAT and go-live?
 
@@ -124,8 +124,8 @@ Before go-live:
 
 See:
 
-* [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT)
-* [Production Go-Live](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/RbSfDpgzWXL0fCAdyLQy)
+* [UAT Validation](../../../readme-1/uat-submission-guide.md)
+* [Production Go-Live](../../../readme-1/production-go-live.md)
 
 ### If you only align 5 things first
 
@@ -139,6 +139,6 @@ Start with these:
 
 ### Related pages
 
-* [Before Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/atRqZqfIII5j9gLe0jRu)
-* [Kickoff Checklist](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/wrBKOpzwnb7ki3On0sXx)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
+* [Before Integration](before-integration.md)
+* [Kickoff Checklist](kickoff-checklist.md)
+* [FAQs](./)

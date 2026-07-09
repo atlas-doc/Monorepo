@@ -143,6 +143,6 @@ Check payment support and required fields in the current search or verification 
 
 ### Related pages
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Finance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tK6nC3S4gDNT3KmHMwQh)
+* [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Error Codes](../errors-handing/)
+* [Finance](atlas-api-finance.md)

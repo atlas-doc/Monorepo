@@ -28,7 +28,7 @@ Open Reference Data when you already know the workflow and only need the support
 
 ### Pages in this section
 
-* [Locale Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Iqbnh1NWCgycDIzPka7l)
+* [Locale Reference](locale.md)
 
 ### What this section covers
 

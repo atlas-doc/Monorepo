@@ -50,4 +50,4 @@ The response can include:
 
 See the complete endpoint schemas and samples here:
 
-[Balance](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/api-reference/utility-apis/balance)
+[Balance](../../api-reference/utility-apis/balance.md)

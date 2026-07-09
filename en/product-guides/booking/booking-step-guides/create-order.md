@@ -93,22 +93,22 @@ For deposit customers, `STOP_SEAT` may require a split fund order and a `credit 
 
 #### Standard payment path
 
-Continue to [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB) with `orderNo`.
+Continue to [Payment & Ticketing](payment-and-ticketing/) with `orderNo`.
 
 #### FR flow
 
-If the airline is FR, complete [Confirm Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB) before payment.
+If the airline is FR, complete [Confirm Order](confirm-order.md) before payment.
 
 ### Related pages
 
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [Verify](verify.md)
+* [Get Offer](get-offer.md)
+* [Get Offer Price](get-offer-price.md)
+* [Payment & Ticketing](payment-and-ticketing/)
+* [Booking APIs](../../../api-reference/booking-apis/)
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/w82BK9CIz280FMw8vmrv)
+* [Create Order](../../../api-reference/booking-apis/create-order.md)

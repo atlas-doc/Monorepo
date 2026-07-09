@@ -20,9 +20,9 @@ Start here when you need to:
 
 #### Where should I start when something fails?
 
-Start with [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1) when you have a returned status code.
+Start with [Error Codes](errors-handing/) when you have a returned status code.
 
-Use [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD) when the issue is about expected behavior, design choices, or common edge cases.
+Use [FAQs](faqs/) when the issue is about expected behavior, design choices, or common edge cases.
 
 #### When should I use support resources?
 
@@ -30,9 +30,9 @@ Use support resources when error lookup and FAQs do not resolve the issue, or wh
 
 ### Pages in this section
 
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [Help Center](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Uz15LoKbrvyjsHXVzMDH)
+* [Error Codes](errors-handing/)
+* [FAQs](faqs/)
+* [Help Center](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6gAksXDk6z99aVnKRffY/)
 
 ### What this section covers
 
@@ -74,6 +74,6 @@ Start with the page that matches the symptom, then escalate only if self-service
 
 ### Related pages
 
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [FAQs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/eSEVUFqqFzApLBAckuJD)
-* [Help Center](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Uz15LoKbrvyjsHXVzMDH)
+* [Error Codes](errors-handing/)
+* [FAQs](faqs/)
+* [Help Center](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6gAksXDk6z99aVnKRffY/)

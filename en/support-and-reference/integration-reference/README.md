@@ -26,12 +26,12 @@ This section holds shared reference values, airline-specific supporting data, an
 
 Use this section for shared values and test inputs.
 
-Use [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV) for exact endpoint fields, schemas, and samples.
+Use [API Reference](../../api-reference/) for exact endpoint fields, schemas, and samples.
 
 ### Pages in this section
 
-* [Reference Data](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/txmj4lKYJtvehocjKHS3)
-* [Sandbox Test Data](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/thEk5cxZ8nxFej5GfhxF)
+* [Reference Data](reference-data/)
+* [Sandbox Test Data](sandbox-test-data/)
 
 ### What this section covers
 
@@ -53,6 +53,6 @@ After you find the required value or test input, return to the workflow or endpo
 
 ### Related sections
 
-* [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)
-* [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV)
-* [Troubleshooting & Support](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tPfxQTN6n9wpKCsa6jJW)
+* [Integration Guides](../../readme-1/)
+* [API Reference](../../api-reference/)
+* [Troubleshooting & Support](../troubleshooting-and-support/)

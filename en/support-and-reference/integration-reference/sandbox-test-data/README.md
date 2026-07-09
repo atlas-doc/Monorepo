@@ -28,8 +28,8 @@ Check it before sandbox validation, scripted testing, or UAT preparation when yo
 
 ### Pages in this section
 
-* [Sandbox Test Routes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tyXBAEpAntbScXsBHd0l)
-* [Sandbox Test Cards](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/VXnL5n838qAJ6myXvikA)
+* [Sandbox Test Routes](sandbox-test-routes.md)
+* [Sandbox Test Cards](sandbox-test-cards.md)
 
 ### What this section covers
 
@@ -45,9 +45,9 @@ Check it before sandbox validation, scripted testing, or UAT preparation when yo
 
 ### What comes next?
 
-After you pick the required test input, continue with [Sandbox Development](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv) or [UAT Validation](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/aH2Shbpf2B9zZldFkBrT).
+After you pick the required test input, continue with [Sandbox Development](../../../readme-1/sandbox-development/) or [UAT Validation](../../../readme-1/uat-submission-guide.md).
 
 ### Related sections
 
-* [Integration Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JKGPURw0UiwgbJIUMwZq)
-* [Sandbox & UAT](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Xs5C4xGnhQl0A2GNjlwv)
+* [Integration Reference](../)
+* [Sandbox & UAT](../../../readme-1/sandbox-development/)

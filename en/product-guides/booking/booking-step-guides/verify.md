@@ -109,18 +109,18 @@ If your seat request arrives later from an upstream system, keep enough itinerar
 
 ### What comes next?
 
-Use [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE) with the returned `sessionId`.
+Use [Create Order](create-order.md) with the returned `sessionId`.
 
 If price, inventory, or ancillaries changed, use the verify result as the current source of truth.
 
 ### Related pages
 
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [Search](search.md)
+* [Create Order](create-order.md)
+* [Booking APIs](../../../api-reference/booking-apis/)
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/COwEy62n0XrLQubATdaA)
+* [Verify](../../../api-reference/booking-apis/verify.md)

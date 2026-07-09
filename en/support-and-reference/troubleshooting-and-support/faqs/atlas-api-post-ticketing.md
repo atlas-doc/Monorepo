@@ -65,7 +65,7 @@ Then submit the void with the latest `voidOfferId`.
 
 Track status until the case is closed.
 
-See [Void](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/B8hsI0GKlmcexaJt4Npx).
+See [Void](../../../product-guides/post-booking/void.md).
 
 ### Does Atlas support partial void for some passengers?
 
@@ -115,7 +115,7 @@ This is handled free of charge.
 Baggage may be added after ticketing when the airline and order support it.\
 Seat selection after ticketing is not supported.
 
-See [Seats](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3) for the current seat-selection support scope.
+See [Seats](../../../product-guides/booking/optional-ancillaries/seats-and-baggage/) for the current seat-selection support scope.
 
 ### What happens in case of booking or service failure?
 
@@ -163,6 +163,6 @@ Then follow up in the existing service request through Eva, or create a new refu
 
 ### Related pages
 
-* [Refunds](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/BrRnHjluVQUVmDfiLe3t)
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Refunds](../../../product-guides/post-booking/refunds.md)
+* [Post-booking](../../../product-guides/post-booking/)
+* [Webhook Overview](../../../product-guides/extensions-and-integrations/webhook-overview/)

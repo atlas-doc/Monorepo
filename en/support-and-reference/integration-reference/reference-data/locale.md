@@ -26,8 +26,8 @@ Locale is most relevant when:
 
 Use locale with:
 
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [FR Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/HyzW7wts21GuPr6cO9gM)
+* [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [FR Integration](../../../product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
 
 ### FR supported locale values
 
@@ -70,8 +70,8 @@ Use locale with:
 
 ### Related pages
 
-* [Reference Data](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/txmj4lKYJtvehocjKHS3)
-* [Integration Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/JKGPURw0UiwgbJIUMwZq)
-* [FR Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/HyzW7wts21GuPr6cO9gM)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Special Integrations](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rJmf4QqhDHnkZLTdu1Io)
+* [Reference Data](./)
+* [Integration Reference](../)
+* [FR Integration](../../../product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
+* [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [Special Integrations](../../../product-guides/extensions-and-integrations/special-integrations/)

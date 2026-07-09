@@ -57,14 +57,14 @@ Use `x-atlas-client-id` and `x-atlas-client-secret` on every sandbox call.
 
 Yes.
 
-Use the Postman collection in [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2).
+Use the Postman collection in [Quick Start](../../../readme-1/quick-start.md).
 
 Use the UAT guidance later when you prepare for formal verification.
 
 ### Is there a Postman collection for first tests?
 
 Yes.\
-Use the Postman collection in [Quick Start](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/MkEt9qjU24ig50fQ8be2).
+Use the Postman collection in [Quick Start](../../../readme-1/quick-start.md).
 
 Use the UAT guidance when you prepare for formal verification.
 

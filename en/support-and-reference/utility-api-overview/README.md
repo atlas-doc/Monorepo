@@ -31,10 +31,10 @@ Use **Balance** for finance checks, **Email Query** for captured email lookup, *
 
 ### Pages in this section
 
-* [Balance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FUCdplDts3cEfJk3ZZ7A)
-* [Email Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/mQPRhePPYFLL0uCWyvMj)
-* [Route Export](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Tjos6manMsLhVf2I2CLI)
-* [ATRIP Token](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xABnvygqYZvEWsr6Csai)
+* [Balance](balance.md)
+* [Email Query](email-query.md)
+* [Route Export](route-export.md)
+* [ATRIP Token](atrip-token.md)
 
 ### What this section covers
 
@@ -65,10 +65,10 @@ After you identify the utility task, open the matching page in this section for 
 
 Use endpoint-level details here:
 
-[Utility APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/X2FRiVZEpfn1IE5NdgLT)
+[Utility APIs](../../api-reference/utility-apis/)
 
 ### Related pages
 
-* [Integration Guides](https://app.gitbook.com/o/BAk4dVh9gDCZNUPtQyDE/s/6LsKtmbJhZxgxraY5mHB/)
-* [Post-booking](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/R6rkbsTfrs5gZzElecNB)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Integration Guides](../../readme-1/)
+* [Post-booking](../../product-guides/post-booking/)
+* [Webhook Overview](../../product-guides/extensions-and-integrations/webhook-overview/)
