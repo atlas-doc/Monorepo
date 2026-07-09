@@ -13,12 +13,12 @@ description: 展示如何在 GitBook 中嵌入 HTML 产品功能树
 把独立的 HTML 文件放在 `.gitbook/assets/` 目录，然后通过 `include` 引用：
 
 ```markdown
-{% include ".gitbook/assets/product-feature-tree.html" %}
+{% include "/.gitbook/assets/product-feature-tree.html" %}
 ```
 
 **效果预览：**
 
-{% include ".gitbook/assets/product-feature-tree.html" %}
+{% include "/.gitbook/assets/product-feature-tree.html" %}
 
 ---
 
