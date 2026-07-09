@@ -1,18 +1,12 @@
 ---
-description: 展示如何在 GitBook 中嵌入 HTML 产品功能树
+description: Atlas API 产品功能全景图，展示所有核心接口能力与依赖关系
 ---
 
 # Atlas API 产品功能树
 
-本文档演示如何在 GitBook 中嵌入交互式 HTML 产品功能树。
+Atlas API 全能力全景图，涵盖搜索、预订、支付、退票、改签等核心业务流程。
 
 ---
-
-## 方式一：直接嵌入 HTML（推荐 ✅）
-
-把完整的 HTML 内容直接写在 Markdown 中，用 `{% raw %}` 包裹。所有样式、交互、动画都会完美保留。
-
-**效果预览：**
 
 {% raw %}
 <style>
