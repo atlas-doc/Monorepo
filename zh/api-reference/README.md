@@ -42,7 +42,7 @@ description: Atlas API 端点参考文档，包含按工作流和能力组织的
 ### 常见起点
 
 * [搜索](booking-apis/search.md)
-* [验证](booking-apis/verify.md)
+* [验价](booking-apis/verify.md)
 * [创建订单](booking-apis/create-order.md)
 * [支付与出票](booking-apis/payment-and-ticketing.md)
 * [退款](post-booking-apis/refunds.md)

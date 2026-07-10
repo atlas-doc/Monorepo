@@ -17,15 +17,15 @@ description: 浏览 Atlas 产品指南，涵盖预订、预订后以及扩展和
 然后使用：
 
 * [预订概述](booking/booking-overview/)了解共享规则和标识符
-* [预订流程](booking/booking-flows/)选择端到端预订路径
-* [预订步骤指南](booking/booking-step-guides/)了解各步骤预订页面
+* [预订路径](booking/booking-flows/)选择端到端预订路径
+* [预订步骤](booking/booking-step-guides/)了解各步骤预订页面
 * [可选附加服务](booking/optional-ancillaries/)了解可选的座位和行李
 
 ### 预订后
 
 此部分涵盖退款、作废、订单维护和 PNR 跟进。
 
-从[预订后服务](post-booking/)开始。
+从[预订后操作](post-booking/)开始。
 
 ### 扩展与集成
 
