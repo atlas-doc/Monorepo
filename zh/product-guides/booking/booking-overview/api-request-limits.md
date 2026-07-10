@@ -1,6 +1,5 @@
 ---
-description: >-
-  Atlas API 针对选定预订前 API 的 QPS 和 QPM 请求限制规则，包括共享池、429 处理和重试指导。
+description: Atlas API 针对选定预订前 API 的 QPS 和 QPM 请求限制规则，包括共享池、429 处理和重试指导。
 ---
 
 # API 请求限制
@@ -153,10 +152,10 @@ Atlas 在滚动 60 秒窗口中计算附加服务次数。
 
 ### 相关页面
 
-* [预订概述](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [错误代码](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [搜索](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [获取报价](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [验证](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [座位](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/3ujCySdZ8OYYLfGI3iF3)
-* [行李](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ftzqh42LAaE6QYzklv67)
+* [预订概述](./)
+* [错误代码](../../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [搜索](../booking-step-guides/search.md)
+* [获取报价](../booking-step-guides/get-offer.md)
+* [验证](../booking-step-guides/verify.md)
+* [座位](../optional-ancillaries/seats-and-baggage/)
+* [行李](../optional-ancillaries/baggage.md)

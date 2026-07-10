@@ -18,5 +18,5 @@ description: Atlas 混合支付集成指南。
 
 ### 相关页面
 
-* [支付与出票](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [创建订单](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [支付与出票](./)
+* [创建订单](../create-order.md)
