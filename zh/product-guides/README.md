@@ -6,6 +6,12 @@ description: 浏览 Atlas 产品指南，涵盖预订、预订后以及扩展和
 
 使用此部分可在实现端点详情之前选择正确的指南。
 
+{% hint style="warning" %}
+**🆕 新产品：** 当您需要 `getOfferPrice.do` 预订路径、更广泛的展示规则以及创建订单后立即支付时，请从[🆕 核价出票接口](booking/booking-flows/fulfillment-flow.md)开始。
+
+在两种基于报价的路径之间做选择时，请使用[Get Offer vs 核价出票接口](booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md)。
+{% endhint %}
+
 浏览产品指南的三个部分：
 
 ### 预订
@@ -13,6 +19,8 @@ description: 浏览 Atlas 产品指南，涵盖预订、预订后以及扩展和
 此部分涵盖完整的预订领域。
 
 从[预订](booking/)开始。
+
+如果您想要最新的预订路径，请从[🆕 核价出票接口](booking/booking-flows/fulfillment-flow.md)开始。
 
 然后使用：
 
