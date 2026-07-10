@@ -399,7 +399,7 @@ This event should not replace:
 
 ### Related pages
 
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Incident Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/70gk6tmdLYkYGQSscSKw)
+* [Webhook Overview](./)
+* [Query Order](../../booking/booking-step-guides/query-order/)
+* [Payment & Ticketing](../../booking/booking-step-guides/payment-and-ticketing/)
+* [Incident Query](incident-query.md)

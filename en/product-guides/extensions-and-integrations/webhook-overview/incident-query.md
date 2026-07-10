@@ -101,16 +101,16 @@ Use:
 
 ### What comes next?
 
-Use the query result together with [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n) and [Incident Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX) to confirm the final operational state.
+Use the query result together with [Query Order](../../booking/booking-step-guides/query-order/) and [Incident Notification](incident-notification.md) to confirm the final operational state.
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Webhook Registration & Incidents](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tHs475MBpb4mdFaxH0qc)
+* [Webhook Registration & Incidents](../../../api-reference/webhook-and-incident-apis/webhook-registration-and-incidents.md)
 
 ### Related pages
 
-* [Incident Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX)
-* [Schedule Change Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8TuCRQT1tW58vMulbndJ)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
+* [Incident Notification](incident-notification.md)
+* [Schedule Change Notification](schedule-change-notification.md)
+* [Query Order](../../booking/booking-step-guides/query-order/)

@@ -340,10 +340,10 @@ Switch to deposit or another card when the fallback path is supported.
 
 ### Related pages
 
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Payments](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/I4apn7RVlP6yFkpJazm3)
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [Payment Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/v1plEh7MJqP2ZqtiNvxk)
-* [Order Maintenance](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/AQEBHaWYnuNx4vUIfO7g)
-* [Regenerate Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/uFfyVhZ3JYFYmFotYD22)
+* [Payment & Ticketing](./)
+* [Fulfillment API](../get-offer-price.md)
+* [Payments](../../../../support-and-reference/troubleshooting-and-support/faqs/atlas-api-payments.md)
+* [Query Order](../query-order/)
+* [Payment Errors](../../../../support-and-reference/troubleshooting-and-support/errors-handing/payment-errors.md)
+* [Order Maintenance](../../../post-booking/order-maintenance.md)
+* [Regenerate Order](../../../../api-reference/post-booking-apis/regenerate-order.md)

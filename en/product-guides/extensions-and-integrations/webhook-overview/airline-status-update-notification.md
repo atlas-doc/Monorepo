@@ -12,7 +12,7 @@ Use this webhook when you need to react to airline-level availability changes.
 
 This is the first live scenario in Atlas multi-channel notifications.
 
-Use [Multi-channel Notifications](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/KsOoqFTUcKVpOxUhs5R7) to configure ATRIP delivery across webhook, email, and team chat.
+Use [Multi-channel Notifications](../multi-channel-notifications.md) to configure ATRIP delivery across webhook, email, and team chat.
 
 ### Trigger
 

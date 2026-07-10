@@ -207,7 +207,7 @@ Make sure travelers are prepared with the required original documents.
 
 ### Related pages
 
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Special Integrations](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/rJmf4QqhDHnkZLTdu1Io)
+* [Search](../../booking/booking-step-guides/search.md)
+* [Create Order](../../booking/booking-step-guides/create-order.md)
+* [Payment & Ticketing](../../booking/booking-step-guides/payment-and-ticketing/)
+* [Special Integrations](./)

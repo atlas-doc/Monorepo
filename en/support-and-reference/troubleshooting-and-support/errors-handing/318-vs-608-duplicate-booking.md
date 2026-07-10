@@ -108,9 +108,9 @@ Use passenger name, itinerary, travel date, and any existing `orderNo` or airlin
 
 ### Related pages
 
-* [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n)
-* [Polling and Ticketing Timing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
-* [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
+* [Query Order](../../../product-guides/booking/booking-step-guides/query-order/)
+* [Polling and Ticketing Timing](../../../product-guides/booking/booking-step-guides/query-order/post-payment-polling.md)
+* [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
+* [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Error Codes](./)
+* [Verify, Order & Ticketing Errors](verify-order-and-ticketing-errors.md)

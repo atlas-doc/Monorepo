@@ -128,5 +128,5 @@ After the access or request issue is fixed, return to the workflow page you were
 
 ### Related pages
 
-* [Authentication & Request Basics](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/readme/quick-start/making-requests)
-* [Help & Support](https://app.gitbook.com/s/cAlPPpTunfEGdmk5fy1e/troubleshooting-and-support)
+* [Authentication & Request Basics](../../../readme-1/making-requests.md)
+* [Help & Support](../)

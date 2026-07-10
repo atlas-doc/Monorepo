@@ -521,8 +521,8 @@ Sample:
 
 ### Related pages
 
-* [Webhook Registration & Incidents](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/tHs475MBpb4mdFaxH0qc)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Incident Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/70gk6tmdLYkYGQSscSKw)
-* [Schedule Change Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/8TuCRQT1tW58vMulbndJ)
-* [Email Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/5JKeyb6NAdTPL7cjz8W2)
+* [Webhook Registration & Incidents](../../../api-reference/webhook-and-incident-apis/webhook-registration-and-incidents.md)
+* [Webhook Overview](./)
+* [Incident Query](incident-query.md)
+* [Schedule Change Notification](schedule-change-notification.md)
+* [Email Notification](email-notification.md)

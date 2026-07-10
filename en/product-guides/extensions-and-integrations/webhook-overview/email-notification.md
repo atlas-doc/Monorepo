@@ -212,6 +212,6 @@ POST to the webhook URL you registered with Atlas.
 
 ### Related pages
 
-* [Email Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/mQPRhePPYFLL0uCWyvMj)
-* [Incident Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX)
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
+* [Email Query](../../../support-and-reference/utility-api-overview/email-query.md)
+* [Incident Notification](incident-notification.md)
+* [Webhook Overview](./)

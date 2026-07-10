@@ -398,6 +398,6 @@ POST to the webhook URL you registered with Atlas.
 
 ### Related pages
 
-* [Webhook Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/1kDgZtL5TYuOLUmAxRd6)
-* [Incident Notification](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/IrfigjkYxz2qfdAQwbuX)
-* [Incident Query](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/70gk6tmdLYkYGQSscSKw)
+* [Webhook Overview](./)
+* [Incident Notification](incident-notification.md)
+* [Incident Query](incident-query.md)
