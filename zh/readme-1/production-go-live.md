@@ -118,7 +118,7 @@ UAT 通过后，您的客户经理将您的账户状态更改为 `LIVE`。
 
 在同一生产设置流程中设置您的 IP 白名单。
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>在 ATRIP 中生成生产凭证和设置 IP 白名单</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>在 ATRIP 中生成生产凭证和设置 IP 白名单</p></figcaption></figure>
 
 客户只有在账户设置为 `LIVE` 后才能直接生成这些值。
 {% endstep %}
