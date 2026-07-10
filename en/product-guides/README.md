@@ -8,6 +8,12 @@ description: >-
 
 Use this section to choose the right guide before you implement endpoint details.
 
+{% hint style="warning" %}
+**🆕 New product:** Start with [🆕 Fulfilment API](booking/booking-flows/fulfillment-flow.md) when you need the `getOfferPrice.do` booking path, broader display rules, and immediate payment after order creation.
+
+Use [Get Offer vs Fulfilment API](booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) when you are choosing between the two offer-based paths.
+{% endhint %}
+
 Browse Product Guides in three sections:
 
 ### Booking
@@ -16,10 +22,12 @@ Use this section for the full booking domain.
 
 Start with [Booking](booking/).
 
+If you want the newest booking path, start with [🆕 Fulfilment API](booking/booking-flows/fulfillment-flow.md).
+
 Then use:
 
 * [Booking Overview](booking/booking-overview/) for shared rules and identifiers
-* [Booking flows](booking/booking-flows/) for end-to-end journey choice
+* [Booking paths](booking/booking-flows/) for end-to-end journey choice
 * [Booking steps](booking/booking-step-guides/) for step-level booking pages
 * [Optional ancillaries](booking/optional-ancillaries/) for optional seats and baggage
 

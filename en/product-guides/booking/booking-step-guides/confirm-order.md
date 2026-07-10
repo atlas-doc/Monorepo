@@ -73,13 +73,13 @@ Use it in:
 
 ### Related pages
 
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB)
-* [FR Integration](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/HyzW7wts21GuPr6cO9gM)
-* [Booking APIs](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/beDx3cjbYPiOQ1Pwk6bC)
+* [Create Order](create-order.md)
+* [Payment & Ticketing](payment-and-ticketing/)
+* [FR Integration](../../extensions-and-integrations/special-integrations/fr-integration.md)
+* [Booking APIs](../../../api-reference/booking-apis/)
 
 ### Full API reference
 
 See endpoint-level details here:
 
-* [Confirm Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ReW5cc40i6p8ngk42VF3)
+* [Confirm Order](../../../api-reference/booking-apis/confirm-order.md)

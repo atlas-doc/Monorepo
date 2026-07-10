@@ -1,34 +1,34 @@
 ---
 description: >-
-  Booking path for known itineraries and independent offer pricing from Get
-  Offer through order follow-up.
+  End-to-end booking steps for known itineraries and independent offer pricing
+  from Get Offer through order follow-up.
 ---
 
-# Get Offer flow
+# Get Offer
 
 Path: `Get Offer → Order → Payment → Query Order`
 
-Use this flow when the itinerary is already known or when you need an independent price check.
+Use this page when the itinerary is already known or when you need an independent price check.
 
 This page defines the end-to-end sequence for this path.
 
-Use [Booking step guides](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/7Hivwro5sZdOotzmaEIn) when you need endpoint-level detail for one step.
+Use [Booking step guides](../booking-step-guides/) when you need endpoint-level detail for one step.
 
-### When to use this flow
+### When to use Get Offer
 
-Use this flow when you need to:
+Use Get Offer when you need to:
 
 * skip Atlas search as the main shopping entry point
 * price or validate a known itinerary
 * create the order directly from `OfferId`
 
-### Full flow
+### Full sequence
 
 {% stepper %}
 {% step %}
 ### Get Offer
 
-Call [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu).
+Call [Get Offer](../booking-step-guides/get-offer.md).
 
 Keep `OfferId`.
 {% endstep %}
@@ -38,13 +38,13 @@ Keep `OfferId`.
 
 This step is optional.
 
-Use [Optional ancillaries](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Bbuhdlzobxaya4FUurUl) before order creation when seat or baggage upsell is part of your product.
+Use [Optional ancillaries](../optional-ancillaries/) before order creation when seat or baggage upsell is part of your product.
 {% endstep %}
 
 {% step %}
 ### Create Order
 
-Call [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE) with `OfferId`.
+Call [Create Order](../booking-step-guides/create-order.md) with `OfferId`.
 
 Keep `orderNo`.
 {% endstep %}
@@ -54,13 +54,13 @@ Keep `orderNo`.
 
 This step is airline-specific.
 
-Use [Confirm Order (FR only)](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/cyd69uDJk3ulct18V6QB) before payment when the airline requires it.
+Use [Confirm Order (FR only)](../booking-step-guides/confirm-order.md) before payment when the airline requires it.
 {% endstep %}
 
 {% step %}
 ### Payment & Ticketing
 
-Call [Payment & Ticketing](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/WK8UWUaHjby25uukAxCB).
+Call [Payment & Ticketing](../booking-step-guides/payment-and-ticketing/).
 
 Payment success does not always mean final ticketing is already complete.
 {% endstep %}
@@ -68,11 +68,11 @@ Payment success does not always mean final ticketing is already complete.
 {% step %}
 ### Query Order
 
-Use [Query Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2yNUkts3yozduQUMF05n) as the standard follow-up step after payment.
+Use [Query Order](../booking-step-guides/query-order/) as the standard follow-up step after payment.
 
 Keep following the order until it is ticketed or reaches another terminal state.
 
-Use [Post-payment polling](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bFPEFbkcemP) for polling timing and retry guidance.
+Use [Post-payment polling](../booking-step-guides/query-order/post-payment-polling.md) for polling timing and retry guidance.
 {% endstep %}
 {% endstepper %}
 
@@ -84,6 +84,6 @@ Use [Post-payment polling](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2qOXdnt78bF
 
 ### Decision support
 
-Use [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx) when you are choosing between the standard search path and Get Offer.
+Use [Search vs Offer](../booking-overview/booking-decisions/search-vs-offer.md) when you are choosing between the standard search path and Get Offer.
 
-Use [API Reference](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/LfT8Y3jMIGXTnxwihZhV) when you need exact request and response fields.
+Use [API Reference](../../../api-reference/) when you need exact request and response fields.

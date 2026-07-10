@@ -38,6 +38,7 @@ Use:
 
 * [Search & Booking](atlas-api-search-and-book.md)
 * [Orders & Ticketing](atlas-api-order.md)
+* [Fulfilment API FAQ](fulfilment-api-faq.md)
 
 #### Payment, refund, and finance
 
@@ -60,6 +61,7 @@ Use:
 * [Getting Started](atlas-api-general-information.md)
 * [Search & Booking](atlas-api-search-and-book.md)
 * [Orders & Ticketing](atlas-api-order.md)
+* [Fulfilment API FAQ](fulfilment-api-faq.md)
 * [Post-booking](atlas-api-post-ticketing.md)
 * [Payments](atlas-api-payments.md)
 * [Finance](atlas-api-finance.md)
@@ -78,8 +80,12 @@ Use [Search & Booking](atlas-api-search-and-book.md) for search, verify, pricing
 
 Use [Orders & Ticketing](atlas-api-order.md) for order status, ticketing, PNR, and follow-up questions.
 
+Use [Fulfilment API FAQ](fulfilment-api-faq.md) when the main question is whether Fulfilment API fits your model or how it works alongside existing Atlas interfaces.
+
 #### Where can I find payment or refund questions?
 
 Use [Payments](atlas-api-payments.md) for deposit, VCC, card handling, and payment limits.
+
+Use [Fulfilment API FAQ](fulfilment-api-faq.md) when the payment question is tied to Fulfilment API fit, dual payment paths, or failure alert timing.
 
 Use [Post-booking](atlas-api-post-ticketing.md) and [Finance](atlas-api-finance.md) for refunds, follow-up, top-ups, and reconciliation questions.

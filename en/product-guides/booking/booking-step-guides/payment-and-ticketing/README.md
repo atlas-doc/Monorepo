@@ -32,13 +32,17 @@ Payment success does not always mean the airline PNR and ticket numbers are alre
 
 Use order follow-up until the final ticketing state is confirmed.
 
-#### Is the deadline different for fulfillment-flow orders?
+#### Is the deadline different for Fulfilment API orders?
 
 Yes.
 
 Orders created from `getOfferPrice.do` use a 5-minute payment and ticketing window.
 
 If ticketing does not complete in time, Atlas cancels the order automatically.
+
+#### Which payment paths are available for Fulfilment API?
+
+{% include "../../../../.gitbook/includes/fulfilment-api-dual-payment-paths.md" %}
 
 ### Main API
 
@@ -74,7 +78,7 @@ Do not send duplicate payment requests when payment may already be in progress o
 ### Payment methods
 
 * `1`: Deposit
-* `3`: VCC passthrough
+* `3`: VCC pass-through
 * `4`: BYOA
 * `5`: MoR
 
@@ -87,7 +91,7 @@ Always send:
 
 Send `creditCard` when using:
 
-* VCC passthrough
+* VCC pass-through
 * MoR
 
 `threeDS.ip` is only relevant for MoR.
@@ -114,7 +118,7 @@ Use webhook as a supplement, not as the only confirmation path.
 * poll order status after payment until ticketing completes
 * handle payment retries carefully to avoid duplicate charges
 
-### Fulfillment flow deadline
+### Fulfilment API deadline
 
 Apply these extra rules when the order comes from `getOfferPrice.do`:
 
@@ -124,10 +128,20 @@ Apply these extra rules when the order comes from `getOfferPrice.do`:
 * stop retrying when the order is already near timeout
 
 {% hint style="warning" %}
-Do not apply the standard 30-minute order-hold expectation to fulfillment-flow orders.
+Do not apply the standard 30-minute order-hold expectation to Fulfilment API orders.
 
 This flow is designed around a 5-minute ticketing deadline.
 {% endhint %}
+
+### Fulfilment API payment fit
+
+Use Fulfilment API when you need:
+
+* immediate payment after order creation
+* deposit and VCC pass-through as dual payment paths
+* near-departure ticketing without the same cache-expiry pressure after request submission
+
+{% include "../../../../.gitbook/includes/fulfilment-api-integration-scope.md" %}
 
 ### Safe retry rule
 
@@ -150,6 +164,10 @@ Common payment response failures include:
 * order not confirmed in FR flow
 
 Use the API response `status` as the source of truth.
+
+### Failure alert timing for Fulfilment API
+
+{% include "../../../../.gitbook/includes/fulfilment-api-failure-alert-timing.md" %}
 
 ### Related pages
 

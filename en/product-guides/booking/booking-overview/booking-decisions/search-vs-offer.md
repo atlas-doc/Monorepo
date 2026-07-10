@@ -131,21 +131,21 @@ Do not add `verify.do` to the standard Get Offer path unless your implementation
 
 #### Need standard shopping and booking
 
-Use [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD).
+Use [Search](../../booking-step-guides/search.md).
 
 #### Need independent price retrieval
 
-Use [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu).
+Use [Get Offer](../../booking-step-guides/get-offer.md).
 
 #### Need the full booking sequence
 
-Use [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3).
+Use [Booking Overview](../).
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [Booking Overview](../)
+* [Identifiers](../identifiers.md)
+* [Search](../../booking-step-guides/search.md)
+* [Get Offer](../../booking-step-guides/get-offer.md)
+* [Verify](../../booking-step-guides/verify.md)
+* [Create Order](../../booking-step-guides/create-order.md)

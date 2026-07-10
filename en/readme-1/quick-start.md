@@ -10,6 +10,12 @@ description: >-
 
 Use this guide to move from Atlas sandbox access to live launch.
 
+{% hint style="warning" %}
+**🆕 New booking path:** Start with [🆕 Fulfilment API](../product-guides/booking/booking-flows/fulfillment-flow.md) when you use `getOfferPrice.do` and can move to payment immediately after order creation.
+
+Use [Get Offer vs Fulfilment API](../product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) when you need a fast path decision.
+{% endhint %}
+
 {% include "../.gitbook/includes/sandbox-search-currency-note.md" %}
 
 If you want an importable assistant for workflow guidance and troubleshooting, use [Atlas AI Assistant Skill](integration-tools/atlas-ai-assistant-skill.md).
@@ -134,9 +140,12 @@ The goal is to complete the end-to-end business flow in sandbox.
 Use these pages during development:
 
 * [Sandbox Development](sandbox-development/)
+* [Booking paths](../product-guides/booking/booking-flows/)
 * [MCP-Assisted Development](integration-tools/mcp-assisted-development.md)
 * [Booking Overview](../product-guides/booking/booking-overview/)
 * [Webhook Overview](../product-guides/extensions-and-integrations/webhook-overview/)
+
+If your product can pay immediately after `order.do`, start with [🆕 Fulfilment API](../product-guides/booking/booking-flows/fulfillment-flow.md).
 
 During this phase, keep these identifiers for later steps:
 
@@ -188,7 +197,7 @@ Keep these identifiers through the main flow:
 * `sessionId`
 * `orderNo`
 
-If you use the Get Offer path, keep `OfferId` instead of `sessionId`.
+If you use the Get Offer or Fulfilment API path, keep `OfferId` instead of `sessionId`.
 
 ### What each phase produces
 

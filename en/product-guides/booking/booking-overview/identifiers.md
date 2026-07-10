@@ -245,12 +245,12 @@ This makes expiry and retry decisions easier.
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Search](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/9K7uEnLGfEbpjGjni5gD)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/e7tapaArEz0MBOv62dxZ)
-* [Get Offer vs Fulfillment API](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/zE0QlLrSj0ynAcagJTD3)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Booking Overview](./)
+* [Search](../booking-step-guides/search.md)
+* [Get Offer](../booking-step-guides/get-offer.md)
+* [Fulfillment API](../booking-step-guides/get-offer-price.md)
+* [Get Offer vs Fulfillment API](booking-decisions/get-offer-vs-get-offer-price.md)
+* [Verify](../booking-step-guides/verify.md)
+* [Create Order](../booking-step-guides/create-order.md)
+* [Get Offer Price](../../../api-reference/booking-apis/get-offer-price.md)
+* [Error Codes](../../../support-and-reference/troubleshooting-and-support/errors-handing/)

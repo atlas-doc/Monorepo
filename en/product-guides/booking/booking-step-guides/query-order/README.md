@@ -18,7 +18,7 @@ Start here when you need to:
 
 * track ticketing after `pay.do`
 * confirm whether an order is already paid or ticketed
-* read airline PNR and ticket details after fulfillment
+* read airline PNR and ticket details after fulfilment
 
 ### FAQ
 
@@ -68,13 +68,13 @@ Webhook can help, but it should not be your only confirmation path.
 
 If payment may already be in progress or completed, query the order before any retry.
 
-### Fulfillment-flow follow-up
+### Fulfilment-flow follow-up
 
 If the order came from `getOfferPrice.do`, monitor it more aggressively.
 
 Use order query to confirm whether the order is still ticketing, already ticketed, or already cancelled by timeout.
 
-Do not keep retrying payment when the order is already close to the 5-minute fulfillment deadline.
+Do not keep retrying payment when the order is already close to the 5-minute fulfilment deadline.
 
 ### Related pages
 

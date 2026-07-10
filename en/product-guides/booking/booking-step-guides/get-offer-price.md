@@ -1,34 +1,50 @@
 ---
 description: >-
-  Step-level guide for the `getOfferPrice.do` fulfillment path, 5-minute
-  ticketing, timeout handling, and recovery rules.
+  Step guide for `getOfferPrice.do` in the Fulfilment API path, including
+  broader offer scope, 5-minute ticketing impact, and handoff to order creation.
 ---
 
 # Get Offer Price
 
 {% include "../../../.gitbook/includes/eva-help-hint.md" %}
 
-Use this page when you need the `getOfferPrice.do` fulfillment flow.
+Use this page when you need `getOfferPrice.do` behavior, timing, and recovery rules in Fulfilment API.
 
-This flow is designed for cases where you already know the target order context and need Atlas to complete fast fulfillment under a strict ticketing window.
+Start with [Fulfilment API](../booking-flows/fulfillment-flow.md) when you need the full end-to-end booking sequence.
+
+This page covers the Fulfilment API entry step only.
+
+It does not replace the full Fulfilment API path.
+
+Use [Fulfilment API FAQ](../../../support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md) when the main question is product fit, coexistence with existing interfaces, pricing model, or airline coverage.
+
+Use this step when you already know the target order context and need Atlas to start a fast fulfilment chain under a strict ticketing window.
 
 ### FAQ
 
 #### When should I use `getOfferPrice.do`?
 
-Use `getOfferPrice.do` when you need the fulfillment flow with broader display rules and a fast ticketing deadline.
+Use `getOfferPrice.do` when you need broader display rules and a fast ticketing deadline.
 
-This flow is a fit for urgent ticketing, risky inventory cases, and scenarios that are intentionally excluded from the standard Get Offer display policy.
+This step is a fit for urgent ticketing, risky inventory cases, and scenarios that are intentionally excluded from the standard Get Offer display policy.
 
-#### How is this flow different from `getOffers.do`?
+#### How is `getOfferPrice.do` different from `getOffers.do`?
 
-`getOfferPrice.do` is a fulfillment-oriented path.
+`getOfferPrice.do` is the core entry API for Fulfilment API.
 
-It allows broader offer visibility, uses its own request-limit policy, and applies a 5-minute fulfillment window after order creation.
+It allows broader offer visibility, uses its own request-limit policy, and applies a 5-minute fulfilment window after order creation.
 
-#### What restrictions are relaxed in this flow?
+#### Can I use `getOfferPrice.do` alongside existing Atlas interfaces?
 
-This flow can return offers that are normally filtered in the standard Get Offer path.
+Yes.
+
+Fulfilment API is an additional fulfilment channel.
+
+Use it in parallel with the standard flow when different business scenarios need different booking paths.
+
+#### What restrictions are relaxed in this step?
+
+This step can return offers that are normally filtered in the standard Get Offer path.
 
 Relaxed rules include:
 
@@ -36,28 +52,35 @@ Relaxed rules include:
 * sold-out-risk scenarios
 * round-trip prices that are higher than `OW + OW`
 
-#### What is the payment and ticketing deadline?
+For near-departure cases, this path is not constrained by the same cache-expiry pressure after request submission.
 
-Orders created from this flow have a 5-minute payment and ticketing window.
+#### What downstream deadline does this step trigger?
+
+Orders created through Fulfilment API have a 5-minute payment and ticketing window.
 
 If ticketing is not completed in time, Atlas cancels the order automatically.
 
 ### Main API
 
 * `getOfferPrice.do`
+
+### Downstream APIs in this path
+
+After `getOfferPrice.do`, the usual Fulfilment API chain continues with:
+
 * `getLuggage.do`
 * `seatAvailability.do`
 * `order.do`
 * `pay.do`
 * `queryOrderDetails.do`
 
-### What is different in this flow
+### What `getOfferPrice.do` changes
 
 #### Broader offer visibility
 
-This flow can surface inventory that standard `getOffers.do` may hide.
+`getOfferPrice.do` can surface inventory that standard `getOffers.do` may hide.
 
-That makes it useful for urgent or harder-to-fulfill scenarios.
+That makes it useful for urgent or harder-to-fulfil scenarios.
 
 #### Separate request governance
 
@@ -67,13 +90,19 @@ Do not assume it shares the same pool as `verify.do` or `getOffers.do`.
 
 #### Faster operational deadline
 
-The fulfillment window is much shorter than the standard booking hold.
+This step leads into an operating window that is much shorter than the standard booking hold.
 
 Plan the full chain for immediate payment and active follow-up.
 
-### 5-minute fulfillment rule
+#### Different integration scope
 
-Atlas expects the whole fulfillment chain to complete quickly in this flow.
+This is one entry interface within Fulfilment API, not the full standard shopping chain.
+
+{% include "../../../.gitbook/includes/fulfilment-api-integration-scope.md" %}
+
+### 5-minute Fulfilment API rule
+
+Atlas expects the whole Fulfilment API chain to complete quickly.
 
 Use these rules:
 
@@ -83,7 +112,7 @@ Use these rules:
 * stop retrying when the order is already outside the allowed window
 
 {% hint style="warning" %}
-Do not treat this flow like the standard order hold flow.
+Do not treat Fulfilment API like the standard order hold flow.
 
 The operational window is 5 minutes, not 30 minutes.
 {% endhint %}
@@ -100,9 +129,9 @@ If ticketing still does not complete within 5 minutes, Atlas cancels the order a
 
 ### Order identity and recovery
 
-Orders created from this flow should keep their fulfillment identity.
+Orders created through Fulfilment API should keep their Fulfilment API identity.
 
-If you need to regenerate the order after a supported cancellation path, keep the same fulfillment flow marker on the regenerated order.
+If you need to regenerate the order after a supported cancellation path, keep the same Fulfilment API marker on the regenerated order.
 
 Use `regenerateOrder.do` only when the original order is no longer payable and the recovery path supports regeneration.
 
@@ -110,17 +139,19 @@ Use `regenerateOrder.do` only when the original order is no longer payable and t
 
 The default scope is all airlines.
 
-U2 and 9C are currently excluded from this flow.
+U2 and 9C are currently excluded from Fulfilment API.
 
 They do not reliably meet the 5-minute ticketing requirement.
 
 For U2 and 9C, use the standard booking path instead.
 
-### Typical flow
+Outside those exclusions, Fulfilment API is powered by Atlas's 100+ direct official airline connections and continues to expand.
+
+### Where this step sits in the full path
 
 {% stepper %}
 {% step %}
-### Get fulfillment offer
+### Get the offer
 
 Call `getOfferPrice.do` and keep the returned `OfferId`.
 {% endstep %}
@@ -130,7 +161,7 @@ Call `getOfferPrice.do` and keep the returned `OfferId`.
 
 Query `getLuggage.do` or `seatAvailability.do` before order creation when seat or baggage upsell is part of your product.
 
-Use the returned `OfferId` as the ancillary context in this flow.
+Use the returned `OfferId` as the ancillary context in Fulfilment API.
 {% endstep %}
 
 {% step %}
@@ -138,7 +169,7 @@ Use the returned `OfferId` as the ancillary context in this flow.
 
 Call `order.do` with `OfferId` only when payment can start immediately.
 
-Treat order creation as the start of the strict fulfillment window.
+Treat order creation as the start of the strict Fulfilment API window.
 {% endstep %}
 
 {% step %}
@@ -146,7 +177,7 @@ Treat order creation as the start of the strict fulfillment window.
 
 Call `pay.do` as soon as the order is ready.
 
-Do not delay payment in this flow.
+Do not delay payment in Fulfilment API.
 {% endstep %}
 
 {% step %}
@@ -160,14 +191,20 @@ Webhook can help, but it should not be your only confirmation path.
 
 ### Best practice
 
-* connect this flow only to fast payment UX
+* connect Fulfilment API only to fast payment UX
 * keep retry logic conservative
-* log the fulfillment flow marker with `orderNo`
+* log the Fulfilment API marker with `orderNo`
 * separate monitoring for timeout cancellation and payment failure
 * use airline allowlists or blocklists that match the 5-minute SLA
 
+### Failure alert timing
+
+{% include "../../../.gitbook/includes/fulfilment-api-failure-alert-timing.md" %}
+
 ### Related pages
 
+* [Fulfilment API](../booking-flows/fulfillment-flow.md)
+* [Fulfilment API FAQ](../../../support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md)
 * [Booking Overview](../booking-overview/)
 * [Get Offer](get-offer.md)
 * [Create Order](create-order.md)

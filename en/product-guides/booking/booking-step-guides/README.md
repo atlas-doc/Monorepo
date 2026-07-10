@@ -1,22 +1,30 @@
 ---
-description: Step-level reference pages used across Atlas API booking journeys.
+description: >-
+  Step guides for individual booking actions used across Atlas API booking
+  paths.
 ---
 
-# Booking step guides
+# Booking steps
 
-Use this section for step-level booking reference pages used across multiple journeys.
+Use this section for step guides that explain one booking action at a time.
 
-These pages are not one fixed sequence in every booking flow.
+Each page covers one step, API entry point, or operational handoff.
 
-Use the flow pages first when you need the end-to-end path.
+These pages are reused across multiple booking paths.
 
-Use this section after you already know which booking flow you are building.
+They are not one fixed end-to-end sequence by themselves.
+
+Use the path pages first when you need the full booking order.
+
+Use this section after you already know which booking path you are building.
 
 Start here when you need to:
 
 * understand one booking step in detail
 * map a task to the right endpoint sequence
 * build or troubleshoot search, verify, order, payment, or order follow-up
+
+`Get Offer Price` is the entry step for the [Fulfilment API](../booking-flows/fulfillment-flow.md) path.
 
 ### Main step guides
 

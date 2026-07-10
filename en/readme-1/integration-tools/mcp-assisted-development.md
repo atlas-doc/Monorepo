@@ -93,7 +93,13 @@ Keep these rules:
 * complete [UAT Validation](../uat-submission-guide.md) before go-live
 
 {% hint style="info" %}
-GitBook MCP is available at [the MCP endpoint](https://resources.atriptech.com/~gitbook/mcp).
+Configure your MCP client with this endpoint:
+
+`https://resources.atriptech.com/~gitbook/mcp`
+
+This endpoint is not a normal web page.
+
+Do not open it directly in a browser.
 {% endhint %}
 
 ### Suggested workflow

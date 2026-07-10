@@ -12,8 +12,8 @@ Use this page to track the latest Atlas API documentation updates and jump to th
 
 Use it as the update feed for **Support & Reference** when you want the newest guidance, revised troubleshooting content, or newly added entry points.
 
-{% hint style="success" %}
-Latest update: Atlas VOID coverage now includes 23 airlines across four regions, with new support for `TS`, `Y4`, `EI`, and `VF`.
+{% hint style="warning" %}
+**🆕 Featured new product:** [🆕 Fulfilment API](product-guides/booking/booking-flows/fulfillment-flow.md) is now available for partners using `getOfferPrice.do` and immediate payment after order creation.
 {% endhint %}
 
 It highlights new guides, major troubleshooting improvements, and the next pages to read by use case.
@@ -23,6 +23,17 @@ Start here if you need to:
 * find the newest Atlas API guides
 * see what changed for sandbox, booking, payment, or troubleshooting
 * choose the right page to read next
+
+### Featured new product
+
+Start with [🆕 Fulfilment API](product-guides/booking/booking-flows/fulfillment-flow.md) when you need the new `getOfferPrice.do` booking path.
+
+Then use:
+
+* [Get Offer vs Fulfilment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) for flow choice
+* [Get Offer Price](product-guides/booking/booking-step-guides/get-offer-price.md) for entry-step timing and recovery rules
+* [Fulfilment API FAQ](support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md) for fit, coexistence, pricing, and payment questions
+* [Get Offer Price](api-reference/booking-apis/get-offer-price.md) for request and response fields
 
 ### FAQ
 
@@ -50,7 +61,7 @@ Start with [Quick Start](readme-1/quick-start.md) and [Integration Guides](readm
 
 #### Booking flow
 
-Start with [Booking Overview](product-guides/booking/booking-overview/) and [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md).
+Start with [🆕 Fulfilment API](product-guides/booking/booking-flows/fulfillment-flow.md), [Booking Overview](product-guides/booking/booking-overview/), and [Search & Booking](support-and-reference/troubleshooting-and-support/faqs/atlas-api-search-and-book.md).
 
 Use [Identifiers](product-guides/booking/booking-overview/identifiers.md) when you need the right token for the next step.
 
@@ -92,20 +103,24 @@ Read next:
 * [Void](api-reference/post-booking-apis/void.md)
 * [Refund, Query & Post-booking Errors](support-and-reference/troubleshooting-and-support/errors-handing/refund-query-and-post-booking-errors.md)
 
-#### Fulfillment API and `getOfferPrice.do` launch
+#### Fulfilment API and `getOfferPrice.do` launch
 
-Published new fulfillment guidance for the `getOfferPrice.do` flow and updated key booking pages with its timing and request-limit rules.
+Published the new Fulfilment API product path for `getOfferPrice.do` and updated the main booking entry pages to surface it faster.
 
 What changed:
 
-* added [Fulfillment API](product-guides/booking/booking-step-guides/get-offer-price.md) for the new fulfillment-oriented booking path
-* added [Get Offer vs Fulfillment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) to clarify when to use `getOffers.do` versus `getOfferPrice.do`
+* added [🆕 Fulfilment API](product-guides/booking/booking-flows/fulfillment-flow.md) for the end-to-end product flow
+* added [Get Offer Price](product-guides/booking/booking-step-guides/get-offer-price.md) for entry-step timing, retry rules, and recovery handling
+* added [Fulfilment API FAQ](support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md) for product fit, coexistence with existing interfaces, pricing, and payment questions
+* added [Get Offer vs Fulfilment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) to clarify when to use `getOffers.do` versus `getOfferPrice.do`
 * added [Get Offer Price](api-reference/booking-apis/get-offer-price.md) under API Reference
 * updated [Booking Overview](product-guides/booking/booking-overview/), [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/), [Query Order](product-guides/booking/booking-step-guides/query-order/), [Create Order](product-guides/booking/booking-step-guides/create-order.md), [Orders & Ticketing](support-and-reference/troubleshooting-and-support/faqs/atlas-api-order.md), and [API Request Limits](product-guides/booking/booking-overview/api-request-limits.md)
 
 Read next:
 
-* [Fulfillment API](product-guides/booking/booking-step-guides/get-offer-price.md)
+* [🆕 Fulfilment API](product-guides/booking/booking-flows/fulfillment-flow.md)
+* [Get Offer Price](product-guides/booking/booking-step-guides/get-offer-price.md)
+* [Fulfilment API FAQ](support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md)
 * [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/)
 * [API Request Limits](product-guides/booking/booking-overview/api-request-limits.md)
 
@@ -380,6 +395,33 @@ Use [Booking Overview](product-guides/booking/booking-overview/) for the main fl
 ### Full change log
 
 {% updates format="full" %}
+{% update date="2026-07-10" %}
+## Added Fulfilment API FAQ for product-fit questions
+
+Published a dedicated FAQ for Fulfilment API and linked it from the main Fulfilment decision and guidance pages.
+
+What changed:
+
+* added [Fulfilment API FAQ](support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md) under Atlas API FAQs
+* updated [Atlas API FAQs](support-and-reference/troubleshooting-and-support/faqs/) to surface the new page in booking and ticketing questions
+* updated [Get Offer vs Fulfilment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) with business-fit guidance
+* updated [Get Offer Price](product-guides/booking/booking-step-guides/get-offer-price.md) to link the new FAQ from the step guide
+* updated [Booking Overview](product-guides/booking/booking-overview/) and [Orders & Ticketing](support-and-reference/troubleshooting-and-support/faqs/atlas-api-order.md) to align Fulfilment API fit, timing, and payment-path entry guidance
+{% endupdate %}
+
+{% update date="2026-07-10" %}
+## Increased Fulfilment API visibility across key entry pages
+
+Updated the highest-traffic navigation pages to make the new Fulfilment API path easier to find.
+
+What changed:
+
+* added a featured Fulfilment API callout to [Quick Start](readme-1/quick-start.md)
+* added a new-product callout to [Product Guides](product-guides/)
+* moved [Fulfilment API](product-guides/booking/booking-flows/fulfillment-flow.md) to the top of [Booking paths](product-guides/booking/booking-flows/)
+* added a featured product section to [Atlas API Documentation Updates](./)
+{% endupdate %}
+
 {% update date="2026-07-08" %}
 ## Expanded VOID airline coverage
 
@@ -399,19 +441,19 @@ Updated pages:
 {% endupdate %}
 
 {% update date="2026-07-06" %}
-## Added Fulfillment API and `getOfferPrice.do`
+## Added Fulfilment API and `getOfferPrice.do`
 
-Published the new fulfillment booking path for `getOfferPrice.do` and updated key workflow pages with fulfillment-specific timing and request-limit guidance.
+Published the new Fulfilment API booking path for `getOfferPrice.do` and updated key workflow pages with fulfilment-specific timing and request-limit guidance.
 
 What changed:
 
-* added [Fulfillment API](product-guides/booking/booking-step-guides/get-offer-price.md) for fulfillment positioning, 5-minute timing, retry rules, and recovery guidance
-* added [Get Offer vs Fulfillment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) to distinguish standard Get Offer from the fulfillment path
+* added [Get Offer Price](product-guides/booking/booking-step-guides/get-offer-price.md) for entry-step positioning, 5-minute timing, retry rules, and recovery guidance
+* added [Get Offer vs Fulfilment API](product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md) to distinguish standard Get Offer from the Fulfilment API path
 * added [Get Offer Price](api-reference/booking-apis/get-offer-price.md) under API Reference
-* updated [Booking Overview](product-guides/booking/booking-overview/) to add the new fulfillment branch
+* updated [Booking Overview](product-guides/booking/booking-overview/) to add the new Fulfilment API branch
 * updated [Get Offer](product-guides/booking/booking-step-guides/get-offer.md) to distinguish `getOffers.do` from `getOfferPrice.do`
-* updated [Create Order](product-guides/booking/booking-step-guides/create-order.md), [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/), and [Query Order](product-guides/booking/booking-step-guides/query-order/) for 5-minute fulfillment handling
-* updated [Orders & Ticketing](support-and-reference/troubleshooting-and-support/faqs/atlas-api-order.md) to separate standard 30-minute hold from the fulfillment flow
+* updated [Create Order](product-guides/booking/booking-step-guides/create-order.md), [Payment & Ticketing](product-guides/booking/booking-step-guides/payment-and-ticketing/), and [Query Order](product-guides/booking/booking-step-guides/query-order/) for 5-minute Fulfilment API handling
+* updated [Orders & Ticketing](support-and-reference/troubleshooting-and-support/faqs/atlas-api-order.md) to separate the standard 30-minute hold from the Fulfilment API path
 * updated [API Request Limits](product-guides/booking/booking-overview/api-request-limits.md) to document the separate `getOfferPrice.do` QPM policy
 {% endupdate %}
 
@@ -454,8 +496,8 @@ Updated booking, troubleshooting, and FAQ pages to document request-limit govern
 What changed:
 
 * added Atlas error code `429` guidance with `retryAfter`
-* documented default limits for Search, Fulfillment, and Ancillary resource pools
-* clarified that `verify.do` and `getOffers.do` share one fulfillment pool
+* documented default limits for Search, Fulfilment, and Ancillary resource pools
+* clarified that `verify.do` and `getOffers.do` share one fulfilment pool
 * clarified that `seatAvailability.do` and `getLuggage.do` share one ancillary pool
 * confirmed that `order.do` and `pay.do` are not part of this request-limit policy
 

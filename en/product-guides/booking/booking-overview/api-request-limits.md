@@ -37,11 +37,11 @@ These APIs are not covered by this policy:
 
 Atlas counts Search in a rolling 1-second window.
 
-#### Fulfillment resource
+#### Fulfilment resource
 
 * `verify.do` + `getOffers.do` — shared `60 QPM`
 
-Atlas counts Fulfillment in a rolling 60-second window.
+Atlas counts Fulfilment in a rolling 60-second window.
 
 #### Ancillary resource
 
@@ -51,7 +51,7 @@ Atlas counts Ancillary in a rolling 60-second window.
 
 ### Shared-pool rules
 
-`verify.do` and `getOffers.do` share one fulfillment pool.
+`verify.do` and `getOffers.do` share one fulfilment pool.
 
 Heavy traffic on one API can consume the pool for the other.
 

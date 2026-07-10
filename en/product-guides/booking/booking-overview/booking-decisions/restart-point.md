@@ -134,9 +134,9 @@ Refresh baggage and seat context after a new verify or offer lookup.
 
 ### Related pages
 
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Get Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/FSGess6buGE1P02WnVNu)
-* [Baggage and seat productCode freshness](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Cxdx0FWp0CbRm6vH8YZg)
+* [Identifiers](../identifiers.md)
+* [Search vs Offer](search-vs-offer.md)
+* [202 vs 301 vs 308](../../../../support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md)
+* [Verify](../../booking-step-guides/verify.md)
+* [Get Offer](../../booking-step-guides/get-offer.md)
+* [Baggage and seat productCode freshness](../../optional-ancillaries/baggage-and-seat-productcode-freshness.md)

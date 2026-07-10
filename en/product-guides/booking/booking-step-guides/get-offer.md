@@ -30,7 +30,7 @@ Use `getOffers.do` when you already know the target itinerary or need an indepen
 
 This flow is a good fit when shopping happens outside Atlas and Atlas is used as the booking and pricing layer.
 
-Do not use this page as the source of truth for the fulfillment-specific `getOfferPrice.do` path.
+Do not use this page as the source of truth for the fulfilment-specific `getOfferPrice.do` path.
 
 Use [Get Offer Price](get-offer-price.md) when the flow needs broader display rules and a 5-minute ticketing window.
 
@@ -44,13 +44,13 @@ Use the same `OfferId` for `seatAvailability.do` when seat lookup is needed befo
 
 #### What request limit applies to `getOffers.do`?
 
-`getOffers.do` shares one `60 QPM` fulfillment pool with `verify.do`.
+`getOffers.do` shares one `60 QPM` fulfilment pool with `verify.do`.
 
 Over-limit requests return Atlas error code `429`.
 
 Honor the returned `retryAfter` value before retrying.
 
-### Fulfillment request limits
+### Fulfilment request limits
 
 Atlas counts `getOffers.do` and `verify.do` together in a rolling 60-second window.
 

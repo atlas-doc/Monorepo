@@ -28,23 +28,26 @@ If payment is not completed in that window, the hold expires.
 
 This 30-minute rule applies to the standard booking flow.
 
-Orders created from `getOfferPrice.do` use a 5-minute fulfillment window instead.
+Orders created from `getOfferPrice.do` use a 5-minute Fulfilment API window instead.
 
-### Does `order.do` hold inventory?
+#### What changes for Fulfilment API orders?
 
-Yes.\
-Atlas holds inventory and price for 30 minutes after order creation.
+Fulfilment API orders created from `getOfferPrice.do` are designed for immediate payment after order creation.
 
-If payment is not completed in that window, the hold expires.
+The operational payment and ticketing window is 5 minutes.
 
-For fulfillment-flow orders created from `getOfferPrice.do`, the operational window is 5 minutes.
+After the request is accepted, Atlas continues fulfilment processing even if your own booking orchestration is interrupted.
 
-### Can we manually release held inventory?
+#### Can we manually release held inventory?
 
 No.\
 Atlas releases it automatically after the hold period.
 
-### Which email should we send in booking contact details?
+#### Which payment paths are available for Fulfilment API orders?
+
+{% include "../../../.gitbook/includes/fulfilment-api-dual-payment-paths.md" %}
+
+#### Which email should we send in booking contact details?
 
 You can use either:
 
@@ -55,7 +58,7 @@ You can use either:
 Some airlines block repeated bookings from the same email address.\
 To reduce that risk, use `useAtlasMailForContact`.
 
-### What does `useAtlasMailForContact` do?
+#### What does `useAtlasMailForContact` do?
 
 * `true`: Atlas generates a unique booking email and sends that to the airline
 * `false`: Atlas uses the email you send in `order.do`
@@ -73,15 +76,9 @@ Payment and ticket issuance are not always the same moment.
 
 Use `queryOrderDetails.do` until the order reaches the final ticketed state.
 
-### Do we need to poll after `pay.do`?
-
-Yes.\
-Payment and ticket issuance are not always the same moment.
-
-Use `queryOrderDetails.do` until the order reaches the final ticketed state.\
 Webhook can help, but it should not be your only confirmation path.
 
-### Is `pnrCode` the airline PNR?
+#### Is `pnrCode` the airline PNR?
 
 No.\
 `pnrCode` is the Atlas booking reference.
@@ -94,19 +91,23 @@ Use `allowGenerateMultipleOrders: true` when the itinerary may split into separa
 
 Read each returned `orderNo` separately and pay each supported order separately.
 
-### When do airline PNR and ticket numbers appear?
+#### When do airline PNR and ticket numbers appear?
 
 They appear after ticketing completes.\
 Read them from `paxTicketInfos.airlinePNRs` and `ticketNos` in order query.
 
-### What should we do if ticketing is still processing?
+#### What should we do if ticketing is still processing?
 
 Do not retry payment blindly.\
 Query the order state first.
 
 Wait for final `orderStatus` and `ticketStatus`, or reconcile with webhook events if configured.
 
-### Which seat selection scenarios are supported?
+#### How fast are Fulfilment API failure alerts sent?
+
+{% include "../../../.gitbook/includes/fulfilment-api-failure-alert-timing.md" %}
+
+#### Which seat selection scenarios are supported?
 
 Atlas supports seat selection for airlines that support Atlas API seat capability.
 
@@ -116,7 +117,7 @@ Atlas does not support non-Atlas-issued orders or post-ticketing seat selection.
 
 See [Seats](../../../product-guides/booking/optional-ancillaries/seats-and-baggage/) for the current support scope.
 
-### Can VCC be used for a round trip built from two one-way fares?
+#### Can VCC be used for a round trip built from two one-way fares?
 
 Yes, but the booking may split into two separate orders.
 
@@ -126,7 +127,7 @@ Use:
 
 If Atlas cannot issue the itinerary as one round trip, it may return two comma-separated `orderNo` values.
 
-### How should split-order payment work?
+#### How should split-order payment work?
 
 1. Create the order with `allowGenerateMultipleOrders: true`
 2. Read each returned order separately
@@ -134,7 +135,7 @@ If Atlas cannot issue the itinerary as one round trip, it may return two comma-s
 
 Check payment support for each returned order before paying.
 
-### How should ancillaries be sent for connecting flights?
+#### How should ancillaries be sent for connecting flights?
 
 Every flown segment must have its own `segmentIndex` entry.
 
@@ -146,7 +147,7 @@ Map ancillaries at the flown-segment level.
 
 If a product applies to two segments, send one entry per `segmentIndex`.
 
-### Example
+#### Example
 
 If one baggage product applies across a two-segment journey, send:
 
@@ -168,3 +169,5 @@ If one baggage product applies across a two-segment journey, send:
 * [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
 * [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
 * [Query Order](../../../product-guides/booking/booking-step-guides/query-order/)
+* [Fulfilment API guide](../../../product-guides/booking/booking-step-guides/get-offer-price.md)
+* [Fulfilment API FAQ](fulfilment-api-faq.md)

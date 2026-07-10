@@ -158,9 +158,9 @@ Right before `order.do`, confirm:
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
-* [202 vs 301 vs 308](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/b6CraSfDmsTKoVEv4EZy)
-* [Verify, Order & Ticketing Errors](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/xgMYjsnxo91kS8079G1O)
+* [Booking Overview](../)
+* [Identifiers](../identifiers.md)
+* [Verify](../../booking-step-guides/verify.md)
+* [Create Order](../../booking-step-guides/create-order.md)
+* [202 vs 301 vs 308](../../../../support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md)
+* [Verify, Order & Ticketing Errors](../../../../support-and-reference/troubleshooting-and-support/errors-handing/verify-order-and-ticketing-errors.md)

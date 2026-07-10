@@ -24,27 +24,11 @@ The main options are **deposit** and **VCC pass-through**.
 
 Supported options still depend on airline and ticketing channel.
 
-### Which payment methods does Atlas support?
-
-The main options are:
-
-* **Deposit**
-* **VCC pass-through**
-
-Supported options still depend on airline and ticketing channel.
-
 #### How does VCC pass-through work?
 
 Send card details in the `pay.do` request.
 
 Atlas passes the card data to the airline, the airline charges you directly, and Atlas deducts the technical service fee from your Atlas account.
-
-### How does VCC pass-through work?
-
-Send card details in the `pay.do` request.\
-Atlas passes the card data to the airline.\
-The airline charges you directly.\
-Atlas then deducts the technical service fee from your Atlas account.
 
 Check payment support in the search or verification response before you build the payment flow.
 
@@ -56,22 +40,10 @@ Atlas supports VCC pass-through only.
 
 You provide the card details in `pay.do`.
 
-### Does Atlas issue VCC cards?
-
-No.\
-Atlas supports VCC pass-through only.
-
-You provide the card details in `pay.do`.
-
 #### Where do refunds go for each payment mode?
 
 For **VCC**, refunded funds usually return to the original card.
 
-For **deposit**, Atlas credits your balance after airline funds are received.
-
-### Where do refunds go for each payment mode?
-
-For **VCC**, refunded funds usually return to the original card.\
 For **deposit**, Atlas credits your balance after airline funds are received.
 
 #### When should we use deposit instead of VCC?
@@ -79,6 +51,14 @@ For **deposit**, Atlas credits your balance after airline funds are received.
 Use deposit when you want a simpler payment path or when VCC is not supported for the airline, order, or mixed-channel itinerary.
 
 Deposit is also the fallback path in some payment-risk or split-payment scenarios.
+
+#### What is different for Fulfilment API payments?
+
+Fulfilment API supports deposit and VCC pass-through.
+
+It uses a strict 5-minute payment and ticketing window after order creation.
+
+Use [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/) for the payment step and [Fulfilment API FAQ](fulfilment-api-faq.md) for fit, timing, and failure alert questions.
 
 ### Why is VCC pass-through unavailable on some mixed-airline bookings?
 
@@ -144,5 +124,6 @@ Check payment support and required fields in the current search or verification 
 ### Related pages
 
 * [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
+* [Fulfilment API FAQ](fulfilment-api-faq.md)
 * [Error Codes](../errors-handing/)
 * [Finance](atlas-api-finance.md)

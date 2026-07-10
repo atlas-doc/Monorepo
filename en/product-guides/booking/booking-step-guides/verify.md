@@ -41,13 +41,13 @@ Treat `bookingRequirement` as the source of truth for the order request.
 
 #### What request limit applies to `verify.do`?
 
-`verify.do` shares one `60 QPM` fulfillment pool with `getOffers.do`.
+`verify.do` shares one `60 QPM` fulfilment pool with `getOffers.do`.
 
 Over-limit requests return `HTTP 429 Too Many Requests`.
 
 Honor the returned `retryAfter` value before retrying.
 
-### Fulfillment request limits
+### Fulfilment request limits
 
 Atlas counts `verify.do` and `getOffers.do` together in a rolling 60-second window.
 

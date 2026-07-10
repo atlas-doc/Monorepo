@@ -17,6 +17,8 @@ Start here when you need to:
 * understand why displayed price changed before booking
 * confirm safe timing between search, verify, and order
 
+Use [Fulfilment API FAQ](fulfilment-api-faq.md) when the main question is whether `getOfferPrice.do` is a better fit than the standard search or Get Offer path.
+
 ### FAQ
 
 #### Which identifier should we keep from each booking step?
@@ -38,6 +40,8 @@ Use `getOffers.do` when you already know the target itinerary or need an indepen
 Use `search.do` for the standard booking flow.
 
 Use `getOffers.do` when the itinerary is already known or when you need an independent price check.
+
+Use `getOfferPrice.do` when you need Fulfilment API, broader display rules, or tighter fulfilment timing.
 
 Use `priceCompareSearch.do` for pre-sale route coverage and raw price discovery.
 
@@ -230,7 +234,9 @@ Use [API Request Limits](../../../product-guides/booking/booking-overview/api-re
 
 * [Identifiers](../../../product-guides/booking/booking-overview/identifiers.md)
 * [Search vs Offer](../../../product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md)
+* [Get Offer vs Fulfilment API](../../../product-guides/booking/booking-overview/booking-decisions/get-offer-vs-get-offer-price.md)
 * [Search](../../../product-guides/booking/booking-step-guides/search.md)
 * [Get Offer](../../../product-guides/booking/booking-step-guides/get-offer.md)
+* [Fulfilment API FAQ](fulfilment-api-faq.md)
 * [Verify](../../../product-guides/booking/booking-step-guides/verify.md)
 * [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
