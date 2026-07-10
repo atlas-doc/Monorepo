@@ -109,7 +109,7 @@ Use passenger name, itinerary, travel date, and any existing `orderNo` or airlin
 ### Related pages
 
 * [Query Order](../../../product-guides/booking/booking-step-guides/query-order/)
-* [Polling and Ticketing Timing](../../../product-guides/booking/booking-step-guides/query-order/post-payment-polling.md)
+* [Post-payment polling](../../../product-guides/booking/booking-step-guides/query-order/post-payment-polling.md)
 * [Create Order](../../../product-guides/booking/booking-step-guides/create-order.md)
 * [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/)
 * [Error Codes](./)

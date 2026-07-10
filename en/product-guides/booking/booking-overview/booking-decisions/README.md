@@ -34,34 +34,34 @@ Use this section when:
 
 #### Choose the booking entry path
 
-Start with [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx).
+Start with [Search vs Offer](search-vs-offer.md).
 
 Use it when you need to decide whether Atlas is your shopping layer or your pricing and booking layer.
 
 #### Choose the offer path
 
-Then use [Get Offer vs Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp).
+Then use [Get Offer vs Get Offer Price](get-offer-vs-get-offer-price.md).
 
 Use it when you already need an offer-based path and must choose between normal offer retrieval and fast fulfillment.
 
 #### Decide where to restart
 
-Use [Restart point](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw).
+Use [Restart point](restart-point.md).
 
 Use it when identifiers expired, pricing drifted, or booking was delayed.
 
 #### Decide which API owns the problem
 
-Use [Verify vs Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL).
+Use [Verify vs Order](verify-vs-order.md).
 
 Use it when you need to separate validation from booking creation.
 
 ### Pages in this section
 
-* [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [Restart point](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw)
-* [Get Offer vs Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [Verify vs Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL)
+* [Search vs Offer](search-vs-offer.md)
+* [Restart point](restart-point.md)
+* [Get Offer vs Get Offer Price](get-offer-vs-get-offer-price.md)
+* [Verify vs Order](verify-vs-order.md)
 
 ### Quick decision rules
 
@@ -121,29 +121,29 @@ The real difference is timing, display scope, and operational recovery.
 
 Use:
 
-* [Search vs Offer](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Pcq0icGceiiiaVBThnzx)
-* [Get Offer vs Get Offer Price](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/hJ5KgpKJEmpzw2hRXmYp)
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
+* [Search vs Offer](search-vs-offer.md)
+* [Get Offer vs Get Offer Price](get-offer-vs-get-offer-price.md)
+* [Booking Overview](../)
 
 #### Decide what to retry
 
 Use:
 
-* [Restart point](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/ZxJaikDjWinutACjHNEw)
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Restart point](restart-point.md)
+* [Identifiers](../identifiers.md)
+* [Error Codes](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)
 
 #### Decide whether the issue belongs to verify or order
 
 Use:
 
-* [Verify vs Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/2hu9DU8aIIGLGqeathgL)
-* [Verify](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Hg2lCO93wE6SPAXEYPOm)
-* [Create Order](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/jZTJWTVq1f6NKaUF3DUE)
+* [Verify vs Order](verify-vs-order.md)
+* [Verify](../../booking-step-guides/verify.md)
+* [Create Order](../../booking-step-guides/create-order.md)
 
 ### Related pages
 
-* [Booking Overview](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/82DaHlpWfsy0ANSplNI3)
-* [Identifiers](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Ns5eKoKIPFUTFhjJkPyC)
-* [API Request Limits](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/EsovwRrOMFnJMFfWhnMV)
-* [Error Codes](/broken/spaces/6LsKtmbJhZxgxraY5mHB/pages/Jk40OgfAM5G1NDZxwAS1)
+* [Booking Overview](../)
+* [Identifiers](../identifiers.md)
+* [API Request Limits](../api-request-limits.md)
+* [Error Codes](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)

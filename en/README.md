@@ -65,7 +65,7 @@ Start with [🆕 Fulfilment API](product-guides/booking/booking-flows/fulfillmen
 
 Use [Identifiers](product-guides/booking/booking-overview/identifiers.md) when you need the right token for the next step.
 
-Use [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) when the booking boundary is the main question.
+Use [Verify vs Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) when the booking boundary is the main question.
 
 Use [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md) when the main question is where to restart.
 
@@ -179,8 +179,8 @@ Published three new pages for booking-stage recovery decisions and post-payment 
 What changed:
 
 * added [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md) to explain when to refresh search, refresh verify, or rebuild the booking context
-* added [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) to clarify the validation boundary before booking creation
-* added [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md) to explain why payment success does not always mean final ticketing
+* added [Verify vs Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md) to clarify the validation boundary before booking creation
+* added [Post-payment polling](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md) to explain why payment success does not always mean final ticketing
 
 Read next:
 
@@ -295,8 +295,8 @@ What changed:
 
 Read next:
 
-* [Inflow Seat & Baggage](api-reference/booking-apis/inflow-seat-and-baggage.md)
-* [Seats & Baggage](product-guides/booking/optional-ancillaries/seats-and-baggage/)
+* [Seat](api-reference/booking-apis/inflow-seat-and-baggage.md)
+* [Seats](product-guides/booking/optional-ancillaries/seats-and-baggage/)
 * [Verify](product-guides/booking/booking-step-guides/verify.md)
 
 #### MCP-Assisted Development
@@ -382,7 +382,7 @@ Start with:
 
 #### What changed in the Atlas API docs recently?
 
-Recent updates added [Identifiers](product-guides/booking/booking-overview/identifiers.md), [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md), [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md), [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md), [Verify vs Create Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md), [Polling and Ticketing Timing](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md), [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md), [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md), [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md), [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md), [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md), [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md), [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md), [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md), and [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md), added QPS and QPM request-limit guidance for selected pre-booking APIs, added [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md) for ATRIP notification setup, added the new ATRIP **UAT Testing** flow to [UAT Validation](readme-1/uat-submission-guide.md), clarified that **flight booking** is required, added automatic verification guidance, expanded the [Void workflow](product-guides/post-booking/void.md), changed `seatAvailability.do` call rules, added [MCP-Assisted Development](readme-1/integration-tools/mcp-assisted-development.md), published [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md), and improved [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) as a troubleshooting entry point.
+Recent updates added [Identifiers](product-guides/booking/booking-overview/identifiers.md), [Search vs Get Offer](product-guides/booking/booking-overview/booking-decisions/search-vs-offer.md), [429 vs 110](support-and-reference/troubleshooting-and-support/errors-handing/429-vs-110.md), [202 vs 301 vs 308](support-and-reference/troubleshooting-and-support/errors-handing/202-vs-301-vs-308.md), [Verify vs Order](product-guides/booking/booking-overview/booking-decisions/verify-vs-order.md), [Post-payment polling](product-guides/booking/booking-step-guides/query-order/post-payment-polling.md), [402 vs 404 vs 406 vs 615](support-and-reference/troubleshooting-and-support/errors-handing/402-vs-404-vs-406-vs-615.md), [Baggage and seat productCode freshness](product-guides/booking/optional-ancillaries/baggage-and-seat-productcode-freshness.md), [Restart from Search vs Verify vs Get Offer](product-guides/booking/booking-overview/booking-decisions/restart-point.md), [307 vs 327 vs 410](support-and-reference/troubleshooting-and-support/errors-handing/307-vs-327-vs-410.md), [309 vs 409](support-and-reference/troubleshooting-and-support/errors-handing/309-vs-409.md), [Seat fallback modes](product-guides/booking/optional-ancillaries/seats-and-baggage/seat-fallback-modes.md), [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md), [205 vs 299 vs 304](support-and-reference/troubleshooting-and-support/errors-handing/205-vs-299-vs-304.md), and [318 vs 608 duplicate booking](support-and-reference/troubleshooting-and-support/errors-handing/318-vs-608-duplicate-booking.md), added QPS and QPM request-limit guidance for selected pre-booking APIs, added [Multi-channel Notifications](product-guides/extensions-and-integrations/multi-channel-notifications.md) for ATRIP notification setup, added the new ATRIP **UAT Testing** flow to [UAT Validation](readme-1/uat-submission-guide.md), clarified that **flight booking** is required, added automatic verification guidance, expanded the [Void workflow](product-guides/post-booking/void.md), changed `seatAvailability.do` call rules, added [MCP-Assisted Development](readme-1/integration-tools/mcp-assisted-development.md), published [Sandbox Validation Test Kit](readme-1/sandbox-development/sandbox-validation-test-kit.md), and improved [Error Codes](support-and-reference/troubleshooting-and-support/errors-handing/) as a troubleshooting entry point.
 
 #### Which guide should I read first for sandbox integration?
 
