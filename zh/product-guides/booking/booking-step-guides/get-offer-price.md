@@ -2,7 +2,7 @@
 description: '`getOfferPrice.do` 履约路径的步骤级指南，涵盖 5 分钟出票、超时处理和恢复规则。'
 ---
 
-# 获取报价价格
+# 核价出票
 
 {% include "../../../.gitbook/includes/eva-help-hint.md" %}
 

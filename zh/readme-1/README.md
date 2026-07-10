@@ -1,99 +1,97 @@
 ---
-description: >-
-  Start here for Atlas API onboarding, sandbox setup, implementation lifecycle,
-  UAT, and production go-live.
+description: Atlas API 入门引导、沙箱设置、实施生命周期、UAT 验证和生产环境上线。
 ---
 
 # 集成指南
 
 {% include "../.gitbook/includes/eva-help-hint.md" %}
 
-Use this section for Atlas onboarding and the full implementation lifecycle from sandbox to go-live.
+使用本部分进行 Atlas API 入门引导以及从沙箱到上线的完整实施生命周期。
 
-Start here when you need to:
+当您需要以下内容时，从这里开始：
 
-* get access and credentials
-* build the integration in the right order
-* prepare UAT evidence
-* complete production cutover safely
+* 获取访问权限和凭证
+* 按正确顺序构建集成
+* 准备 UAT 验证材料
+* 安全完成生产环境切换
 
-### What belongs in Integration Guides
+### 集成指南包含什么
 
-Use this section for:
+使用此部分进行：
 
-* onboarding and access setup
-* sandbox implementation
-* validation and go-live preparation
-* integration-stage setup tasks
+* 入门引导和访问设置
+* 沙箱实施
+* 验证和上线准备
+* 集成阶段设置任务
 
-Use [Product Guides](../product-guides/) when you need to choose the right booking flow or product capability.
+当您需要选择合适的预订流程或产品能力时，请使用[产品指南](../product-guides/)。
 
-Use [API Reference](../api-reference/) when you need exact endpoint fields and schemas.
+当您需要精确的端点字段和架构时，请使用[API 参考](../api-reference/)。
 
-### Recommended reading order
+### 推荐阅读顺序
 
-1. [Quick Start](quick-start.md)
-2. [Sandbox Access](making-requests.md)
-3. [Sandbox Development](sandbox-development/)
-4. [UAT Validation](uat-submission-guide.md)
-5. [Production Go-Live](production-go-live.md)
+1. [快速入门](quick-start.md)
+2. [沙箱访问](making-requests.md)
+3. [沙箱开发](sandbox-development/)
+4. [UAT 验证](uat-submission-guide.md)
+5. [生产环境上线](production-go-live.md)
 
-Use [Integration Tools](integration-tools/) when you want optional implementation accelerators such as [Atlas AI Assistant Skill](integration-tools/atlas-ai-assistant-skill.md) or [MCP-Assisted Development](integration-tools/mcp-assisted-development.md).
+当您需要可选的实施加速工具时，请使用[集成工具](integration-tools/)，例如 [Atlas AI 助手技能](integration-tools/atlas-ai-assistant-skill.md)或 [MCP 辅助开发](integration-tools/mcp-assisted-development.md)。
 
-### Common starting points
+### 常见起点
 
-#### New Atlas API integration
+#### 新的 Atlas API 集成
 
-Start with [Quick Start](quick-start.md).
+从[快速入门](quick-start.md)开始。
 
-Then move to [Sandbox Access](making-requests.md) and [Sandbox Development](sandbox-development/).
+然后前往[沙箱访问](making-requests.md)和[沙箱开发](sandbox-development/)。
 
-#### UAT and launch preparation
+#### UAT 和上线准备
 
-Use [UAT Validation](uat-submission-guide.md) and [Production Go-Live](production-go-live.md).
+使用[UAT 验证](uat-submission-guide.md)和[生产环境上线](production-go-live.md)。
 
-#### Notification setup during integration
+#### 集成期间的通知设置
 
-Use [Webhook Overview](../product-guides/extensions-and-integrations/webhook-overview/) for webhook event coverage and handling guidance.
+使用[Webhook 概述](../product-guides/extensions-and-integrations/webhook-overview/)了解 webhook 事件覆盖范围和处理指导。
 
-Use [Multi-channel Notifications](../product-guides/extensions-and-integrations/multi-channel-notifications.md) for channel setup across webhook, email, DingTalk, WeCom, Slack, and Teams.
+使用[多渠道通知](../product-guides/extensions-and-integrations/multi-channel-notifications.md)进行 webhook、邮件、钉钉、企业微信、Slack 和 Teams 的渠道设置。
 
-#### Need to choose a booking flow?
+#### 需要选择预订流程？
 
-Use [Product Guides](../product-guides/).
+使用[产品指南](../product-guides/)。
 
-Start with [Booking Overview](../product-guides/booking/booking-overview/) when you are deciding between the three main booking paths.
+当您在三种主要预订路径之间做决策时，从[预订概述](../product-guides/booking/booking-overview/)开始。
 
-### Typical implementation lifecycle
+### 典型实施生命周期
 
 {% stepper %}
 {% step %}
-### Access and kickoff
+### 访问与启动
 
-Collect sandbox credentials and confirm required request headers.
+收集沙箱凭证并确认所需的请求头。
 {% endstep %}
 
 {% step %}
-### Sandbox development
+### 沙箱开发
 
-Build the integration in sandbox and validate the main implementation path.
+在沙箱中构建集成并验证主要实施路径。
 {% endstep %}
 
 {% step %}
-### UAT validation
+### UAT 验证
 
-Run the required UAT track and submit the evidence package.
+运行所需的 UAT 测试并提交验证材料。
 {% endstep %}
 
 {% step %}
-### Production go-live
+### 生产环境上线
 
-Switch to production credentials and endpoints after UAT approval and account activation.
+在 UAT 审批和账户激活后，切换到生产凭证和端点。
 {% endstep %}
 {% endstepper %}
 
-### Related sections
+### 相关部分
 
-* [Product Guides](../product-guides/)
-* [API Reference](../api-reference/)
-* [Support & Reference](../support-and-reference/)
+* [产品指南](../product-guides/)
+* [API 参考](../api-reference/)
+* [支持与参考](../support-and-reference/)
