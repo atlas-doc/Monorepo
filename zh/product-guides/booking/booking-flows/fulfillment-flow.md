@@ -2,7 +2,7 @@
 description: 从获取报价价格到订单跟进的履约预订路径，具有严格的 5 分钟支付和出票窗口。
 ---
 
-# 履约流程
+# 核价出票接口
 
 路径：`Get Offer Price → Order → Payment → Query Order`
 

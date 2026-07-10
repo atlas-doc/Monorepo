@@ -2,7 +2,7 @@
 description: 从获取报价到订单跟进的已知行程和独立报价定价的预订路径。
 ---
 
-# 获取报价流程
+# Get Offer 获取报价
 
 路径：`Get Offer → Order → Payment → Query Order`
 

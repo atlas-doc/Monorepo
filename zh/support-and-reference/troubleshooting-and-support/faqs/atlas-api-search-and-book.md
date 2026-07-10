@@ -33,7 +33,7 @@ description: 常见的 Atlas API 预订流程问题，涉及 search.do、getOffe
 
 #### 如何在 `search.do`、`getOffers.do` 和 `priceCompareSearch.do` 之间选择？
 
-使用 `search.do` 进行标准预订流程。
+使用 `search.do` 进行标准预订。
 
 当行程已知或需要独立价格检查时使用 `getOffers.do`。
 

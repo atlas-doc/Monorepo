@@ -19,11 +19,11 @@ layout:
     visible: true
 ---
 
-# 获取报价价格
+# Get Offer Price
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
 
-使用 `获取报价价格` 作为 `getOfferPrice.do` 的文档名称。
+使用 `Get Offer Price` 作为 `getOfferPrice.do` 的文档名称。
 
 此端点启动履约流程。
 

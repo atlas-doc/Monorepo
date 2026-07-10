@@ -17,5 +17,5 @@ description: Atlas API 预订领域，涵盖共享规则、端到端流程、步
 
 * [预订概述](booking-overview/)
 * [预订流程](booking-flows/)
-* [预订步骤指南](booking-step-guides/)
+* [预订步骤](booking-step-guides/)
 * [可选附加服务](optional-ancillaries/)
