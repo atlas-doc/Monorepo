@@ -1,53 +1,53 @@
 ---
-description: Balance query API for finance and operational checks.
+description: 用于财务和运营检查的余额查询 API。
 ---
 
 # 余额
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
 
-Use this page to check the current account balance.
+使用本页查询当前账户余额。
 
-### Main API
+### 主要 API
 
 * `balance.do`
 
-### Use this when you need
+### 何时使用
 
-* Finance checks before payment activity
-* Balance reconciliation
-* Support confirmation for insufficient balance cases
+* 在支付前做财务检查
+* 对账余额
+* 确认余额不足相关问题
 
-### Key input
+### 关键入参
 
-Send:
+请传入：
 
 * `currency`
 
-Use the settlement currency of the balance account you want to check.
+使用您要查询的余额账户对应的结算币种。
 
-### What the response gives you
+### 响应会返回什么
 
-The response can include:
+响应通常包括：
 
-* account balance amount
-* settlement currency
+* 账户余额金额
+* 结算币种
 
-### Best practice
+### 最佳实践
 
-* query balance before high-volume payment activity
-* check the correct currency account
-* use the returned amount for operational checks only
-* rely on response `status` for success handling
+* 在高频支付前先查询余额
+* 确认币种账户正确
+* 将返回金额仅用于运营检查
+* 以响应中的 `status` 作为成功判断依据
 
-### What to watch
+### 注意事项
 
-* balances are currency-specific
-* low balance can block deposit payments
-* `msg` is descriptive only and should not drive logic
+* 余额按币种区分
+* 余额不足可能阻塞 Deposit 支付
+* `msg` 仅作说明，不应作为程序判断依据
 
-### Full API reference
+### 完整 API 参考
 
-See the complete endpoint schemas and samples here:
+完整端点结构和示例请查看：
 
-[Balance](../../api-reference/utility-apis/balance.md)
+[余额](../../api-reference/utility-apis/balance.md)

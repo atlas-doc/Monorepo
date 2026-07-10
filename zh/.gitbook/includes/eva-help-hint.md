@@ -1,9 +1,9 @@
 ---
-title: Eva help hint
+title: Eva 帮助提示
 ---
 
 {% hint style="info" %}
-💬 **Need help?** If you're stuck, ask Eva in the Help Center for instant diagnostics.
+💬 **需要帮助？** 如果遇到问题，请在帮助中心咨询 Eva，快速获取诊断建议。
 
-<a href="https://www.atriptech.com/" class="button primary" data-icon="comments">Ask Eva</a>
+<a href="https://www.atriptech.com/" class="button primary" data-icon="comments">咨询 Eva</a>
 {% endhint %}

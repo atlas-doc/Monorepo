@@ -1,16 +1,16 @@
 ---
-title: Environment endpoint note
+title: 环境端点说明
 ---
 
 {% hint style="warning" %}
-All API Reference endpoint examples on this site show **sandbox** base URLs.
+本网站中的 API 参考端点示例均使用 **沙箱** 基础 URL。
 
-For production traffic, use the production API base URLs shown in ATRIP under `My Profile` → `Company Information`.
+生产流量请使用 ATRIP 中 **My Profile** → **Company Information** 显示的生产 API 基础 URL。
 
-Production uses **two** API base URLs:
+生产环境使用 **两个** API 基础 URL：
 
-* one for `search` traffic
-* one for all other transaction APIs
+* 一个用于 `search` 流量
+* 一个用于其他所有交易类 API
 
-Do not send live traffic to sandbox endpoints.
+不要将生产流量发送到沙箱端点。
 {% endhint %}

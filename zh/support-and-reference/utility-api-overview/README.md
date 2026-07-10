@@ -1,74 +1,72 @@
 ---
-description: >-
-  Operational Atlas API tools for balance checks, email query, route export, and
-  ATRIP token generation.
+description: Atlas API 运营工具，涵盖余额检查、邮件查询、航线导出和 ATRIP 令牌生成。
 ---
 
 # 运营工具
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
 
-Use this section for non-transactional APIs used by operations and support teams.
+本部分汇总运营和支持团队使用的非交易类 API。
 
-Start here when you need to:
+当您需要以下能力时，从这里开始：
 
-* check balance or finance-related status
-* query operational email records
-* export route data
-* generate ATRIP access tokens
+* 检查余额或财务状态
+* 查询运营相关邮件记录
+* 导出航线数据
+* 生成 ATRIP 访问令牌
 
 ### FAQ
 
-#### What are these utilities used for?
+#### 这些工具主要用于什么？
 
-They support non-transactional workflows such as finance checks, email lookup, route export, and ATRIP access.
+它们支持财务检查、邮件查询、航线导出和 ATRIP 访问等非交易类流程。
 
-They are not part of the main search-to-ticket booking chain.
+它们不属于从搜索到出票的主预订链路。
 
-#### Which utility page should I open first?
+#### 我应该先打开哪个工具页面？
 
-Use **Balance** for finance checks, **Email Query** for captured email lookup, **Route Export** for route data extraction, and **ATRIP Token** for token generation.
+财务检查使用**余额**，邮件记录查询使用**邮件查询**，航线数据提取使用**航线导出**，令牌生成使用**ATRIP 令牌**。
 
-### Pages in this section
+### 本部分包含的页面
 
-* [Balance](balance.md)
-* [Email Query](email-query.md)
-* [Route Export](route-export.md)
-* [ATRIP Token](atrip-token.md)
+* [余额](balance.md)
+* [邮件查询](email-query.md)
+* [航线导出](route-export.md)
+* [ATRIP 令牌](atrip-token.md)
 
-### What this section covers
+### 本部分覆盖范围
 
-* Balance and finance checks
-* Email lookups for operational workflows
-* Route exports for reporting
-* ATRIP token generation
+* 余额和财务检查
+* 运营流程中的邮件查询
+* 报表和分析用的航线导出
+* ATRIP 令牌生成
 
-### Main APIs
+### 主要 API
 
 * `balance.do`
 * `route/export.do`
 * `queryMail.do`
 * `getAtripToken.do`
 
-### Use this when you need
+### 何时使用
 
-* Operations and finance workflows
-* Export route data
-* Query email records
-* Access ATRIP with generated tokens
+* 处理运营和财务类流程
+* 导出航线数据
+* 查询邮件记录
+* 使用生成的令牌访问 ATRIP
 
-### What comes next?
+### 下一步
 
-After you identify the utility task, open the matching page in this section for the exact request and response details.
+确认目标任务后，打开本部分中的对应页面，查看准确的请求和响应说明。
 
-### Full API reference
+### 完整 API 参考
 
-Use endpoint-level details here:
+端点级详情请查看：
 
-[Utility APIs](../../api-reference/utility-apis/)
+[工具 API](../../api-reference/utility-apis/)
 
-### Related pages
+### 相关页面
 
-* [Integration Guides](../../readme-1/)
-* [Post-booking](../../product-guides/post-booking/)
-* [Webhook Overview](../../product-guides/extensions-and-integrations/webhook-overview/)
+* [集成指南](../../readme-1/)
+* [预订后操作](../../product-guides/post-booking/)
+* [Webhook 概述](../../product-guides/extensions-and-integrations/webhook-overview/)
