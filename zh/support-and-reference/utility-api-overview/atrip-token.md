@@ -1,5 +1,5 @@
 ---
-description: Generate ATRIP access tokens for downstream workflows.
+description: 为下游流程生成 ATRIP 访问令牌。
 ---
 
 # ATRIP 令牌

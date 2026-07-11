@@ -1,5 +1,5 @@
 ---
-description: Query email records linked to bookings or support workflows.
+description: 查询与订单或支持流程相关联的邮件记录。
 ---
 
 # 邮件查询
