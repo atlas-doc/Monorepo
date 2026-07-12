@@ -395,6 +395,25 @@ Use [Booking Overview](product-guides/booking/booking-overview/) for the main fl
 ### Full change log
 
 {% updates format="full" %}
+{% update date="2026-07-12" %}
+## Improved Atlas API documentation discovery
+
+Improved documentation entry points for product discovery, common questions, and integration terminology.
+
+What changed:
+
+* added [What is Atlas API?](what-is-atlas-api.md) as the canonical product overview
+* added [Atlas API concepts](support-and-reference/atlas-api-concepts.md) for booking flows, identifiers, order lifecycle, and webhooks
+* added direct-answer FAQ sections to [Product Guides](product-guides/) and [Support & Reference](support-and-reference/)
+* improved descriptions for key integration, booking-decision, and operational pages
+
+Read next:
+
+* [What is Atlas API?](what-is-atlas-api.md)
+* [Quick Start](readme-1/quick-start.md)
+* [Atlas API concepts](support-and-reference/atlas-api-concepts.md)
+{% endupdate %}
+
 {% update date="2026-07-10" %}
 ## Added Fulfilment API FAQ for product-fit questions
 

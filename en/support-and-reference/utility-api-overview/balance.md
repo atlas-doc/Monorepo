@@ -1,5 +1,7 @@
 ---
-description: Balance query API for finance and operational checks.
+description: >-
+  Atlas API balance query for finance checks, account monitoring, and
+  operational readiness.
 ---
 
 # Balance

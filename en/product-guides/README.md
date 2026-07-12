@@ -8,6 +8,24 @@ description: >-
 
 Use this section to choose the right guide before you implement endpoint details.
 
+New to the product? Read [What is Atlas API?](../what-is-atlas-api.md) for a concise capability overview.
+
+### FAQ
+
+#### What does Atlas API support?
+
+Atlas API supports flight shopping, booking, payment, ticketing, post-booking operations, notifications, and supporting integrations.
+
+Choose a capability below. Then use [API Reference](../api-reference/) for endpoint fields and schemas.
+
+#### Which Atlas API booking path should I choose?
+
+Choose Standard booking for the main search-to-order journey.
+
+Choose Get Offer for known itineraries. Choose Fulfilment API when its offer-pricing flow fits your payment timing.
+
+Use [Booking Overview](booking/booking-overview/) before implementation.
+
 {% hint style="warning" %}
 **🆕 New product:** Start with [🆕 Fulfilment API](booking/booking-flows/fulfillment-flow.md) when you need the `getOfferPrice.do` booking path, broader display rules, and immediate payment after order creation.
 

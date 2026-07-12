@@ -1,5 +1,5 @@
 ---
-description: Choose the right booking step.
+description: Decide whether an Atlas API booking request belongs in verify.do or order.do.
 ---
 
 # Verify vs Order

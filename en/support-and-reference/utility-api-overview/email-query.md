@@ -1,5 +1,7 @@
 ---
-description: Query email records linked to bookings or support workflows.
+description: >-
+  Atlas API email query for retrieving booking-linked messages and supporting
+  operational follow-up.
 ---
 
 # Email Query

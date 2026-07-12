@@ -1,5 +1,7 @@
 ---
-description: Choose where to restart the flow.
+description: >-
+  Decide where to restart an Atlas API booking flow after identifier expiry,
+  price changes, or failures.
 ---
 
 # Restart point

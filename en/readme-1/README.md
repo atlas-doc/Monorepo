@@ -10,6 +10,8 @@ description: >-
 
 Use this section for Atlas onboarding and the full implementation lifecycle from sandbox to go-live.
 
+New to the product? Read [What is Atlas API?](../what-is-atlas-api.md) for an overview of supported workflows.
+
 Start here when you need to:
 
 * get access and credentials

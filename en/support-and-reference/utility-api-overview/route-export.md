@@ -1,5 +1,7 @@
 ---
-description: Export route data for analysis or operational workflows.
+description: >-
+  Atlas API route export for retrieving route data used in analysis and
+  operational workflows.
 ---
 
 # Route Export

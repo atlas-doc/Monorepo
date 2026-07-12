@@ -1,5 +1,7 @@
 ---
-description: Build and validate the sandbox integration before UAT.
+description: >-
+  Atlas API sandbox development guide for building, testing, and validating
+  booking workflows before UAT.
 ---
 
 # Sandbox Development

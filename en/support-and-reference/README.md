@@ -8,6 +8,28 @@ description: >-
 
 Use this section for shared reference material, troubleshooting, operational tools, and documentation updates.
 
+New to the product? Read [What is Atlas API?](../what-is-atlas-api.md) for capabilities and integration starting points.
+
+### FAQ
+
+#### Where can I troubleshoot an Atlas API error?
+
+Start with [Error Codes](troubleshooting-and-support/errors-handing/).
+
+It identifies retry-safe failures, fresh-identifier requirements, and payment states that need order checks.
+
+#### Where can I find Atlas API sandbox test data?
+
+Use [Sandbox Test Data](integration-reference/sandbox-test-data/).
+
+It provides published test routes, test cards, and shared validation inputs.
+
+#### Where are Atlas API terms and identifier rules defined?
+
+Use [Atlas API concepts](atlas-api-concepts.md) for key terms.
+
+Use [Identifiers](../product-guides/booking/booking-overview/identifiers.md) for flow mapping, validity periods, and refresh rules.
+
 Start here when you need to:
 
 * find shared values or sandbox test inputs
@@ -19,6 +41,8 @@ Start here when you need to:
 ### Shared reference material
 
 Use [Reference data & sandbox](integration-reference/) for reference data and sandbox test inputs shared across workflows.
+
+Use [Atlas API concepts](atlas-api-concepts.md) for definitions of flows, identifiers, orders, and webhooks.
 
 ### Troubleshooting and support
 

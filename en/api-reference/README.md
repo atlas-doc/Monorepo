@@ -12,6 +12,8 @@ description: >-
 
 Use this section for exact endpoint schemas, fields, and samples.
 
+New to the product? Read [What is Atlas API?](../what-is-atlas-api.md) for supported workflows and starting points.
+
 Start here when you need to:
 
 * confirm exact request and response fields

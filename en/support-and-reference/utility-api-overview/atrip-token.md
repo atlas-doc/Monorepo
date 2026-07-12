@@ -1,5 +1,7 @@
 ---
-description: Generate ATRIP access tokens for downstream workflows.
+description: >-
+  Atlas API ATRIP token generation for supported downstream workflows and
+  integrations.
 ---
 
 # ATRIP Token

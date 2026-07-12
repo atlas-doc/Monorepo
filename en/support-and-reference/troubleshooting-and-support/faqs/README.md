@@ -10,6 +10,8 @@ description: >-
 
 Use this section for common Atlas API integration questions and edge cases.
 
+New to Atlas API? Read [What is Atlas API?](../../../what-is-atlas-api.md) for product capabilities and starting points.
+
 Start here when you need to:
 
 * find the right FAQ by implementation stage
@@ -67,6 +69,12 @@ Use:
 * [Finance](atlas-api-finance.md)
 
 ### FAQ
+
+#### What is Atlas API?
+
+Atlas API supports flight shopping, booking, payment, ticketing, and post-booking operations.
+
+Use [Atlas API concepts](../../atlas-api-concepts.md) for definitions of booking flows, identifiers, orders, and webhooks.
 
 #### Where should a new Atlas API partner start?
 

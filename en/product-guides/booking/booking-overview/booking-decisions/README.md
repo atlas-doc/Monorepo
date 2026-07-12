@@ -1,5 +1,7 @@
 ---
-description: Choose the right booking flow, restart point, or API step.
+description: >-
+  Atlas API booking decision guides for choosing a flow, restart point, and the
+  correct next API step.
 ---
 
 # Booking decisions

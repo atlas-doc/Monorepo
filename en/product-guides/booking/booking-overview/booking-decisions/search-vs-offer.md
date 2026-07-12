@@ -1,5 +1,7 @@
 ---
-description: Choose the booking entry flow.
+description: >-
+  Choose the Atlas API booking entry flow between search-based and offer-based
+  booking paths.
 ---
 
 # Search vs Offer
