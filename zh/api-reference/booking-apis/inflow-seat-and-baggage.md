@@ -1,3 +1,7 @@
+---
+description: Atlas API 座位端点参考，用于查询可用座位、选择座位，并将座位附加服务加入预订。
+---
+
 # 座位
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
@@ -64,5 +68,5 @@ Atlas 不支持这种情况。
 有关共享规则和计数详情，请使用 [API 请求限制](../../product-guides/booking/booking-overview/api-request-limits.md)。
 
 {% openapi-operation spec="atlas-api" path="/seatAvailability.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260710%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260710T135943Z&X-Amz-Expires=172800&X-Amz-Signature=a91e06790fe16444153714b1e760c6ddcf3ef98321a66a526061dc96713b69a7&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260712%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260712T130706Z&X-Amz-Expires=172800&X-Amz-Signature=ed831eb627658f05066487da35b6e7847bcd35599e3beb2c0f94e791fb76408c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}

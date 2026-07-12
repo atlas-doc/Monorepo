@@ -19,3 +19,35 @@ description: Atlas API 预订领域，涵盖共享规则、端到端流程、步
 * [预订流程](booking-flows/)
 * [预订步骤](booking-step-guides/)
 * [可选附加服务](optional-ancillaries/)
+
+### 常见问题
+
+#### Atlas API 的标准预订流程是什么？
+
+标准流程为 `search.do` → `verify.do` → `order.do` → `pay.do` → `queryOrderDetails.do`。
+
+在最终出票确认前，持续调用 `queryOrderDetails.do`。
+
+查看[标准预订](booking-flows/standard-booking-flow.md)了解完整顺序。
+
+#### 应从哪种预订路径开始？
+
+Atlas 是主要搜索入口时，使用标准搜索路径。
+
+已知目标行程时，使用获取报价路径。
+
+需要更广报价范围且能立即支付时，使用履约路径。
+
+使用[预订决策](booking-overview/booking-decisions/)选择正确路径。
+
+#### 座位和行李应在何时添加？
+
+座位和行李属于可选附加服务。
+
+在支付前添加，并仅使用有效的 `sessionId` 或 `OfferId`。
+
+使用[可选附加服务](optional-ancillaries/)确认支持的流程和时效规则。
+
+### 后续步骤
+
+选择路径后，打开[预订概述](booking-overview/)确认标识符、时效和请求限制。

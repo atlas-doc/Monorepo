@@ -1,3 +1,7 @@
+---
+description: Atlas API search.do 航班搜索端点参考，用于获取航班报价和供后续验价使用的 routingIdentifier。
+---
+
 # 搜索
 
 {% include "../../.gitbook/includes/eva-help-hint.md" %}
@@ -25,5 +29,5 @@
 有关共享规则和计数详情，请使用 [API 请求限制](../../product-guides/booking/booking-overview/api-request-limits.md)。
 
 {% openapi-operation spec="atlas-api" path="/search.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260710%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260710T150255Z&X-Amz-Expires=172800&X-Amz-Signature=0388a193e40550981d2a95589da0c83cd718526413c3398fb2da98c370cda0a1&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260712%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260712T130706Z&X-Amz-Expires=172800&X-Amz-Signature=ed831eb627658f05066487da35b6e7847bcd35599e3beb2c0f94e791fb76408c&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}

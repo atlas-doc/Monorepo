@@ -26,6 +26,30 @@ description: Atlas API 故障排除与支持入口点，包含错误代码、常
 
 当错误查询和常见问题解答无法解决问题时，或者当案例需要超出自助故障排除范围的运营跟进时，使用支持资源。
 
+### 按症状开始排查
+
+#### 请求被限流或返回 `429`
+
+使用[429 vs 110](errors-handing/429-vs-110.md)区分限流与业务错误。
+
+等待返回的 `retryAfter` 值后再重试。不要立即循环重试。
+
+#### 搜索未返回预期结果或失败
+
+使用[搜索错误](errors-handing/search-errors.md)检查请求验证、余额、航线限制和超时。
+
+需要确认流程行为时，使用[搜索与预订常见问题](faqs/atlas-api-search-and-book.md)。
+
+#### 支付、出票或订单状态异常
+
+支付状态使用[支付错误](errors-handing/payment-errors.md)排查。
+
+订单和出票问题使用[订单与出票常见问题](faqs/atlas-api-order.md)排查。
+
+#### 退款、作废或出票后操作失败
+
+使用[退款、查询与预订后错误](errors-handing/refund-query-and-post-booking-errors.md)选择正确处理路径。
+
 ### 本部分的页面
 
 * [错误代码](errors-handing/)
