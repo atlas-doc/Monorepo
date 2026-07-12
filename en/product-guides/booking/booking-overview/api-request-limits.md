@@ -31,6 +31,8 @@ These APIs are not covered by this policy:
 
 ### Default limits
 
+These defaults apply as of July 2026. Your configured limits may differ.
+
 #### Search resource
 
 * `search.do` — `10 QPS`

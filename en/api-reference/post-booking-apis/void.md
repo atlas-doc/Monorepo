@@ -1,4 +1,7 @@
 ---
+description: >-
+  Atlas API void reference for checking void eligibility, submitting void
+  requests, and tracking their status.
 layout:
   width: wide
   title:
@@ -81,7 +84,9 @@ Use Refund when the void window has passed or the case needs the refund flow.
 
 ### Current VOID coverage
 
-Atlas VOID currently supports 23 airlines across four regions.
+Atlas VOID supports 23 airlines across four regions as of July 2026.
+
+Coverage is airline-, route-, and account-specific.
 
 #### Americas
 
@@ -118,14 +123,12 @@ Atlas VOID currently supports 23 airlines across four regions.
 * `TW`
 * `ZE`
 
-Recent additions:
+Recent additions as of July 2026:
 
 * `TS`
 * `Y4`
 * `EI`
 * `VF`
-
-Coverage is airline- and route-specific.
 
 If the booking is outside this scope, Atlas can return `843`.
 
@@ -252,9 +255,11 @@ Pass `orderNo` as the main query key.
 
 Add `voidCode` when you want one specific void case under that order.
 
-In most cases, Atlas returns within about 5 minutes whether the void request was accepted for processing.
+Atlas usually returns a processing decision within about five minutes.
 
 Final completion or rejection can still take longer.
+
+This is a typical operating result, not a contractual SLA.
 
 Important fields to read first:
 
@@ -316,13 +321,13 @@ Read [Void Notification](../../product-guides/extensions-and-integrations/webhoo
 * [Post-booking APIs](./)
 
 {% openapi-operation spec="atlas-api" path="/voidQuotation.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260709%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260709T031124Z&X-Amz-Expires=172800&X-Amz-Signature=1e9560eea36a0642d63d078b53660ca0003454e12d11250b98fbc3924e8ead9b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260712%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260712T083622Z&X-Amz-Expires=172800&X-Amz-Signature=8ecfe8fda6f5a32473da008d6ddf175f45c50f70ab0fd5ec308bd5af9cad3aaa&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="atlas-api" path="/void.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260709%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260709T031124Z&X-Amz-Expires=172800&X-Amz-Signature=1e9560eea36a0642d63d078b53660ca0003454e12d11250b98fbc3924e8ead9b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260712%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260712T083622Z&X-Amz-Expires=172800&X-Amz-Signature=8ecfe8fda6f5a32473da008d6ddf175f45c50f70ab0fd5ec308bd5af9cad3aaa&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}
 
 {% openapi-operation spec="atlas-api" path="/queryVoidOrders.do" method="post" %}
-[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260709%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260709T031124Z&X-Amz-Expires=172800&X-Amz-Signature=1e9560eea36a0642d63d078b53660ca0003454e12d11250b98fbc3924e8ead9b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
+[OpenAPI atlas-api](https://4401d86825a13bf607936cc3a9f3897a.r2.cloudflarestorage.com/gitbook-x-prod-openapi/raw/9dcd4bc9b39af8e0697eeeb02edb459eb14088e6acf7e1f061779a4a67a31524.json?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=dce48141f43c0191a2ad043a6888781c%2F20260712%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260712T083622Z&X-Amz-Expires=172800&X-Amz-Signature=8ecfe8fda6f5a32473da008d6ddf175f45c50f70ab0fd5ec308bd5af9cad3aaa&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject)
 {% endopenapi-operation %}

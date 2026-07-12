@@ -54,22 +54,24 @@ Deposit is also the fallback path in some payment-risk or split-payment scenario
 
 #### What is different for Fulfilment API payments?
 
-Fulfilment API supports deposit and VCC pass-through.
+Fulfilment API supports deposit and VCC pass-through in supported configurations.
 
 It uses a strict 5-minute payment and ticketing window after order creation.
 
 Use [Payment & Ticketing](../../../product-guides/booking/booking-step-guides/payment-and-ticketing/) for the payment step and [Fulfilment API FAQ](fulfilment-api-faq.md) for fit, timing, and failure alert questions.
 
-### Why is VCC pass-through unavailable on some mixed-airline bookings?
+#### Why is VCC pass-through unavailable on some mixed-airline bookings?
 
 Atlas does not support multiple VCCs in one `pay.do` request.
 
-When outbound and inbound segments require different ticketing channels, two separate payments may be needed.\
+When outbound and inbound segments require different ticketing channels, two separate payments may be needed.
+
 If Atlas cannot support that split in one payment flow, the payment mode falls back to **deposit**.
 
-### When is cardholder address data required?
+#### When is cardholder address data required?
 
-Some airlines require full billing address details.\
+Some airlines require full billing address details.
+
 Use the matrix below when you send VCC or card-based payments.
 
 Cardholder country, province, city, postcode and address are required only for a select few airlines as per the table provided below:
@@ -77,6 +79,8 @@ Cardholder country, province, city, postcode and address are required only for a
 {% hint style="info" %}
 Check payment support and required fields in the current search or verification response before sending `pay.do`.
 {% endhint %}
+
+The matrix reflects the documented rules as of July 2026. Airline requirements can change.
 
 | Airline Code | Airline Name                       | cardHolderCountry | cardHoldProvince | cardHolderCity | cardHolderPostCode | cardHolderAddress |
 | ------------ | ---------------------------------- | ----------------- | ---------------- | -------------- | ------------------ | ----------------- |

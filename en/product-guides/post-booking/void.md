@@ -58,7 +58,9 @@ Do not keep retrying void after the window closes.
 
 ### Current VOID coverage
 
-Atlas VOID currently supports 23 airlines across four regions.
+Atlas VOID supports 23 airlines across four regions as of July 2026.
+
+Coverage is airline-, route-, and account-specific.
 
 #### Americas
 
@@ -95,7 +97,7 @@ Atlas VOID currently supports 23 airlines across four regions.
 * `TW`
 * `ZE`
 
-Recent additions:
+Recent additions as of July 2026:
 
 * `TS`
 * `Y4`
