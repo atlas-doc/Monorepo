@@ -468,5 +468,5 @@ curl --location --request POST 'https://api-sg.atriptech.com/confirmBaggageLoss.
 
 * [可选附加服务](../../booking/optional-ancillaries/)
 * [核价出票接口](../../booking/booking-flows/fulfillment-flow.md)
-* [Fulfilment API FAQ](../../../../support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md)
-* [错误码总览](../../../../support-and-reference/troubleshooting-and-support/errors-handing/)
+* [Fulfilment API FAQ](../../../support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md)
+* [错误码](../../../support-and-reference/troubleshooting-and-support/errors-handing/)
