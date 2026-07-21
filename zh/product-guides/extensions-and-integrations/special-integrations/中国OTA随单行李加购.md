@@ -10,15 +10,7 @@ description: OTA 随单行李加购接入手册，涵盖信息透传、自动履
 
 ### 速查 · 关键约定
 
-| 事项     | 结论                                                            |
-| ------ | ------------------------------------------------------------- |
-| 价格基准   | 直接用 OTA 入参价格生单，**不与 Atlas 内部报价比对**                            |
-| 校验方    | 航司（返回 `309` / `3011`）                                         |
-| 确认亏出时限 | **30 分钟**，超时未确认订单自动取消                                         |
-| 确认亏出回传 | ① API `POST /confirmBaggageLoss.do`（传 `orderNo`）；② atrip 页面点击 |
-| 取消订单   | **复用现有取消订单接口**                                                |
-| 异常通知   | 钉钉群通知（已有）+ Webhook（已有）                                        |
-| 结算     | 月底统一对账，盈余退还 / 亏损收取，多退少补                                       |
+<table data-search="false"><thead><tr><th>事项</th><th>结论</th></tr></thead><tbody><tr><td>价格基准</td><td>直接用 OTA 入参价格生单，<strong>不与 Atlas 内部报价比对</strong></td></tr><tr><td>校验方</td><td>航司（返回 <code>309</code> / <code>3011</code>）</td></tr><tr><td>确认亏出时限</td><td><strong>30 分钟</strong>，超时未确认订单自动取消</td></tr><tr><td>确认亏出回传</td><td>① API <code>POST /confirmBaggageLoss.do</code>（传 <code>orderNo</code>）；② atrip 页面点击</td></tr><tr><td>取消订单</td><td><strong>复用现有取消订单接口</strong></td></tr><tr><td>异常通知</td><td>钉钉群通知（已有）+ Webhook（已有）</td></tr><tr><td>结算</td><td>月底统一对账，盈余退还 / 亏损收取，多退少补</td></tr></tbody></table>
 
 ***
 
