@@ -8,7 +8,7 @@ description: Atlas API 预订流程概述，涵盖搜索、获取报价、验证
 
 使用此部分选择正确的 Atlas API 预订流程，并在每个步骤保留正确的标识符。
 
-<figure><img src="../../../.gitbook/assets/FlowChart_2_IssueTicket (1).png" alt=""><figcaption><p>从搜索到支付和跟进的预订流程</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/FlowChart_2_IssueTicket.png" alt=""><figcaption><p>从搜索到支付和跟进的预订流程</p></figcaption></figure>
 
 当您需要以下内容时从这里开始：
 
