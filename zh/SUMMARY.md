@@ -82,6 +82,7 @@
     * [退款](api-reference/post-booking-apis/refunds.md)
     * [作废](api-reference/post-booking-apis/void.md)
     * [重新生成订单](api-reference/post-booking-apis/regenerate-order.md)
+    * [确认行李损失](api-reference/post-booking-apis/regenerate-order-1.md)
     * [停止出票](api-reference/post-booking-apis/stop-ticket-issuance.md)
     * [订单列表](api-reference/post-booking-apis/order-list.md)
     * [PNR 认领](api-reference/post-booking-apis/pnr-claim.md)
