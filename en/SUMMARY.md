@@ -63,6 +63,7 @@
     * [Special Integrations](product-guides/extensions-and-integrations/special-integrations/README.md)
       * [FR Integration](product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
       * [Resident Price Integration](product-guides/extensions-and-integrations/special-integrations/resident-price-integration.md)
+      * [China OTA Baggage Integration](product-guides/extensions-and-integrations/special-integrations/china-ota-baggage-integration.md)
 * [API Reference](api-reference/README.md)
   * [Booking APIs](api-reference/booking-apis/README.md)
     * [Search](api-reference/booking-apis/search.md)

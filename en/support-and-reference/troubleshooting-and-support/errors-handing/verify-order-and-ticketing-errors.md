@@ -112,6 +112,22 @@ The ancillary product code is invalid or outdated.
 * Re-read ancillary options from verify
 * Use returned `productCode` values only
 
+#### `3011` Airline price higher than OTA price
+
+Airline actual price is higher than the OTA selling price for baggage in China OTA with-order baggage integration.
+
+**Context**
+
+This is specific to the China OTA baggage integration scenario，where OTA passes its own baggage price for order creation，and Atlas validates with airline actual price.
+
+**Action**
+
+* Customer receives notification with change amount
+* Customer chooses to cancel order or confirm loss acceptance within 30 minutes
+* If confirmed, order continues ticketing，difference is charged to customer at month-end settlement
+
+For complete documentation，see [China OTA Baggage Integration](../../../../product-guides/extensions-and-integrations/special-integrations/china-ota-baggage-integration.md)
+
 #### `312` / `315` Too many seats booked or not enough seats
 
 Inventory changed or requested seat count exceeds availability.
