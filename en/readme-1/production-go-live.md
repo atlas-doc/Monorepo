@@ -120,7 +120,7 @@ After your account is in `LIVE` status, generate the production client ID and cl
 
 Set up your IP whitelist in the same production setup flow.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Production credential generation and IP whitelist setup in ATRIP</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Production credential generation and IP whitelist setup in ATRIP</p></figcaption></figure>
 
 Customers can generate these values directly only after the account is set to `LIVE`.
 {% endstep %}

@@ -28,7 +28,7 @@ When you move to production, get the live API base URLs in ATRIP under `My Profi
 Production uses one base URL for `search` and another for all other transaction APIs.
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/FlowChart_1_QuickStart.png" alt=""><figcaption><p>End-to-end integration flow from sandbox access to go-live</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/FlowChart_1_QuickStart (1).png" alt=""><figcaption><p>End-to-end integration flow from sandbox access to go-live</p></figcaption></figure>
 
 Start here when you need to:
 
@@ -231,7 +231,7 @@ If you want a no-code environment check first, use [Sandbox Validation Test Kit]
 
 Then use this Postman collection during sandbox development:
 
-{% file src="../.gitbook/assets/TheAtlas UAT Test Shopping & Ticketing Services Only Postman Collection.zip" %}
+{% file src="../.gitbook/assets/TheAtlas UAT Test Shopping & Ticketing Services Only Postman Collection (1).zip" %}
 
 ### Next step
 

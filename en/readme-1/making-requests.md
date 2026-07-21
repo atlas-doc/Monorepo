@@ -48,7 +48,7 @@ Get your sandbox credentials in ATRIP:
 2. Open `My Profile`.
 3. Open `Company Information`.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 In `Sandbox Info`, you can find:
 

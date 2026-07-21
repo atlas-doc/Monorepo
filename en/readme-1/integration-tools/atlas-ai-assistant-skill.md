@@ -16,7 +16,7 @@ This package is separate from GitBook MCP.
 
 Use it when you want an importable AI assistant setup.
 
-{% file src="../../.gitbook/assets/atlas-api-integration-advisor (2).zip" %}
+{% file src="../../.gitbook/assets/atlas-api-integration-advisor (2) (1).zip" %}
 
 ### What it helps with
 

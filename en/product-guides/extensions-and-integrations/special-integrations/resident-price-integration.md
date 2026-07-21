@@ -187,11 +187,11 @@ Use the files below to map names to coded values.
 
 The municipality code is a 6-digit value built from `CPOR + CMUN + DC`.
 
-{% file src="../../../.gitbook/assets/25codmun.xlsx" %}
+{% file src="../../../.gitbook/assets/25codmun (1).xlsx" %}
 
 #### Community codes
 
-{% file src="../../../.gitbook/assets/community.xlsx" %}
+{% file src="../../../.gitbook/assets/community (1).xlsx" %}
 
 ### Final verification behavior
 

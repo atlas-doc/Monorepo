@@ -87,6 +87,22 @@ Use [401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors
 
 ### Latest Atlas API documentation updates
 
+#### OTA baggage integration guide
+
+Published a general OTA baggage integration guide. The guide no longer limits this capability to a regional use case.
+
+What changed:
+
+* renamed [OTA Baggage Integration](product-guides/extensions-and-integrations/special-integrations/china-ota-baggage-integration.md) from its regional title
+* clarified that the flow supports OTA-collected baggage orders generally
+* standardized the guide's heading hierarchy, punctuation, and related links
+
+Read next:
+
+* [OTA Baggage Integration](product-guides/extensions-and-integrations/special-integrations/china-ota-baggage-integration.md)
+* [Baggage](product-guides/booking/optional-ancillaries/baggage.md)
+* [Optional Ancillaries](product-guides/booking/optional-ancillaries/)
+
 #### VOID airline coverage expansion
 
 Updated the VOID documentation to show the current supported airline scope.
@@ -395,6 +411,18 @@ Use [Booking Overview](product-guides/booking/booking-overview/) for the main fl
 ### Full change log
 
 {% updates format="full" %}
+{% update date="2026-07-21" %}
+## Generalized OTA baggage integration guidance
+
+Updated the baggage integration guide for all OTA use cases.
+
+What changed:
+
+* renamed the guide to [OTA Baggage Integration](product-guides/extensions-and-integrations/special-integrations/china-ota-baggage-integration.md)
+* removed regional wording from the title, description, and guidance
+* standardized formatting and replaced external related links with GitBook pages
+{% endupdate %}
+
 {% update date="2026-07-12" %}
 ## Improved Atlas API documentation discovery
 

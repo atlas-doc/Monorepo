@@ -1,39 +1,33 @@
 ---
-description: China OTA baggage integration guide covering info pass-through, auto fulfilment, exception confirmation, and monthly settlement.
+description: >-
+  OTA baggage integration guide covering information pass-through, automatic
+  fulfilment, exception confirmation, and monthly settlement.
 ---
 
-# China OTA Baggage Integration
+# OTA Baggage Integration
 
 {% include "../../../.gitbook/includes/eva-help-hint.md" %}
 
-For scenarios where Chinese OTAs sell baggage alongside ticket bookings, Atlas provides an end-to-end capability: "baggage information pass-through → automated fulfillment → exception confirmation → monthly settlement". This enables stable ticketing for OTA-collected baggage orders with unified "surplus refund, deficit charge" settlement at month-end.
+When OTAs sell baggage alongside ticket bookings, Atlas provides an end-to-end capability: "baggage information pass-through → automated fulfillment → exception confirmation → monthly settlement". This enables stable ticketing for OTA-collected baggage orders with unified "surplus refund, deficit charge" settlement at month-end.
 
-## Quick Reference · Key Agreements
+### Quick Reference · Key Agreements
 
-| Item | Conclusion |
-|----|----|
-| Price Benchmark | Use OTA input prices directly for order creation, **no comparison with Atlas internal pricing** |
-| Validation Party | Airline (returns `309` / `3011`) |
-| Loss Acceptance Timeout | **30 minutes**；unconfirmed orders are automatically canceled after timeout |
-| Loss Acceptance Callback | ① API `POST /confirmBaggageLoss.do` (pass `orderNo`)；② atrip page click |
-| Order Cancellation | **Reuse existing cancel order interface** |
-| Exception Notification | DingTalk group notification (existing) + Webhook (existing) |
-| Settlement | Unified month-end reconciliation, surplus refund / loss charge, with netting |
+<table data-search="false"><thead><tr><th>Item</th><th>Conclusion</th></tr></thead><tbody><tr><td>Price Benchmark</td><td>Use OTA input prices directly for order creation, <strong>no comparison with Atlas internal pricing</strong></td></tr><tr><td>Validation Party</td><td>Airline (returns <code>309</code> / <code>3011</code>)</td></tr><tr><td>Loss Acceptance Timeout</td><td><strong>30 minutes</strong>; unconfirmed orders are automatically canceled after timeout</td></tr><tr><td>Loss Acceptance Callback</td><td>API <code>POST /confirmBaggageLoss.do</code> (pass <code>orderNo</code>) or the ATRIP page</td></tr><tr><td>Order Cancellation</td><td><strong>Reuse existing cancel order interface</strong></td></tr><tr><td>Exception Notification</td><td>DingTalk group notification (existing) + Webhook (existing)</td></tr><tr><td>Settlement</td><td>Unified month-end reconciliation, surplus refund / loss charge, with netting</td></tr></tbody></table>
 
----
+***
 
-## Problems Solved
+### Problems Solved
 
-| Pain Point | This Solution's Response |
-|----|----|
-| OTA has already sold baggage to passengers, but baggage specs/prices are OTA-proprietary | Atlas **does NOT compare/replace with internal baggage quotes**, directly creates orders using OTA-provided specs and prices |
-| Airline actual price at fulfillment differs from OTA selling price, risking loss or disputes | Real-time airline price validation：**profit generates rebate, loss requires confirmation first**, unified netting settlement at month-end |
-| Spec non-compliance with airline requirements causes entire order failure | Independent `309` exception notification，confirm first then handle |
-| Loss order appeal later requires screenshots | Clear screenshot responsibility attribution，pre-agreed in process |
+| Pain Point                                                                                   | This Solution's Response                                                                                                                   |
+| -------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| OTA has already sold baggage to passengers, but baggage specs/prices are OTA-proprietary     | Atlas **does NOT compare/replace with internal baggage quotes**, directly creates orders using OTA-provided specs and prices               |
+| Airline actual price at fulfillment differs from OTA selling price, risking loss or disputes | Real-time airline price validation: **profit generates rebate, loss requires confirmation first**, unified netting settlement at month-end |
+| Spec non-compliance with airline requirements causes entire order failure                    | Independent `309` exception notification; confirm first, then handle                                                                       |
+| Loss order appeal later requires screenshots                                                 | Clear screenshot responsibility attribution, pre-agreed in process                                                                         |
 
----
+***
 
-## Core Business Process
+### Core Business Process
 
 ```mermaid
 flowchart TD
@@ -55,234 +49,234 @@ flowchart TD
     I --> J
 ```
 
----
+***
 
-## Key Business Rules
+### Key Business Rules
 
-### Baggage Info Pass-Through（Order Creation Stage）
+#### Baggage Info Pass-Through (Order Creation Stage)
 
-When calling the Atlas create order interface（`CreateOrder` / `POST /order.do`），customers pass in baggage already sold by OTA：
+When calling the Atlas create order interface (`CreateOrder` / `POST /order.do`), customers pass in baggage already sold by OTA:
 
-* Baggage **type/specs**（weight-based or piece-based, weight, pieces, checked/carry-on）；
-* OTA-side **sales amount & currency**；
-* Baggage **passenger**；
-* Baggage **flight segment**（linked by flight number）。
+* Baggage **type/specs** (weight-based or piece-based, weight, pieces, checked/carry-on).
+* OTA-side **sales amount and currency**.
+* Baggage **passenger**.
+* Baggage **flight segment** (linked by flight number).
 
 {% hint style="info" %}
-**Important**：Atlas **does NOT compare and match with own quotes**，directly creates orders using customer input parameters.
+**Important:** Atlas **does not compare or match its own quotes**. It directly creates orders using customer input parameters.
 {% endhint %}
 
-### Automated Fulfillment Rules
+#### Automated Fulfillment Rules
 
-During fulfillment，system validates in real-time actual purchasable baggage specs and prices from the airline side：
+During fulfillment, the system validates real-time purchasable baggage specifications and prices from the airline.
 
-* **Airline actual price ≤ OTA selling price**：automatically complete baggage add-on and ticketing，**diff surplus is refunded to customer as rebate in month-end statement**。
+* **Airline actual price ≤ OTA selling price:** Automatically complete baggage add-on and ticketing. **The surplus is refunded to the customer as a rebate in the month-end statement.**
 
-### Exception Handling Rules
+#### Exception Handling Rules
 
-During fulfillment，if any of the following occur，system **suspends automatic ticketing and notifies customer to confirm**：
+During fulfillment, if either condition occurs, the system **suspends automatic ticketing and asks the customer to confirm**:
 
-| Trigger Condition | Error Code | Meaning |
-|----|----|----|
-| Customer-provided baggage specs do not meet airline requirements | **309** | Specs not purchasable，order cannot continue confirmation |
-| Airline actual quote is higher than OTA selling price | **3011** | Price change（loss risk），notification includes change amount |
+| Trigger Condition                                                | Error Code | Meaning                                                           |
+| ---------------------------------------------------------------- | ---------- | ----------------------------------------------------------------- |
+| Customer-provided baggage specs do not meet airline requirements | **309**    | Specifications are not purchasable; the order cannot continue     |
+| Airline actual quote is higher than OTA selling price            | **3011**   | Price change (loss risk); notification includes the change amount |
 
-**Notification Methods**：
+**Notification methods:**
 
-* DingTalk group notification（**already supported**）；
-* Webhook notification（**already supported**）。
+* DingTalk group notification (**already supported**).
+* Webhook notification (**already supported**).
 
-**Customer options after receiving notification**：
+**Customer options after receiving notification:**
 
-1. **Cancel Order**：Atlas terminates fulfillment for this order（**reuse existing cancel order interface**）。
-2. **Accept Loss**：After customer confirmation，Atlas continues automatic baggage add-on and ticketing；the resulting loss amount is combined with rebate amount for month-end reconciliation。
-   * System will flag such orders；flagged orders support customer "**loss acceptance**"，system auto-accepts price change for ticketing。
-   * **Confirmation window is 30 minutes**；**unconfirmed orders after 30 minutes will be automatically canceled**。
+1. **Cancel Order:** Atlas terminates fulfillment for this order. **Reuse the existing cancel order interface.**
+2. **Accept Loss:** After confirmation, Atlas continues baggage fulfillment and ticketing. The resulting loss is combined with the rebate for month-end reconciliation.
+   * The system flags these orders for loss acceptance.
+   * **The confirmation window is 30 minutes.** **Unconfirmed orders are automatically canceled.**
 
-### Screenshot Clarification（Voucher Responsibility）
+#### Screenshot Clarification (Voucher Responsibility)
 
-For **loss-accepted orders**，if the Chinese OTA needs airline official website screenshots for subsequent appeals，**Atlas does not provide related screenshots**。
+For **loss-accepted orders**, Atlas does not provide airline website screenshots for appeals.
 
-Customer should，after receiving **loss order completion notification**，independently go to airline official website to check order and save screenshots，for later appeal or internal audit。
+After receiving the **loss order completion notification**, the customer should check the airline website and save screenshots for appeals or internal audits.
 
-### Month-End Unified Settlement
+#### Month-End Unified Settlement
 
-During month-end reconciliation，Atlas aggregates all China OTA baggage add-on orders，and uniformly calculates：
+During month-end reconciliation, Atlas aggregates all OTA baggage add-on orders and calculates:
 
-* **Surplus amount** from baggage add-on → refund to customer；
-* **Loss amount** from baggage add-on → charge to customer；
+* **Surplus amount** from baggage add-ons → refund to the customer.
+* **Loss amount** from baggage add-ons → charge to the customer.
 
-Final settlement is reflected in **month-end statement**，completed on **netting basis**。
+Final settlement appears in the **month-end statement** on a **netting basis**.
 
----
+***
 
-## Settlement Example
+### Settlement Example
 
-| Scenario | OTA Selling Price | Airline Actual Price | Outcome | Month-End Settlement |
-|----|----|----|----|----|
-| Surplus | 30 USD | 25 USD | Auto ticketing | Refund customer **5 USD** |
-| Loss（Confirmed） | 30 USD | 35 USD | Customer accepts loss then tickets | Charge customer **5 USD** |
+| Scenario         | OTA Selling Price | Airline Actual Price | Outcome                             | Month-End Settlement      |
+| ---------------- | ----------------- | -------------------- | ----------------------------------- | ------------------------- |
+| Surplus          | 30 USD            | 25 USD               | Auto ticketing                      | Refund customer **5 USD** |
+| Loss (confirmed) | 30 USD            | 35 USD               | Customer accepts loss, then tickets | Charge customer **5 USD** |
 
----
+***
 
-# Part 2 · FAQ / Q&A
+### FAQ
 
-## I. Basic Understanding
+#### Basic understanding
 
-### Q1. What is "baggage add-on with order"？
+**Q1. What is "baggage add-on with order"?**
 
-It refers to the scenario where a passenger，**during the flight booking process** on a Chinese OTA，purchases baggage product using OTA-proprietary baggage specs/prices；merchant passes baggage order together with ticket order to Atlas，who completes fulfillment and ticketing。
+It refers to a passenger purchasing baggage during an OTA flight booking. The merchant passes the baggage order with the ticket order to Atlas for fulfillment and ticketing.
 
-### Q2. Will Atlas replace OTA-provided baggage with its own internal baggage product？
+**Q2. Will Atlas replace OTA-provided baggage with its own internal baggage product?**
 
-**No**。This solution explicitly does not compare and match with Atlas quotes，**directly creates orders using customer input specs and prices**。
+**No.** This solution does not compare Atlas quotes. It creates orders from the customer's specifications and prices.
 
-### Q3. Will Atlas perform local pre-validation on the provided baggage price and specs？
+**Q3. Will Atlas perform local pre-validation on the provided baggage price and specifications?**
 
-**No local pre-validation**，subject to airline return value。Airline is the final validator。
+There is **no local pre-validation**. The airline response is authoritative.
 
-### Q4. Is this capability mandatory？
+**Q4. Is this capability mandatory?**
 
-**Optional**。When `passengerBaggages` field is not provided，order follows normal booking flow；OTA baggage flow is triggered only when field is populated。
+It is **optional**. Without `passengerBaggages`, the order follows the normal booking flow. The OTA baggage flow starts only when the field is populated.
 
----
+***
 
-## II. Pricing & Settlement
+#### Pricing and settlement
 
-### Q5. Who determines baggage price？
+**Q5. Who determines the baggage price?**
 
-Price is subject to **OTA-provided selling price**（`bookSalePrice`）。Airline actual price is compared during fulfillment。
+The price uses the **OTA-provided selling price** (`bookSalePrice`). The airline price is compared during fulfillment.
 
-### Q6. If airline actual price is **lower than** OTA selling price，who gets the diff？
+**Q6. If the airline price is lower than the OTA selling price, who gets the difference?**
 
-Customer gets it。Diff **surplus is refunded as rebate in month-end statement**。
+The customer receives it. The **surplus is refunded as a rebate in the month-end statement**.
 
-### Q7. What happens if airline actual price is **higher than** OTA selling price？
+**Q7. What happens if the airline price is higher than the OTA selling price?**
 
-System **suspends automatic ticketing and notifies customer**（error code `3011`），notification includes change amount。Customer may either cancel order，or "accept loss" within time limit to continue ticketing。**Diff amount from loss acceptance is charged to customer at month-end**。
+The system **suspends automatic ticketing and notifies the customer** (error code `3011`). The notification includes the change amount. The customer can cancel the order or accept the loss within the time limit. **The accepted-loss amount is charged at month-end.**
 
-### Q8. How are surplus and loss settled？
+**Q8. How are surplus and loss settled?**
 
-**Unified month-end reconciliation**，surplus refund，loss charge，reflected together in month-end statement on **netting basis**。
+**Month-end reconciliation** reflects the surplus refund and loss charge together on a **netting basis**.
 
-### Q9. Can you provide a settlement example？
+**Q9. Can you provide a settlement example?**
 
-* OTA sells 30 USD，airline actually charges 25 USD → surplus 5 USD，refunded to customer at month-end。
-* OTA sells 30 USD，airline actually charges 35 USD → after customer loss acceptance and ticketing，charge customer 5 USD at month-end。
+* The OTA sells for 30 USD. The airline charges 25 USD. The 5 USD surplus is refunded at month-end.
+* The OTA sells for 30 USD. The airline charges 35 USD. After acceptance and ticketing, 5 USD is charged at month-end.
 
----
+***
 
-## III. Exception Handling & Confirmation
+#### Exception handling and confirmation
 
-### Q10. What types of exceptions may occur？
+**Q10. What types of exceptions may occur?**
 
-Two main types：
+Two main types:
 
-* `309`：Baggage **specs** do not meet airline requirements，order cannot continue confirmation；
-* `3011`：Airline quote is **higher than** OTA price（price change/loss risk）。
+* `309`: Baggage **specifications** do not meet airline requirements. The order cannot continue.
+* `3011`: The airline quote is **higher than** the OTA price (price-change or loss risk).
 
-### Q11. How are exceptions notified to customer？
+**Q11. How are exceptions notified to the customer?**
 
-* **DingTalk group notification**；
-* **Webhook notification**。
+* **DingTalk group notification**.
+* **Webhook notification**.
 
-### Q12. After receiving exception notification，what can customer do？
+**Q12. After receiving an exception notification, what can the customer do?**
 
-* **Cancel Order**：Atlas terminates fulfillment for this order；
-* **Accept Loss**：Continue ticketing，loss settled at month-end。System flags such orders；**two confirmation methods**：① call API（`confirmBaggageLoss.do`，pass `orderNo`）；② click confirm on atrip page（ref Part 3 §7 of this doc）。
+* **Cancel Order:** Atlas terminates fulfillment for the order.
+* **Accept Loss:** Continue ticketing and settle the loss at month-end. The system flags these orders. Confirm through `confirmBaggageLoss.do` with `orderNo`, or in ATRIP.
 
-### Q13. Is there a time limit for "loss acceptance"？
+**Q13. Is there a time limit for "loss acceptance"?**
 
-**Yes，confirmation window is 30 minutes**。After 30 minutes unconfirmed，**order will be automatically canceled**。
+**Yes. The confirmation window is 30 minutes.** After 30 minutes, **the order is automatically canceled**.
 
-### Q14. What if customer neither cancels nor confirms？
+**Q14. What if the customer neither cancels nor confirms?**
 
-**After 30 minutes unconfirmed，order will be automatically canceled**。
+**After 30 minutes without confirmation, the order is automatically canceled.**
 
-### Q15. Can spec mismatch（309）orders continue via "loss acceptance"？
+**Q15. Can specification-mismatch (`309`) orders continue through "loss acceptance"?**
 
-`309` is **specs not purchasable**，hard block，**cannot bypass via loss acceptance**，requires customer cancellation or adjustment then re-order。
+`309` means the **specifications are not purchasable**. It is a hard block. **Loss acceptance cannot bypass it.** The customer must cancel or adjust the request and create a new order.
 
----
+***
 
-## IV. Specs and Matching
+#### Specifications and matching
 
-### Q16. How to pass weight-based vs piece-based？
+**Q16. How do I pass weight-based versus piece-based baggage?**
 
-* **Weight-based**（unlimited pieces）：`pkgNumber: -1`，and fill positive `weight`；
-* **Piece-based**：`pkgNumber` pass positive integer（1,2,3…），and fill `weight` per airline product requirement。
+* **Weight-based** (unlimited pieces): Set `pkgNumber` to `-1` and provide a positive `weight`.
+* **Piece-based:** Set `pkgNumber` to a positive integer, such as `1`, `2`, or `3`. Provide `weight` as required by the airline product.
 
-### Q17. Can `pkgNumber` pass 0？
+**Q17. Can `pkgNumber` be `0`?**
 
-**Not recommended to pass 0**（ambiguous semantics）。Weight-based uniformly uses `-1`，piece-based uses positive integer。
+Do **not** pass `0`; its meaning is ambiguous. Use `-1` for weight-based baggage and a positive integer for piece-based baggage.
 
-### Q18. How is baggage bound to passenger and segment？
+**Q18. How is baggage bound to a passenger and segment?**
 
-* First bind to order passenger by **passenger name**（`passengerName`）；
-* Then bind to flight segment by **flight number**（`flight`）。
-* When name does not match any order passenger，that baggage entry **will not be linked to anyone**。
+* First bind the order passenger by **passenger name** (`passengerName`).
+* Then bind the flight segment by **flight number** (`flight`).
+* If the name does not match an order passenger, the baggage entry **is not linked**.
 
 {% hint style="warning" %}
-⚠️ **Avoid scenario**：Do not submit with-order baggage when an order contains **same flight number** multiple segments（cannot distinguish segments）。
+**Avoid this scenario:** Do not submit with-order baggage when an order contains multiple segments with the **same flight number**. Atlas cannot distinguish the segments.
 {% endhint %}
 
-### Q19. What if an order contains **same flight number** multiple segments？
+**Q19. What if an order contains multiple segments with the same flight number?**
 
-Current **only matches segment by flight number**，`depTime`、`fromAirport`、`toAirport` cannot be used for further differentiation。**Should avoid submitting with-order baggage in same-order same-flight multi-segment scenarios**，otherwise wrong segment may be linked。
+Atlas **matches segments only by flight number**. It cannot use `depTime`, `fromAirport`, or `toAirport` for further differentiation. Avoid submitting baggage for same-flight, multi-segment orders. Otherwise, it may link the wrong segment.
 
-### Q20. How to distinguish checked vs carry-on？
+**Q20. How do I distinguish checked and carry-on baggage?**
 
-`baggageType`：`0` = checked baggage（default），`1` = carry-on baggage。
+`baggageType`: `0` = checked baggage (default); `1` = carry-on baggage.
 
-### Q21. Should `bookSalePrice` be entire trip total or per-segment？
+**Q21. Should `bookSalePrice` be the entire trip total or a per-segment price?**
 
-Fill **current segment** price，not entire trip total。
+Provide the **current segment** price, not the entire trip total.
 
----
+***
 
-## V. Screenshot Voucher
+#### Screenshot voucher
 
-### Q22. For loss order appeal needing airline official website screenshots，will Atlas provide？
+**Q22. Will Atlas provide airline website screenshots for loss-order appeals?**
 
-**Atlas does not provide screenshots**。Customer should，after receiving **loss order completion notification**，independently go to airline official website to check order and save screenshots。
+**Atlas does not provide screenshots.** After receiving the **loss order completion notification**, the customer should check the airline website and save screenshots.
 
-### Q23. When should screenshots be taken？
+**Q23. When should screenshots be taken?**
 
-Take screenshots **after loss order completion notification** received，to ensure order is generated and visible on airline side。
+Take screenshots **after receiving the loss order completion notification**. This confirms the order is generated and visible in the airline system.
 
----
+***
 
-## VI. Tech Integration Related
+#### Technical integration
 
-### Q24. What do we（customer）need to do to integrate？
+**Q24. What does the customer need to do to integrate?**
 
-See Part 3 of this doc for details。In summary：
+See the [technical integration guide](china-ota-baggage-integration.md#technical-integration-guide) for details. In summary:
 
-1. Add `passengerBaggages` field in create order interface（`POST /order.do`）request body；
-2. Pass specs and price by passenger × segment；
-3. Handle error codes `309` / `3011`；
-4. Configure DingTalk group / Webhook to receive exception notifications；
-5. Implement "loss acceptance" callback（call `confirmBaggageLoss.do` or click on atrip page）and "cancel order" operation。
+1. Add `passengerBaggages` to the `POST /order.do` request body.
+2. Pass specifications and price for each passenger and segment.
+3. Handle error codes `309` and `3011`.
+4. Configure DingTalk or a webhook for exception notifications.
+5. Implement loss acceptance through `confirmBaggageLoss.do` or ATRIP. Implement order cancellation.
 
----
+***
 
-# Part 3 · Technical Integration Guide
+### Technical integration guide
 
 {% hint style="info" %}
-**Focus of this part**：Answer "**What does customer need to do**"。
+**Focus:** This section answers, "**What does the customer need to do?**"
 {% endhint %}
 
-## I. Pre-requisites for Integration
+#### Prerequisites
 
-| Item | Description |
-|----|----|
-| Interface | Atlas create order interface `POST /order.do`（`CreateOrder`） |
-| New Field | Add `passengerBaggages` node in request body |
-| Field Nature | **Optional**：not provided = normal order；provided = follow China OTA baggage flow |
+| Item         | Description                                                       |
+| ------------ | ----------------------------------------------------------------- |
+| Interface    | Atlas create order interface `POST /order.do` (`CreateOrder`)     |
+| New Field    | Add `passengerBaggages` node in request body                      |
+| Field Nature | **Optional**: omitted = normal order; provided = OTA baggage flow |
 
----
+***
 
-## II. Customer Task List（Overview）
+#### Customer task list
 
 ```mermaid
 flowchart LR
@@ -292,23 +286,23 @@ flowchart LR
     T4 --> T5["5. Month-end reconciliation<br/>Surplus refund & loss charge"]
 ```
 
-| # | Customer Action | Mandatory | Corresponding Section |
-|----|----|----|----|
-| 1 | Assemble `passengerBaggages` in `CreateOrder` request body，pass specs & price by passenger × segment | Mandatory when baggage exists | §3 Interface & Request Body / §4 Field Quick Reference |
-| 2 | Identify and handle error codes `309`（spec mismatch）& `3011`（airline price > OTA price） | Mandatory | §5 Error Codes & Exception Handling |
-| 3 | Configure DingTalk group notification + Webhook callback URL to receive exception notifications | Mandatory | §6 Notification & Callback |
-| 4 | Implement "accept loss/cancel order" callback operation，complete within 30 minutes | Mandatory | §7 Accept Loss / Cancel Callback |
-| 5 | Cooperate with month-end reconciliation settlement（surplus refund，loss charge，netting） | Mandatory | §8 Settlement Reconciliation |
+| # | Customer Action                                                                                                         | Mandatory                     | Corresponding Section                              |
+| - | ----------------------------------------------------------------------------------------------------------------------- | ----------------------------- | -------------------------------------------------- |
+| 1 | Assemble `passengerBaggages` in the `CreateOrder` request body. Pass specifications and price by passenger and segment. | Mandatory when baggage exists | Interface and request body / Field quick reference |
+| 2 | Identify and handle error codes `309` (specification mismatch) and `3011` (airline price > OTA price).                  | Mandatory                     | Error codes and exception handling                 |
+| 3 | Configure DingTalk group notification + Webhook callback URL to receive exception notifications                         | Mandatory                     | §6 Notification & Callback                         |
+| 4 | Implement accept-loss and cancel-order callbacks within 30 minutes.                                                     | Mandatory                     | Loss acceptance and cancellation callback          |
+| 5 | Complete month-end reconciliation for surplus refunds, loss charges, and netting.                                       | Mandatory                     | Settlement reconciliation                          |
 
----
+***
 
-## III. Interface & Request Body
+#### Interface and request body
 
-* **Interface**：`POST /order.do`（create order）
-* **Add-on node location**：Request body root level `"passengerBaggages": [ ... ]`
-* **Data Hierarchy**：`passengerBaggages` → `PassengerBaggageReqData`（passenger-level）→ `baggages`（segment-level）→ `baggagePrices`（spec + price-level）
+* **Interface:** `POST /order.do` (create order)
+* **Add-on node location:** Request body root level: `"passengerBaggages": [ ... ]`
+* **Data hierarchy:** `passengerBaggages` → `PassengerBaggageReqData` (passenger level) → `baggages` (segment level) → `baggagePrices` (specification and price level)
 
-### Full Request Example（Main Ticket + Baggage）
+#### Full Request Example（Main Ticket + Baggage）
 
 ```json
 {
@@ -375,88 +369,88 @@ flowchart LR
 }
 ```
 
----
+***
 
-## IV. Field Quick Reference（Integration Must-Read Only）
+#### Field quick reference
 
-### `PassengerBaggageReqData`（Passenger-Level）
+**`PassengerBaggageReqData` (passenger level)**
 
-| Field | Type | Integration Requirement | How to Fill |
-|----|----|----|----|
-| `passengerName` | String | **Mandatory** when baggage exists | Must match order passenger name；no match → baggage not linked to anyone |
-| `baggages` | Array | **Mandatory** when baggage exists | Baggage list for this passenger across segments；empty array treated as not purchased |
+| Field           | Type   | Integration Requirement           | How to Fill                                                                        |
+| --------------- | ------ | --------------------------------- | ---------------------------------------------------------------------------------- |
+| `passengerName` | String | **Mandatory** when baggage exists | Must match the order passenger name. No match → baggage is not linked.             |
+| `baggages`      | Array  | **Mandatory** when baggage exists | Baggage list for this passenger across segments. An empty array means no purchase. |
 
-### `BaggageReqData`（Segment-Level）
+**`BaggageReqData` (segment level)**
 
-| Field | Type | Integration Requirement | How to Fill |
-|----|----|----|----|
-| `flight` | String | **Mandatory** | Flight number，must match order itinerary；**currently only matches by flight number**，non-match is blocked |
-| `baggagePrices` | Array | **Mandatory** | Specs & selling price for this segment；empty list → segment ignored |
-| `cabin` / `depTime` / `fromAirport` / `toAirport` | String | Optional | Current OTA flow **does NOT use for matching or validation**，only for compatibility info；also **cannot** use to distinguish duplicate flight numbers in same order |
+| Field                                             | Type   | Integration Requirement | How to Fill                                                                                                   |
+| ------------------------------------------------- | ------ | ----------------------- | ------------------------------------------------------------------------------------------------------------- |
+| `flight`                                          | String | **Mandatory**           | Flight number. It must match the itinerary. **Atlas matches only by flight number.** Non-matches are blocked. |
+| `baggagePrices`                                   | Array  | **Mandatory**           | Specifications and selling price for this segment. An empty list means the segment is ignored.                |
+| `cabin` / `depTime` / `fromAirport` / `toAirport` | String | Optional                | Used only for compatibility. The OTA flow does **not** use these fields for matching or validation.           |
 
 {% hint style="warning" %}
-⚠️ **Avoid scenario**：Do not submit with-order baggage when an order contains **same flight number** multiple segments（cannot distinguish segments）。
+**Avoid this scenario:** Do not submit with-order baggage when an order contains multiple segments with the **same flight number**. Atlas cannot distinguish the segments.
 {% endhint %}
 
-### `BaggagePriceReqData`（Spec + Price-Level）
+**`BaggagePriceReqData` (specification and price level)**
 
-| Field | Type | Integration Requirement | How to Fill |
-|----|----|----|----|
-| `bookSalePrice` | Decimal | **Recommended Mandatory** | **Current segment** price OTA sells to customer（not entire trip total），two decimal places |
-| `bookSaleCurrency` | String | **Mandatory** | Currency，e.g. `USD` / `SGD`；recommended to align with order customer currency |
-| `pkgNumber` | Integer | Piece-based：positive integer mandatory；weight-based：pass `-1` | Add-on product pieces；unlimited pieces for weight-based use `-1`；**do NOT pass** `0` |
-| `weight` | Integer | **Mandatory** | Corresponding chargeable baggage **total weight**（kg）； |
-| `baggageType` | Integer | Optional | `0` = checked（default），`1` = carry-on |
+| Field              | Type    | Integration Requirement                           | How to Fill                                                                        |
+| ------------------ | ------- | ------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| `bookSalePrice`    | Decimal | **Recommended**                                   | OTA price for the **current segment**, not the whole trip. Use two decimal places. |
+| `bookSaleCurrency` | String  | **Mandatory**                                     | Currency, such as `USD` or `SGD`. Align it with the order currency when possible.  |
+| `pkgNumber`        | Integer | Piece-based: positive integer; weight-based: `-1` | Number of pieces. Use `-1` for unlimited pieces. **Do not pass** `0`.              |
+| `weight`           | Integer | **Mandatory**                                     | Chargeable baggage **total weight** in kg.                                         |
+| `baggageType`      | Integer | Optional                                          | `0` = checked (default); `1` = carry-on.                                           |
 
----
+***
 
-## V. Error Codes & Exception Handling
+#### Error codes and exception handling
 
-Customer-provided prices and specs **do NOT compare with Atlas internal quotes**，**airline is final validator**：
+Customer-provided prices and specifications **do not compare with Atlas internal quotes**. **The airline is the final validator.**
 
-| Error Code | Meaning | Trigger Outcome | What Customer Needs to Do |
-|----|----|----|----|
-| **309** | Baggage specs do not meet airline requirements | Order cannot proceed confirmation（**hard block，cannot bypass via loss acceptance**） | Receive notification → cancel order or adjust specs then re-order |
-| **3011** | Airline price > OTA price | Order **suspended**，notification includes change amount | Receive notification → **within 30 minutes** accept loss or cancel order |
+| Error Code | Meaning                                                 | Trigger Outcome                                                          | What Customer Needs to Do                                        |
+| ---------- | ------------------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| **309**    | Baggage specifications do not meet airline requirements | Order cannot continue (**hard block; loss acceptance cannot bypass it**) | Cancel the order or adjust specifications and create a new order |
+| **3011**   | Airline price > OTA price                               | Order is **suspended**. The notification includes the change amount.     | Accept the loss or cancel the order **within 30 minutes**        |
 
 {% hint style="success" %}
-**Note**：When airline price ≤ OTA selling price：Auto ticketing，diff surplus refunded at month-end，**no customer involvement required**。
+**Note:** When the airline price is less than or equal to the OTA selling price, ticketing is automatic. The surplus is refunded at month-end. **No customer action is required.**
 {% endhint %}
 
----
+***
 
-## VI. Notification & Callback
+#### Notification and callback
 
-| Notification Method | Status | What Customer Needs to Do |
-|----|----|----|
-| **DingTalk Group Notification** | **Already Supported** | Provide/configure DingTalk group to receive notifications |
-| **Webhook Notification** | **Already Supported** | Provide callback URL，parse `309` / `3011`（including change amount）and trigger internal confirmation flow |
+| Notification Method             | Status                | What Customer Needs to Do                                                                                                 |
+| ------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| **DingTalk Group Notification** | **Already Supported** | Provide/configure DingTalk group to receive notifications                                                                 |
+| **Webhook Notification**        | **Already Supported** | Provide a callback URL. Parse `309` and `3011`, including the change amount, then trigger the internal confirmation flow. |
 
----
+***
 
-## VII. Loss Acceptance / Cancellation Callback
+#### Loss acceptance and cancellation callback
 
-Loss acceptance supports **two methods**，order cancellation reuses existing cancel order interface。
+Loss acceptance supports **two methods**. Order cancellation reuses the existing cancel-order interface.
 
-### Method 1：API Confirmation（Recommended for System Integration）
+**Method 1: API confirmation (recommended for system integrations)**
 
-**Interface**：`POST https://api-sg.atriptech.com/confirmBaggageLoss.do`
+**Interface:** `POST https://api-sg.atriptech.com/confirmBaggageLoss.do`
 
-**Request Headers**：
+**Request headers:**
 
-| Header | Description |
-|----|----|
-| `x-atlas-client-id` | Client integration ID |
-| `x-atlas-client-secret` | Client secret |
-| `Content-Type` | `application/json` |
+| Header                  | Description           |
+| ----------------------- | --------------------- |
+| `x-atlas-client-id`     | Client integration ID |
+| `x-atlas-client-secret` | Client secret         |
+| `Content-Type`          | `application/json`    |
 
-**Request Body**：
+**Request body:**
 
-| Field | Description |
-|----|----|
+| Field     | Description                             |
+| --------- | --------------------------------------- |
 | `orderNo` | Order number to confirm loss acceptance |
 
-**cURL Example**：
+**cURL example:**
 
 ```bash
 curl --location --request POST 'https://api-sg.atriptech.com/confirmBaggageLoss.do' \
@@ -468,39 +462,39 @@ curl --location --request POST 'https://api-sg.atriptech.com/confirmBaggageLoss.
 }'
 ```
 
-### Method 2：atrip Page Click Confirmation
+**Method 2: ATRIP page confirmation**
 
-Find flagged loss order on atrip order page，click "Confirm baggage price change"，system auto-accepts price change for ticketing。
+Find the flagged loss order in ATRIP. Click **Confirm baggage price change**. The system accepts the price change and starts ticketing.
 
-![](../.gitbook/assets/china-ota-baggage-screenshot.png)
 
-### Time Limit & Timeout
 
-* **Confirmation Window：30 minutes**（counting from receipt of `3011` price change notification）；
-* **After 30 minutes unconfirmed：Order auto-cancels**；
-* Client-side preparation required：Internal decision workflow（who has authority to confirm loss），confirmation call encapsulation，30-minute countdown logic。
+**Time limit and timeout**
 
-### Order Cancellation
+* **Confirmation window:** 30 minutes from the `3011` price-change notification.
+* **After 30 minutes without confirmation:** The order is automatically canceled.
+* Prepare an internal decision workflow, confirmation-call handling, and a 30-minute countdown.
 
-**Reuse existing cancel order interface**，this solution does not add new cancel interface。
+**Order cancellation**
 
----
+**Reuse the existing cancel-order interface.** This solution adds no new cancel interface.
 
-## VIII. Settlement Reconciliation
+***
 
-During month-end reconciliation，Atlas uniformly aggregates all with-order baggage orders：
+#### Settlement reconciliation
 
-* Surplus → refund to customer；
-* Loss → charge to customer；
-* Reflected in month-end statement on **netting basis**。
+During month-end reconciliation, Atlas aggregates all orders with baggage:
 
-What customer needs to do：**Confirm baggage surplus/loss details in reconciliation statement**，cooperate to complete settlement。
+* Surplus → refund to the customer.
+* Loss → charge to the customer.
+* Results appear in the month-end statement on a **netting basis**.
 
----
+**Customer action:** Confirm baggage surplus and loss details in the reconciliation statement.
 
-## Related Pages
+***
 
-* [Optional Ancillaries](../../booking/optional-ancillaries/README.md)
+### Related Pages
+
+* [Optional Ancillaries](../../booking/optional-ancillaries/)
 * [Fulfilment API](../../booking/booking-flows/fulfillment-flow.md)
-* [Fulfilment API FAQ](../../../../support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md)
-* [Error Codes Overview](../../../../support-and-reference/troubleshooting-and-support/errors-handing/README.md)
+* [Fulfilment API FAQ](../../../support-and-reference/troubleshooting-and-support/faqs/fulfilment-api-faq.md)
+* [Error Codes](../../../support-and-reference/troubleshooting-and-support/errors-handing/)

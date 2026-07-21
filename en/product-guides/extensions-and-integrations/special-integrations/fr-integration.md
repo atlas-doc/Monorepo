@@ -306,7 +306,7 @@ Do not use real cards in test environments.
 
 Use the FR-specific UAT file below.
 
-{% file src="../../../.gitbook/assets/Ryan Air (FR) Atlas UAT Test Shopping & Ticketing Services Only Template.xlsx" %}
+{% file src="../../../.gitbook/assets/Ryan Air (FR) Atlas UAT Test Shopping & Ticketing Services Only Template (1).xlsx" %}
 
 ### Related pages
 

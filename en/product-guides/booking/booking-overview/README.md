@@ -10,7 +10,7 @@ description: >-
 
 Use this section to choose the correct Atlas API booking path and keep the right identifier at each step.
 
-<figure><img src="../../../.gitbook/assets/FlowChart_2_IssueTicket.png" alt=""><figcaption><p>Booking path from search to payment and follow-up</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/FlowChart_2_IssueTicket (1).png" alt=""><figcaption><p>Booking path from search to payment and follow-up</p></figcaption></figure>
 
 Start here when you need to:
 
