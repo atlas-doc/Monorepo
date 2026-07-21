@@ -61,7 +61,7 @@
     * [航班数据源](product-guides/extensions-and-integrations/flight-data-feed.md)
     * [特殊集成](product-guides/extensions-and-integrations/special-integrations/README.md)
       * [FR 集成](product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
-      * [常驻价格集成](product-guides/extensions-and-integrations/special-integrations/resident-price-integration.md)
+      * [西班牙岛民价集成](product-guides/extensions-and-integrations/special-integrations/resident-price-integration.md)
       * [OTA 随单行李加购](product-guides/extensions-and-integrations/special-integrations/中国OTA随单行李加购.md)
 * [API 参考](api-reference/README.md)
   * [预订 API](api-reference/booking-apis/README.md)
