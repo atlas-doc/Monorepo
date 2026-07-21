@@ -11,7 +11,7 @@ description: Atlas API 文档最新更新、新指南、故障排除变更及推
 当您需要最新的指南、修订后的故障排除内容或新增的入口点时，请将此页面作为**支持与参考**的更新动态。
 
 {% hint style="success" %}
-最新更新：Atlas VOID 覆盖范围现已涵盖四个地区的 23 家航司，新增支持 `TS`、`Y4`、`EI` 和 `VF`。
+最新更新：OTA 现可在 `order.do` 请求中随单传入行李规格和售价。
 {% endhint %}
 
 此页面突出显示新指南、主要的故障排除改进以及按使用场景推荐的后续阅读页面。
@@ -73,6 +73,21 @@ description: Atlas API 文档最新更新、新指南、故障排除变更及推
 当主要问题是订单是否已过期或已支付时，请使用[401 vs 402 vs 404](support-and-reference/troubleshooting-and-support/errors-handing/401-vs-402-vs-404.md)。
 
 ### 最新的 Atlas API 文档更新
+
+#### OTA 随单行李加购发布
+
+Atlas 支持 OTA 在创建机票订单时随单传入已售行李。
+
+变更内容：
+
+* `order.do` 支持可选的 `passengerBaggages` 请求字段
+* 记录乘机人、航段、规格、售价和币种的传参规则
+* 新增 `309`、`3011`、确认亏出和月底结算说明
+
+后续阅读：
+
+* [OTA 随单行李加购](product-guides/extensions-and-integrations/special-integrations/中国OTA随单行李加购.md)
+* [创建订单](api-reference/booking-apis/create-order.md)
 
 #### VOID 航司覆盖范围扩展
 
@@ -378,6 +393,26 @@ description: Atlas API 文档最新更新、新指南、故障排除变更及推
 ### 完整变更日志
 
 {% updates format="full" %}
+{% update date="2026-07-21" %}
+## 发布 OTA 随单行李加购
+
+Atlas 现支持 OTA 在 `order.do` 请求中传入已售行李。
+
+变更内容：
+
+* 新增可选的 `passengerBaggages` 请求字段
+* 支持按乘机人和航段传入行李规格、售价与币种
+* 航司实际价格高于 OTA 售价时返回 `3011`
+* 客户可在 30 分钟内确认亏出或取消订单
+* 行李盈余和亏损在月底统一结算
+
+更新的页面：
+
+* [OTA 随单行李加购](product-guides/extensions-and-integrations/special-integrations/中国OTA随单行李加购.md)
+* [创建订单](api-reference/booking-apis/create-order.md)
+* [Atlas API 文档更新](./)
+{% endupdate %}
+
 {% update date="2026-07-08" %}
 ## 扩展 VOID 航司覆盖范围
 
