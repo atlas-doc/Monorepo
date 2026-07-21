@@ -62,7 +62,7 @@
     * [特殊集成](product-guides/extensions-and-integrations/special-integrations/README.md)
       * [FR 集成](product-guides/extensions-and-integrations/special-integrations/fr-integration.md)
       * [常驻价格集成](product-guides/extensions-and-integrations/special-integrations/resident-price-integration.md)
-      * [中国 OTA 随单行李加购](product-guides/extensions-and-integrations/special-integrations/中国OTA随单行李加购.md)
+      * [OTA 随单行李加购](product-guides/extensions-and-integrations/special-integrations/中国OTA随单行李加购.md)
 * [API 参考](api-reference/README.md)
   * [预订 API](api-reference/booking-apis/README.md)
     * [搜索](api-reference/booking-apis/search.md)
